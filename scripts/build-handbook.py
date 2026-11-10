@@ -174,6 +174,7 @@ def main():
 <a href="trainer-session-and-readiness-checklist.html"><span class="path-symbol">03</span><div><h3>I’m training the team</h3><p>Use the session plan, drills and readiness checklist.</p></div><span aria-hidden="true">→</span></a></div></section>
 <section class="three-truths"><p class="eyebrow">THREE IDEAS THAT PREVENT CONFUSION</p><div><article><span>01 / PLAN</span><h3>A program is reusable.<br>A service is one run.</h3><p>Live adjustments don’t rewrite your saved plan or old reports.</p></article><article><span>02 / OUTPUT</span><h3>Pause stops time.<br>Blank hides the screen.</h3><p>A moving arc alone doesn’t prove the physical sign is current.</p></article><article><span>03 / PEOPLE</span><h3>Synced is delivery.<br>Seen is a person.</h3><p>Ask for explicit acknowledgement when an instruction needs it.</p></article></div></section>
 <section class="curriculum"><div class="section-intro"><p class="eyebrow">THE COMPLETE LEARNING PATH</p><h2>From preparation to handover.</h2><p>Read in order, or use search to find the answer you need during a rehearsal.</p></div>{lessons}</section>
+{GET_APP}
 <section class="ready-strip"><div><p class="eyebrow">KEEP A COPY AT THE DESK</p><h2>Your next operator starts here.</h2><p>Download teaching.md, print the complete handbook, or share this site with your team.</p></div><a class="primary-button" href="complete-guide.html">Open the complete guide →</a></section>'''
     (out / "index.html").write_text(shell("Learn to run a service", "index", homepage, "The practical Church Service Timer handbook: rehearse, connect screens, run the service and understand your reports."), encoding="utf-8")
     # The privacy policy, at /privacy-policy/ (a folder, for a clean URL).
@@ -192,7 +193,7 @@ def main():
     notes, _ = render(re.sub(r"(?s)^# .*?\n", "", notes_source, count=1), whole=True)
     notes_body = ('<div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">WHAT’S NEW</p>'
                   '<h1 id="release-notes">Release notes</h1><p class="chapter-deck">What changed in each version, newest first.</p></header>'
-                  '<article class="prose">' + notes + '</article></div>')
+                  '<article class="prose">' + notes + '</article></div>' + GET_APP)
     (out / "release-notes.html").write_text(
         shell("Release notes", "release-notes", notes_body,
               "What changed in each version of Church Service Timer, newest first."),
@@ -200,6 +201,9 @@ def main():
     notfound = '<div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">PAGE NOT FOUND</p><h1>Let’s get you back to the desk.</h1><p>This lesson may have moved. Use the navigation or search to find it.</p><a class="primary-button" href="index.html">Open the handbook</a></header></div>'
     (out / "404.html").write_text(shell("Page not found", "404", notfound, "Return to the Church Service Timer handbook."), encoding="utf-8")
     print(f"Built {len(chapters)} lessons, overview, full guide, search index and 404 in {out}")
+
+
+GET_APP = '''<section class="ready-strip get-app" id="get-the-app"><div><p class="eyebrow">GET THE APP · ANDROID 7.0 OR LATER</p><h2>Download Church Service Timer.</h2><p>Download the latest signed APK from GitHub Releases, open it on your phone and allow the install when Android asks. Install the same version on every phone and tablet your team uses. A Google Play listing is coming.</p></div><a class="primary-button" href="https://github.com/ImmanuelOkose/church-service-timer-guide/releases/latest">Download the latest version →</a></section>'''
 
 
 def in_folder(page):
