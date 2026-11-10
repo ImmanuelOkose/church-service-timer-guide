@@ -17,7 +17,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar">
 <a class="brand" href="index.html"><img src="assets/chapel.svg" width="42" height="42" alt=""><span>Church Service Timer<small>THE OPERATOR HANDBOOK</small></span></a>
-<div class="header-actions"><span class="version">ANDROID 0.18.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
+<div class="header-actions"><span class="version">ANDROID 0.30.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
 <button class="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">Lessons <span aria-hidden="true">☰</span></button></div>
 </header>
 <div class="layout">
@@ -50,7 +50,7 @@
 <a class="full-guide-link" href="complete-guide.html">Full guide & printing <span aria-hidden="true">↗</span></a>
 <a class="sidebar-privacy" href="privacy-policy/index.html">Privacy policy</a>
 </aside>
-<main id="main" tabindex="-1"><div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">LESSON 17 / 17 <span>2 MIN READ</span></p>
+<main id="main" tabindex="-1"><div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">LESSON 17 / 17 <span>4 MIN READ</span></p>
 <h1 id="17-quick-reference-and-knowledge-check">Quick reference and knowledge check</h1><p class="chapter-deck">Look up terms, check your understanding and review the current scope.</p></header>
 <nav class="on-this-page" aria-label="On this page"><strong>In this lesson</strong><a href="#check-your-understanding">Check your understanding</a><a href="#current-scope">Current scope</a></nav>
 <article class="prose"><div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
@@ -74,8 +74,12 @@
 <td>Loaded and reviewed, but not counting yet.</td>
 </tr>
 <tr>
+<td>Quick timer</td>
+<td>A single countdown with no program or Ready step; saved only if you choose.</td>
+</tr>
+<tr>
 <td>Host</td>
-<td>The phone that owns the service clock, saving and output.</td>
+<td>The device that owns the service clock, saving and output.</td>
 </tr>
 <tr>
 <td>Stage cue</td>
@@ -83,23 +87,31 @@
 </tr>
 <tr>
 <td>Quick message</td>
-<td>A richer temporary message for selected mobile stage screens.</td>
+<td>A richer temporary message for selected stage screens.</td>
 </tr>
 <tr>
-<td>At Zero</td>
-<td>Shared output behavior when a segment expires.</td>
+<td>Web screen</td>
+<td>A browser on the same Wi-Fi following the service; it cannot control it.</td>
+</tr>
+<tr>
+<td>Guest code / team code</td>
+<td>The guest code opens Order of service and stays the same each week; the team code also opens Stage display and Service overview, and changes each time you share.</td>
+</tr>
+<tr>
+<td>At zero</td>
+<td>Shared output behaviour when a segment expires.</td>
 </tr>
 <tr>
 <td>End screen</td>
 <td>The selected program's output after End service.</td>
 </tr>
 <tr>
-<td>Controller accepted / Synced</td>
+<td>Controller accepted / Stage screens received</td>
 <td>Data acknowledged by the receiver; not optical verification.</td>
 </tr>
 <tr>
 <td>Seen</td>
-<td>An explicit human acknowledgement on a recipient stage screen.</td>
+<td>An explicit human acknowledgement on a paired stage screen.</td>
 </tr>
 <tr>
 <td>Disconnect</td>
@@ -115,16 +127,18 @@
 <ol>
 <li>If the main arc moves, does that prove the LED sign is current? <strong>No. Check connection/acknowledgement and the physical output.</strong></li>
 <li>Does Blank screen pause the countdown? <strong>No. It hides output while time continues.</strong></li>
-<li>A ten-minute segment has a warning at 01:30. When does it trigger? <strong>At one minute thirty seconds remaining, normally eight minutes thirty seconds after starting.</strong></li>
+<li>A ten-minute segment has a warning at 01:30. When does it trigger? <strong>At 1 min 30 s remaining, normally 8 min 30 s after starting.</strong></li>
 <li>Will a newly reconnected receiver replay a Quick message sent earlier? <strong>No. Recipients are fixed at send time and missed messages are not replayed.</strong></li>
 <li>Does changing the default end screen update all saved programs? <strong>No. Edit an existing program's own end screen.</strong></li>
 <li>Can a second operator take control just by pairing? <strong>No. The host must approve it and grant control explicitly.</strong></li>
 <li>What do you do if End service cannot save its report? <strong>Use Retry saving report; preserve the completed information.</strong></li>
 <li>Should a Stage print copy include private notes? <strong>No. Operator copy is a separate deliberate choice.</strong></li>
+<li>Does a Quick timer appear in Reports? <strong>Only if Save as a report was turned on; then it is marked Quick timer.</strong></li>
+<li>Can someone with the guest code see the stage countdown in a browser? <strong>No. The guest code opens only Order of service; Stage display needs the team code.</strong></li>
 </ol>
 <h3 id="current-scope">Current scope</h3>
-<p>This guide covers Android 0.18.0. Desktop/iOS releases and universal LED compatibility are not provided by this build. The original Matrix glyphs and square-matrix glyphs are unchanged. Tinos is bundled; installed/imported font loading is not part of the workflow.</p>
-<p>Physical checks have established the supported W2 countdown, expected one-blink transitions, scrolling warnings returning to the current timer, and Next segment after overtime. Full-service endurance, power-loss acceptance and controller administration writes still require controlled hardware validation. New 0.18 features passed automated checks; hands-on testing of that release remains the user's responsibility.</p>
+<p>This guide covers Android 0.30.0. Desktop/iOS apps and universal LED compatibility are not provided by this build; browsers can only follow a service as web screens, never control it. The original Matrix glyphs and square-matrix glyphs are unchanged. Tinos is bundled; installed/imported font loading is not part of the workflow. LED countdowns, segments and Quick timers stay within 59:59.</p>
+<p>Physical checks have established the supported W2 countdown, expected one-blink transitions, scrolling warnings returning to the current timer, and Next segment after overtime. Full-service endurance, power-loss acceptance and controller administration writes still require controlled hardware validation. Web screens, guided practice, Quick timer, stage requests and the other features added from 0.19 to 0.30 are described here from the app's release notes and on-screen wording; behaviour on your phones, routers, browsers and projectors has not been verified by this handbook, so hands-on testing of that release remains the user's responsibility.</p>
 <p>The online handbook and this Markdown guide are training materials, not a remote-control interface. Nothing in the handbook can connect to a sign, start a service or send a stage cue.</p></article>
 <section class="quiz" aria-labelledby="quiz-title"><p class="eyebrow">PRACTICE WITHOUT THE PHONE</p><h2 id="quiz-title">Three quick scenarios.</h2>
 <form id="knowledge-quiz">
@@ -133,7 +147,7 @@
 <fieldset><legend>3. You need to know an instruction was read. What should you look for?</legend><label><input type="radio" name="q3" value="synced" required> A Synced status alone.</label><label><input type="radio" name="q3" value="seen"> The recipient’s explicit Seen acknowledgement.</label></fieldset>
 <button type="submit" class="primary-button">Check my answers</button><p id="quiz-result" role="status"></p></form></section><div class="lesson-complete"><div><strong>A moment to reflect.</strong><p>Could you explain this workflow to another operator?</p></div><button type="button" data-complete="quick-reference-and-knowledge-check" aria-pressed="false">Mark lesson as read</button></div>
 <nav class="chapter-pagination" aria-label="Lesson pagination"><a href="trainer-session-and-readiness-checklist.html"><span>PREVIOUS LESSON</span>Trainer session and readiness checklist</a><a href="index.html"><span>KEEP IT CLOSE</span>Return to handbook →</a></nav></div>
-<footer class="page-footer"><img src="assets/chapel.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.18.0 · Updated 21 October 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
+<footer class="page-footer"><img src="assets/chapel.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.30.0 · Updated 10 November 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
 </main></div>
 <dialog id="image-dialog" aria-label="Enlarged app screenshot"><button type="button" class="close-dialog" aria-label="Close enlarged screenshot">Close ✕</button><img alt=""><p></p></dialog>
 <noscript><div class="noscript-note">All lessons and the full guide work without JavaScript. Search, progress tracking and the practice quiz need JavaScript.</div></noscript>

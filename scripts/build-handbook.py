@@ -11,25 +11,25 @@ from pathlib import Path
 import markdown
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.18.0"
-UPDATED = "21 October 2026"
+VERSION = "0.30.0"
+UPDATED = "10 November 2026"
 GROUPS = [(0, 3, "Begin here"), (3, 6, "Connect the room"),
           (6, 11, "Run the service"), (11, 15, "Review & maintain"),
           (15, 17, "Train your team")]
 SUMMARIES = [
-    "Know the four tabs, the operator clock and what a display acknowledgement really means.",
-    "Practice the complete service workflow in the simulator, without touching the stage.",
-    "Create a reusable plan with segments, speakers, notes and its own end screen.",
-    "Understand when to choose Simulator, LED sign, or Phone or tablet.",
+    "Know the four tabs, swiping between them, the operator clock and what a display acknowledgement really means.",
+    "Use guided practice, then rehearse the complete service workflow in the simulator, without touching the stage.",
+    "Create a reusable plan with segments, speakers, notes and its own end screen; import, share and restore versions.",
+    "Understand when to choose Simulator, LED sign, or Phone, tablet or web screens.",
     "Join the right Wi-Fi, authenticate the supported W2 and understand its limits.",
-    "Approve stage screens and operators, assign layouts, and manage saved devices.",
-    "Start, pause, adjust, advance and blank with clear control of the service.",
+    "Approve stage screens and operators, open web screens in a browser, and manage saved devices.",
+    "Start, pause, adjust, advance and blank with clear control, or run a Quick timer.",
     "Prepare one-tap instructions and configure warnings based on time remaining.",
-    "Target a mobile stage screen, format the message and request explicit Seen.",
+    "Target stage screens, format the message and request explicit Seen.",
     "Review future timing changes and learn from comparable completed services.",
     "End once, save the report and recover cleanly from a saving failure.",
-    "Read the record, export it, and print the right copy with notes kept private.",
-    "Set the church profile, banner and appearance; understand shared defaults.",
+    "Read the record, add review notes, export it, and print the right copy with notes kept private.",
+    "Set the church logo, name, banner and appearance; understand shared defaults.",
     "Diagnose a stale screen, lost connection, missing warning or rejected command.",
     "Back up your setup and understand the boundaries of LED administration.",
     "Coach a new operator through a practical session and a readiness checklist.",

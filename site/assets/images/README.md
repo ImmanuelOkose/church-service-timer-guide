@@ -1,6 +1,6 @@
 # Screenshot provenance
 
-These PNG files are unchanged copies of reviewed automated app previews from Church Service Timer 0.18.0's test/goldens directory. They illustrate example states and do not show real phone sessions. No live pairing code/QR, revealed password, raw device log, or user-supplied photograph is included.
+These PNG files are unchanged copies of reviewed automated app previews from Church Service Timer's test/goldens directory; the set now comes from the 0.18.0–0.30.0 previews, and every file below was refreshed from the 0.30.0 goldens. They illustrate example states and do not show real phone sessions. No live pairing code/QR, revealed password, raw device log, or user-supplied photograph is included.
 
 | Public filename | Original fixture |
 | --- | --- |
@@ -17,5 +17,9 @@ These PNG files are unchanged copies of reviewed automated app previews from Chu
 | report.png | report-detail-phone.png |
 | print.png | print-service-sheet.png |
 | appearance.png | appearance-phone.png |
+| practice.png | practice-coach.png |
+| church-profile.png | church-profile-custom-phone.png |
+| reports.png | report-list-phone.png |
+| screens-devices.png | settings-screens-devices.png |
 
 Future photo placeholders: replace only with an authorized, credential-free photograph of the church's actual operator desk or stage screen. Keep captions explicit about examples versus real equipment.

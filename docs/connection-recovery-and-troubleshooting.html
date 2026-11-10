@@ -17,7 +17,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar">
 <a class="brand" href="index.html"><img src="assets/chapel.svg" width="42" height="42" alt=""><span>Church Service Timer<small>THE OPERATOR HANDBOOK</small></span></a>
-<div class="header-actions"><span class="version">ANDROID 0.18.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
+<div class="header-actions"><span class="version">ANDROID 0.30.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
 <button class="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">Lessons <span aria-hidden="true">☰</span></button></div>
 </header>
 <div class="layout">
@@ -50,7 +50,7 @@
 <a class="full-guide-link" href="complete-guide.html">Full guide & printing <span aria-hidden="true">↗</span></a>
 <a class="sidebar-privacy" href="privacy-policy/index.html">Privacy policy</a>
 </aside>
-<main id="main" tabindex="-1"><div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">LESSON 14 / 17 <span>3 MIN READ</span></p>
+<main id="main" tabindex="-1"><div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">LESSON 14 / 17 <span>5 MIN READ</span></p>
 <h1 id="14-connection-recovery-and-troubleshooting">Connection recovery and troubleshooting</h1><p class="chapter-deck">Diagnose a stale screen, lost connection, missing warning or rejected command.</p></header>
 
 <article class="prose"><p>Start with the destination badge, not repeated button presses. Identify whether the problem is the phone's network, the app's connection, a held output, or the receiver itself.</p>
@@ -64,11 +64,11 @@
 <tbody>
 <tr>
 <td>Arc counts, LED is unchanged</td>
-<td>Confirm LED sign is selected, the phone is on sign Wi-Fi, and the connection is authenticated. Inspect held/stale status; review and Restore current output when offered.</td>
+<td>Confirm LED sign is selected, the phone is on sign Wi-Fi, and the connection is authenticated. Inspect "Output paused after an interruption"; review and <strong>Restore current output</strong> when offered.</td>
 </tr>
 <tr>
 <td>App disconnects while Android remains on Wi-Fi</td>
-<td>Allow its retry to the remembered controller. Use Reconnect display if required. Re-enter credentials if missing/rejected; do not change passwords as the first troubleshooting step.</td>
+<td>Live shows "Reconnecting to LED sign" with <strong>Reconnect display</strong> and <strong>Stop trying</strong>; timer controls and cues stay usable, and the sign receives current output when it returns. Re-enter credentials only if missing or rejected; do not change passwords as the first troubleshooting step.</td>
 </tr>
 <tr>
 <td>LED counts after Wi-Fi is off</td>
@@ -79,8 +79,24 @@
 <td>Expected on the tested W2 during program replacement. Repeated blinking while a steady timer should run needs investigation.</td>
 </tr>
 <tr>
+<td>The sign did not acknowledge</td>
+<td>"Blanking was not acknowledged" means the previous sign may still show its last output; you can still switch with <strong>Leave output</strong>. A cue showing "Not sent" did not reach the sign. Check the sign itself and its connection before resending.</td>
+</tr>
+<tr>
+<td>Timing was recovered with uncertainty</td>
+<td>After a restart or long interruption the app asks you to <strong>Verify remaining time</strong>. Check and correct it, then <strong>Verify &amp; restore</strong>. The service report keeps its uncertainty marker.</td>
+</tr>
+<tr>
 <td>Pairing host is not found</td>
-<td>Same reachable network, host sharing enabled, no client isolation. Try QR if discovery alone fails. QR cannot fix blocked phone-to-phone traffic.</td>
+<td>Same Wi-Fi, host sharing on, no client isolation. Try <strong>Scan QR code instead</strong> if discovery alone fails. QR cannot fix blocked phone-to-phone traffic.</td>
+</tr>
+<tr>
+<td>Phones on a hotspot can't see each other</td>
+<td>Some sign hotspots, guest Wi-Fi and church networks keep devices apart. Use the host device's own hotspot and join the other devices to it. The host shares again at the new address by itself.</td>
+</tr>
+<tr>
+<td>A browser can't open the web screen</td>
+<td>Use the QR code or the address instead of the easy name (some devices do not open <code>.local</code> names). Check the browser is on the same Wi-Fi and the host is still sharing. On a Windows laptop, the easy name may not work while its Wi-Fi is set to a <strong>Public network</strong>; use the address, or set that network to Private in Windows settings. If a printed address stopped working, the phone got a new address: export the join slide again.</td>
 </tr>
 <tr>
 <td>Mobile preview looks frozen/stale</td>
@@ -88,23 +104,27 @@
 </tr>
 <tr>
 <td>Cue command is rejected</td>
-<td>Check who has control and whether the program, segment or selected cue changed. Refresh/review the current service instead of repeatedly pressing an old control.</td>
+<td>Check who has control and whether the program, segment or selected cue changed. Review the current service instead of repeatedly pressing an old control.</td>
 </tr>
 <tr>
 <td>Warning not visible on stage</td>
-<td>Check enabled rule, time-remaining threshold, destination and connection. Intentional Blank suppresses stage warnings; all-screen Quick messages can take priority.</td>
+<td>Check enabled rule, time-remaining threshold, Where to show and connection. Intentional Blank suppresses stage warnings; all-screen Quick messages can take priority.</td>
 </tr>
 <tr>
 <td>No notification sound</td>
-<td>Check Android permission, channel sound, volume, Do Not Disturb and precise-warning access. Use Test notification sound.</td>
+<td>Check Android permission, channel sound, volume, Do Not Disturb and Precise timing. Use <strong>Test</strong> under Sound and vibration.</td>
+</tr>
+<tr>
+<td>Warnings stop or the timer notification goes quiet with the screen off</td>
+<td>Battery optimisation may pause warnings. Tap the battery hint on Live, or <strong>Allow</strong> on the Battery row in Ready for service, to open the Android setting. If background operation is unavailable, keep the app open.</td>
 </tr>
 <tr>
 <td>Screen is blank but timer runs</td>
-<td>Check for intentional Blank. Tap Unblank screen, or choose Show timer as appropriate.</td>
+<td>Check for intentional Blank. Tap <strong>Unblank screen</strong>, or choose <strong>Show timer</strong> as appropriate.</td>
 </tr>
 <tr>
 <td>Quick message send is disabled</td>
-<td>Phone/tablet destination, sharing, approved synchronized recipients and control are needed. Before the first run, use Test screen.</td>
+<td>Phone, tablet or web screens destination, sharing, connected recipients in Send to and control are needed. The composer says which is missing. Before the first run, use <strong>Test 5 s</strong>.</td>
 </tr>
 <tr>
 <td>Controller administration is disabled</td>
@@ -112,20 +132,20 @@
 </tr>
 <tr>
 <td>Report save fails</td>
-<td>Use Retry saving report. Keep the completed information; do not clear data or create a duplicate run.</td>
+<td>Use <strong>Retry saving report</strong>. Keep the completed information; do not clear data or create a duplicate run.</td>
 </tr>
 <tr>
 <td>Cannot find timing suggestions</td>
-<td>At least three comparable completed services are needed. Rehearsals, ambiguous names and incomplete/uncertain records are excluded.</td>
+<td>At least three comparable completed services are needed. Rehearsals, Quick timers, ambiguous names and incomplete/uncertain records are excluded.</td>
 </tr>
 </tbody>
 </table></div>
 <p>The LED connection tolerates brief health-check misses before reconnecting. Retry delay rises from about two to thirty seconds. Within the same trusted active service, recovery restores the latest intended output against the original deadline; it does not replay every missed update.</p>
-<p><strong>Deliberate Disconnect, Forget display, or another output selection stops LED retries.</strong> A saved credential does not override that choice. Restarting the app, uncertain timing, a long absence or an existing output hold can require review before restoration.</p>
+<p><strong>Deliberate Disconnect, Forget this sign, or another output selection stops LED retries.</strong> A saved credential does not override that choice. Restarting the app, uncertain timing, a long absence or an existing output hold can require review before restoration.</p>
 <p>For an interruption during worship: keep one responsible operator in control, establish what the stage is actually seeing, restore connectivity, check the timer against the real activity, and restore current output once. A second person should not open another independent LED app and compete for the sign.</p></article>
 <div class="lesson-complete"><div><strong>A moment to reflect.</strong><p>Could you explain this workflow to another operator?</p></div><button type="button" data-complete="connection-recovery-and-troubleshooting" aria-pressed="false">Mark lesson as read</button></div>
 <nav class="chapter-pagination" aria-label="Lesson pagination"><a href="make-the-workspace-yours.html"><span>PREVIOUS LESSON</span>Make the workspace yours</a><a href="protect-data-and-manage-the-led-device.html"><span>NEXT LESSON</span>Protect data and manage the LED device →</a></nav></div>
-<footer class="page-footer"><img src="assets/chapel.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.18.0 · Updated 21 October 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
+<footer class="page-footer"><img src="assets/chapel.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.30.0 · Updated 10 November 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
 </main></div>
 <dialog id="image-dialog" aria-label="Enlarged app screenshot"><button type="button" class="close-dialog" aria-label="Close enlarged screenshot">Close ✕</button><img alt=""><p></p></dialog>
 <noscript><div class="noscript-note">All lessons and the full guide work without JavaScript. Search, progress tracking and the practice quiz need JavaScript.</div></noscript>

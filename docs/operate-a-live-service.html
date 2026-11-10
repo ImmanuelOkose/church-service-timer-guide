@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Operate a live service · Church Service Timer Handbook</title>
-<meta name="description" content="Start, pause, adjust, advance and blank with clear control of the service.">
+<meta name="description" content="Start, pause, adjust, advance and blank with clear control, or run a Quick timer.">
 <meta name="theme-color" content="#11271e">
 <meta name="color-scheme" content="light">
 <meta property="og:title" content="Operate a live service · Church Service Timer">
-<meta property="og:description" content="Start, pause, adjust, advance and blank with clear control of the service.">
+<meta property="og:description" content="Start, pause, adjust, advance and blank with clear control, or run a Quick timer.">
 <meta property="og:type" content="website">
 <link rel="icon" href="assets/chapel.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/handbook.css">
@@ -17,7 +17,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar">
 <a class="brand" href="index.html"><img src="assets/chapel.svg" width="42" height="42" alt=""><span>Church Service Timer<small>THE OPERATOR HANDBOOK</small></span></a>
-<div class="header-actions"><span class="version">ANDROID 0.18.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
+<div class="header-actions"><span class="version">ANDROID 0.30.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
 <button class="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">Lessons <span aria-hidden="true">☰</span></button></div>
 </header>
 <div class="layout">
@@ -50,10 +50,16 @@
 <a class="full-guide-link" href="complete-guide.html">Full guide & printing <span aria-hidden="true">↗</span></a>
 <a class="sidebar-privacy" href="privacy-policy/index.html">Privacy policy</a>
 </aside>
-<main id="main" tabindex="-1"><div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">LESSON 07 / 17 <span>2 MIN READ</span></p>
-<h1 id="07-operate-a-live-service">Operate a live service</h1><p class="chapter-deck">Start, pause, adjust, advance and blank with clear control of the service.</p></header>
-
+<main id="main" tabindex="-1"><div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">LESSON 07 / 17 <span>5 MIN READ</span></p>
+<h1 id="07-operate-a-live-service">Operate a live service</h1><p class="chapter-deck">Start, pause, adjust, advance and blank with clear control, or run a Quick timer.</p></header>
+<nav class="on-this-page" aria-label="On this page"><strong>In this lesson</strong><a href="#quick-timer">Quick timer</a></nav>
 <article class="prose"><p>Load the correct program, check its first segment and destination, then <strong>Start first segment</strong>. Program transitions remain manual: the app does not decide when worship, a message or an announcement is finished.</p>
+<p><strong>Before you start.</strong> In Ready you can:</p>
+<ul>
+<li>Use <strong>Change</strong> to swap in another program (pinned first, with search); an 8-second Undo switches back.</li>
+<li>Set a <strong>Pre-service countdown</strong> (<strong>Set time</strong>). The display shows the clock until the last hour, counts down to the start, then holds "STARTING SOON" at 00:00. It never starts the service by itself. Tapping Start first segment early asks "Start now?" first.</li>
+<li>Read the "Last time" review note if the same program has one.</li>
+</ul>
 <div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
 <thead>
 <tr>
@@ -63,7 +69,7 @@
 </thead>
 <tbody>
 <tr>
-<td>Pause / Resume icons</td>
+<td>Pause / Resume</td>
 <td>Confirm the action. Pause holds the service clock; Resume continues it. LED replacement can blink briefly.</td>
 </tr>
 <tr>
@@ -72,40 +78,55 @@
 </tr>
 <tr>
 <td>Custom</td>
-<td>Choose add or remove and enter minutes/seconds. Review the resulting timer; time can continue while the dialog is open.</td>
+<td>Choose add or remove and set minutes and seconds. Review the resulting timer; time can continue while the dialog is open.</td>
 </tr>
 <tr>
-<td>Next segment</td>
+<td>Next (Next segment on a tablet)</td>
 <td>Confirm when the next real activity begins. It starts that segment's allocation and replaces the previous output.</td>
 </tr>
 <tr>
+<td>Segment title</td>
+<td>Tap the current segment's name to <strong>Jump to segment</strong> further ahead, with a confirmation.</td>
+</tr>
+<tr>
 <td>Undo</td>
-<td>Reverses the supported last segment advance when available; it is not a universal undo of every action. Review the confirmation.</td>
+<td>Reverses the supported last segment change when available; it is not a universal undo of every action. Review the confirmation.</td>
 </tr>
 <tr>
-<td>Allocated time</td>
-<td>The current segment's allotted duration, not the entire service length.</td>
+<td>"of 10:00 allocated"</td>
+<td>The current segment's allotted time, not the entire service length.</td>
 </tr>
 <tr>
-<td>View / Hide private notes</td>
-<td>Opens the current operator's notes; it does not publish them to stage displays.</td>
+<td>View / Hide operator notes</td>
+<td>Opens the current segment's private notes; it does not publish them to stage displays.</td>
 </tr>
 <tr>
 <td>Focused operator view</td>
-<td>Keeps essential controls, timer, cues and display preview prominent.</td>
+<td>In the <strong>⋮</strong> menu. Keeps essential controls, timer, cues and display preview prominent.</td>
 </tr>
 <tr>
 <td>Lock controls</td>
-<td>Prevents accidental commands. Hold Hold to unlock to regain local controls. It does not pause time.</td>
+<td>The lock icon prevents accidental commands. Use <strong>Hold to unlock</strong> to regain local controls. It does not pause time.</td>
 </tr>
 </tbody>
 </table></div>
-<p>Tap a row in <strong>Service rundown · snapshot</strong> to inspect its timing, speaker and private note. Opening that information does not advance to the row.</p>
-<p>At zero, the operator view can enter <strong>Overtime</strong> and show red text while the display stays at 00:00 or the configured At Zero message. This is intentional. Start the next segment when appropriate; do not add time merely to hide an overrun from the report.</p>
-<p><strong>Blank screen</strong> is a toggle: tap again as <strong>Unblank screen</strong> to restore current output. It also works after End service. Timing and phone alerts continue while blanked, but automatic stage warnings are suppressed. The focused preview should remain present and identify intentional blanking.</p></article>
+<p>Tap a row in <strong>Service rundown</strong> to inspect its timing, speaker and private note. Opening that information does not advance to the row. The rundown header also holds <strong>Edit upcoming</strong>, <strong>Recover time</strong> and a print icon for <strong>Print order of service</strong>.</p>
+<p>At zero, the operator view enters <strong>Overtime</strong> and shows red text while the display stays at 00:00 or the configured At zero text. This is intentional. Start the next segment when appropriate; do not add time merely to hide an overrun from the report.</p>
+<p>The <strong>Stage &amp; display</strong> panel holds Stage cues, <strong>Show clock</strong>, <strong>Send message</strong>, <strong>Blank screen</strong> and <strong>Quick timer</strong>, plus the display preview. <strong>Show clock</strong> puts the time of day on the display (12 or 24 hour, set in Display settings › Clock format); <strong>Back to clock</strong> or <strong>Show timer</strong> returns. <strong>Blank screen</strong> is a toggle: tap again as <strong>Unblank screen</strong> to restore current output. It also works after End service. Timing and phone alerts continue while blanked, but automatic stage warnings are suppressed. The preview should remain present and identify intentional blanking.</p>
+<p><strong>Lock-screen controls.</strong> During a service, a notification shows the current segment with a live countdown (counting up in overtime), with Pause/Resume and Next; Next needs a second tap. It is on by default in <strong>Settings › Warnings &amp; alerts › During a service</strong>, and it obeys Lock controls. A <strong>clicker or foot pedal</strong> can also drive Live: Page Down or Right arrow arms Next and a second press within 4 seconds starts it; B or Space pauses and resumes.</p>
+<p><strong>Requests from the stage.</strong> If a presenter sends a request, the phone vibrates briefly and a card on Live shows it with <strong>Acknowledge</strong> and <strong>Dismiss</strong>. "Need 2 minutes" also offers <strong>Add 2 min</strong>, the normal adjustment with Undo; nothing changes the timing by itself. The presenter's screen shows "Sent", then "Seen by operator" or "2 minutes added". One request per screen at a time, at most one every 5 seconds, and requests expire after 2 minutes. The service report lists each request and what you did.</p>
+<h3 id="quick-timer">Quick timer</h3>
+<p>For a prayer meeting, a break or a talk that isn't a whole service, use <strong>Quick timer</strong> instead of a program. It is available when no service is loaded or running: on the Standing by card next to <strong>Start service</strong>, or as the tile beside Show clock, Send message and Blank screen.</p>
+<ol>
+<li>Choose <strong>5 min</strong>, <strong>10 min</strong>, <strong>15 min</strong>, <strong>30 min</strong> or <strong>45 min</strong>, or <strong>Custom…</strong> for any length up to 59 min 59 s. Your last three timers appear under <strong>Recent</strong> as one-tap choices.</li>
+<li>Optionally give it a <strong>Name (optional)</strong>, such as "Prayer meeting".</li>
+<li>Leave <strong>Save as a report</strong> off unless you want a record. Off, nothing is saved when it ends; on, it is saved in Reports, marked Quick timer.</li>
+<li>Tap <strong>Start 5 min timer</strong> (the button names the length). It starts straight away, with no Ready step.</li>
+</ol>
+<p>It counts down on the LED sign, stage screens and web screens together, with Pause, ±2 min, overtime, warnings and the lock-screen controls as usual. <strong>End timer</strong> stops it and shows the end screen. Saved Quick timers are left out of service averages and length suggestions.</p></article>
 <div class="lesson-complete"><div><strong>A moment to reflect.</strong><p>Could you explain this workflow to another operator?</p></div><button type="button" data-complete="operate-a-live-service" aria-pressed="false">Mark lesson as read</button></div>
 <nav class="chapter-pagination" aria-label="Lesson pagination"><a href="pair-a-phone-or-tablet.html"><span>PREVIOUS LESSON</span>Pair a phone or tablet</a><a href="prepared-cues-and-automatic-warnings.html"><span>NEXT LESSON</span>Prepared cues and automatic warnings →</a></nav></div>
-<footer class="page-footer"><img src="assets/chapel.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.18.0 · Updated 21 October 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
+<footer class="page-footer"><img src="assets/chapel.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.30.0 · Updated 10 November 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
 </main></div>
 <dialog id="image-dialog" aria-label="Enlarged app screenshot"><button type="button" class="close-dialog" aria-label="Close enlarged screenshot">Close ✕</button><img alt=""><p></p></dialog>
 <noscript><div class="noscript-note">All lessons and the full guide work without JavaScript. Search, progress tracking and the practice quiz need JavaScript.</div></noscript>

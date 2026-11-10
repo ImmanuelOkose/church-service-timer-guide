@@ -1,6 +1,6 @@
 ﻿# Church Service Timer - operator handbook
 
-Onboarding and reference guide for Church Service Timer 0.18.0 by I-Proton.
+Onboarding and reference guide for Church Service Timer 0.30.0 by I-Proton.
 
 Website: https://immanuelokose.github.io/church-service-timer-guide/
 Source: [teaching.md](teaching.md) and [privacy-policy.md](privacy-policy.md)
