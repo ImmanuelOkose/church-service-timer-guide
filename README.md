@@ -3,7 +3,8 @@
 Onboarding and reference guide for Church Service Timer 0.18.0 by I-Proton.
 
 Website: https://kosenuel.github.io/church-service-timer-guide/
-Source: [teaching.md](teaching.md).
+Source: [teaching.md](teaching.md) and [privacy-policy.md](privacy-policy.md)
+(published at /privacy-policy/).
 
 Includes 17 lessons, example screenshots, troubleshooting, a trainer checklist,
 search, reading progress and a printable complete guide.
