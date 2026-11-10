@@ -125,10 +125,11 @@ def main():
 <nav aria-label="Lessons">{navigation(active)}</nav>
 <div class="learning-progress"><p><strong id="progress-count">0 of 17</strong> lessons marked read</p><progress id="progress" max="17" value="0" aria-label="Lessons marked read"></progress><button type="button" id="reset-progress">Reset my progress</button><small>Saved only in this browser.</small></div>
 <a class="full-guide-link" href="complete-guide.html">Full guide & printing <span aria-hidden="true">↗</span></a>
+<a class="sidebar-privacy" href="release-notes.html">Release notes</a>
 <a class="sidebar-privacy" href="privacy-policy/index.html">Privacy policy</a>
 </aside>
 <main id="main" tabindex="-1">{body}
-<footer class="page-footer"><img src="assets/chapel.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for {VERSION} · Updated {UPDATED}</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
+<footer class="page-footer"><img src="assets/chapel.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for {VERSION} · Updated {UPDATED}</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="release-notes.html">Release notes</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
 </main></div>
 <dialog id="image-dialog" aria-label="Enlarged app screenshot"><button type="button" class="close-dialog" aria-label="Close enlarged screenshot">Close ✕</button><img alt=""><p></p></dialog>
 <noscript><div class="noscript-note">All lessons and the full guide work without JavaScript. Search, progress tracking and the practice quiz need JavaScript.</div></noscript>
@@ -173,6 +174,7 @@ def main():
 <a href="trainer-session-and-readiness-checklist.html"><span class="path-symbol">03</span><div><h3>I’m training the team</h3><p>Use the session plan, drills and readiness checklist.</p></div><span aria-hidden="true">→</span></a></div></section>
 <section class="three-truths"><p class="eyebrow">THREE IDEAS THAT PREVENT CONFUSION</p><div><article><span>01 / PLAN</span><h3>A program is reusable.<br>A service is one run.</h3><p>Live adjustments don’t rewrite your saved plan or old reports.</p></article><article><span>02 / OUTPUT</span><h3>Pause stops time.<br>Blank hides the screen.</h3><p>A moving arc alone doesn’t prove the physical sign is current.</p></article><article><span>03 / PEOPLE</span><h3>Synced is delivery.<br>Seen is a person.</h3><p>Ask for explicit acknowledgement when an instruction needs it.</p></article></div></section>
 <section class="curriculum"><div class="section-intro"><p class="eyebrow">THE COMPLETE LEARNING PATH</p><h2>From preparation to handover.</h2><p>Read in order, or use search to find the answer you need during a rehearsal.</p></div>{lessons}</section>
+{GET_APP}
 <section class="ready-strip"><div><p class="eyebrow">KEEP A COPY AT THE DESK</p><h2>Your next operator starts here.</h2><p>Download teaching.md, print the complete handbook, or share this site with your team.</p></div><a class="primary-button" href="complete-guide.html">Open the complete guide →</a></section>'''
     (out / "index.html").write_text(shell("Learn to run a service", "index", homepage, "The practical Church Service Timer handbook: rehearse, connect screens, run the service and understand your reports."), encoding="utf-8")
     # The privacy policy, at /privacy-policy/ (a folder, for a clean URL).
@@ -186,9 +188,22 @@ def main():
         in_folder(shell("Privacy policy", "privacy", policy_body,
                         "How Church Service Timer by I-Proton handles information: no account, no ads, no tracking; data stays on your phone.")),
         encoding="utf-8")
+    # Release notes, summarised from the app's changelog.
+    notes_source = (ROOT / "release-notes.md").read_text(encoding="utf-8")
+    notes, _ = render(re.sub(r"(?s)^# .*?\n", "", notes_source, count=1), whole=True)
+    notes_body = ('<div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">WHAT’S NEW</p>'
+                  '<h1 id="release-notes">Release notes</h1><p class="chapter-deck">What changed in each version, newest first.</p></header>'
+                  '<article class="prose">' + notes + '</article></div>' + GET_APP)
+    (out / "release-notes.html").write_text(
+        shell("Release notes", "release-notes", notes_body,
+              "What changed in each version of Church Service Timer, newest first."),
+        encoding="utf-8")
     notfound = '<div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">PAGE NOT FOUND</p><h1>Let’s get you back to the desk.</h1><p>This lesson may have moved. Use the navigation or search to find it.</p><a class="primary-button" href="index.html">Open the handbook</a></header></div>'
     (out / "404.html").write_text(shell("Page not found", "404", notfound, "Return to the Church Service Timer handbook."), encoding="utf-8")
     print(f"Built {len(chapters)} lessons, overview, full guide, search index and 404 in {out}")
+
+
+GET_APP = '''<section class="ready-strip get-app" id="get-the-app"><div><p class="eyebrow">GET THE APP · ANDROID 7.0 OR LATER</p><h2>Download Church Service Timer.</h2><p>Download the latest signed APK from GitHub Releases, open it on your phone and allow the install when Android asks. Install the same version on every phone and tablet your team uses. A Google Play listing is coming.</p></div><a class="primary-button" href="https://github.com/ImmanuelOkose/church-service-timer-guide/releases/latest">Download the latest version →</a></section>'''
 
 
 def in_folder(page):
