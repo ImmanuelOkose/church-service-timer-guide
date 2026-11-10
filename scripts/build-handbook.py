@@ -60,7 +60,8 @@ def main():
     for chapter, summary in zip(chapters, SUMMARIES):
         chapter["summary"] = summary
     out.mkdir(parents=True, exist_ok=True)
-    shutil.copytree(ROOT / "site/assets", out / "assets", dirs_exist_ok=True)
+    shutil.copytree(ROOT / "site/assets", out / "assets", dirs_exist_ok=True,
+                    ignore=shutil.ignore_patterns("README.md"))
     (out / ".nojekyll").write_text("", encoding="utf-8")
     (out / "teaching.md").write_text(source.replace("site/assets/", "assets/"), encoding="utf-8")
     anchors = {c["anchor"]: c["slug"] + ".html" for c in chapters}
@@ -124,9 +125,10 @@ def main():
 <nav aria-label="Lessons">{navigation(active)}</nav>
 <div class="learning-progress"><p><strong id="progress-count">0 of 17</strong> lessons marked read</p><progress id="progress" max="17" value="0" aria-label="Lessons marked read"></progress><button type="button" id="reset-progress">Reset my progress</button><small>Saved only in this browser.</small></div>
 <a class="full-guide-link" href="complete-guide.html">Full guide & printing <span aria-hidden="true">↗</span></a>
+<a class="sidebar-privacy" href="privacy-policy/index.html">Privacy policy</a>
 </aside>
 <main id="main" tabindex="-1">{body}
-<footer class="page-footer"><img src="assets/chapel.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for {VERSION} · Updated {UPDATED}</span></p><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></footer>
+<footer class="page-footer"><img src="assets/chapel.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for {VERSION} · Updated {UPDATED}</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
 </main></div>
 <dialog id="image-dialog" aria-label="Enlarged app screenshot"><button type="button" class="close-dialog" aria-label="Close enlarged screenshot">Close ✕</button><img alt=""><p></p></dialog>
 <noscript><div class="noscript-note">All lessons and the full guide work without JavaScript. Search, progress tracking and the practice quiz need JavaScript.</div></noscript>
@@ -173,9 +175,25 @@ def main():
 <section class="curriculum"><div class="section-intro"><p class="eyebrow">THE COMPLETE LEARNING PATH</p><h2>From preparation to handover.</h2><p>Read in order, or use search to find the answer you need during a rehearsal.</p></div>{lessons}</section>
 <section class="ready-strip"><div><p class="eyebrow">KEEP A COPY AT THE DESK</p><h2>Your next operator starts here.</h2><p>Download teaching.md, print the complete handbook, or share this site with your team.</p></div><a class="primary-button" href="complete-guide.html">Open the complete guide →</a></section>'''
     (out / "index.html").write_text(shell("Learn to run a service", "index", homepage, "The practical Church Service Timer handbook: rehearse, connect screens, run the service and understand your reports."), encoding="utf-8")
+    # The privacy policy, at /privacy-policy/ (a folder, for a clean URL).
+    policy_source = (ROOT / "privacy-policy.md").read_text(encoding="utf-8")
+    policy, _ = render(re.sub(r"(?s)^# .*?\n", "", policy_source, count=1), whole=True)
+    policy_body = ('<div class="chapter-shell policy"><header class="chapter-header"><p class="eyebrow">YOUR DATA</p>'
+                   '<h1 id="privacy-policy">Privacy policy</h1><p class="chapter-deck">What Church Service Timer stores, what it connects to, and what never leaves your phone.</p></header>'
+                   '<article class="prose">' + policy + '</article></div>')
+    (out / "privacy-policy").mkdir(exist_ok=True)
+    (out / "privacy-policy" / "index.html").write_text(
+        in_folder(shell("Privacy policy", "privacy", policy_body,
+                        "How Church Service Timer by I-Proton handles information: no account, no ads, no tracking; data stays on your phone.")),
+        encoding="utf-8")
     notfound = '<div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">PAGE NOT FOUND</p><h1>Let’s get you back to the desk.</h1><p>This lesson may have moved. Use the navigation or search to find it.</p><a class="primary-button" href="index.html">Open the handbook</a></header></div>'
     (out / "404.html").write_text(shell("Page not found", "404", notfound, "Return to the Church Service Timer handbook."), encoding="utf-8")
     print(f"Built {len(chapters)} lessons, overview, full guide, search index and 404 in {out}")
+
+
+def in_folder(page):
+    """Points a page's relative links and images one folder up."""
+    return re.sub(r'(href|src)="(?!https?:|mailto:|#|/)([^"]+)"', r'\1="../\2"', page)
 
 
 def quiz_html():
