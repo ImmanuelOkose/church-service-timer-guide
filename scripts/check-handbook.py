@@ -65,7 +65,7 @@ def main():
             elif parsed.fragment and destination in pages and unquote(parsed.fragment) not in pages[destination].ids:
                 errors.append(f"{file.name}: missing anchor {url}")
     index = json.loads((root / "search-index.json").read_text(encoding="utf-8"))
-    if len(index) != 17 or len(pages) != 21:
+    if len(index) != 17 or len(pages) != 22:
         errors.append(f"Unexpected lesson/page count: {len(index)} / {len(pages)}")
     for item in index:
         if not (root / item["url"]).is_file() or not item["text"]:

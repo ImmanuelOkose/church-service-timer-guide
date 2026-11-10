@@ -125,10 +125,11 @@ def main():
 <nav aria-label="Lessons">{navigation(active)}</nav>
 <div class="learning-progress"><p><strong id="progress-count">0 of 17</strong> lessons marked read</p><progress id="progress" max="17" value="0" aria-label="Lessons marked read"></progress><button type="button" id="reset-progress">Reset my progress</button><small>Saved only in this browser.</small></div>
 <a class="full-guide-link" href="complete-guide.html">Full guide & printing <span aria-hidden="true">↗</span></a>
+<a class="sidebar-privacy" href="release-notes.html">Release notes</a>
 <a class="sidebar-privacy" href="privacy-policy/index.html">Privacy policy</a>
 </aside>
 <main id="main" tabindex="-1">{body}
-<footer class="page-footer"><img src="assets/chapel.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for {VERSION} · Updated {UPDATED}</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
+<footer class="page-footer"><img src="assets/chapel.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for {VERSION} · Updated {UPDATED}</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="release-notes.html">Release notes</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
 </main></div>
 <dialog id="image-dialog" aria-label="Enlarged app screenshot"><button type="button" class="close-dialog" aria-label="Close enlarged screenshot">Close ✕</button><img alt=""><p></p></dialog>
 <noscript><div class="noscript-note">All lessons and the full guide work without JavaScript. Search, progress tracking and the practice quiz need JavaScript.</div></noscript>
@@ -185,6 +186,16 @@ def main():
     (out / "privacy-policy" / "index.html").write_text(
         in_folder(shell("Privacy policy", "privacy", policy_body,
                         "How Church Service Timer by I-Proton handles information: no account, no ads, no tracking; data stays on your phone.")),
+        encoding="utf-8")
+    # Release notes, summarised from the app's changelog.
+    notes_source = (ROOT / "release-notes.md").read_text(encoding="utf-8")
+    notes, _ = render(re.sub(r"(?s)^# .*?\n", "", notes_source, count=1), whole=True)
+    notes_body = ('<div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">WHAT’S NEW</p>'
+                  '<h1 id="release-notes">Release notes</h1><p class="chapter-deck">What changed in each version, newest first.</p></header>'
+                  '<article class="prose">' + notes + '</article></div>')
+    (out / "release-notes.html").write_text(
+        shell("Release notes", "release-notes", notes_body,
+              "What changed in each version of Church Service Timer, newest first."),
         encoding="utf-8")
     notfound = '<div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">PAGE NOT FOUND</p><h1>Let’s get you back to the desk.</h1><p>This lesson may have moved. Use the navigation or search to find it.</p><a class="primary-button" href="index.html">Open the handbook</a></header></div>'
     (out / "404.html").write_text(shell("Page not found", "404", notfound, "Return to the Church Service Timer handbook."), encoding="utf-8")
