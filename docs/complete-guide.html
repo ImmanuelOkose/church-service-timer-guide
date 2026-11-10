@@ -17,7 +17,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar">
 <a class="brand" href="index.html"><img src="assets/chapel.svg" width="42" height="42" alt=""><span>Church Service Timer<small>THE OPERATOR HANDBOOK</small></span></a>
-<div class="header-actions"><span class="version">ANDROID 0.18.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
+<div class="header-actions"><span class="version">ANDROID 0.30.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
 <button class="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">Lessons <span aria-hidden="true">☰</span></button></div>
 </header>
 <div class="layout">
@@ -51,12 +51,12 @@
 <a class="sidebar-privacy" href="privacy-policy/index.html">Privacy policy</a>
 </aside>
 <main id="main" tabindex="-1"><div class="chapter-shell complete-guide"><header class="chapter-header"><p class="eyebrow">THE COMPLETE HANDBOOK</p><h1>One guide. Every workflow.</h1><p class="chapter-deck">Read every lesson here, or print this page for a training session.</p><button class="primary-button" type="button" id="print-guide">Print this handbook</button></header><article class="prose">
-<p>For app <strong>0.18.0</strong> · Prepared <strong>21 October 2026</strong> · Creator <strong>I-Proton</strong></p>
+<p>For app <strong>0.30.0</strong> · Prepared <strong>10 November 2026</strong> · Creator <strong>I-Proton</strong></p>
 <p>This handbook teaches a new operator to prepare a program, run its timer, communicate discreetly with the stage, recover from common interruptions, and close the service with a useful report. Keep it beside the phone during your first rehearsal. Screenshots use example data from automated app previews; they are illustrations, not evidence that a particular physical display is connected.</p>
 <p><strong>Start with a simulator rehearsal.</strong> Move to the church's actual equipment with an experienced operator before running a service alone. The app is an Android prototype with tested support for a specific LED controller; reliable use still depends on the phone, network and stage equipment.</p>
 <h2 id="01-understand-the-workspace">01 — Understand the workspace</h2>
 <p><strong>A Program is a saved plan. A service is one run of that plan.</strong> Editing a saved program prepares a future run. Adjusting a running service does not rewrite the saved program or old reports.</p>
-<p>The four bottom tabs are your main destinations:</p>
+<p>The four bottom tabs are your main destinations (on a tablet they sit in a side rail):</p>
 <div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
 <thead>
 <tr>
@@ -67,23 +67,25 @@
 <tbody>
 <tr>
 <td>Live</td>
-<td>Start and operate a service, inspect output, send cues and messages.</td>
+<td>Start and operate a service or a Quick timer, inspect output, send cues and messages, share to screens or join a service.</td>
 </tr>
 <tr>
 <td>Programs</td>
-<td>Create reusable plans, arrange segments, add speakers and private notes, set each program's end screen.</td>
+<td>Create reusable plans, arrange segments, add speakers and private notes, set each program's end screen, keep a segment library and version history.</td>
 </tr>
 <tr>
 <td>Reports</td>
-<td>Review completed services, compare durations, export records and print documents.</td>
+<td>Review completed services, compare durations, add review notes, export, share and print records.</td>
 </tr>
 <tr>
 <td>Settings</td>
-<td>Church identity, appearance, global warnings, displays, prepared cues, paired devices, backups and help.</td>
+<td>Church profile, appearance, warnings and alerts, display settings, stage cues, Quick message presets, Screens &amp; devices, LED device management, backups, Settings PIN and About.</td>
 </tr>
 </tbody>
 </table></div>
-<p>The <strong>display icon at the top right</strong> opens the output chooser. Selecting a destination and connecting it are separate from starting a service.</p>
+<p><strong>Moving between tabs.</strong> Tap the bar, or swipe left or right anywhere on the page. Each tab keeps its place when you come back to it. While a service is loaded or running, Live stays put: leave it with the bar, and swipe back to it from any other tab. A running-service bar on the other tabs, and <strong>Return to Live</strong> on Settings pages, take you straight back. Swiping is off while the controls are locked or while programs or reports are being selected; a sideways list or slider still scrolls as before, and a swipe from the very edge of the screen is still Android Back. With reduced motion on, the new tab appears at once.</p>
+<p>The <strong>Back</strong> key on Programs, Reports or Settings returns to Live. On Live it asks you to press Back again before leaving the app; during a service it asks for confirmation and explains that the timer keeps running.</p>
+<p>The <strong>display chip at the top of Live</strong> (for example "Simulator") opens <strong>Choose display</strong>. Selecting a destination and connecting it are separate from starting a service. Beside it, the lock icon locks the controls and the <strong>⋮</strong> menu holds <strong>Focused operator view</strong> and <strong>Ready for service</strong>. Your church logo, or the built-in mark, sits at the top left; tap it to open the church profile.</p>
 <p>Learn these three readings before touching a control:</p>
 <div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
 <thead>
@@ -99,43 +101,55 @@
 </tr>
 <tr>
 <td>Display preview</td>
-<td>What the selected output is simulating or last acknowledged. Check its badge and any stale/held indication.</td>
+<td>What the selected output is simulating or last acknowledged. Check its badge and any stale or "Output paused after an interruption" indication.</td>
 </tr>
 <tr>
-<td>Service timing overview</td>
-<td>Progress against the whole plan; its estimated finish can change with pauses and manual advances.</td>
+<td>Timing status and Service timing overview</td>
+<td>Progress against the whole plan ("On time", "45 min behind" and so on); its estimated finish can change with pauses and manual advances. Tap the status line for the full overview.</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>A running arc does not prove the sign is receiving updates.</strong> Likewise, Controller accepted or Synced means the receiving system acknowledged data; it is not a camera view of what a person can see.</p>
+<p><strong>A running arc does not prove the sign is receiving updates.</strong> Likewise, Controller accepted or Stage screens received means the receiving system acknowledged data; it is not a camera view of what a person can see.</p>
 <figure class="app-figure"><a class="zoom-image" href="assets/images/live.png" aria-label="Enlarge: Example Live screen: countdown, current segment and operator controls"><img src="assets/images/live.png" alt="Example Live screen: countdown, current segment and operator controls" loading="lazy" decoding="async"></a><figcaption>Example Live screen: countdown, current segment and operator controls<span>Example app preview · tap to enlarge</span></figcaption></figure>
 <p>Use the labels as well as colour: normal time, warning and overtime have different meanings. In Royal Navy, the normal arc is green while the surrounding theme remains gold; warning is amber and overtime is red.</p>
 <h2 id="02-your-first-rehearsal">02 — Your first rehearsal</h2>
 <p>Allow about 15 minutes. Use the simulator so no practice cue reaches a real stage.</p>
+<p><strong>The quickest start is guided practice.</strong> On a new phone, Live shows a card: "New to this? Practise running a service". Choose <strong>Start practice</strong>, <strong>Not now</strong> (hides it until the app is next opened) or <strong>Don't show again</strong>. You can start it any time from <strong>Settings › About › Guided practice</strong>.</p>
+<figure class="app-figure"><a class="zoom-image" href="assets/images/practice.png" aria-label="Enlarge: Guided practice: the coach card and a highlighted Start first segment button"><img src="assets/images/practice.png" alt="Guided practice: the coach card and a highlighted Start first segment button" loading="lazy" decoding="async"></a><figcaption>Guided practice: the coach card and a highlighted Start first segment button<span>Example app preview · tap to enlarge</span></figcaption></figure>
+<ul>
+<li>Practice loads a built-in 17-minute <strong>Practice service</strong> that runs at 5× speed on the Simulator, so nothing appears on stage. It is never added to Programs, saves no report and leaves your programs, reports and settings alone.</li>
+<li>If another display is in use, practice asks <strong>Practise on the simulator?</strong> before switching, and offers to switch back when practice ends.</li>
+<li>A coach card lists eight steps, ticked off as you do them in any order: start, pause and resume, add and remove 2 min, next and Undo, a cue and the timer, blank and unblank, see overtime, and end. A pulsing ring and a small "Tap" badge show which control the current step needs; it never blocks a tap.</li>
+<li>Use <strong>Skip step</strong> or <strong>Leave practice</strong> at any time. At the end, a summary such as "8 of 8 steps done · about 4 min" offers <strong>Practise again</strong>, and About shows when this phone last practised.</li>
+<li>Practice cannot start while a service is loaded or running, or on a paired operator phone.</li>
+</ul>
+<p>Then try the full workflow yourself:</p>
 <ol>
-<li>Install the supplied Android app. Check <strong>Settings → About</strong> for its version. This guide describes 0.18.0; update paired devices too when using its new screen layouts and Seen acknowledgements.</li>
-<li>Open the top-right display icon and choose <strong>Simulator</strong>. Confirm the preview badge says Simulator.</li>
-<li>On Live choose <strong>Start service</strong>, then load <strong>Quick rehearsal</strong>. Loading a program enters <strong>Ready</strong>; it does not start the countdown.</li>
-<li>Review the first and next segment. Choose normal timing or Fast rehearsal while Ready. A program's Service/Rehearsal grouping is not its speed setting.</li>
-<li>Select <strong>Start first segment</strong>, review the confirmation and start.</li>
-<li>Try the pause icon, confirm, and observe the held timer. Resume, then try <strong>Custom</strong> to add or remove minutes and seconds. Read the proposed result before confirming.</li>
-<li>Tap one prepared <strong>Stage cue</strong>. It sends immediately. The countdown continues underneath. Choose <strong>Show timer</strong> to restore the current timer, not the original starting time.</li>
+<li>Install the supplied Android app. Check <strong>Settings › About</strong> for its version. This guide describes 0.30.0. Update every phone together: program files, backups and sent programs saved by 0.28 or later cannot be opened by 0.27 or earlier.</li>
+<li>Tap the display chip at the top of Live and choose <strong>Simulator</strong>. Confirm the chip and preview badge say Simulator.</li>
+<li>On Live choose <strong>Start service</strong>, then load <strong>Quick rehearsal</strong> (a Pinned or Recent program card on Live loads straight away). Loading a program enters <strong>Ready</strong>; it does not start the countdown.</li>
+<li>Review the first and next segment. While Ready, choose <strong>Service mode</strong>: <strong>Live timing · 1×</strong> or a <strong>Fast rehearsal</strong> speed. A program's Service/Rehearsal grouping is not its speed setting. <strong>Change</strong> swaps in another program without leaving Ready.</li>
+<li>Select <strong>Start first segment</strong>. When the display is connected and nothing needs attention, the service starts at once and <strong>Undo start</strong> is offered for 8 seconds; otherwise a confirmation explains what to check.</li>
+<li>Tap <strong>Pause</strong>, confirm, and observe the held timer. Tap <strong>Resume</strong>, then try <strong>Custom</strong> to add or remove minutes and seconds. Read the proposed result before confirming.</li>
+<li>Open <strong>Stage &amp; display</strong> and tap one prepared <strong>Stage cue</strong>. It sends immediately. The countdown continues underneath. Choose <strong>Show timer</strong> to restore the current timer, not the original starting time.</li>
 <li>Tap <strong>Blank screen</strong>, then <strong>Unblank screen</strong>. Blanking hides output; it does not pause the service.</li>
-<li>Use <strong>Next segment</strong> when the current activity is finished. If this was accidental, use <strong>Undo</strong> while it is available and review the confirmation.</li>
-<li>Allow a segment to reach zero. Observe the operator's red overtime and the shared At Zero display behavior. Reaching zero does not automatically advance the program.</li>
-<li>Choose <strong>End service</strong> and confirm. Live returns to Standing by after the report saves. Open <strong>View last report</strong>.</li>
+<li>Use <strong>Next</strong> (<strong>Next segment</strong> on a tablet) when the current activity is finished. If this was accidental, use <strong>Undo</strong> while it is available and review the confirmation.</li>
+<li>Allow a segment to reach zero. Observe the operator's red overtime and the shared At zero display behaviour. Reaching zero does not automatically advance the program.</li>
+<li>Choose <strong>End service</strong> and confirm. Live returns to Standing by after the report saves. On the <strong>Last service</strong> card, tap <strong>View last service report</strong>.</li>
+<li>Finally, tap <strong>Quick timer</strong> on Live, choose 5 min and start it. Notice there is no Ready step. Tap <strong>End timer</strong> when you have seen it count. See <a href="#07-operate-a-live-service">Operate a live service</a> for details.</li>
 </ol>
-<p><strong>You are ready for the next lesson when you can explain:</strong> Ready versus running, Pause versus Blank, Show timer versus Next segment, and a display acknowledgement versus a physical check.</p>
-<p>Fast rehearsal accelerates simulated service time. Reports identify it as rehearsal timing, and duration insights exclude rehearsals. Use normal speed for the supported physical LED countdown.</p>
+<p><strong>You are ready for the next lesson when you can explain:</strong> Ready versus running, Pause versus Blank, Show timer versus Next, a Quick timer versus a service, and a display acknowledgement versus a physical check.</p>
+<p>Fast rehearsal accelerates simulated service time (5×, 10×, 30× or 60×). Reports identify it as rehearsal timing, and duration insights exclude rehearsals. Use normal speed for the supported physical LED countdown.</p>
 <h2 id="03-build-a-reusable-program">03 — Build a reusable program</h2>
-<p>Open <strong>Programs → + New</strong>. In <strong>Program editor</strong>, give the plan a useful <strong>Program name</strong>; “Youth sunday” is the example placeholder, not a mandatory name.</p>
+<p>Open <strong>Programs</strong> and tap <strong>New program</strong>. (With no programs at all, Programs offers <strong>Create program</strong> and <strong>Import</strong>.) In <strong>Program editor</strong>, give the plan a useful <strong>Program name</strong>; “Youth sunday” is the example placeholder, not a mandatory name.</p>
 <ol>
-<li>Select Service or Rehearsal as its group.</li>
-<li>Add the segments in the order they will happen. Enter a name and whole-minute duration for each.</li>
-<li>Add speaker names and <strong>private operator notes</strong> where useful: microphone changes, music cues or an agreed finish instruction.</li>
-<li>Reorder segments using the editor's drag handles.</li>
-<li>Review <strong>End screen · this program</strong>. Set the message and formatting for this program's conclusion.</li>
-<li>Choose <strong>Create Program</strong> for a new plan, or save an existing plan after editing.</li>
+<li>Choose Service or Rehearsal as its <strong>Program group</strong>.</li>
+<li>Use <strong>Add segment</strong> for each activity, in the order it will happen. Enter a <strong>Segment name</strong> and set its duration in minutes and seconds, for example 5 min 30 s. Each segment stays within 59 min 59 s.</li>
+<li>Add a <strong>Speaker (optional)</strong> and <strong>Private operator notes</strong> where useful: microphone changes, music cues or an agreed finish instruction. Notes are never shown on the sign.</li>
+<li>Turn on <strong>Protect duration</strong> for a segment that time recovery must not shorten.</li>
+<li>Reorder segments using the drag handles ("Drag the handle to reorder" appears once there are two or more).</li>
+<li>Review the <strong>End screen</strong> row. It reads "Uses the current default" until you give this program its own end screen.</li>
+<li>Choose <strong>Create program</strong> for a new plan, or <strong>Save changes</strong> after editing.</li>
 </ol>
 <p>Example practice plan:</p>
 <div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
@@ -154,7 +168,7 @@
 </tr>
 <tr>
 <td>Worship</td>
-<td>5 min</td>
+<td>5 min 30 s</td>
 <td>Worship lead · confirm final song with the team.</td>
 </tr>
 <tr>
@@ -170,12 +184,39 @@
 </tbody>
 </table></div>
 <figure class="app-figure"><a class="zoom-image" href="assets/images/program-editor.png" aria-label="Enlarge: Program editor with example segments and program-specific end screen"><img src="assets/images/program-editor.png" alt="Program editor with example segments and program-specific end screen" loading="lazy" decoding="async"></a><figcaption>Program editor with example segments and program-specific end screen<span>Example app preview · tap to enlarge</span></figcaption></figure>
-<p>Open a row in Programs for <strong>Program details</strong>. Use <strong>Edit Program</strong>, Duplicate or the export actions. <strong>Delete program</strong> is at the bottom and requires confirmation. A duplicate is useful for a special service without overwriting a familiar plan.</p>
-<p>Unfinished program edits are saved locally as drafts after a short delay. On reopening, choose <strong>Restore draft</strong>, <strong>Discard draft</strong>, or Cancel. Restoring is not the same as saving the program. If a save fails, keep the app open and use its retry action. The latest keystrokes can be lost if the phone kills the app before a pending write completes.</p>
-<p>CSV import uses exactly <code>Segment Name,Duration (Minutes)</code> as its header. It carries names and durations only. Versioned JSON preserves richer program information such as speakers, notes and end-screen formatting. Imports are previewed before acceptance; current limits are 1 MiB and 200 segments, with durations of 1–99 whole minutes. The LED native countdown has a separate shorter limit explained in the LED lesson.</p>
-<p>Global warnings and At Zero settings are shared on the receiving phone. Importing a program does not establish an independent set of warning rules for it. Keep exports containing private notes within the operator team.</p>
+<p>Open a row in Programs for <strong>Program details</strong>, with <strong>Load into Live</strong> and <strong>Edit program</strong> up front. Its <strong>⋮</strong> menu holds Duplicate, Export JSON, Export CSV, <strong>Print order of service</strong>, <strong>Send to paired phone</strong> (while one is connected), <strong>Version history</strong> and <strong>Delete program</strong>, which asks for confirmation. A duplicate is useful for a special service without overwriting a familiar plan.</p>
+<p>In the Programs list, the pin icon marks pinned programs, which Live offers first. <strong>Press and hold</strong> a program to start selecting; the bar at the bottom then offers <strong>Pin</strong>, <strong>Share</strong>, <strong>Export</strong> and, in red, <strong>Delete</strong> (with a 10-second Undo). Back or <strong>×</strong> finishes selecting.</p>
+<p><strong>Segment library.</strong> For segments you use often, such as Offering or Announcements, open the segment in the editor and tap <strong>Save to library</strong>. It keeps the duration, speaker, notes and protection. <strong>From library</strong> next to Add segment inserts one into any program, with search. Saving the same name again updates it. <strong>Programs › ⋮ › Segment library</strong> lists them and removes one, with Undo. Up to 50 are kept.</p>
+<p><strong>Version history.</strong> Each time you save a change, the version before it is kept, up to the last 10. <strong>Program details › ⋮ › Version history</strong> lists them with what changed (for example “Added “Offering”, +4 min in total”). Tap one to open it as "Earlier version" and choose <strong>Restore this version</strong>, with Undo. Restoring keeps the current name, and the version it replaces stays in history.</p>
+<p>Unfinished program edits are saved locally as drafts after a short delay ("Draft saved" appears once you change something). On reopening, choose <strong>Restore draft</strong>, <strong>Discard draft</strong>, or Cancel. Restoring is not the same as saving the program. If a save fails, keep the app open and use its retry action. The latest keystrokes can be lost if the phone kills the app before a pending write completes.</p>
+<p><strong>Importing.</strong> Use <strong>Programs › ⋮ › Import programs (JSON or CSV)</strong>, or open a program <code>.json</code> or <code>.csv</code> file shared to the app. Every import goes to a review ("Preview program import") before you choose <strong>Import program</strong>.</p>
+<div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
+<thead>
+<tr>
+<th>File</th>
+<th>What it carries</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Program JSON</td>
+<td>Everything: segments, speakers, notes, protection and end-screen formatting.</td>
+</tr>
+<tr>
+<td>Simple CSV</td>
+<td>The header <code>Segment Name,Duration (Minutes)</code>, with an optional <code>Seconds</code> column. Names and durations only.</td>
+</tr>
+<tr>
+<td>Any other spreadsheet (CSV)</td>
+<td>Opens <strong>Match spreadsheet columns</strong>. The app guesses which column is the name, duration, speaker, notes or program, and reads durations written as <code>5</code>, <code>5.5</code>, <code>05:30</code>, <code>5 min</code> or <code>90s</code>. A live preview lists every problem by row number. The choice is remembered, so next week's sheet in the same layout needs one tap. Then <strong>Continue to review</strong>.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Current limits are 1 MiB and 200 segments. Export Excel files as CSV first. The LED native countdown has its own limit, explained in the LED lesson.</p>
+<p><strong>Sending a program to another phone.</strong> While sharing to screens, <strong>Program details › ⋮ › Send to paired phone</strong> sends the program to the connected operator and viewer phones you tick (stage screens are left out). Private notes are optional. The other phone shows a "Program received" card with <strong>Review</strong>. If it already has a program with that name, <strong>Update mine</strong> replaces it and keeps its current version in Version history; <strong>Save as copy</strong> adds it with a numbered name. Received programs wait until reviewed, even after leaving the pairing (up to five), and are not included in backups.</p>
+<p>Global warnings and At zero settings are shared on the receiving phone. Importing a program does not establish an independent set of warning rules for it. Keep exports containing private notes within the operator team.</p>
 <h2 id="04-choose-the-right-display">04 — Choose the right display</h2>
-<p>Use the header display icon or <strong>Change display</strong> to open <strong>Choose display</strong>.</p>
+<p>Tap the display chip at the top of Live, or <strong>Change display</strong>, to open <strong>Choose display</strong>. Each choice shows what is connected, for example "1 paired · 2 web connected".</p>
 <div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
 <thead>
 <tr>
@@ -193,30 +234,31 @@
 <tr>
 <td>LED sign</td>
 <td>A physical red LED countdown and short cues.</td>
-<td>The supported W2 profile, sign Wi-Fi, and its device connection password.</td>
+<td>The supported W2 profile, sign Wi-Fi, and its connection password.</td>
 </tr>
 <tr>
-<td>Phone or tablet</td>
-<td>A large stage countdown, rich Quick messages, recipient groups and Seen.</td>
-<td>Another Android device with the app and a network allowing phone-to-phone traffic.</td>
+<td>Phone, tablet or web screens</td>
+<td>A large stage countdown, rich Quick messages, recipient groups and Seen, on paired Android devices or any browser on the same Wi-Fi.</td>
+<td>Paired devices need the app; browsers need nothing installed. All need a network that lets devices reach each other.</td>
 </tr>
 </tbody>
 </table></div>
-<figure class="app-figure"><a class="zoom-image" href="assets/images/choose-display.png" aria-label="Enlarge: Choose display with LED sign, Phone or tablet, and Simulator"><img src="assets/images/choose-display.png" alt="Choose display with LED sign, Phone or tablet, and Simulator" loading="lazy" decoding="async"></a><figcaption>Choose display with LED sign, Phone or tablet, and Simulator<span>Example app preview · tap to enlarge</span></figcaption></figure>
-<p>LED sign and Phone or tablet are <strong>alternative stage-output destinations</strong> in this build. Paired viewer/operator access is separate, so sharing controls does not itself require replacing the LED destination.</p>
+<figure class="app-figure"><a class="zoom-image" href="assets/images/choose-display.png" aria-label="Enlarge: Choose display with LED sign, Phone, tablet or web screens, and Simulator"><img src="assets/images/choose-display.png" alt="Choose display with LED sign, Phone, tablet or web screens, and Simulator" loading="lazy" decoding="async"></a><figcaption>Choose display with LED sign, Phone, tablet or web screens, and Simulator<span>Example app preview · tap to enlarge</span></figcaption></figure>
+<p>LED sign and Phone, tablet or web screens are <strong>alternative stage-output destinations</strong> in this build. Sharing to viewers, operators and web screens is separate, so sharing does not itself require replacing the LED destination.</p>
+<p><strong>Web screens</strong> let a laptop on a projector, a smart TV, a tablet or people's own phones follow the service in a browser, without the app and without the internet. They work while this phone is sharing (see <a href="#06-pair-a-phone-or-tablet">Pair a phone or tablet</a>). A web <strong>Stage display</strong> counts as a stage screen: it receives cues, scrolling and flashing text, and Quick messages sent to it.</p>
 <p>Changing destination preserves the service timer and stops LED reconnect attempts when another destination is chosen. When leaving a connected LED sign, choose whether to <strong>Blank previous sign</strong> or <strong>Leave output</strong>. A sign left displaying a countdown can continue on its own.</p>
-<p>Always check the badge after changing output. A simulator preview, an authenticated LED connection and an acknowledged mobile screen are different states. Use <strong>Test screen</strong> where available and have someone confirm the intended physical screen before the service.</p>
+<p>Always check the badge after changing output. A simulator preview, an authenticated LED connection and an acknowledged mobile screen are different states. Use <strong>Test screen</strong> (or <strong>Test 5 s</strong> in the Quick message composer) and have someone confirm the intended physical screen before the service.</p>
 <h2 id="05-connect-the-led-sign">05 — Connect the LED sign</h2>
 <p>The hardware path has been tested with <strong>Huidu W2, firmware V6.02.232, 32 × 16 red monochrome</strong>. Do not assume every LED sign or every W2 firmware is supported. The app reads and validates the profile before publishing content.</p>
 <ol>
-<li>Power the sign and connect the operator phone to the sign's Wi-Fi in Android.</li>
-<li>Choose <strong>LED sign</strong> in Church Service Timer.</li>
-<li>Scan, select the intended display, and enter its <strong>device connection password</strong>.</li>
-<li>Leave <strong>Remember password on this phone</strong> checked if this is a trusted operator phone. It remembers the LED connection password, not the Wi-Fi password.</li>
+<li>Power the sign and choose <strong>LED sign</strong> in Choose display. The <strong>Connect the LED sign</strong> page walks through three steps.</li>
+<li><strong>Join the sign's Wi-Fi</strong>: connect the operator phone to the sign's network in Android (<strong>Wi-Fi settings</strong>), then come back.</li>
+<li><strong>Choose the sign</strong>: tap <strong>Scan for displays</strong> and select the intended display.</li>
+<li><strong>Sign in</strong>: enter its connection password (the field is labelled "Display device password"; it may differ from the Wi-Fi password). Leave <strong>Remember password on this phone</strong> checked if this is a trusted operator phone. It remembers the connection password, not the Wi-Fi password.</li>
 <li>Tap <strong>Connect selected display</strong> and check the successful result and preview status.</li>
 <li>Start a normal-speed service when ready. If restoring a service already in progress after an interruption, review its timer and use <strong>Restore current output</strong> when offered.</li>
 </ol>
-<p>Connecting alone does not overwrite what the sign is currently showing. The stored connection password is encrypted locally with Android Keystore and excluded from portable backups. <strong>Forget display</strong> removes the app's remembered information; it does not reset the sign.</p>
+<p>Connecting alone does not overwrite what the sign is currently showing. The stored connection password is encrypted locally with Android Keystore. It is left out of backups unless you choose to include saved passwords, encrypted with a passphrase. <strong>Forget this sign</strong> (in LED device management) removes the app's remembered information and saved passwords; it does not reset the sign.</p>
 <p>There are two different passwords:</p>
 <div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
 <thead>
@@ -231,25 +273,27 @@
 <td>Android uses it to join the sign's wireless network.</td>
 </tr>
 <tr>
-<td>Device connection password</td>
+<td>Connection password</td>
 <td>The app uses it to authenticate to the LED controller.</td>
 </tr>
 </tbody>
 </table></div>
-<p>Supported native countdowns run up to <strong>59:59</strong>. The sign runs an accepted countdown independently and settles at 00:00. The app handles shared At Zero output and future segment changes. A brief blink at pause, resume, cue, warning or program replacement is expected on the tested controller; normal counting between replacements should be smooth.</p>
+<p>Supported native countdowns run up to <strong>59:59</strong>. The sign runs an accepted countdown independently and settles at 00:00. The app handles shared At zero output and future segment changes. A brief blink at pause, resume, cue, warning or program replacement is expected on the tested controller; normal counting between replacements should be smooth. The LED sign keeps a steady colon; the blinking colon is for paired and web screens.</p>
 <p>An uploaded countdown can continue if Wi-Fi is lost. A static pause frame or cue may instead remain visible until it is replaced. Do not infer that the sign is current just because it is still lit. Read <a href="#14-connection-recovery-and-troubleshooting">connection recovery</a> before using automatic recovery during a service.</p>
 <h2 id="06-pair-a-phone-or-tablet">06 — Pair a phone or tablet</h2>
-<p>Use one phone as the <strong>host</strong>. It owns the clock and saved data. The other devices join as stage displays, viewers or additional operators.</p>
-<p><strong>Network first:</strong> place devices on a normal router or a third device's hotspot that permits local traffic. Internet is not required. The tested LED sign's hotspot isolates its clients, so two phones on that hotspot could not pair with each other. QR codes do not bypass this restriction. Hosting on the same phone that supplies a hotspot is not verified in this build.</p>
+<p>Use one device as the <strong>host</strong>. It owns the clock and saved data. Other phones and tablets join as stage displays, viewers or additional operators; browsers can follow as web screens.</p>
+<p><strong>Network first:</strong> put the devices on the same Wi-Fi or on the host phone's own hotspot. Internet is not required. Some sign hotspots, guest Wi-Fi and church networks keep devices apart ("client isolation"), so phones on them cannot reach each other; the app's advice is then to use the host device's hotspot. QR codes do not bypass isolation. If the host moves to another network while sharing, for example when you turn its hotspot on, it shares again at the new address by itself; approved devices, the team code and joined browsers carry over.</p>
+<figure class="app-figure"><a class="zoom-image" href="assets/images/screens-devices.png" aria-label="Enlarge: Screens &amp; devices before sharing, with Share to screens and Join a service"><img src="assets/images/screens-devices.png" alt="Screens &amp; devices before sharing, with Share to screens and Join a service" loading="lazy" decoding="async"></a><figcaption>Screens &amp; devices before sharing, with Share to screens and Join a service<span>Example app preview · tap to enlarge</span></figcaption></figure>
 <ol>
-<li>On the host, choose <strong>Phone or tablet</strong>, then <strong>Share to stage screens</strong>. To share viewer/operator access while retaining LED output, use <strong>Settings → Paired devices → Share this service</strong> instead.</li>
-<li>On a stage phone's Live welcome card, choose <strong>Join as stage screen</strong>. For a viewer or operator role, open <strong>Settings → Paired devices → Join another operator</strong> and select the role.</li>
-<li>Give the joining device a clear name, select the nearby host, and enter its <strong>six-digit code</strong>, including leading zeros. Alternatively, scan the host's QR code using <strong>Scan QR code instead</strong>.</li>
-<li>The host reviews and approves the joining device. Knowing the code is not enough by itself.</li>
-<li>For stage use, open <strong>Use as stage display</strong>. The receiver enters landscape full screen. Tap to reveal its overview/exit tools.</li>
-<li>Check the host's recipient/connection list and use Test screen before going live. <strong>Go to Live</strong> returns from device management without ending sharing.</li>
+<li>On the host, tap <strong>Share to screens</strong> on Live (or <strong>Settings › Screens &amp; devices</strong>). From Choose display › Phone, tablet or web screens, the button is <strong>Share to stage screens</strong>, which also turns on stage output. Sharing to screens alone keeps LED output.</li>
+<li>On the joining device, tap <strong>Join a service</strong> on Live. Give it a clear <strong>Device name</strong> and choose <strong>Use this device as</strong>: <strong>Service viewer</strong>, <strong>Stage display</strong> or <strong>Additional operator</strong>.</li>
+<li>Select the host under Nearby hosts and enter its <strong>six-digit code</strong>, including leading zeros, then <strong>Join service</strong>. Alternatively, use <strong>Scan QR code instead</strong> with the host's <strong>Show QR code</strong>.</li>
+<li>The host reviews and <strong>Approve</strong>s the joining device. Knowing the code is not enough by itself.</li>
+<li>A stage display opens in landscape full screen. Tap to reveal its overview and exit tools (<strong>Back to service overview</strong>, <strong>Open stage display</strong>).</li>
+<li>Check the host's Saved devices list and use <strong>Test screen</strong> before going live. <strong>Return to Live</strong> leaves Screens &amp; devices without ending sharing.</li>
 </ol>
-<p>Invitations expire after ten minutes. If an invitation expires or PIN attempts are exhausted, use <strong>New code</strong> on the host. A new invitation does not remove already approved devices. Never publish a live pairing code or QR image in training materials.</p>
+<p>When joining, a phone can offer <strong>Rejoin this Wi-Fi automatically</strong>: it notes the network it is on (church Wi-Fi, the host's hotspot or the sign's Wi-Fi) and rejoins only that network if the link drops.</p>
+<p>Codes expire after ten minutes. If a code expires or its attempts are exhausted, use <strong>New code</strong> on the host. A new code does not remove already approved devices. Never publish a live pairing code or QR image in training materials.</p>
 <div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
 <thead>
 <tr>
@@ -260,14 +304,14 @@
 <tbody>
 <tr>
 <td>Host</td>
-<td>Owns timing, reports and output; approves devices and can reclaim control. Keep it powered and connected.</td>
+<td>Owns timing, reports and output; approves devices and can take back control. Keep it powered and connected.</td>
 </tr>
 <tr>
 <td>Additional operator</td>
-<td>Initially observes; the host must explicitly give it control. Only one operator controls at a time. Private notes become available when control is granted.</td>
+<td>Initially observes and can <strong>Request control</strong>; the host must explicitly <strong>Give control</strong>. Only one operator controls at a time. Private notes become visible when control is granted.</td>
 </tr>
 <tr>
-<td>Viewer</td>
+<td>Service viewer</td>
 <td>Observes service information without control or private operator notes.</td>
 </tr>
 <tr>
@@ -277,12 +321,56 @@
 </tbody>
 </table></div>
 <p>Handing over control does <strong>not</strong> move the service to the other phone. If that operator disconnects, control returns to the host. Reconnection does not silently restore its control grant.</p>
-<p>For each saved screen, set a recognizable name, a group (<strong>General, Preacher, Choir, Media desk</strong>) and layout (<strong>Timer only, Timer + current segment, Timer + next segment</strong>). The host can choose which acknowledged screen to inspect in the preview.</p>
+<p>For each saved screen, use <strong>Screen options</strong> to set a recognisable name, a <strong>Screen group</strong> (<strong>General, Preacher, Choir, Media desk</strong>) and a <strong>Screen layout</strong> (<strong>Timer only, Timer + current segment, Timer + next segment</strong>). The host can choose which acknowledged screen to inspect in the preview.</p>
 <figure class="app-figure"><a class="zoom-image" href="assets/images/stage-layout.png" aria-label="Enlarge: Example stage display with the next segment beneath the countdown"><img src="assets/images/stage-layout.png" alt="Example stage display with the next segment beneath the countdown" loading="lazy" decoding="async"></a><figcaption>Example stage display with the next segment beneath the countdown<span>Example app preview · tap to enlarge</span></figcaption></figure>
-<p><strong>Disconnect</strong> keeps a device saved but pauses its service access. <strong>Reconnect</strong> on the host can restore it without another code when the receiver app is available on the same reachable network. <strong>Forget device</strong> revokes approval and requires pairing again. If the receiver deliberately leaves, it must choose <strong>Reconnect saved host</strong> to rejoin. Stop sharing is deliberate; host sharing does not automatically restart on app launch.</p>
-<p>One host with three stage receivers is within the current eight-connection cap, which also counts pending connections. That cap is not a guarantee of performance on every router or phone; rehearse the exact setup.</p>
+<p><strong>Disconnect</strong> keeps a device saved but pauses its service access. <strong>Reconnect</strong> on the host can restore it without another code when the receiver app is available on the same reachable network. <strong>Forget device</strong> revokes approval and requires pairing again. If the receiver deliberately leaves, it must choose <strong>Reconnect saved host</strong> to rejoin. <strong>Stop sharing</strong> is deliberate; host sharing does not automatically restart on app launch.</p>
+<p>One host with three stage receivers is within the current eight-connection cap for paired devices, which also counts pending connections. That cap is not a guarantee of performance on every router or phone; rehearse the exact setup.</p>
+<h3 id="web-screens-in-a-browser">Web screens in a browser</h3>
+<p>While sharing, <strong>Settings › Screens &amp; devices › Web screens</strong> shows three ways for a browser on the same Wi-Fi to open the page:</p>
+<ol>
+<li><strong>Easy name</strong>, made from the church name, for example <code>grace-community.local:8080</code>. iPhones, iPads, Macs and most laptops open it; some Android phones do not. <strong>Change easy name</strong> edits it.</li>
+<li><strong>QR code</strong>, which any phone camera reads.</li>
+<li><strong>Address</strong>, the phone's own address such as <code>192.168.1.23:8080</code>, as a last resort.</li>
+</ol>
+<div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Browser view</th>
+<th>Shows</th>
+<th>Needs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Order of service</td>
+<td>The rundown with the current item marked <strong>NOW</strong>; no times. Speakers only if <strong>Show speakers in the order of service</strong> is on.</td>
+<td>The <strong>guest code</strong> (4 digits, the same each week until you tap <strong>Change guest code</strong>), or nothing if set to open.</td>
+</tr>
+<tr>
+<td>Stage display</td>
+<td>The full-screen countdown, cues and Quick messages.</td>
+<td>The <strong>team code</strong>.</td>
+</tr>
+<tr>
+<td>Service overview</td>
+<td>Time left, ahead or behind, finish time and the rundown with durations and speakers.</td>
+<td>The <strong>team code</strong>.</td>
+</tr>
+</tbody>
+</table></div>
+<p>The 6-digit team code changes each time you share, or with <strong>New team code</strong>, and unlocks switching between all three views. Order of service access can be <strong>Off</strong>, <strong>Needs the guest code</strong> (the default) or <strong>Open to anyone on this Wi-Fi</strong>. Changing a code signs out the browsers that used the old one. No browser can control the service or see private notes.</p>
+<p><strong>Export join slide</strong> makes an image with the church name, a large QR code, the easy name, the guest code and the address, ready to project. Pick the screen it is for (16:9 HD or 4K, 16:10, 4:3, Portrait 9:16 or Square) and dark or light. If the phone's address changes afterwards, the panel says the slide is out of date: export it again. A printed address or QR stops working if the router gives the phone a new address, so ask for the address to be reserved on the router, or show the join slide instead.</p>
+<p>A browser shows a red "Connection to the host device lost · reconnecting…" banner and fades the countdown within about five seconds of the host going quiet, and picks up again by itself when the host returns. On a web Stage display, the <strong>Full screen</strong> chip becomes <strong>Exit full screen</strong>.</p>
+<h3 id="requests-from-the-stage">Requests from the stage</h3>
+<p>When <strong>Requests from the stage</strong> is switched on in Screens &amp; devices (off by default), a presenter can quietly ask the operator for something during a service, from a paired stage screen or a team-code web Stage display. A small <strong>Request</strong> button offers three fixed choices: <strong>Need 2 minutes</strong>, <strong>Ready to finish</strong> and <strong>Microphone issue</strong>; there is no free text. How the operator answers is in <a href="#07-operate-a-live-service">Operate a live service</a>.</p>
 <h2 id="07-operate-a-live-service">07 — Operate a live service</h2>
 <p>Load the correct program, check its first segment and destination, then <strong>Start first segment</strong>. Program transitions remain manual: the app does not decide when worship, a message or an announcement is finished.</p>
+<p><strong>Before you start.</strong> In Ready you can:</p>
+<ul>
+<li>Use <strong>Change</strong> to swap in another program (pinned first, with search); an 8-second Undo switches back.</li>
+<li>Set a <strong>Pre-service countdown</strong> (<strong>Set time</strong>). The display shows the clock until the last hour, counts down to the start, then holds "STARTING SOON" at 00:00. It never starts the service by itself. Tapping Start first segment early asks "Start now?" first.</li>
+<li>Read the "Last time" review note if the same program has one.</li>
+</ul>
 <div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
 <thead>
 <tr>
@@ -292,7 +380,7 @@
 </thead>
 <tbody>
 <tr>
-<td>Pause / Resume icons</td>
+<td>Pause / Resume</td>
 <td>Confirm the action. Pause holds the service clock; Resume continues it. LED replacement can blink briefly.</td>
 </tr>
 <tr>
@@ -301,102 +389,155 @@
 </tr>
 <tr>
 <td>Custom</td>
-<td>Choose add or remove and enter minutes/seconds. Review the resulting timer; time can continue while the dialog is open.</td>
+<td>Choose add or remove and set minutes and seconds. Review the resulting timer; time can continue while the dialog is open.</td>
 </tr>
 <tr>
-<td>Next segment</td>
+<td>Next (Next segment on a tablet)</td>
 <td>Confirm when the next real activity begins. It starts that segment's allocation and replaces the previous output.</td>
 </tr>
 <tr>
+<td>Segment title</td>
+<td>Tap the current segment's name to <strong>Jump to segment</strong> further ahead, with a confirmation.</td>
+</tr>
+<tr>
 <td>Undo</td>
-<td>Reverses the supported last segment advance when available; it is not a universal undo of every action. Review the confirmation.</td>
+<td>Reverses the supported last segment change when available; it is not a universal undo of every action. Review the confirmation.</td>
 </tr>
 <tr>
-<td>Allocated time</td>
-<td>The current segment's allotted duration, not the entire service length.</td>
+<td>"of 10:00 allocated"</td>
+<td>The current segment's allotted time, not the entire service length.</td>
 </tr>
 <tr>
-<td>View / Hide private notes</td>
-<td>Opens the current operator's notes; it does not publish them to stage displays.</td>
+<td>View / Hide operator notes</td>
+<td>Opens the current segment's private notes; it does not publish them to stage displays.</td>
 </tr>
 <tr>
 <td>Focused operator view</td>
-<td>Keeps essential controls, timer, cues and display preview prominent.</td>
+<td>In the <strong>⋮</strong> menu. Keeps essential controls, timer, cues and display preview prominent.</td>
 </tr>
 <tr>
 <td>Lock controls</td>
-<td>Prevents accidental commands. Hold Hold to unlock to regain local controls. It does not pause time.</td>
+<td>The lock icon prevents accidental commands. Use <strong>Hold to unlock</strong> to regain local controls. It does not pause time.</td>
 </tr>
 </tbody>
 </table></div>
-<p>Tap a row in <strong>Service rundown · snapshot</strong> to inspect its timing, speaker and private note. Opening that information does not advance to the row.</p>
-<p>At zero, the operator view can enter <strong>Overtime</strong> and show red text while the display stays at 00:00 or the configured At Zero message. This is intentional. Start the next segment when appropriate; do not add time merely to hide an overrun from the report.</p>
-<p><strong>Blank screen</strong> is a toggle: tap again as <strong>Unblank screen</strong> to restore current output. It also works after End service. Timing and phone alerts continue while blanked, but automatic stage warnings are suppressed. The focused preview should remain present and identify intentional blanking.</p>
+<p>Tap a row in <strong>Service rundown</strong> to inspect its timing, speaker and private note. Opening that information does not advance to the row. The rundown header also holds <strong>Edit upcoming</strong>, <strong>Recover time</strong> and a print icon for <strong>Print order of service</strong>.</p>
+<p>At zero, the operator view enters <strong>Overtime</strong> and shows red text while the display stays at 00:00 or the configured At zero text. This is intentional. Start the next segment when appropriate; do not add time merely to hide an overrun from the report.</p>
+<p>The <strong>Stage &amp; display</strong> panel holds Stage cues, <strong>Show clock</strong>, <strong>Send message</strong>, <strong>Blank screen</strong> and <strong>Quick timer</strong>, plus the display preview. <strong>Show clock</strong> puts the time of day on the display (12 or 24 hour, set in Display settings › Clock format); <strong>Back to clock</strong> or <strong>Show timer</strong> returns. <strong>Blank screen</strong> is a toggle: tap again as <strong>Unblank screen</strong> to restore current output. It also works after End service. Timing and phone alerts continue while blanked, but automatic stage warnings are suppressed. The preview should remain present and identify intentional blanking.</p>
+<p><strong>Lock-screen controls.</strong> During a service, a notification shows the current segment with a live countdown (counting up in overtime), with Pause/Resume and Next; Next needs a second tap. It is on by default in <strong>Settings › Warnings &amp; alerts › During a service</strong>, and it obeys Lock controls. A <strong>clicker or foot pedal</strong> can also drive Live: Page Down or Right arrow arms Next and a second press within 4 seconds starts it; B or Space pauses and resumes.</p>
+<p><strong>Requests from the stage.</strong> If a presenter sends a request, the phone vibrates briefly and a card on Live shows it with <strong>Acknowledge</strong> and <strong>Dismiss</strong>. "Need 2 minutes" also offers <strong>Add 2 min</strong>, the normal adjustment with Undo; nothing changes the timing by itself. The presenter's screen shows "Sent", then "Seen by operator" or "2 minutes added". One request per screen at a time, at most one every 5 seconds, and requests expire after 2 minutes. The service report lists each request and what you did.</p>
+<h3 id="quick-timer">Quick timer</h3>
+<p>For a prayer meeting, a break or a talk that isn't a whole service, use <strong>Quick timer</strong> instead of a program. It is available when no service is loaded or running: on the Standing by card next to <strong>Start service</strong>, or as the tile beside Show clock, Send message and Blank screen.</p>
+<ol>
+<li>Choose <strong>5 min</strong>, <strong>10 min</strong>, <strong>15 min</strong>, <strong>30 min</strong> or <strong>45 min</strong>, or <strong>Custom…</strong> for any length up to 59 min 59 s. Your last three timers appear under <strong>Recent</strong> as one-tap choices.</li>
+<li>Optionally give it a <strong>Name (optional)</strong>, such as "Prayer meeting".</li>
+<li>Leave <strong>Save as a report</strong> off unless you want a record. Off, nothing is saved when it ends; on, it is saved in Reports, marked Quick timer.</li>
+<li>Tap <strong>Start 5 min timer</strong> (the button names the length). It starts straight away, with no Ready step.</li>
+</ol>
+<p>It counts down on the LED sign, stage screens and web screens together, with Pause, ±2 min, overtime, warnings and the lock-screen controls as usual. <strong>End timer</strong> stops it and shows the end screen. Saved Quick timers are left out of service averages and length suggestions.</p>
 <h2 id="08-prepared-cues-and-automatic-warnings">08 — Prepared cues and automatic warnings</h2>
-<p>Prepared <strong>Stage cues</strong> are short reusable instructions such as WRAP UP or AMEN. Configure them before the service in <strong>Settings → Stage cues</strong>, or use the underlined <strong>Manage cues</strong> link on Live.</p>
+<p>Prepared <strong>Stage cues</strong> are short reusable instructions such as WRAP UP or AMEN. Configure them before the service in <strong>Settings › Stage cues</strong>, or use the <strong>Manage cues</strong> link on Live.</p>
 <ol>
 <li>Create or edit a cue's text, font, height, bold/italic, alignment, effect and speed as available.</li>
 <li>Save it. The Live cue buttons share this saved set across services.</li>
-<li>During the service, <strong>tap the cue once to send</strong>. There is no editing step on Live; choose deliberately.</li>
+<li>During the service, <strong>tap the cue once to send</strong>. There is no editing step on Live; choose deliberately. Before a service starts, Stage cues says "Cues work once the service starts".</li>
 <li>Select <strong>Show timer</strong> when the instruction has served its purpose. The timer has continued beneath the cue.</li>
 </ol>
-<p>Changing the saved cue later does not rewrite content already on stage. Deleting an individual cue or warning offers an <strong>eight-second Undo</strong>, preserving its formatting. This Undo does not apply to clearing reports.</p>
+<p>Changing the saved cue later does not rewrite content already on stage. Deleting an individual cue or warning offers an <strong>eight-second Undo</strong>, preserving its formatting. This Undo does not apply to deleting reports.</p>
 <figure class="app-figure"><a class="zoom-image" href="assets/images/cues.png" aria-label="Enlarge: Prepared Stage cues in Settings, separated into editable rows"><img src="assets/images/cues.png" alt="Prepared Stage cues in Settings, separated into editable rows" loading="lazy" decoding="async"></a><figcaption>Prepared Stage cues in Settings, separated into editable rows<span>Example app preview · tap to enlarge</span></figcaption></figure>
 <p>For LED text, choose <strong>I-Proton Matrix</strong>, <strong>I-Proton Sq-Matrix</strong>, or bundled <strong>Tinos</strong>. Matrix countdown digits are unchanged. Tinos has regular, bold, italic and bold-italic faces; no font import is needed. Tall 14 px preserves more serif detail. Short 7 px fits a smaller line. Static/flashing text must fit the LED width; scroll longer text. Changing square/circular LED preview cells does not change the actual sign's physical LEDs or glyph data.</p>
-<p>Automatic rules live in <strong>Settings → Warnings &amp; alerts</strong> and apply to <strong>all services and rehearsals</strong>. They trigger at <strong>time remaining</strong>, not time elapsed. In a ten-minute segment, a 01:30 rule triggers when eight minutes thirty seconds have elapsed under ordinary uninterrupted timing.</p>
-<p>Set the threshold, cue and intended destination. Choose a fixed display duration of 1–120 seconds or one scroll cycle. A stage warning returns to the current countdown, or At Zero, after its duration. On the LED path, that duration begins after the controller acknowledges it.</p>
+<p>Automatic rules live in <strong>Settings › Warnings &amp; alerts</strong> and apply to <strong>all services and rehearsals</strong>. They trigger at <strong>time remaining</strong>, not time elapsed. In a ten-minute segment, a 01:30 rule triggers when 8 min 30 s have elapsed under ordinary uninterrupted timing. <strong>Use suggested warnings</strong> adds a starting set.</p>
+<p>For each rule set the <strong>Remaining time</strong>, the warning text and <strong>Where to show</strong>: <strong>Operator + phone notification</strong> or <strong>Operator and stage</strong>. Choose <strong>Show for</strong> 1–120 seconds, or <strong>Scroll once, then return</strong> for scrolling text wider than the display. A stage warning returns to the current countdown, or At zero, after its duration. On the LED path, that duration begins after the controller acknowledges it.</p>
 <figure class="app-figure"><a class="zoom-image" href="assets/images/warnings.png" aria-label="Enlarge: Shared warning rules and phone notification controls"><img src="assets/images/warnings.png" alt="Shared warning rules and phone notification controls" loading="lazy" decoding="async"></a><figcaption>Shared warning rules and phone notification controls<span>Example app preview · tap to enlarge</span></figcaption></figure>
-<p>New manual cues, Blank, Next segment and End service supersede a warning. Passed thresholds are not replayed retroactively when rules change. If a manual Quick message covers every connected stage screen, automatic stage cues are consumed while it is present; phone warnings continue. With a targeted Quick message, other stage screens can still show warnings.</p>
-<p>Phone notification lifetime is separate: choose <strong>15, 30, 60 seconds or Until dismissed</strong>, with 30 seconds as default. A segment change or service end clears obsolete warning notices. This does not shorten stage warning duration or remove the persistent active-service notification.</p>
-<p>Enable Android notification permission and precise-warning access where offered, then use <strong>Test notification sound</strong>. Volume, the notification channel and Do Not Disturb still affect sound. Keep the active-service notification running for background delivery. Force-stopping the app is not a supported way to silence a service.</p>
+<p>New manual cues, Blank, Next and End service supersede a warning. Passed thresholds are not replayed retroactively when rules change. If a manual Quick message covers every connected stage screen, automatic stage cues are consumed while it is present; phone warnings continue. With a targeted Quick message, other stage screens can still show warnings.</p>
+<p>Under <strong>Phone alerts</strong>, <strong>Clear phone warnings after</strong> is separate: choose <strong>15, 30, 60 seconds or Until dismissed</strong>, with 30 seconds as default. A segment change or service end clears obsolete warning notices. This does not shorten stage warning duration or remove the active-service notification. Phone warnings use a distinct vibration pattern, which Wear OS watches mirror.</p>
+<p>Turn on Android notifications (<strong>Turn on</strong>) and <strong>Precise timing</strong> (<strong>Allow</strong>) where offered, then use <strong>Test</strong> on the <strong>Sound and vibration</strong> row. Volume, the notification channel and Do Not Disturb still affect sound. <strong>Background operation</strong> starts with the LED sign or sharing and keeps warnings running while locked; if Live says background operation is unavailable, keep the app open. Ready for service also shows whether Android <strong>battery optimisation</strong> could pause warnings with the screen off, with <strong>Allow</strong> to fix it. Force-stopping the app is not a supported way to silence a service.</p>
 <h2 id="09-send-rich-quick-messages">09 — Send rich Quick messages</h2>
-<p>Quick messages are for <strong>Phone or tablet</strong> stage output, not the LED sign. They let you send a longer, formatted instruction without changing the program.</p>
+<p>Quick messages are for <strong>Phone, tablet or web screens</strong> stage output, not the LED sign. They let you send a longer, formatted instruction without changing the program. (The <strong>Send message</strong> tile in Stage &amp; display is different: it sends a simple text message to whichever display is selected, the LED sign included.)</p>
 <ol>
-<li>Confirm sharing is enabled and the intended stage receivers are approved and synchronized.</li>
-<li>In Live's <strong>Quick message</strong> card, choose <strong>All connected stage screens</strong>, one saved screen, or a screen group.</li>
-<li>Write an optional headline and a body, or choose a preset and adapt it. The combined limit is <strong>160 characters</strong>, with a headline of at most 48 and up to six body lines.</li>
-<li>Choose bold/italic, alignment, colour, size and duration: 5, 10, 15 or 30 seconds, or Until cleared. Use 15–30 seconds for longer instructions.</li>
-<li>Inspect the preview and recipient count. Optionally enable <strong>Request Seen acknowledgement</strong>. Then tap <strong>Send message</strong>.</li>
+<li>Confirm sharing is on and the intended stage screens are approved and connected.</li>
+<li>On Live, in the <strong>Quick message</strong> section of Stage &amp; display (shown while Phone, tablet or web screens is the destination), tap <strong>Write a message</strong>. In <strong>Send to</strong>, choose <strong>All connected stage screens</strong>, one screen, or a screen group. Only connected screens are listed; one that drops off while you write stays listed as "offline" and can't be picked.</li>
+<li>Write an optional headline and a message, or use <strong>Choose a preset</strong> and adapt it. The combined limit is <strong>160 characters</strong>, with a headline of at most 48 and up to six message lines.</li>
+<li>Under <strong>Style</strong>, choose bold/italic, alignment, colour and text size. Set <strong>Show for</strong> on the wheel, or 00:00 for Until cleared. For a longer message, consider 15 or 30 seconds.</li>
+<li>Inspect the preview and recipient count. Optionally tick <strong>Request Seen acknowledgement</strong>. Use <strong>Test 5 s</strong> to check it reaches the screens in Send to, then tap <strong>Send message</strong>.</li>
 </ol>
 <figure class="app-figure"><a class="zoom-image" href="assets/images/quick-message.png" aria-label="Enlarge: Rich Quick message composer with recipient selection and formatting"><img src="assets/images/quick-message.png" alt="Rich Quick message composer with recipient selection and formatting" loading="lazy" decoding="async"></a><figcaption>Rich Quick message composer with recipient selection and formatting<span>Example app preview · tap to enlarge</span></figcaption></figure>
-<p>The recipients are fixed when you send. Newly joined or reconnected screens do not receive a replay of an earlier message. Other screens keep their normal output. When the message expires or you clear it, its recipients return to their current timer or preceding end/blank output. A segment change, manual cue, Blank, End service or disconnection can supersede the message.</p>
-<p><strong>Seen means a person tapped Mark Seen.</strong> A transport acknowledgement only says the app received data. If you require acknowledgement, watch the per-recipient status. Do not assume silence means agreement, and do not repeatedly resend without checking the recipient list.</p>
-<figure class="app-figure"><a class="zoom-image" href="assets/images/seen.png" aria-label="Enlarge: Example stage message with an explicit Mark Seen action"><img src="assets/images/seen.png" alt="Example stage message with an explicit Mark Seen action" loading="lazy" decoding="async"></a><figcaption>Example stage message with an explicit Mark Seen action<span>Example app preview · tap to enlarge</span></figcaption></figure>
-<p>Use <strong>Save as preset</strong> or <strong>Settings → Quick message presets</strong> for repeatable messages with their formatting. Unsent Quick message drafts can be restored locally; restoring a draft never sends it. Sent messages are temporary and are not restored after restarting the app.</p>
-<p>After End service, messages can still be sent while approved stage screens remain connected and this phone has control. The app asks you to confirm because the service has ended. Sending does not restart the service or change its report. Before any service has run, use <strong>Test screen</strong> for setup rather than a normal Quick message.</p>
+<p>The recipients are fixed when you send. Newly joined or reconnected screens do not receive a replay of an earlier message. Other screens keep their normal output. When the message expires or you clear it, its recipients return to their current timer or preceding end/blank output. A segment change, manual cue, Blank, End service or disconnection can supersede the message. If Send is unavailable, the composer says why.</p>
+<p><strong>Seen means a person tapped Mark seen.</strong> A transport acknowledgement only says the app received data. If you require acknowledgement, watch the "Seen N of M" count and per-recipient status. Web screens show the message but have no Seen button; they are listed as "On screen (web, no Seen)" and left out of the count. Do not assume silence means agreement, and do not repeatedly resend without checking the recipient list.</p>
+<figure class="app-figure"><a class="zoom-image" href="assets/images/seen.png" aria-label="Enlarge: Example stage message with an explicit Mark seen action"><img src="assets/images/seen.png" alt="Example stage message with an explicit Mark seen action" loading="lazy" decoding="async"></a><figcaption>Example stage message with an explicit Mark seen action<span>Example app preview · tap to enlarge</span></figcaption></figure>
+<p>Use <strong>Save preset</strong>, or <strong>Manage presets</strong> and <strong>Settings › Quick message presets</strong>, for repeatable messages with their formatting. Unsent Quick message drafts can be restored locally; restoring a draft never sends it. Sent messages are temporary and are not restored after restarting the app.</p>
+<p>After End service, messages can still be sent while approved stage screens remain connected and this phone has control. The app asks you to confirm because the service has ended. Sending does not restart the service or change its report. Before any service has run, use <strong>Test 5 s</strong> or <strong>Test screen</strong> for setup rather than a normal Quick message.</p>
 <h2 id="10-adjust-the-plan-without-losing-control">10 — Adjust the plan without losing control</h2>
 <p>Use <strong>Service timing overview</strong> to notice drift early. Its estimated finish assumes future segments use their allocations; pauses, overtime and manual advances can change the actual finish.</p>
 <p><strong>Edit upcoming</strong> changes only future segments in this running service. It does not rewrite the current/completed segments, saved program or historical reports. Confirm changes with the service leader before shortening important activities.</p>
 <p>For a structured reduction, open <strong>Recover time</strong> from the Live rundown:</p>
 <ol>
-<li>Enter how many minutes you want to recover.</li>
-<li>Protect segments that must retain their duration.</li>
-<li>Review each proposed before/after duration. Each remaining segment keeps at least one minute.</li>
+<li>Set <strong>Time to recover</strong>.</li>
+<li>Protect segments that must retain their duration (segments with <strong>Protect duration</strong> start protected).</li>
+<li>Choose <strong>Review adjustments</strong> and check each proposed before/after duration. Each remaining segment keeps at least one minute.</li>
 <li>Choose <strong>Apply reviewed adjustments</strong> only after the proposal is suitable. If the service/control state has changed, review again.</li>
 </ol>
 <figure class="app-figure"><a class="zoom-image" href="assets/images/recover-time.png" aria-label="Enlarge: Recover time review with protected segments and before/after durations"><img src="assets/images/recover-time.png" alt="Recover time review with protected segments and before/after durations" loading="lazy" decoding="async"></a><figcaption>Recover time review with protected segments and before/after durations<span>Example app preview · tap to enlarge</span></figcaption></figure>
-<p>Recover time changes allocations; it does not automatically move to the next segment or guarantee a finish time. The current segment keeps running. Future program defaults remain unchanged.</p>
-<p>After several comparable services, open <strong>Reports → Timing insights</strong>. The app requires at least three suitable observations and uses up to the five most recent comparable services for a program. It excludes rehearsals, incomplete/uncertain records, ambiguous segment names and paused time.</p>
-<p>Suggestions use median active duration rounded up. In <strong>Program editor → Learn from previous services</strong>, select only the suggestions you want and <strong>Apply to draft</strong>, then Save. These are planning aids, not instructions to rush a speaker or evidence of why a service ran long.</p>
+<p>Recover time changes allocations of upcoming segments for this running service only; it does not automatically move to the next segment or guarantee a finish time. The current segment keeps running. Future program defaults remain unchanged.</p>
+<p>After several comparable services, open <strong>Reports › ⋮ › Timing insights</strong>. The app requires at least three suitable observations and uses up to the five most recent comparable services for a program. It excludes rehearsals, Quick timers, incomplete/uncertain records, ambiguous segment names and paused time. <strong>Open in program editor</strong> appears when there is a suggestion.</p>
+<p>Suggestions use median active duration rounded up. In <strong>Program editor › Learn from previous services</strong> (offered only when past services can suggest a duration), select only the suggestions you want and <strong>Apply to draft</strong>, then save. These are planning aids, not instructions to rush a speaker or evidence of why a service ran long.</p>
 <h2 id="11-finish-and-hand-over-cleanly">11 — Finish and hand over cleanly</h2>
 <ol>
 <li>Confirm the service really is complete.</li>
 <li>Choose <strong>End service</strong> and confirm.</li>
-<li>Wait for the completed report to save. Live returns to the clean <strong>Standing by</strong> card with <strong>Start service</strong> and <strong>View last report</strong>; the active rundown and timing overview disappear.</li>
-<li>Check the selected screen's program-specific end output. It remains connected. Blank/Unblank and Print Service remain available.</li>
-<li>Open View last report, check the service date and segment timings, and export/print if required.</li>
-<li>Stop sharing when the stage/viewer devices are no longer needed. Deliberately disconnect the LED if the equipment is being handed over or powered down.</li>
+<li>Wait for the completed report to save. Live returns to the <strong>Standing by</strong> card ("Ready when you are") with <strong>Start service</strong>, <strong>Quick timer</strong>, <strong>Share to screens</strong> (or <strong>Manage sharing</strong> while sharing) and <strong>Join a service</strong>, and a <strong>Last service</strong> card with <strong>View last service report</strong>. The active rundown and timing overview disappear.</li>
+<li>Check the selected screen's program-specific end output. It remains connected. The <strong>Stage &amp; display</strong> panel starts closed after a service; open it to blank or unblank, or to send a message or cue after the service.</li>
+<li>Open View last service report, check the service date and segment timings, add a review note if useful, and export or print if required.</li>
+<li><strong>Stop sharing</strong> when the stage, viewer and web devices are no longer needed. Deliberately disconnect the LED if the equipment is being handed over or powered down.</li>
 </ol>
-<figure class="app-figure"><a class="zoom-image" href="assets/images/standing-by.png" aria-label="Enlarge: Standing by after a saved service, with View last report"><img src="assets/images/standing-by.png" alt="Standing by after a saved service, with View last report" loading="lazy" decoding="async"></a><figcaption>Standing by after a saved service, with View last report<span>Example app preview · tap to enlarge</span></figcaption></figure>
-<p>If saving fails, the app retains the completed information and offers <strong>Retry saving report</strong>. Retry rather than starting a duplicate service. It preserves the original finish time and saves one report; successful retry restores the welcome screen automatically. Pending save failure blocks service mutations. Do not clear app storage to remove the message.</p>
-<p>An end screen belongs to the selected program. The default end screen in Settings seeds new programs; changing that default does not overwrite existing program-specific end screens.</p>
+<figure class="app-figure"><a class="zoom-image" href="assets/images/standing-by.png" aria-label="Enlarge: Standing by after a saved service, with the Last service card"><img src="assets/images/standing-by.png" alt="Standing by after a saved service, with the Last service card" loading="lazy" decoding="async"></a><figcaption>Standing by after a saved service, with the Last service card<span>Example app preview · tap to enlarge</span></figcaption></figure>
+<p>If saving fails, the app retains the completed information and offers <strong>Retry saving report</strong>. Retry rather than starting a duplicate service. It preserves the original finish time and saves one report; a successful retry restores the Standing by card automatically. A pending save failure blocks service changes. Do not clear app storage to remove the message.</p>
+<p>An end screen belongs to the selected program. The <strong>Default end screen</strong> in Settings › Display settings seeds new programs; changing that default does not overwrite existing program-specific end screens.</p>
 <h2 id="12-read-export-and-print-reports">12 — Read, export and print reports</h2>
-<p>Reports lists completed services as compact rows with their type, date and duration. Open a row for the segment breakdown and activity history. The Graph view helps compare records. Rehearsals are labelled so they are not confused with real service timing.</p>
+<p>Reports lists completed services as rows with a date badge, the length and start time, and an outcome chip: <strong>On time</strong>, <strong>N min over</strong> (amber) or <strong>N min under</strong> (blue), or "Partial" for an incomplete record. Rehearsals and saved Quick timers are labelled so they are not confused with real service timing. A finished service or segment is always on time, over or under in Reports; Live keeps "ahead" and "behind" for a service still running.</p>
+<figure class="app-figure"><a class="zoom-image" href="assets/images/reports.png" aria-label="Enlarge: Reports list with summary tiles, filters and outcome chips"><img src="assets/images/reports.png" alt="Reports list with summary tiles, filters and outcome chips" loading="lazy" decoding="async"></a><figcaption>Reports list with summary tiles, filters and outcome chips<span>Example app preview · tap to enlarge</span></figcaption></figure>
+<p>Above the list:</p>
+<div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Part</th>
+<th>What it shows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Last live service</strong> tile</td>
+<td>How the latest live service compared with its plan, for example "1 min over". With several services it reads "Last N live services" and adds "avg". It leaves rehearsals out.</td>
+</tr>
+<tr>
+<td><strong>On time</strong> tile</td>
+<td>How many of those services finished on time, for example "0 of 1".</td>
+</tr>
+<tr>
+<td><strong>Most over</strong> tile</td>
+<td>The segment that ran over most.</td>
+</tr>
+<tr>
+<td>Search and <strong>Dates</strong></td>
+<td>Find a service by name, or limit the date range.</td>
+</tr>
+<tr>
+<td>Filters</td>
+<td><strong>All</strong>, <strong>Live only</strong>, <strong>Rehearsals</strong>, and <strong>Quick timers</strong> once one has been saved.</td>
+</tr>
+<tr>
+<td><strong>List</strong> / <strong>Graph</strong></td>
+<td>The Graph starts with bars of minutes over or under plan for the last few services, each date under its own bar. Tap a bar to see that service, for example "Ran 21 min · planned 25 min" with "4 min under", and <strong>Open report</strong>. Planned-vs-actual rows follow below.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Open a row for its <strong>Service report</strong>: planned, actual, variance, paused time and time adjustments, then <strong>Print report</strong> at the foot of that summary card, <strong>Review notes</strong>, the <strong>Segment breakdown</strong> and the <strong>Activity timeline</strong>.</p>
 <figure class="app-figure"><a class="zoom-image" href="assets/images/report.png" aria-label="Enlarge: Example report details and segment durations"><img src="assets/images/report.png" alt="Example report details and segment durations" loading="lazy" decoding="async"></a><figcaption>Example report details and segment durations<span>Example app preview · tap to enlarge</span></figcaption></figure>
-<p>Read actual duration alongside planned and paused time. Activity records can help explain when an operator adjusted time, changed segment or experienced a send failure; they do not prove what a person on stage saw.</p>
-<p>Export one record or all records as CSV/JSON using the available actions. JSON keeps richer report details. Clear one record or all records only after checking the confirmation; deletion has no report Undo. Export first if you need a permanent copy.</p>
-<p><strong>Print Service</strong> is available from program details, Live and report details. From a report, choose the historical service report or rundown. New records preserve the program snapshot, service date and church name used for that service, so editing today's program does not rewrite old speakers or notes. Older records may explicitly lack historical details.</p>
-<p>Print choices:</p>
+<p>Read actual duration alongside planned and paused time. Activity records can help explain when an operator adjusted time, changed segment, answered a stage request or experienced a send failure; they do not prove what a person on stage saw. "Partial or uncertain timing" means the record should be reviewed before comparing it.</p>
+<p><strong>Review notes</strong> are an after-service reflection, such as “Reduce welcome next week”, kept apart from the recorded timings. Use <strong>Add a review note</strong> (or <strong>Edit</strong>). The note shows as "Last time" when the same program is next loaded into Ready, and is optional when exporting or printing.</p>
+<p><strong>Export and share.</strong> A report's <strong>⋮</strong> menu has <strong>Export report CSV</strong>, <strong>Export report JSON</strong> and <strong>Delete report</strong>. To handle several, press and hold a row to select, then use <strong>Share</strong> (Bluetooth, messaging or email) or <strong>Export</strong>: pick a format (report file, spreadsheet or printable PDF) and whether to include review notes. JSON keeps richer report details. <strong>Reports › ⋮ › Export all reports</strong> covers every saved report. Deleting selected reports offers a 10-second Undo; <strong>Delete report</strong> and <strong>Delete all reports</strong> cannot be undone, so export first if you need a permanent copy.</p>
+<p><strong>Print report</strong> is on a report; <strong>Print order of service</strong> is on program details and on Live (the print icon in the Service rundown header). From a report, choose the <strong>Document</strong>: Service report or Service rundown. New records preserve the program snapshot, service date and church name used for that service, so editing today's program does not rewrite old speakers or notes. Older records may explicitly lack historical details.</p>
+<p>Print choices open as a sheet:</p>
 <div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
 <thead>
 <tr>
@@ -411,30 +552,58 @@
 </tr>
 <tr>
 <td>Operator copy</td>
-<td>Enables notes; you may still uncheck them before printing. Review the content before sharing.</td>
-</tr>
-<tr>
-<td>Include church banner</td>
-<td>Selected initially; uses the current configured banner. A historical service snapshot does not freeze the old image.</td>
-</tr>
-<tr>
-<td>Church-name watermark</td>
-<td>Checked by default. A faint bold diagonal church name is used when a name exists. An explicit opt-out is remembered.</td>
+<td>Enables private notes; you may still untick <strong>Include private operator notes</strong> before printing. Review the content before sharing.</td>
 </tr>
 <tr>
 <td>Ink-saving</td>
-<td>Suppresses banner and watermark for this output without erasing the stored watermark choice.</td>
+<td>Omits banner and watermark for this output. It is remembered from your last print.</td>
+</tr>
+<tr>
+<td>Church-name watermark</td>
+<td>A faint bold diagonal church name, used when a name exists. Ticking it turns Ink-saving off.</td>
+</tr>
+<tr>
+<td>Include church banner</td>
+<td>Uses the current configured banner; a historical service snapshot does not freeze the old image. Ticking it turns Ink-saving off.</td>
+</tr>
+<tr>
+<td>Include review notes</td>
+<td>Offered for a report that has one.</td>
 </tr>
 </tbody>
 </table></div>
-<figure class="app-figure"><a class="zoom-image" href="assets/images/print.png" aria-label="Enlarge: Print Service options with copy preset, banner and watermark"><img src="assets/images/print.png" alt="Print Service options with copy preset, banner and watermark" loading="lazy" decoding="async"></a><figcaption>Print Service options with copy preset, banner and watermark<span>Example app preview · tap to enlarge</span></figcaption></figure>
-<p>The PDF repeats table headings and reserves footer space on every page for <strong>Church Service Timer · I-Proton</strong> and <strong>Page N of M</strong>. The footer does not need its own page. Service date and the document's preparation date/time/timezone are separate. Rundowns omit Planned start; historical reports retain useful planned/actual/paused columns.</p>
-<p>Continue to Android's print screen and select a printer or <strong>Save as PDF</strong>. Review the destination and final pages there. Printing a program before it has run offers a date selection. A PDF is an exported copy; later app changes do not update a file already shared.</p>
+<figure class="app-figure"><a class="zoom-image" href="assets/images/print.png" aria-label="Enlarge: Print order of service sheet with copy preset, banner and watermark"><img src="assets/images/print.png" alt="Print order of service sheet with copy preset, banner and watermark" loading="lazy" decoding="async"></a><figcaption>Print order of service sheet with copy preset, banner and watermark<span>Example app preview · tap to enlarge</span></figcaption></figure>
+<p>The PDF repeats table headings and reserves footer space on every page for <strong>Church Service Timer · I-Proton</strong> and <strong>Page N of M</strong>. Service date and the document's preparation date/time/timezone are separate. Rundowns omit Planned start; historical reports retain useful planned/actual/paused columns.</p>
+<p>Choose <strong>Print</strong> to continue to Android's print screen and select a printer or <strong>Save as PDF</strong>, or <strong>Share PDF</strong> to send the sheet directly. Review the destination and final pages. Printing a program before it has run offers a service date. A PDF is an exported copy; later app changes do not update a file already shared.</p>
 <h2 id="13-make-the-workspace-yours">13 — Make the workspace yours</h2>
-<p>Open <strong>Settings → Church profile</strong> to enter the church's name and choose a banner. Use a wide <strong>3:1 image</strong>, ideally <strong>1200 × 400 px</strong>, no larger than <strong>5 MB</strong>. The app crops it proportionally instead of stretching it. Keep essential details away from the edges because of cropping. A built-in banner is available if no custom image is selected.</p>
-<p>The profile gives context to the Reports heading and printed documents. Individual reports retain their captured church name; the current banner is used when printing.</p>
-<p><strong>Appearance</strong> offers seven preset themes and a custom theme editor. Preview the choice, then Save; Cancel or Back discards the preview. Test readability in the actual room, including overtime and warning labels. A beautiful palette is not useful if the operator cannot distinguish a warning at a glance.</p>
-<figure class="app-figure"><a class="zoom-image" href="assets/images/appearance.png" aria-label="Enlarge: Appearance settings with selectable theme rows"><img src="assets/images/appearance.png" alt="Appearance settings with selectable theme rows" loading="lazy" decoding="async"></a><figcaption>Appearance settings with selectable theme rows<span>Example app preview · tap to enlarge</span></figcaption></figure>
+<p>Open <strong>Settings › Church profile</strong>, or tap the logo or mark at the top left of any page. A preview of the page header sits at the top, then three sections and one <strong>Save church profile</strong> button.</p>
+<figure class="app-figure"><a class="zoom-image" href="assets/images/church-profile.png" aria-label="Enlarge: Church profile with logo, church name and banner sections"><img src="assets/images/church-profile.png" alt="Church profile with logo, church name and banner sections" loading="lazy" decoding="async"></a><figcaption>Church profile with logo, church name and banner sections<span>Example app preview · tap to enlarge</span></figcaption></figure>
+<div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Section</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Logo</strong></td>
+<td><strong>Choose logo</strong>, then crop it to a square: drag to move, pinch to zoom, then <strong>Use logo</strong>. It replaces the built-in mark at the top left of every page. <strong>Use built-in mark</strong> puts the original back. The home-screen app icon is unchanged.</td>
+</tr>
+<tr>
+<td><strong>Church name</strong></td>
+<td>Shown at the top of every page, on the opening screen and on new service reports. Services already loaded and older reports keep the name they had.</td>
+</tr>
+<tr>
+<td><strong>Banner</strong></td>
+<td><strong>Choose banner</strong>, then crop it to its 3:1 shape (three times as wide as it is tall), so you choose which part of the photo shows. It is used on printed services and reports. <strong>Use built-in banner</strong> is always available.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Choose a JPEG, PNG or WebP photo up to 5 MB and 40 megapixels. The app saves exactly what is inside the crop frame, and a transparent background stays transparent. Keep essential details away from the edges. The logo and banner are included in backups.</p>
+<p><strong>Appearance</strong> offers thirteen preset themes and <strong>Create custom theme</strong>: Midnight Lime, Royal Navy, Warm Ivory, Deep Plum, Slate Teal, Morning Sky, Sage Linen, Ocean Deep, Cobalt Night, Graphite (clean white, for dark booths), Paper &amp; Ink (near-black ink, for well-lit rooms), <strong>Paper &amp; Ink (blue)</strong> (ink-blue buttons) and Meadow. Preview the choice, then <strong>Save appearance</strong>; Cancel or Back discards the preview. Test readability in the actual room, including overtime and warning labels. A beautiful palette is not useful if the operator cannot distinguish a warning at a glance.</p>
+<figure class="app-figure"><a class="zoom-image" href="assets/images/appearance.png" aria-label="Enlarge: Appearance settings with selectable theme tiles"><img src="assets/images/appearance.png" alt="Appearance settings with selectable theme tiles" loading="lazy" decoding="async"></a><figcaption>Appearance settings with selectable theme tiles<span>Example app preview · tap to enlarge</span></figcaption></figure>
+<p>The <strong>Layout &amp; accessibility</strong> tab sets <strong>Layout density</strong> (Compact, Comfortable, Spacious or Automatic, the default), <strong>High contrast</strong>, <strong>Reduced motion</strong> and the divider style.</p>
 <p>Other useful settings:</p>
 <div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
 <thead>
@@ -445,16 +614,24 @@
 </thead>
 <tbody>
 <tr>
-<td>At Zero</td>
-<td>Shared by every service; normally 00:00 unless a message is configured.</td>
+<td>At zero</td>
+<td>Display settings. Shared by every service: <strong>Show 00:00</strong> or <strong>Custom text</strong>.</td>
 </tr>
 <tr>
 <td>Default end screen</td>
-<td>Starting value for new programs; existing programs keep their own setting.</td>
+<td>Display settings. Starting value for new programs; existing programs keep their own setting.</td>
+</tr>
+<tr>
+<td>Clock format</td>
+<td>Display settings. 12 or 24 hour, and the <strong>Blinking colon</strong> on paired and web screens (on by default).</td>
+</tr>
+<tr>
+<td>LED preview shape</td>
+<td>Display settings. Square or circular visual cells; does not reconfigure physical hardware.</td>
 </tr>
 <tr>
 <td>Warnings &amp; alerts</td>
-<td>Shared rules and phone notification behavior.</td>
+<td>Shared rules, phone alerts, lock-screen controls, clicker and foot pedal.</td>
 </tr>
 <tr>
 <td>Stage cues</td>
@@ -462,22 +639,27 @@
 </tr>
 <tr>
 <td>Quick message presets</td>
-<td>Saved rich messages for mobile stage screens.</td>
+<td>Saved rich messages for stage screens.</td>
 </tr>
 <tr>
-<td>LED preview shape</td>
-<td>Square or circular visual cells; does not reconfigure physical hardware.</td>
+<td>Screens &amp; devices</td>
+<td>Pairing, saved devices, web screens and Requests from the stage.</td>
 </tr>
 <tr>
 <td>Keep screen awake</td>
 <td>Prevents sleep while the app is visible; it is not a guarantee against force-stop or power loss.</td>
 </tr>
 <tr>
+<td>Settings PIN</td>
+<td>Optional lock for Settings, deleting and sign administration. See lesson 15.</td>
+</tr>
+<tr>
 <td>About</td>
-<td>Installed version, creator I-Proton and the consolidated open-source licenses.</td>
+<td>Installed version, creator I-Proton, What's new, Your data, Guided practice, Diagnostics and the open-source licences.</td>
 </tr>
 </tbody>
 </table></div>
+<p>Use <strong>Search settings</strong> at the top of Settings to find a page by name.</p>
 <p>The simulator display profile is a preview assumption until supported hardware is connected and validated. Do not interpret a manually set preview width as a measurement of an unknown sign.</p>
 <h2 id="14-connection-recovery-and-troubleshooting">14 — Connection recovery and troubleshooting</h2>
 <p>Start with the destination badge, not repeated button presses. Identify whether the problem is the phone's network, the app's connection, a held output, or the receiver itself.</p>
@@ -491,11 +673,11 @@
 <tbody>
 <tr>
 <td>Arc counts, LED is unchanged</td>
-<td>Confirm LED sign is selected, the phone is on sign Wi-Fi, and the connection is authenticated. Inspect held/stale status; review and Restore current output when offered.</td>
+<td>Confirm LED sign is selected, the phone is on sign Wi-Fi, and the connection is authenticated. Inspect "Output paused after an interruption"; review and <strong>Restore current output</strong> when offered.</td>
 </tr>
 <tr>
 <td>App disconnects while Android remains on Wi-Fi</td>
-<td>Allow its retry to the remembered controller. Use Reconnect display if required. Re-enter credentials if missing/rejected; do not change passwords as the first troubleshooting step.</td>
+<td>Live shows "Reconnecting to LED sign" with <strong>Reconnect display</strong> and <strong>Stop trying</strong>; timer controls and cues stay usable, and the sign receives current output when it returns. Re-enter credentials only if missing or rejected; do not change passwords as the first troubleshooting step.</td>
 </tr>
 <tr>
 <td>LED counts after Wi-Fi is off</td>
@@ -506,8 +688,24 @@
 <td>Expected on the tested W2 during program replacement. Repeated blinking while a steady timer should run needs investigation.</td>
 </tr>
 <tr>
+<td>The sign did not acknowledge</td>
+<td>"Blanking was not acknowledged" means the previous sign may still show its last output; you can still switch with <strong>Leave output</strong>. A cue showing "Not sent" did not reach the sign. Check the sign itself and its connection before resending.</td>
+</tr>
+<tr>
+<td>Timing was recovered with uncertainty</td>
+<td>After a restart or long interruption the app asks you to <strong>Verify remaining time</strong>. Check and correct it, then <strong>Verify &amp; restore</strong>. The service report keeps its uncertainty marker.</td>
+</tr>
+<tr>
 <td>Pairing host is not found</td>
-<td>Same reachable network, host sharing enabled, no client isolation. Try QR if discovery alone fails. QR cannot fix blocked phone-to-phone traffic.</td>
+<td>Same Wi-Fi, host sharing on, no client isolation. Try <strong>Scan QR code instead</strong> if discovery alone fails. QR cannot fix blocked phone-to-phone traffic.</td>
+</tr>
+<tr>
+<td>Phones on a hotspot can't see each other</td>
+<td>Some sign hotspots, guest Wi-Fi and church networks keep devices apart. Use the host device's own hotspot and join the other devices to it. The host shares again at the new address by itself.</td>
+</tr>
+<tr>
+<td>A browser can't open the web screen</td>
+<td>Use the QR code or the address instead of the easy name (some devices do not open <code>.local</code> names). Check the browser is on the same Wi-Fi and the host is still sharing. On a Windows laptop, the easy name may not work while its Wi-Fi is set to a <strong>Public network</strong>; use the address, or set that network to Private in Windows settings. If a printed address stopped working, the phone got a new address: export the join slide again.</td>
 </tr>
 <tr>
 <td>Mobile preview looks frozen/stale</td>
@@ -515,23 +713,27 @@
 </tr>
 <tr>
 <td>Cue command is rejected</td>
-<td>Check who has control and whether the program, segment or selected cue changed. Refresh/review the current service instead of repeatedly pressing an old control.</td>
+<td>Check who has control and whether the program, segment or selected cue changed. Review the current service instead of repeatedly pressing an old control.</td>
 </tr>
 <tr>
 <td>Warning not visible on stage</td>
-<td>Check enabled rule, time-remaining threshold, destination and connection. Intentional Blank suppresses stage warnings; all-screen Quick messages can take priority.</td>
+<td>Check enabled rule, time-remaining threshold, Where to show and connection. Intentional Blank suppresses stage warnings; all-screen Quick messages can take priority.</td>
 </tr>
 <tr>
 <td>No notification sound</td>
-<td>Check Android permission, channel sound, volume, Do Not Disturb and precise-warning access. Use Test notification sound.</td>
+<td>Check Android permission, channel sound, volume, Do Not Disturb and Precise timing. Use <strong>Test</strong> under Sound and vibration.</td>
+</tr>
+<tr>
+<td>Warnings stop or the timer notification goes quiet with the screen off</td>
+<td>Battery optimisation may pause warnings. Tap the battery hint on Live, or <strong>Allow</strong> on the Battery row in Ready for service, to open the Android setting. If background operation is unavailable, keep the app open.</td>
 </tr>
 <tr>
 <td>Screen is blank but timer runs</td>
-<td>Check for intentional Blank. Tap Unblank screen, or choose Show timer as appropriate.</td>
+<td>Check for intentional Blank. Tap <strong>Unblank screen</strong>, or choose <strong>Show timer</strong> as appropriate.</td>
 </tr>
 <tr>
 <td>Quick message send is disabled</td>
-<td>Phone/tablet destination, sharing, approved synchronized recipients and control are needed. Before the first run, use Test screen.</td>
+<td>Phone, tablet or web screens destination, sharing, connected recipients in Send to and control are needed. The composer says which is missing. Before the first run, use <strong>Test 5 s</strong>.</td>
 </tr>
 <tr>
 <td>Controller administration is disabled</td>
@@ -539,52 +741,57 @@
 </tr>
 <tr>
 <td>Report save fails</td>
-<td>Use Retry saving report. Keep the completed information; do not clear data or create a duplicate run.</td>
+<td>Use <strong>Retry saving report</strong>. Keep the completed information; do not clear data or create a duplicate run.</td>
 </tr>
 <tr>
 <td>Cannot find timing suggestions</td>
-<td>At least three comparable completed services are needed. Rehearsals, ambiguous names and incomplete/uncertain records are excluded.</td>
+<td>At least three comparable completed services are needed. Rehearsals, Quick timers, ambiguous names and incomplete/uncertain records are excluded.</td>
 </tr>
 </tbody>
 </table></div>
 <p>The LED connection tolerates brief health-check misses before reconnecting. Retry delay rises from about two to thirty seconds. Within the same trusted active service, recovery restores the latest intended output against the original deadline; it does not replay every missed update.</p>
-<p><strong>Deliberate Disconnect, Forget display, or another output selection stops LED retries.</strong> A saved credential does not override that choice. Restarting the app, uncertain timing, a long absence or an existing output hold can require review before restoration.</p>
+<p><strong>Deliberate Disconnect, Forget this sign, or another output selection stops LED retries.</strong> A saved credential does not override that choice. Restarting the app, uncertain timing, a long absence or an existing output hold can require review before restoration.</p>
 <p>For an interruption during worship: keep one responsible operator in control, establish what the stage is actually seeing, restore connectivity, check the timer against the real activity, and restore current output once. A second person should not open another independent LED app and compete for the sign.</p>
 <h2 id="15-protect-data-and-manage-the-led-device">15 — Protect data and manage the LED device</h2>
-<p>Use <strong>Settings → Backup &amp; restore → Export backup</strong> before changing phones or replacing a setup. Backups include saved programs, cues, reports and preferences, including the reduced church banner. Keep exports containing private notes in an appropriate place.</p>
-<p>Restoring replaces saved data on the target phone after review. Export its current setup first if it should be kept. Portable backups do <strong>not</strong> transfer an active clock, phone permissions, LED credentials, pairing approvals, local editing drafts or a live display connection. Reconnect and approve equipment again as needed.</p>
-<p><strong>LED device management is for the sign, not the phone or tablet.</strong> Its Open Wi-Fi and Connect/Reconnect LED display actions help reach the correct network and controller. Revealing a saved password shows the app's local copy; it does not retrieve an unknown current password from the sign. Saving a known Wi-Fi password locally does not change the sign's Wi-Fi configuration.</p>
+<p>Use <strong>Settings › Backup &amp; restore › Export backup</strong> before changing phones or replacing a setup. Backups include saved programs (with version history), the segment library, cues, reports, preferences and the church profile, including the logo and reduced banner. Keep exports containing private notes in an appropriate place.</p>
+<p>Saved sign passwords are left out unless you tick <strong>Include saved passwords</strong>, which encrypts them with a <strong>Passphrase</strong> you choose. Restoring asks for that passphrase; skipping it or a wrong passphrase still restores everything else.</p>
+<p>Restoring replaces saved data on the target phone after review (<strong>Restore and replace</strong>). Export its current setup first if it should be kept. Backups do <strong>not</strong> transfer an active clock, phone permissions, pairing approvals, the Settings PIN, received programs waiting for review, local editing drafts or a live display connection. Reconnect and approve equipment again as needed.</p>
+<p><strong>Settings PIN</strong> (optional, 4–8 digits) locks Settings, deleting programs and reports, and LED sign administration; Live, Programs and Reports stay open. Setting it shows a one-time recovery code that removes the PIN if forgotten (<strong>Forgot PIN?</strong>). Settings lock again whenever the app leaves the screen. <strong>Turn off PIN</strong> removes it.</p>
+<p><strong>LED device management is for the sign, not the phone or tablet.</strong> It shows the saved <strong>Wi-Fi password</strong> and <strong>Connection password</strong>, with <strong>Show</strong> on each row and change or forget in the row's <strong>⋮</strong> menu. Once connected, <strong>Open Wi-Fi</strong> and <strong>Details</strong> help reach the correct network and controller. Revealing a saved password shows the app's local copy; it does not retrieve an unknown current password from the sign. Saving a known Wi-Fi password locally does not change the sign's Wi-Fi configuration.</p>
 <p>Changing the sign's Wi-Fi name or passwords requires a supported authenticated LED connection, the correct Wi-Fi, an ended service and stopped sharing. Reserve this for the equipment administrator outside a live service. Keep the current and intended new details available until reconnection verifies the change.</p>
-<p>The administration setters have automated/packet validation, but physical password/Wi-Fi write-and-reconnect acceptance remains outstanding for this build. A controller acknowledgement is not proof that a new password works after reconnection. An uncertain result should be verified before retrying. Do not alter scan, polarity or firmware settings as part of normal operator onboarding.</p>
-<p>For help, open <strong>Settings → Feedback Center</strong>. Enter a title, a clear description and your contact. Optional diagnostics can be reviewed before inclusion. The app opens a draft to <strong>immanuelproton@gmail.com</strong>; you must send it in your email app. <strong>Copy feedback</strong> is the fallback. No automatic support delivery or response time is promised.</p>
-<p>Describe the app version, output type, steps, expected result and actual result. Avoid including passwords, pairing QR codes or private speaker notes. The feedback form is not saved after leaving/restarting, so copy important text before closing it.</p>
+<p>The administration setters have automated/packet validation, but physical password/Wi-Fi write-and-reconnect acceptance remains outstanding for this build. A controller acknowledgement is not proof that a new password works after reconnection. If there is "No acknowledgement", the setting may have changed: rejoin using the new details first, and do not repeatedly apply the change. Do not alter scan, polarity or firmware settings as part of normal operator onboarding.</p>
+<p>For help, open <strong>Settings › Feedback centre</strong>. Enter a title, a message and your contact. <strong>Include optional diagnostics</strong> can be reviewed before inclusion. <strong>Open email app</strong> opens a draft to <strong>immanuelproton@gmail.com</strong>; you must send it in your email app. <strong>Copy feedback</strong> is the fallback. No automatic support delivery or response time is promised.</p>
+<p>Describe the app version, output type, steps, expected result and actual result. Avoid including passwords, pairing QR codes or private speaker notes. Copy important text before closing the form.</p>
+<p>For a performance problem, <strong>Settings › About › Diagnostics › Record service metrics</strong> records the next service on this phone (memory, battery, smoothness, timer accuracy, warning timing and reconnections), then switches itself off. It records no service content or people, and nothing leaves the phone until you tap <strong>Share recording</strong>.</p>
 <h2 id="16-trainer-session-and-readiness-checklist">16 — Trainer session and readiness checklist</h2>
-<p>Suggested coached session: 10 minutes explaining roles and output, 15 minutes of simulator practice, 15 minutes on the actual connected equipment, then 10 minutes of recovery and reporting. These are teaching estimates, not app timers.</p>
+<p>Suggested coached session: 10 minutes explaining roles and output, 15 minutes of simulator practice (guided practice is a good start), 15 minutes on the actual connected equipment, then 10 minutes of recovery and reporting. These are teaching estimates, not app timers.</p>
 <h3 id="before-the-service">Before the service</h3>
 <ul>
-<li>Confirm the installed version and the program, speakers, allocations and end screen.</li>
+<li>Confirm the installed version on every phone, and the program, speakers, allocations and end screen.</li>
 <li>Choose the intended destination and confirm the physical screen with another person.</li>
-<li>Check phone power, network reachability and notification sound.</li>
+<li>Check phone power, battery optimisation, network reachability and notification sound.</li>
 <li>Review shared warning thresholds and prepared cues with the service leader.</li>
 <li>Agree who hosts and who has control; name and approve receivers deliberately.</li>
-<li>Use <strong>Ready for service</strong> to review the app checklist. An isolated simulator test is not proof of physical delivery.</li>
+<li>If browsers will follow, check the guest code, team code and join slide are current.</li>
+<li>Open <strong>⋮ › Ready for service</strong> on Live to review the app checklist. An isolated simulator test is not proof of physical delivery.</li>
 <li>Review stage-message recipients and screen groups; do not use a real congregation-facing screen for an unannounced test.</li>
 </ul>
 <h3 id="during-the-service">During the service</h3>
 <ul>
 <li>Watch both the current segment and the whole-service timing overview.</li>
-<li>Use Next segment when the real activity changes; do not rely on automatic advance.</li>
+<li>Use Next when the real activity changes; do not rely on automatic advance.</li>
 <li>Read confirmation dialogs before time adjustments or ending.</li>
-<li>Keep cues concise; target rich messages carefully and distinguish Synced from Seen.</li>
+<li>Keep cues concise; target rich messages carefully and distinguish delivery from Seen.</li>
+<li>Answer stage requests promptly with Acknowledge, Dismiss or Add 2 min.</li>
 <li>Check any disconnected/stale/held indication before assuming output is current.</li>
 <li>Keep the host powered; control handover does not move the service to another phone.</li>
 </ul>
 <h3 id="after-the-service">After the service</h3>
 <ul>
-<li>End once, confirm the report saved, and inspect View last report.</li>
+<li>End once, confirm the report saved, and inspect View last service report. Add a review note while it is fresh.</li>
 <li>Print or export the right copy; inspect private-note inclusion before distribution.</li>
 <li>Stop sharing and deliberately disconnect equipment when appropriate.</li>
-<li>Record an issue or useful program improvement while it is fresh.</li>
+<li>Record an issue or useful program improvement.</li>
 <li>Back up the configuration after significant changes.</li>
 </ul>
 <h3 id="competency-drills">Competency drills</h3>
@@ -607,11 +814,15 @@
 </tr>
 <tr>
 <td>Cue and return</td>
-<td>Sends a prepared cue and returns to the lower current countdown.</td>
+<td>Sends a prepared cue and returns to the current countdown.</td>
 </tr>
 <tr>
 <td>Overtime transition</td>
-<td>Recognizes red overtime and starts the next segment correctly.</td>
+<td>Recognises red overtime and starts the next segment correctly.</td>
+</tr>
+<tr>
+<td>Quick timer</td>
+<td>Starts a named 10 min timer, explains Save as a report, and ends it with End timer.</td>
 </tr>
 <tr>
 <td>Message targeting</td>
@@ -654,8 +865,12 @@
 <td>Loaded and reviewed, but not counting yet.</td>
 </tr>
 <tr>
+<td>Quick timer</td>
+<td>A single countdown with no program or Ready step; saved only if you choose.</td>
+</tr>
+<tr>
 <td>Host</td>
-<td>The phone that owns the service clock, saving and output.</td>
+<td>The device that owns the service clock, saving and output.</td>
 </tr>
 <tr>
 <td>Stage cue</td>
@@ -663,23 +878,31 @@
 </tr>
 <tr>
 <td>Quick message</td>
-<td>A richer temporary message for selected mobile stage screens.</td>
+<td>A richer temporary message for selected stage screens.</td>
 </tr>
 <tr>
-<td>At Zero</td>
-<td>Shared output behavior when a segment expires.</td>
+<td>Web screen</td>
+<td>A browser on the same Wi-Fi following the service; it cannot control it.</td>
+</tr>
+<tr>
+<td>Guest code / team code</td>
+<td>The guest code opens Order of service and stays the same each week; the team code also opens Stage display and Service overview, and changes each time you share.</td>
+</tr>
+<tr>
+<td>At zero</td>
+<td>Shared output behaviour when a segment expires.</td>
 </tr>
 <tr>
 <td>End screen</td>
 <td>The selected program's output after End service.</td>
 </tr>
 <tr>
-<td>Controller accepted / Synced</td>
+<td>Controller accepted / Stage screens received</td>
 <td>Data acknowledged by the receiver; not optical verification.</td>
 </tr>
 <tr>
 <td>Seen</td>
-<td>An explicit human acknowledgement on a recipient stage screen.</td>
+<td>An explicit human acknowledgement on a paired stage screen.</td>
 </tr>
 <tr>
 <td>Disconnect</td>
@@ -695,18 +918,20 @@
 <ol>
 <li>If the main arc moves, does that prove the LED sign is current? <strong>No. Check connection/acknowledgement and the physical output.</strong></li>
 <li>Does Blank screen pause the countdown? <strong>No. It hides output while time continues.</strong></li>
-<li>A ten-minute segment has a warning at 01:30. When does it trigger? <strong>At one minute thirty seconds remaining, normally eight minutes thirty seconds after starting.</strong></li>
+<li>A ten-minute segment has a warning at 01:30. When does it trigger? <strong>At 1 min 30 s remaining, normally 8 min 30 s after starting.</strong></li>
 <li>Will a newly reconnected receiver replay a Quick message sent earlier? <strong>No. Recipients are fixed at send time and missed messages are not replayed.</strong></li>
 <li>Does changing the default end screen update all saved programs? <strong>No. Edit an existing program's own end screen.</strong></li>
 <li>Can a second operator take control just by pairing? <strong>No. The host must approve it and grant control explicitly.</strong></li>
 <li>What do you do if End service cannot save its report? <strong>Use Retry saving report; preserve the completed information.</strong></li>
 <li>Should a Stage print copy include private notes? <strong>No. Operator copy is a separate deliberate choice.</strong></li>
+<li>Does a Quick timer appear in Reports? <strong>Only if Save as a report was turned on; then it is marked Quick timer.</strong></li>
+<li>Can someone with the guest code see the stage countdown in a browser? <strong>No. The guest code opens only Order of service; Stage display needs the team code.</strong></li>
 </ol>
 <h3 id="current-scope">Current scope</h3>
-<p>This guide covers Android 0.18.0. Desktop/iOS releases and universal LED compatibility are not provided by this build. The original Matrix glyphs and square-matrix glyphs are unchanged. Tinos is bundled; installed/imported font loading is not part of the workflow.</p>
-<p>Physical checks have established the supported W2 countdown, expected one-blink transitions, scrolling warnings returning to the current timer, and Next segment after overtime. Full-service endurance, power-loss acceptance and controller administration writes still require controlled hardware validation. New 0.18 features passed automated checks; hands-on testing of that release remains the user's responsibility.</p>
+<p>This guide covers Android 0.30.0. Desktop/iOS apps and universal LED compatibility are not provided by this build; browsers can only follow a service as web screens, never control it. The original Matrix glyphs and square-matrix glyphs are unchanged. Tinos is bundled; installed/imported font loading is not part of the workflow. LED countdowns, segments and Quick timers stay within 59:59.</p>
+<p>Physical checks have established the supported W2 countdown, expected one-blink transitions, scrolling warnings returning to the current timer, and Next segment after overtime. Full-service endurance, power-loss acceptance and controller administration writes still require controlled hardware validation. Web screens, guided practice, Quick timer, stage requests and the other features added from 0.19 to 0.30 are described here from the app's release notes and on-screen wording; behaviour on your phones, routers, browsers and projectors has not been verified by this handbook, so hands-on testing of that release remains the user's responsibility.</p>
 <p>The online handbook and this Markdown guide are training materials, not a remote-control interface. Nothing in the handbook can connect to a sign, start a service or send a stage cue.</p></article></div>
-<footer class="page-footer"><img src="assets/chapel.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.18.0 · Updated 21 October 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
+<footer class="page-footer"><img src="assets/chapel.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.30.0 · Updated 10 November 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
 </main></div>
 <dialog id="image-dialog" aria-label="Enlarged app screenshot"><button type="button" class="close-dialog" aria-label="Close enlarged screenshot">Close ✕</button><img alt=""><p></p></dialog>
 <noscript><div class="noscript-note">All lessons and the full guide work without JavaScript. Search, progress tracking and the practice quiz need JavaScript.</div></noscript>

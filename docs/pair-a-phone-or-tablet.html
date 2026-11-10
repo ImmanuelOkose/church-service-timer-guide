@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Pair a phone or tablet · Church Service Timer Handbook</title>
-<meta name="description" content="Approve stage screens and operators, assign layouts, and manage saved devices.">
+<meta name="description" content="Approve stage screens and operators, open web screens in a browser, and manage saved devices.">
 <meta name="theme-color" content="#11271e">
 <meta name="color-scheme" content="light">
 <meta property="og:title" content="Pair a phone or tablet · Church Service Timer">
-<meta property="og:description" content="Approve stage screens and operators, assign layouts, and manage saved devices.">
+<meta property="og:description" content="Approve stage screens and operators, open web screens in a browser, and manage saved devices.">
 <meta property="og:type" content="website">
 <link rel="icon" href="assets/chapel.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/handbook.css">
@@ -17,7 +17,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar">
 <a class="brand" href="index.html"><img src="assets/chapel.svg" width="42" height="42" alt=""><span>Church Service Timer<small>THE OPERATOR HANDBOOK</small></span></a>
-<div class="header-actions"><span class="version">ANDROID 0.18.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
+<div class="header-actions"><span class="version">ANDROID 0.30.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
 <button class="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">Lessons <span aria-hidden="true">☰</span></button></div>
 </header>
 <div class="layout">
@@ -50,20 +50,22 @@
 <a class="full-guide-link" href="complete-guide.html">Full guide & printing <span aria-hidden="true">↗</span></a>
 <a class="sidebar-privacy" href="privacy-policy/index.html">Privacy policy</a>
 </aside>
-<main id="main" tabindex="-1"><div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">LESSON 06 / 17 <span>3 MIN READ</span></p>
-<h1 id="06-pair-a-phone-or-tablet">Pair a phone or tablet</h1><p class="chapter-deck">Approve stage screens and operators, assign layouts, and manage saved devices.</p></header>
-
-<article class="prose"><p>Use one phone as the <strong>host</strong>. It owns the clock and saved data. The other devices join as stage displays, viewers or additional operators.</p>
-<p><strong>Network first:</strong> place devices on a normal router or a third device's hotspot that permits local traffic. Internet is not required. The tested LED sign's hotspot isolates its clients, so two phones on that hotspot could not pair with each other. QR codes do not bypass this restriction. Hosting on the same phone that supplies a hotspot is not verified in this build.</p>
+<main id="main" tabindex="-1"><div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">LESSON 06 / 17 <span>6 MIN READ</span></p>
+<h1 id="06-pair-a-phone-or-tablet">Pair a phone or tablet</h1><p class="chapter-deck">Approve stage screens and operators, open web screens in a browser, and manage saved devices.</p></header>
+<nav class="on-this-page" aria-label="On this page"><strong>In this lesson</strong><a href="#web-screens-in-a-browser">Web screens in a browser</a><a href="#requests-from-the-stage">Requests from the stage</a></nav>
+<article class="prose"><p>Use one device as the <strong>host</strong>. It owns the clock and saved data. Other phones and tablets join as stage displays, viewers or additional operators; browsers can follow as web screens.</p>
+<p><strong>Network first:</strong> put the devices on the same Wi-Fi or on the host phone's own hotspot. Internet is not required. Some sign hotspots, guest Wi-Fi and church networks keep devices apart ("client isolation"), so phones on them cannot reach each other; the app's advice is then to use the host device's hotspot. QR codes do not bypass isolation. If the host moves to another network while sharing, for example when you turn its hotspot on, it shares again at the new address by itself; approved devices, the team code and joined browsers carry over.</p>
+<figure class="app-figure"><a class="zoom-image" href="assets/images/screens-devices.png" aria-label="Enlarge: Screens &amp; devices before sharing, with Share to screens and Join a service"><img src="assets/images/screens-devices.png" alt="Screens &amp; devices before sharing, with Share to screens and Join a service" loading="lazy" decoding="async"></a><figcaption>Screens &amp; devices before sharing, with Share to screens and Join a service<span>Example app preview · tap to enlarge</span></figcaption></figure>
 <ol>
-<li>On the host, choose <strong>Phone or tablet</strong>, then <strong>Share to stage screens</strong>. To share viewer/operator access while retaining LED output, use <strong>Settings → Paired devices → Share this service</strong> instead.</li>
-<li>On a stage phone's Live welcome card, choose <strong>Join as stage screen</strong>. For a viewer or operator role, open <strong>Settings → Paired devices → Join another operator</strong> and select the role.</li>
-<li>Give the joining device a clear name, select the nearby host, and enter its <strong>six-digit code</strong>, including leading zeros. Alternatively, scan the host's QR code using <strong>Scan QR code instead</strong>.</li>
-<li>The host reviews and approves the joining device. Knowing the code is not enough by itself.</li>
-<li>For stage use, open <strong>Use as stage display</strong>. The receiver enters landscape full screen. Tap to reveal its overview/exit tools.</li>
-<li>Check the host's recipient/connection list and use Test screen before going live. <strong>Go to Live</strong> returns from device management without ending sharing.</li>
+<li>On the host, tap <strong>Share to screens</strong> on Live (or <strong>Settings › Screens &amp; devices</strong>). From Choose display › Phone, tablet or web screens, the button is <strong>Share to stage screens</strong>, which also turns on stage output. Sharing to screens alone keeps LED output.</li>
+<li>On the joining device, tap <strong>Join a service</strong> on Live. Give it a clear <strong>Device name</strong> and choose <strong>Use this device as</strong>: <strong>Service viewer</strong>, <strong>Stage display</strong> or <strong>Additional operator</strong>.</li>
+<li>Select the host under Nearby hosts and enter its <strong>six-digit code</strong>, including leading zeros, then <strong>Join service</strong>. Alternatively, use <strong>Scan QR code instead</strong> with the host's <strong>Show QR code</strong>.</li>
+<li>The host reviews and <strong>Approve</strong>s the joining device. Knowing the code is not enough by itself.</li>
+<li>A stage display opens in landscape full screen. Tap to reveal its overview and exit tools (<strong>Back to service overview</strong>, <strong>Open stage display</strong>).</li>
+<li>Check the host's Saved devices list and use <strong>Test screen</strong> before going live. <strong>Return to Live</strong> leaves Screens &amp; devices without ending sharing.</li>
 </ol>
-<p>Invitations expire after ten minutes. If an invitation expires or PIN attempts are exhausted, use <strong>New code</strong> on the host. A new invitation does not remove already approved devices. Never publish a live pairing code or QR image in training materials.</p>
+<p>When joining, a phone can offer <strong>Rejoin this Wi-Fi automatically</strong>: it notes the network it is on (church Wi-Fi, the host's hotspot or the sign's Wi-Fi) and rejoins only that network if the link drops.</p>
+<p>Codes expire after ten minutes. If a code expires or its attempts are exhausted, use <strong>New code</strong> on the host. A new code does not remove already approved devices. Never publish a live pairing code or QR image in training materials.</p>
 <div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
 <thead>
 <tr>
@@ -74,14 +76,14 @@
 <tbody>
 <tr>
 <td>Host</td>
-<td>Owns timing, reports and output; approves devices and can reclaim control. Keep it powered and connected.</td>
+<td>Owns timing, reports and output; approves devices and can take back control. Keep it powered and connected.</td>
 </tr>
 <tr>
 <td>Additional operator</td>
-<td>Initially observes; the host must explicitly give it control. Only one operator controls at a time. Private notes become available when control is granted.</td>
+<td>Initially observes and can <strong>Request control</strong>; the host must explicitly <strong>Give control</strong>. Only one operator controls at a time. Private notes become visible when control is granted.</td>
 </tr>
 <tr>
-<td>Viewer</td>
+<td>Service viewer</td>
 <td>Observes service information without control or private operator notes.</td>
 </tr>
 <tr>
@@ -91,13 +93,51 @@
 </tbody>
 </table></div>
 <p>Handing over control does <strong>not</strong> move the service to the other phone. If that operator disconnects, control returns to the host. Reconnection does not silently restore its control grant.</p>
-<p>For each saved screen, set a recognizable name, a group (<strong>General, Preacher, Choir, Media desk</strong>) and layout (<strong>Timer only, Timer + current segment, Timer + next segment</strong>). The host can choose which acknowledged screen to inspect in the preview.</p>
+<p>For each saved screen, use <strong>Screen options</strong> to set a recognisable name, a <strong>Screen group</strong> (<strong>General, Preacher, Choir, Media desk</strong>) and a <strong>Screen layout</strong> (<strong>Timer only, Timer + current segment, Timer + next segment</strong>). The host can choose which acknowledged screen to inspect in the preview.</p>
 <figure class="app-figure"><a class="zoom-image" href="assets/images/stage-layout.png" aria-label="Enlarge: Example stage display with the next segment beneath the countdown"><img src="assets/images/stage-layout.png" alt="Example stage display with the next segment beneath the countdown" loading="lazy" decoding="async"></a><figcaption>Example stage display with the next segment beneath the countdown<span>Example app preview · tap to enlarge</span></figcaption></figure>
-<p><strong>Disconnect</strong> keeps a device saved but pauses its service access. <strong>Reconnect</strong> on the host can restore it without another code when the receiver app is available on the same reachable network. <strong>Forget device</strong> revokes approval and requires pairing again. If the receiver deliberately leaves, it must choose <strong>Reconnect saved host</strong> to rejoin. Stop sharing is deliberate; host sharing does not automatically restart on app launch.</p>
-<p>One host with three stage receivers is within the current eight-connection cap, which also counts pending connections. That cap is not a guarantee of performance on every router or phone; rehearse the exact setup.</p></article>
+<p><strong>Disconnect</strong> keeps a device saved but pauses its service access. <strong>Reconnect</strong> on the host can restore it without another code when the receiver app is available on the same reachable network. <strong>Forget device</strong> revokes approval and requires pairing again. If the receiver deliberately leaves, it must choose <strong>Reconnect saved host</strong> to rejoin. <strong>Stop sharing</strong> is deliberate; host sharing does not automatically restart on app launch.</p>
+<p>One host with three stage receivers is within the current eight-connection cap for paired devices, which also counts pending connections. That cap is not a guarantee of performance on every router or phone; rehearse the exact setup.</p>
+<h3 id="web-screens-in-a-browser">Web screens in a browser</h3>
+<p>While sharing, <strong>Settings › Screens &amp; devices › Web screens</strong> shows three ways for a browser on the same Wi-Fi to open the page:</p>
+<ol>
+<li><strong>Easy name</strong>, made from the church name, for example <code>grace-community.local:8080</code>. iPhones, iPads, Macs and most laptops open it; some Android phones do not. <strong>Change easy name</strong> edits it.</li>
+<li><strong>QR code</strong>, which any phone camera reads.</li>
+<li><strong>Address</strong>, the phone's own address such as <code>192.168.1.23:8080</code>, as a last resort.</li>
+</ol>
+<div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Browser view</th>
+<th>Shows</th>
+<th>Needs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Order of service</td>
+<td>The rundown with the current item marked <strong>NOW</strong>; no times. Speakers only if <strong>Show speakers in the order of service</strong> is on.</td>
+<td>The <strong>guest code</strong> (4 digits, the same each week until you tap <strong>Change guest code</strong>), or nothing if set to open.</td>
+</tr>
+<tr>
+<td>Stage display</td>
+<td>The full-screen countdown, cues and Quick messages.</td>
+<td>The <strong>team code</strong>.</td>
+</tr>
+<tr>
+<td>Service overview</td>
+<td>Time left, ahead or behind, finish time and the rundown with durations and speakers.</td>
+<td>The <strong>team code</strong>.</td>
+</tr>
+</tbody>
+</table></div>
+<p>The 6-digit team code changes each time you share, or with <strong>New team code</strong>, and unlocks switching between all three views. Order of service access can be <strong>Off</strong>, <strong>Needs the guest code</strong> (the default) or <strong>Open to anyone on this Wi-Fi</strong>. Changing a code signs out the browsers that used the old one. No browser can control the service or see private notes.</p>
+<p><strong>Export join slide</strong> makes an image with the church name, a large QR code, the easy name, the guest code and the address, ready to project. Pick the screen it is for (16:9 HD or 4K, 16:10, 4:3, Portrait 9:16 or Square) and dark or light. If the phone's address changes afterwards, the panel says the slide is out of date: export it again. A printed address or QR stops working if the router gives the phone a new address, so ask for the address to be reserved on the router, or show the join slide instead.</p>
+<p>A browser shows a red "Connection to the host device lost · reconnecting…" banner and fades the countdown within about five seconds of the host going quiet, and picks up again by itself when the host returns. On a web Stage display, the <strong>Full screen</strong> chip becomes <strong>Exit full screen</strong>.</p>
+<h3 id="requests-from-the-stage">Requests from the stage</h3>
+<p>When <strong>Requests from the stage</strong> is switched on in Screens &amp; devices (off by default), a presenter can quietly ask the operator for something during a service, from a paired stage screen or a team-code web Stage display. A small <strong>Request</strong> button offers three fixed choices: <strong>Need 2 minutes</strong>, <strong>Ready to finish</strong> and <strong>Microphone issue</strong>; there is no free text. How the operator answers is in <a href="operate-a-live-service.html">Operate a live service</a>.</p></article>
 <div class="lesson-complete"><div><strong>A moment to reflect.</strong><p>Could you explain this workflow to another operator?</p></div><button type="button" data-complete="pair-a-phone-or-tablet" aria-pressed="false">Mark lesson as read</button></div>
 <nav class="chapter-pagination" aria-label="Lesson pagination"><a href="connect-the-led-sign.html"><span>PREVIOUS LESSON</span>Connect the LED sign</a><a href="operate-a-live-service.html"><span>NEXT LESSON</span>Operate a live service →</a></nav></div>
-<footer class="page-footer"><img src="assets/chapel.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.18.0 · Updated 21 October 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
+<footer class="page-footer"><img src="assets/chapel.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.30.0 · Updated 10 November 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
 </main></div>
 <dialog id="image-dialog" aria-label="Enlarged app screenshot"><button type="button" class="close-dialog" aria-label="Close enlarged screenshot">Close ✕</button><img alt=""><p></p></dialog>
 <noscript><div class="noscript-note">All lessons and the full guide work without JavaScript. Search, progress tracking and the practice quiz need JavaScript.</div></noscript>
