@@ -1,6 +1,10 @@
 # Screenshot provenance
 
-These PNG files are unchanged copies of reviewed automated app previews from Church Service Timer's test/goldens directory; the set now comes from the 0.18.0–0.30.0 previews, and every file below was refreshed from the 0.30.0 goldens. They illustrate example states and do not show real phone sessions. No live pairing code/QR, revealed password, raw device log, or user-supplied photograph is included.
+These PNG files come from reviewed automated app previews in Church Service Timer's test/goldens directory. The whole set was refreshed for the 0.34.0 handbook from the previews on the app's main branch. They illustrate example states with sample data and do not show real phone or PC sessions. No live pairing code or QR, revealed password, raw device log, or user-supplied photograph is included.
+
+Every file was re-compressed without loss (oxipng), so the pixels match the preview. Three files differ from a plain copy, as noted in the second table.
+
+## Phone and tablet
 
 | Public filename | Original fixture |
 | --- | --- |
@@ -21,5 +25,40 @@ These PNG files are unchanged copies of reviewed automated app previews from Chu
 | church-profile.png | church-profile-custom-phone.png |
 | reports.png | report-list-phone.png |
 | screens-devices.png | settings-screens-devices.png |
+
+## PC (wide window) and stage
+
+| Public filename | Original fixture |
+| --- | --- |
+| desktop-mission-control.png | desktop-mission-control-1080.png |
+| desktop-mission-control-large.png | desktop-mission-control-1440.png |
+| desktop-live-home.png | desktop-standing-by-1080.png |
+| desktop-three-panes.png | desktop-three-panes-1080-paper.png |
+| desktop-dial.png | desktop-dial-1080.png |
+| desktop-keys.png | desktop-keys-1080.png |
+| desktop-classic.png | desktop-classic-1440.png, scaled from 2560 × 1440 to 1920 × 1080 |
+| desktop-layout-settings.png | desktop-layout-settings.png |
+| second-screen-live.png | desktop-second-screen-live.png |
+| second-screen-settings.png | desktop-screens-devices.png |
+| full-screen-confirm.png | desktop-host-full-screen-confirm.png |
+| stage-simulator.png | desktop-stage-simulator-live.png |
+| shortcuts.png | desktop-shortcuts-sheet.png |
+| commands.png | command-palette.png |
+| clicker-test.png | desktop-clicker-test.png |
+| cue-on-screens.png | desktop-cue-editor-screens.png |
+| cue-banner.png | stage-cue-amber-banner.png |
+| stage-cues-desktop.png | desktop-settings-stage-cues-stage-screen.png |
+| warnings-desktop.png | desktop-settings-warnings.png |
+| programs-desktop.png | desktop-programs.png |
+| reports-dates.png | desktop-date-range.png |
+| reports-desktop.png | Rendered for the handbook by the fixture behind desktop-date-range.png (the same sample reports, dated 2026), without the calendar open |
+| mini-timer.png | Rendered for the handbook by the fixture behind mini-timer.png, at twice the pixel density (760 × 300) |
+
+## Adding or replacing an image
+
+- Copy the preview, or render it from the app's own test fixtures. Do not edit the pixels.
+- Look at it before publishing: no pairing code, QR, password, address of a real network or real person's name.
+- Keep it PNG (the site's check allows nothing else), compress it without loss, and keep wide shots at 1920 pixels across unless the larger size is the point.
+- Give it alt text that says what the screen shows; the site uses the same words as the caption.
 
 Future photo placeholders: replace only with an authorized, credential-free photograph of the church's actual operator desk or stage screen. Keep captions explicit about examples versus real equipment.

@@ -1,17 +1,21 @@
 ﻿# Church Service Timer - operator handbook
 
-Onboarding and reference guide for Church Service Timer 0.30.0 by I-Proton.
+Onboarding and reference guide for Church Service Timer 0.34.0 by I-Proton,
+for Android phones and tablets and Windows PCs.
 
 Website: https://immanuelokose.github.io/church-service-timer-guide/
 Source: [teaching.md](teaching.md) and [privacy-policy.md](privacy-policy.md)
 (published at /privacy-policy/).
 
-Includes 17 lessons, example screenshots, troubleshooting, a trainer checklist,
+Includes 22 lessons, example screenshots, troubleshooting, a trainer checklist,
 search, reading progress and a printable complete guide.
 
 ## Update the guide
 
-Edit teaching.md and approved example images in site/assets/images.
+Edit teaching.md, release-notes.md and approved example images in
+site/assets/images. When the app version changes, also update VERSION and
+UPDATED in scripts/build-handbook.py; when lessons are added or removed, update
+GROUPS and SUMMARIES there.
 With Python 3.11 or newer, run from this repository:
 
     python -m pip install --require-hashes -r site/requirements.txt
