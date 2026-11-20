@@ -6,16 +6,41 @@ What changed in each version of Church Service Timer, newest first, in short. Up
 
 Not released yet. These are finished and arrive with 0.34.0; the handbook already describes them.
 
-- **Full screen on the device running the service.** When your own screen is the one people watch, Live can show the stage countdown on it, with **F11** on a PC. Every timer action still asks first, in a small card over the stage. See [Second screen and full screen](second-screen-and-full-screen.html).
+**Before and during a service**
+
+- **Check this service.** One button runs a whole program through on the Simulator in about 18 seconds and lists every warning that fires, and any that cannot. Nothing reaches the stage and no report is saved. See [Build a reusable program](build-a-reusable-program.html).
+- **Up next on stage screens.** A screen set to **Timer and up next** says who is next and for how long, such as "Next: Response · Worship team · 6 min 30 s". See [Pair a phone or tablet](pair-a-phone-or-tablet.html).
+- **Full screen on the device running the service.** When your own screen is the one people watch, Live can show the stage countdown on it, with **F11** on a PC. A phone or tablet turns to landscape and turns back when you leave. Every timer action still asks first, in a small card over the stage. See [Second screen and full screen](second-screen-and-full-screen.html).
+- **No warning the moment a segment starts.** A warning fires only when the countdown comes down to its time, so a 5-minute segment no longer begins with 5 MIN LEFT. TIME'S UP at 0:00 still fires at zero.
 - **Choose what the Simulator simulates:** an LED sign or a stage screen. The chip reads **LED simulator** or **Stage simulator**. See [Choose the right display](choose-the-right-display.html).
-- **Cues on screens.** A cue can have a colour (White, Amber, Red, Green or your theme's colour), sit in a **banner at the top or bottom** while the countdown stays in view, and scroll at its own **Speed on screens**. The LED sign is not changed by any of it. See [Prepared cues and automatic warnings](prepared-cues-and-automatic-warnings.html).
-- **Previews follow your display.** The cue editor has an **LED sign | Stage screen** switch over its preview, and the panes beside Stage cues and Warnings & alerts show what your display will show.
-- **See the second screen on Live.** While the stage shows on a projector or second monitor, the Display preview holds a small live copy of it.
+
+**Cues and warnings**
+
+- **New cues and warnings to start with:** seven cues on keys 1 to 7 (WRAP UP, TIME'S UP, SPEAK UP, SLOW DOWN, MIC OFF?, FINAL SONG and SEE ME) and four warnings (5 MIN LEFT, 2 MIN LEFT, WRAP UP and TIME'S UP). Cues and warnings you changed are left alone. See [Prepared cues and automatic warnings](prepared-cues-and-automatic-warnings.html).
+- **Cues on screens.** A cue can have a colour (White, Amber, Red, Green or your theme's colour), sit in a **banner at the top or bottom** while the countdown stays in view, **wrap** onto up to 3 lines, and scroll at its own **Speed on screens**. A coloured cue that fills the screen sits on warm charcoal with a band of its colour. The LED sign is not changed by any of it.
+- **Five new effects:** Flash then hold, Pulse, Slide in, Countdown bar and Screen flash. Flash and Pulse show long text a few words at a time; Slide in, Countdown bar and Screen flash scroll on the LED sign when the text is too wide for it.
+- **A clearer cue editor.** The **LED sign | Stage screen** switch over the preview also chooses which settings are shown, and the panes beside Stage cues and Warnings & alerts show what your display will show.
+- **A clearer warning editor,** set out as When, What it shows, Where, How long and On or off: two columns on a PC, the whole screen on a phone. "Operator + phone notification" is now **Operator only**.
+- **Smoother scrolling cues** on a second monitor, web screens and the simulators.
+
+**On a PC and a tablet**
+
+- **Install an update from the app.** On Windows, **Check for updates** offers **Download and install**. The installer is checked, and started only after you confirm. The Windows installer is now published beside the Android app. See [Get started on Windows](get-started-on-windows.html).
+- **Tablet layout.** A 10-inch or larger tablet in landscape gets the wide layouts, under **Settings › Tablet layout**. Phones no longer show a desktop layout setting.
 - **Mission control is the layout a new install starts in.** If you already use the app, your layout stays as it is.
 - **Live makes better use of a large screen** in every desktop layout except Keys.
+- **See the second screen on Live.** While the stage shows on a projector or second monitor, the Display preview holds a small live copy of it.
+- **The mini timer button is at the top of every page,** and the mini timer opens with no service running, showing the time of day. **Click the app's name, the service's name or your church's name** on any tab to go back to Live.
+- **More keys listed.** The line of keys includes **J Jump to segment**, and Three panes and The dial list the keys too.
+- **Clicker and foot pedal works on a PC.** Switched off, Space, B, Page Down and → do nothing, from a clicker or the keyboard. See [Keyboard, clicker and Commands](keyboard-clicker-and-commands.html).
 - **A calendar for the reports date filter** on a PC, with ready-made ranges and a dot on each day that has a report. See [Read, export and print reports](read-export-and-print-reports.html).
-- **A button for the mini timer** at the top right of Live on a PC, and **click the service name** on any tab to go back to Live.
-- A backup or program file containing a cue with a colour, a banner or its own screen speed needs 0.34 or later to open. A paired phone or tablet on an earlier version shows every cue in white and full screen.
+- **Dates and times the way the app writes them:** "Fri 20 Nov 2026", 20/11/2026, a 24-hour clock, and weeks that start on Monday.
+- **Fixed:** the buttons under the Keys rundown in a 1200 × 600 window, and **New program** jumping into place on Programs.
+
+**Keep every device on the same version**
+
+- A backup or program file with any of the new cue settings (a colour, a banner, wrapped text, its own screen speed, a new effect, long Flash or Pulse text, or more than six cues) needs 0.34 or later to open.
+- A paired phone or tablet on an earlier version shows every cue in white and full screen, with the new effects as steady text.
 
 ## 0.33.0 · 19 November 2026
 
