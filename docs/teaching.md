@@ -1,6 +1,6 @@
 # Church Service Timer — operator teaching guide
 
-For app **0.34.0** on Android and Windows · Prepared **20 November 2026** · Creator **I-Proton**
+For app **0.34.0** on Android and Windows · Prepared **21 November 2026** · Creator **I-Proton**
 
 This handbook teaches a new operator to prepare a program, run its timer, communicate discreetly with the stage, recover from common interruptions, and close the service with a useful report. Keep it beside the phone or the PC during your first rehearsal. Screenshots use example data from automated app previews; they are illustrations, not evidence that a particular physical display is connected.
 

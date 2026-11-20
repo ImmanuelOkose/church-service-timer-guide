@@ -2,9 +2,7 @@
 
 What changed in each version of Church Service Timer, newest first, in short. Update every phone, tablet and PC your team uses to the same version: from 0.28, program files, backups and sent programs can't be opened by 0.27 or earlier.
 
-## 0.34.0 · next release
-
-Not released yet. These are finished and arrive with 0.34.0; the handbook already describes them.
+## 0.34.0 · 21 November 2026
 
 **Before and during a service**
 
