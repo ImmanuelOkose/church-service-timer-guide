@@ -6,35 +6,50 @@ import html
 import json
 import re
 import shutil
+import struct
 from pathlib import Path
 
 import markdown
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.30.0"
-UPDATED = "10 November 2026"
-GROUPS = [(0, 3, "Begin here"), (3, 6, "Connect the room"),
-          (6, 11, "Run the service"), (11, 15, "Review & maintain"),
-          (15, 17, "Train your team")]
+VERSION = "0.34.0"
+UPDATED = "20 November 2026"
+GROUPS = [(0, 5, "Begin here"), (5, 9, "Connect the room"),
+          (9, 16, "Run the service"), (16, 20, "Review & maintain"),
+          (20, 22, "Train your team")]
 SUMMARIES = [
-    "Know the four tabs, swiping between them, the operator clock and what a display acknowledgement really means.",
+    "Know the four tabs on a phone and a PC, the operator clock and what a display acknowledgement really means.",
+    "Install the app on a phone or tablet, allow what it asks for and keep every device on the same version.",
+    "Install on a Windows 10 or 11 PC, learn what is different from the phone, and find the countdown beside the clock.",
     "Use guided practice, then rehearse the complete service workflow in the simulator, without touching the stage.",
     "Create a reusable plan with segments, speakers, notes and its own end screen; import, share and restore versions.",
-    "Understand when to choose Simulator, LED sign, or Phone, tablet or web screens.",
+    "See every way to show the timer: Simulator, LED sign, phones, tablets, browsers, a second screen or your own screen.",
     "Join the right Wi-Fi, authenticate the supported W2 and understand its limits.",
     "Approve stage screens and operators, open web screens in a browser, and manage saved devices.",
+    "Show the stage on a projector or monitor plugged into the PC, or fill your own screen with the countdown.",
     "Start, pause, adjust, advance and blank with clear control, or run a Quick timer.",
-    "Prepare one-tap instructions and configure warnings based on time remaining.",
+    "Choose a desktop layout, read the Live home before a service, and keep a mini timer above your slides.",
+    "Every key that works on Live, the Commands list, and how to test a clicker or foot pedal.",
+    "Prepare one-tap instructions, style them for screens and the sign, and configure warnings by time remaining.",
     "Target stage screens, format the message and request explicit Seen.",
     "Review future timing changes and learn from comparable completed services.",
     "End once, save the report and recover cleanly from a saving failure.",
-    "Read the record, add review notes, export it, and print the right copy with notes kept private.",
+    "Read the record, filter by date, add review notes, export it, and print the right copy with notes kept private.",
     "Set the church logo, name, banner and appearance; understand shared defaults.",
-    "Diagnose a stale screen, lost connection, missing warning or rejected command.",
-    "Back up your setup and understand the boundaries of LED administration.",
+    "Diagnose a stale screen, lost connection, missing warning or rejected command, on a phone or a PC.",
+    "Back up your setup, move it between a phone and a PC, and understand the boundaries of LED administration.",
     "Coach a new operator through a practical session and a readiness checklist.",
     "Look up terms, check your understanding and review the current scope.",
 ]
+
+
+def png_size(path):
+    """Width and height from a PNG header, so pages reserve the space."""
+    with open(path, "rb") as file:
+        head = file.read(24)
+    if head[:8] != b"\x89PNG\r\n\x1a\n":
+        return None
+    return struct.unpack(">II", head[16:24])
 
 
 def slug(text):
@@ -55,7 +70,8 @@ def main():
         number, title, body = parts[i:i + 3]
         chapters.append({"number": number, "title": title, "body": body,
                          "slug": slug(title), "anchor": number + "-" + slug(title)})
-    if len(chapters) != len(SUMMARIES):
+    total = len(chapters)
+    if total != len(SUMMARIES) or total != GROUPS[-1][1]:
         raise SystemExit("Update chapter summaries and grouping when adding lessons.")
     for chapter, summary in zip(chapters, SUMMARIES):
         chapter["summary"] = summary
@@ -76,10 +92,13 @@ def main():
         content = re.sub(r"<table>(.*?)</table>", r'<div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>\1</table></div>', content, flags=re.S)
         def image_figure(match):
             alt, src = match.group(1), match.group(2)
-            return ('<figure class="app-figure"><a class="zoom-image" href="' + src +
+            size = png_size(ROOT / "site" / src) if src.startswith("assets/") else None
+            dimensions = ' width="%d" height="%d"' % size if size else ""
+            wide = " wide-figure" if size and size[0] > size[1] * 1.2 else ""
+            return ('<figure class="app-figure' + wide + '"><a class="zoom-image" href="' + src +
                     '" aria-label="Enlarge: ' + alt + '"><img src="' + src +
-                    '" alt="' + alt + '" loading="lazy" decoding="async"></a><figcaption>' +
-                    alt + '<span>Example app preview · tap to enlarge</span></figcaption></figure>')
+                    '" alt="' + alt + '"' + dimensions + ' loading="lazy" decoding="async"></a><figcaption>' +
+                    alt + '<span>Example app preview · select to enlarge</span></figcaption></figure>')
         content = re.sub(r'<p><img alt="([^"]*)" src="([^"]*)" /></p>', image_figure, content)
         return content, converter.toc_tokens
 
@@ -120,14 +139,14 @@ def main():
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar">
 <a class="brand" href="index.html"><img src="assets/app-mark.svg" width="42" height="42" alt=""><span>Church Service Timer<small>THE OPERATOR HANDBOOK</small></span></a>
-<div class="header-actions"><span class="version">ANDROID {VERSION}</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
+<div class="header-actions"><span class="version">VERSION {VERSION}</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
 <button class="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">Lessons <span aria-hidden="true">☰</span></button></div>
 </header>
 <div class="layout">
 <aside class="sidebar" id="sidebar" aria-label="Handbook navigation">
-<div class="search-wrap"><label for="search">Find an answer</label><input id="search" type="search" placeholder="Try “pairing” or “watermark”" autocomplete="off" aria-controls="search-results"><p id="search-status" class="sr-only" role="status"></p><div id="search-results" hidden></div></div>
+<div class="search-wrap"><label for="search">Find an answer</label><input id="search" type="search" placeholder="Try “second screen” or “pairing”" autocomplete="off" aria-controls="search-results"><p id="search-status" class="sr-only" role="status"></p><div id="search-results" hidden></div></div>
 <nav aria-label="Lessons">{navigation(active)}</nav>
-<div class="learning-progress"><p><strong id="progress-count">0 of 17</strong> lessons marked read</p><progress id="progress" max="17" value="0" aria-label="Lessons marked read"></progress><button type="button" id="reset-progress">Reset my progress</button><small>Saved only in this browser.</small></div>
+<div class="learning-progress"><p><strong id="progress-count">0 of {total}</strong> lessons marked read</p><progress id="progress" max="{total}" value="0" aria-label="Lessons marked read"></progress><button type="button" id="reset-progress">Reset my progress</button><small>Saved only in this browser.</small></div>
 <a class="full-guide-link" href="complete-guide.html">Full guide & printing <span aria-hidden="true">↗</span></a>
 <a class="sidebar-privacy" href="release-notes.html">Release notes</a>
 <a class="sidebar-privacy" href="privacy-policy/index.html">Privacy policy</a>
@@ -151,13 +170,13 @@ def main():
                      html.escape(previous["title"]) + '</a>') if previous else '<a href="index.html"><span>START HERE</span>Handbook overview</a>'
         next_link = ('<a href="' + following["slug"] + '.html"><span>NEXT LESSON</span>' +
                      html.escape(following["title"]) + ' →</a>') if following else '<a href="index.html"><span>KEEP IT CLOSE</span>Return to handbook →</a>'
-        body = f'''<div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">LESSON {c["number"]} / 17 <span>{minutes} MIN READ</span></p>
+        body = f'''<div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">LESSON {c["number"]} / {total} <span>{minutes} MIN READ</span></p>
 <h1 id="{c["anchor"]}">{html.escape(c["title"])}</h1><p class="chapter-deck">{c["summary"]}</p></header>
 {('<nav class="on-this-page" aria-label="On this page"><strong>In this lesson</strong>' + subnav + '</nav>') if subnav else ''}
 <article class="prose">{content}</article>
 <div class="lesson-complete"><div><strong>A moment to reflect.</strong><p>Could you explain this workflow to another operator?</p></div><button type="button" data-complete="{c["slug"]}" aria-pressed="false">Mark lesson as read</button></div>
 <nav class="chapter-pagination" aria-label="Lesson pagination">{prev_link}{next_link}</nav></div>'''
-        if idx == 16:
+        if idx == total - 1:
             body = body.replace('<div class="lesson-complete">', quiz_html() + '<div class="lesson-complete">')
         (out / (c["slug"] + ".html")).write_text(shell(c["title"], c["slug"], body, c["summary"]), encoding="utf-8")
         search_items.append({"title": c["title"], "number": c["number"], "url": c["slug"] + ".html",
@@ -170,12 +189,13 @@ def main():
     lessons = "".join('<a class="chapter-row" href="' + c["slug"] + '.html"><span>' + c["number"] +
                       '</span><div><h3>' + html.escape(c["title"]) + '</h3><p>' + c["summary"] +
                       '</p></div><span aria-hidden="true">↗</span></a>' for c in chapters)
-    homepage = f'''<section class="hero"><div class="hero-copy"><p class="eyebrow">THE OPERATOR HANDBOOK · {VERSION}</p><h1>Know the controls.<br><em>Care for the room.</em></h1><p>From your first rehearsal to the final report. A practical guide to timing the service and communicating clearly with the stage.</p><a class="primary-button" href="your-first-rehearsal.html">Start your first rehearsal <span aria-hidden="true">→</span></a><a class="hero-secondary" href="trainer-session-and-readiness-checklist.html">Teaching a team? Open the trainer checklist</a><div class="hero-facts"><span>17 focused lessons</span><span>Real app previews</span><span>No sign needed to begin</span></div></div>
+    homepage = f'''<section class="hero"><div class="hero-copy"><p class="eyebrow">THE OPERATOR HANDBOOK · {VERSION}</p><h1>Know the controls.<br><em>Care for the room.</em></h1><p>From your first rehearsal to the final report. A practical guide to timing the service and communicating clearly with the stage.</p><a class="primary-button" href="your-first-rehearsal.html">Start your first rehearsal <span aria-hidden="true">→</span></a><a class="hero-secondary" href="trainer-session-and-readiness-checklist.html">Teaching a team? Open the trainer checklist</a><div class="hero-facts"><span>{total} focused lessons</span><span>Phone, tablet and Windows PC</span><span>No sign needed to begin</span></div></div>
 <div class="hero-visual"><div class="visual-caption"><span class="live-dot"></span> ONE SERVICE. ONE CLEAR PLAN.</div><img class="hero-phone" src="assets/images/live.png" width="420" height="900" alt="Church Service Timer Live example showing a one-minute rehearsal countdown"><div class="visual-note"><span>FIRST THING TO KNOW</span><strong>The timer and the output<br>are different checks.</strong><a href="understand-the-workspace.html">Learn the workspace →</a></div></div></section>
 <section class="start-paths"><div class="section-intro"><p class="eyebrow">FIND YOUR STARTING POINT</p><h2>Your role. Your route.</h2></div><div class="path-list">
 <a href="your-first-rehearsal.html"><span class="path-symbol">01</span><div><h3>I’m a new operator</h3><p>Learn the workspace, rehearse safely, then run a service.</p></div><span aria-hidden="true">→</span></a>
-<a href="pair-a-phone-or-tablet.html"><span class="path-symbol">02</span><div><h3>I’m setting up the screens</h3><p>Choose the output, pair devices and confirm who has control.</p></div><span aria-hidden="true">→</span></a>
-<a href="trainer-session-and-readiness-checklist.html"><span class="path-symbol">03</span><div><h3>I’m training the team</h3><p>Use the session plan, drills and readiness checklist.</p></div><span aria-hidden="true">→</span></a></div></section>
+<a href="get-started-on-windows.html"><span class="path-symbol">02</span><div><h3>I’m running it from a PC</h3><p>Install on Windows, pick a layout and learn the keys.</p></div><span aria-hidden="true">→</span></a>
+<a href="choose-the-right-display.html"><span class="path-symbol">03</span><div><h3>I’m setting up the screens</h3><p>Choose the output, pair devices or plug in a second screen.</p></div><span aria-hidden="true">→</span></a>
+<a href="trainer-session-and-readiness-checklist.html"><span class="path-symbol">04</span><div><h3>I’m training the team</h3><p>Use the session plan, drills and readiness checklist.</p></div><span aria-hidden="true">→</span></a></div></section>
 <section class="three-truths"><p class="eyebrow">THREE IDEAS THAT PREVENT CONFUSION</p><div><article><span>01 / PLAN</span><h3>A program is reusable.<br>A service is one run.</h3><p>Live adjustments don’t rewrite your saved plan or old reports.</p></article><article><span>02 / OUTPUT</span><h3>Pause stops time.<br>Blank hides the screen.</h3><p>A moving arc alone doesn’t prove the physical sign is current.</p></article><article><span>03 / PEOPLE</span><h3>Synced is delivery.<br>Seen is a person.</h3><p>Ask for explicit acknowledgement when an instruction needs it.</p></article></div></section>
 <section class="curriculum"><div class="section-intro"><p class="eyebrow">THE COMPLETE LEARNING PATH</p><h2>From preparation to handover.</h2><p>Read in order, or use search to find the answer you need during a rehearsal.</p></div>{lessons}</section>
 {GET_APP}
@@ -185,7 +205,7 @@ def main():
     policy_source = (ROOT / "privacy-policy.md").read_text(encoding="utf-8")
     policy, _ = render(re.sub(r"(?s)^# .*?\n", "", policy_source, count=1), whole=True)
     policy_body = ('<div class="chapter-shell policy"><header class="chapter-header"><p class="eyebrow">YOUR DATA</p>'
-                   '<h1 id="privacy-policy">Privacy policy</h1><p class="chapter-deck">What Church Service Timer stores, what it connects to, and what never leaves your phone.</p></header>'
+                   '<h1 id="privacy-policy">Privacy policy</h1><p class="chapter-deck">What Church Service Timer stores, what it connects to, and what never leaves your device.</p></header>'
                    '<article class="prose">' + policy + '</article></div>')
     (out / "privacy-policy").mkdir(exist_ok=True)
     (out / "privacy-policy" / "index.html").write_text(
@@ -207,7 +227,7 @@ def main():
     print(f"Built {len(chapters)} lessons, overview, full guide, search index and 404 in {out}")
 
 
-GET_APP = '''<section class="ready-strip get-app" id="get-the-app"><div><p class="eyebrow">GET THE APP · ANDROID 7.0 OR LATER</p><h2>Download Church Service Timer.</h2><p>Download the latest signed APK from GitHub Releases, open it on your phone and allow the install when Android asks. Install the same version on every phone and tablet your team uses. A Google Play listing is coming.</p></div><a class="primary-button" href="https://github.com/ImmanuelOkose/church-service-timer-guide/releases/latest">Download the latest version →</a></section>'''
+GET_APP = '''<section class="ready-strip get-app" id="get-the-app"><div><p class="eyebrow">GET THE APP · ANDROID 7.0 OR LATER · WINDOWS 10 OR 11</p><h2>Download Church Service Timer.</h2><p>Each release is on GitHub Releases. For a phone or tablet, download the signed <code>.apk</code>, open it and allow the install when Android asks. For a PC, download the <code>windows-setup.exe</code> installer where the release lists one. Install the same version on every device your team uses. A Google Play listing is coming.</p></div><a class="primary-button" href="https://github.com/ImmanuelOkose/church-service-timer-guide/releases/latest">Download the latest version →</a></section>'''
 
 
 def in_folder(page):
@@ -216,11 +236,13 @@ def in_folder(page):
 
 
 def quiz_html():
-    return '''<section class="quiz" aria-labelledby="quiz-title"><p class="eyebrow">PRACTICE WITHOUT THE PHONE</p><h2 id="quiz-title">Three quick scenarios.</h2>
+    return '''<section class="quiz" aria-labelledby="quiz-title"><p class="eyebrow">PRACTICE WITHOUT THE PHONE</p><h2 id="quiz-title">Five quick scenarios.</h2>
 <form id="knowledge-quiz">
 <fieldset><legend>1. You blank the stage screen. What happens to time?</legend><label><input type="radio" name="q1" value="pause" required> The service pauses.</label><label><input type="radio" name="q1" value="continue"> The service keeps counting.</label></fieldset>
 <fieldset><legend>2. An approved operator reconnects. Who has control?</legend><label><input type="radio" name="q2" value="peer" required> The returning operator automatically.</label><label><input type="radio" name="q2" value="host"> The host until it explicitly grants control.</label></fieldset>
 <fieldset><legend>3. You need to know an instruction was read. What should you look for?</legend><label><input type="radio" name="q3" value="synced" required> A Synced status alone.</label><label><input type="radio" name="q3" value="seen"> The recipient’s explicit Seen acknowledgement.</label></fieldset>
+<fieldset><legend>4. On a PC, you press Space during a service. What happens?</legend><label><input type="radio" name="q4" value="atonce" required> The timer pauses at once.</label><label><input type="radio" name="q4" value="asks"> The app asks first; Space or Enter confirms.</label></fieldset>
+<fieldset><legend>5. A projector is plugged into the PC and Windows is set to Extend. What puts the countdown on it?</legend><label><input type="radio" name="q5" value="pair" required> Pairing the projector with a six-digit code.</label><label><input type="radio" name="q5" value="show"> Show on second screen, under the Display preview on Live.</label></fieldset>
 <button type="submit" class="primary-button">Check my answers</button><p id="quiz-result" role="status"></p></form></section>'''
 
 
