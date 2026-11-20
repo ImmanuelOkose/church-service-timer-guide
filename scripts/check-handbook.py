@@ -65,7 +65,9 @@ def main():
             elif parsed.fragment and destination in pages and unquote(parsed.fragment) not in pages[destination].ids:
                 errors.append(f"{file.name}: missing anchor {url}")
     index = json.loads((root / "search-index.json").read_text(encoding="utf-8"))
-    if len(index) != 17 or len(pages) != 22:
+    # Every lesson, plus the overview, full guide, release notes, privacy
+    # policy and the not-found page.
+    if len(index) < 17 or len(pages) != len(index) + 5:
         errors.append(f"Unexpected lesson/page count: {len(index)} / {len(pages)}")
     for item in index:
         if not (root / item["url"]).is_file() or not item["text"]:
@@ -77,7 +79,7 @@ def main():
             errors.append(f"Unexpected publishable file: {file.relative_to(root)}")
     if errors:
         raise SystemExit("\n".join(errors))
-    print(f"PASS: {len(pages)} HTML pages; 17 searchable lessons; internal links, anchors, image alt and public-output boundary checked.")
+    print(f"PASS: {len(pages)} HTML pages; {len(index)} searchable lessons; internal links, anchors, image alt and public-output boundary checked.")
 
 
 if __name__ == "__main__":

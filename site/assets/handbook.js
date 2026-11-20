@@ -8,7 +8,8 @@
   read = Array.from(new Set(read)).filter(id => validLessons.has(id));
   function updateProgress() {
     const count = document.getElementById('progress-count');
-    if (count) count.textContent = read.length + ' of 17';
+    const total = document.getElementById('progress')?.max || lessonLinks.length;
+    if (count) count.textContent = read.length + ' of ' + total;
     const progress = document.getElementById('progress');
     if (progress) progress.value = read.length;
     lessonLinks.forEach(el => { el.querySelector('.lesson-check').textContent = read.includes(el.dataset.lesson) ? '✓' : ''; });
@@ -108,10 +109,11 @@
   quiz?.addEventListener('submit', event => {
     event.preventDefault();
     const answers = new FormData(quiz);
-    const expected = {q1: 'continue', q2: 'host', q3: 'seen'};
+    const expected = {q1: 'continue', q2: 'host', q3: 'seen', q4: 'asks', q5: 'show'};
+    const total = Object.keys(expected).length;
     const score = Object.entries(expected).filter(([id, value]) => answers.get(id) === value).length;
-    document.getElementById('quiz-result').textContent = score + ' of 3 correct. ' + (score === 3 ?
+    document.getElementById('quiz-result').textContent = score + ' of ' + total + ' correct. ' + (score === total ?
       'Well understood. Now practise the workflow on the simulator with your trainer.' :
-      'Remember: Blank only hides output; control returns to the host; Seen needs the recipient’s tap. Review your answers and try again.');
+      'Remember: Blank only hides output; control returns to the host; Seen needs the recipient’s tap; every timer key asks first; a second screen needs no pairing. Review your answers and try again.');
   });
 })();
