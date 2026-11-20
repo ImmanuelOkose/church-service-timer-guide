@@ -1,8 +1,8 @@
 # Screenshot provenance
 
-These PNG files come from reviewed automated app previews in Church Service Timer's test/goldens directory. The whole set was refreshed for the 0.34.0 handbook from the previews on the app's main branch. They illustrate example states with sample data and do not show real phone or PC sessions. No live pairing code or QR, revealed password, raw device log, or user-supplied photograph is included.
+These PNG files come from reviewed automated app previews in Church Service Timer's test/goldens directory. The whole set was refreshed for the 0.34.0 handbook from the previews on the app's main branch, and again once the new starting cues, warning editor, cue effects, Check this service and the PC update had been added. They illustrate example states with sample data and do not show real phone or PC sessions. No live pairing code or QR, revealed password, raw device log, or user-supplied photograph is included.
 
-Every file was re-compressed without loss (oxipng), so the pixels match the preview. Three files differ from a plain copy, as noted in the second table.
+Every file was re-compressed without loss (oxipng), so the pixels match the preview. Three files differ from a plain copy, as noted in the second table. reports-desktop.png and mini-timer.png were not rendered again in the second refresh; the screens they show had not changed.
 
 ## Phone and tablet
 
@@ -11,7 +11,7 @@ Every file was re-compressed without loss (oxipng), so the pixels match the prev
 | live.png | phone-live.png |
 | program-editor.png | program-editor.png |
 | choose-display.png | display-destination-chooser.png |
-| stage-layout.png | stage-next-segment.png |
+| stage-layout.png | stage-up-next-1080.png |
 | cues.png | settings-stage-cues.png |
 | warnings.png | warnings-settings-phone.png |
 | quick-message.png | quick-message-composer.png |
@@ -25,6 +25,8 @@ Every file was re-compressed without loss (oxipng), so the pixels match the prev
 | church-profile.png | church-profile-custom-phone.png |
 | reports.png | report-list-phone.png |
 | screens-devices.png | settings-screens-devices.png |
+| warning-editor-phone.png | warning-editor-phone.png |
+| tablet-layout.png | layout-setting-tablet.png |
 
 ## PC (wide window) and stage
 
@@ -47,6 +49,13 @@ Every file was re-compressed without loss (oxipng), so the pixels match the prev
 | clicker-test.png | desktop-clicker-test.png |
 | cue-on-screens.png | desktop-cue-editor-screens.png |
 | cue-banner.png | stage-cue-amber-banner.png |
+| cue-effects.png | desktop-cue-effect-list.png |
+| cue-editor-switch.png | desktop-cue-stage-preview.png |
+| cue-red-full.png | stage-cue-red-full.png |
+| cue-wrapped-bar.png | stage-cue-wrapped-bar-1080.png |
+| warning-editor.png | warning-editor-desktop-1920.png |
+| service-check.png | desktop-service-check.png |
+| update-pc.png | desktop-update-available.png |
 | stage-cues-desktop.png | desktop-settings-stage-cues-stage-screen.png |
 | warnings-desktop.png | desktop-settings-warnings.png |
 | programs-desktop.png | desktop-programs.png |

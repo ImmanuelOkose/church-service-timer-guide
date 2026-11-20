@@ -1,6 +1,6 @@
 # Church Service Timer — operator teaching guide
 
-For app **0.34.0** on Android and Windows · Prepared **20 November 2026** · Creator **I-Proton**
+For app **0.34.0** on Android and Windows · Prepared **21 November 2026** · Creator **I-Proton**
 
 This handbook teaches a new operator to prepare a program, run its timer, communicate discreetly with the stage, recover from common interruptions, and close the service with a useful report. Keep it beside the phone or the PC during your first rehearsal. Screenshots use example data from automated app previews; they are illustrations, not evidence that a particular physical display is connected.
 
@@ -19,7 +19,7 @@ The app has four main destinations. On a phone they are tabs along the bottom. O
 | Live | Start and operate a service or a Quick timer, inspect output, send cues and messages, share to screens or join a service. |
 | Programs | Create reusable plans, arrange segments, add speakers and private notes, set each program's end screen, keep a segment library and version history. |
 | Reports | Review completed services, compare durations, add review notes, export, share and print records. |
-| Settings | Church profile, appearance, desktop layout, warnings and alerts, display settings, stage cues, Quick message presets, Screens & devices, LED device management, backups, Settings PIN and About. |
+| Settings | Church profile, appearance, desktop or tablet layout, warnings and alerts, display settings, stage cues, Quick message presets, Screens & devices, LED device management, backups, Settings PIN and About. |
 
 ![Example Live screen on a phone: countdown, current segment and operator controls](site/assets/images/live.png)
 
@@ -28,9 +28,10 @@ The app has four main destinations. On a phone they are tabs along the bottom. O
 | Part | What it does |
 | --- | --- |
 | Logo or mark, top left | Your church logo, or the built-in ring-and-cross mark. Select it to open the church profile. |
-| Service name | The loaded or running service. On Programs, Reports or Settings, select the name to go straight back to Live. With no service loaded it reads Church Service Timer and does nothing. |
+| App or service name | The loaded or running service, or Church Service Timer when none is loaded, with your church's name under it. On Programs, Reports or Settings, select either name to go straight back to Live, whether or not a service is running. Lock controls still stops it. |
 | Display chip | Where the stage output is going, for example **LED simulator**, **Stage simulator**, **LED sign** or **Stage screens**. Select it to open **Choose display**. Choosing and connecting a display are separate from starting a service. |
 | Full screen | During a service or a Quick timer, shows the stage countdown on this device's own screen. On a phone the button is under the display preview instead. See [Second screen and full screen](#09-second-screen-and-full-screen). |
+| Mini timer | On a PC only, and on every page: shrinks the app to a small window that stays above your slides. See [Run the service from a PC](#11-run-the-service-from-a-pc). |
 | Lock | During a service, locks every control and key until you **Hold to unlock**. |
 | **⋮** menu | **Focused operator view** and **Ready for service**. On a PC it also holds **Mini timer**, **Full screen**, **Commands** and **Keyboard shortcuts**. |
 
@@ -54,9 +55,9 @@ The **Back** key on Programs, Reports or Settings returns to Live. On Live it as
 
 ### Moving around on a PC
 
-In a window at least 1200 wide and 600 tall, Live fills the window with a **desktop layout**. A new install starts in **Mission control**, shown below. Click a tab in the side rail or the header, or click the service name at the top left to return to Live. A smaller window uses the phone and tablet layout, and so does the focused operator view.
+In a window at least 1200 wide and 600 tall, Live fills the window with a **desktop layout**. A new install starts in **Mission control**, shown below. Click a tab in the side rail or the header, or click the app or service name at the top left, or your church's name under it, to return to Live. A smaller window uses the phone and tablet layout, and so does the focused operator view. A 10-inch or larger tablet held sideways gets the same layouts; a phone never does.
 
-![Mission control on a PC: status strip, timer, display preview, stage cues and the rundown as a timeline](site/assets/images/desktop-mission-control.png)
+![Mission control on a PC: status strip, timer, display preview, seven stage cues and the rundown as a timeline, with the keys listed along the bottom](site/assets/images/desktop-mission-control.png)
 
 The timer, cues, display preview and rundown are the same ones the phone uses, arranged for a wide screen. The layouts are described in [Run the service from a PC](#11-run-the-service-from-a-pc), and the keys in [Keyboard, clicker and Commands](#12-keyboard-clicker-and-commands).
 
@@ -94,8 +95,8 @@ Settle these before the service, not during it. **Live › ⋮ › Ready for ser
 Update every phone, tablet and PC your team uses together.
 
 - Program files, backups and sent programs saved by 0.28 or later cannot be opened by 0.27 or earlier.
-- A backup or program file that contains a cue with a screen colour, a banner or its own screen speed needs 0.34 or later to open.
-- A paired phone or tablet still on an earlier version shows every cue in white and full screen, at the LED sign's speed.
+- A backup or program file made by 0.34 needs 0.34 or later to open if it holds any of the new cue settings: a screen colour, a banner, **Wrap long text**, its own screen speed, one of the new effects, long text with Flash or Pulse, or more than six cues. The cues a new install starts with use several of these.
+- A paired phone or tablet still on an earlier version shows every cue in white and full screen, at the LED sign's speed, with the new effects as steady text and the next segment's name without its speaker and length.
 
 ### Check for updates
 
@@ -104,7 +105,7 @@ Update every phone, tablet and PC your team uses together.
 | The row says | What to do |
 | --- | --- |
 | You have the latest version | Nothing. |
-| Version … is available | Tap **Open the download page**, then install as above. The version you have keeps working, so update when it suits you, not during a service. |
+| Version … is available | Tap **Open the download page**, download the `.apk` and install as above. A phone or tablet never downloads or installs an update by itself. The version you have keeps working, so update when it suits you, not during a service. |
 | Could not check. This device may be offline. | Try again with an internet connection. The app itself never needs the internet to run a service. |
 
 Installing a newer version over the old one keeps your programs, reports and settings. Export a backup first all the same; see [Protect data and manage the LED device](#20-protect-data-and-manage-the-led-device).
@@ -117,7 +118,7 @@ The Windows app is new. Rehearse on the actual PC, with its projector or screens
 
 ### Install it
 
-1. On the PC, open the [download page](https://github.com/ImmanuelOkose/church-service-timer-guide/releases/latest) and download the file ending in `windows-setup.exe`. If the page lists only the Android `.apk`, the Windows installer has not been published for that version yet.
+1. On the PC, open the [download page](https://github.com/ImmanuelOkose/church-service-timer-guide/releases/latest) and download the file ending in `windows-setup.exe`. From 0.34.0, each release lists the Windows installer and its checksum beside the Android `.apk`. An earlier release may list only the `.apk`.
 2. Run the installer. Windows may show **Windows protected your PC**, because the installer is not code-signed. Click **More info**, then **Run anyway**.
 3. Follow the installer. It installs for your Windows account, so it does not need an administrator password. Tick the desktop icon if you want one.
 4. Start **Church Service Timer** from the Start menu.
@@ -180,7 +181,23 @@ If the same PC runs your slides, the **Mini timer** keeps the countdown and thre
 
 ### Update the PC
 
-**Settings › About › Check for updates** works as on the phone: it checks only when you click it, then offers **Open the download page**. Download the newer installer and run it; it replaces the old version and keeps your data. Update between services, never during one, and update the team's phones and tablets to the same version.
+**Settings › About › Check for updates** checks only when you click it, as on the phone. When a newer version has been published, a PC can fetch and start the installer for you.
+
+![Check for updates on a PC: a newer version is available, with Download and install beside Open release page](site/assets/images/update-pc.png)
+
+1. Click **Download and install**. A progress bar shows the download, and **Cancel download** stops it.
+2. The app checks the file against the size and checksum published with the release. A file that does not match is deleted and nothing is installed.
+3. The app asks "Install version …?". Click **Close and install**. Anything you are editing is saved first and offered again when the app reopens.
+4. The app closes and the installer opens in its own window. Windows may show **Windows protected your PC**; click **More info**, then **Run anyway**.
+5. Finish the installer and start the app. Your services, programs, reports and settings are kept.
+
+| What you see | What it means |
+| --- | --- |
+| Only **Open release page** | That release has no Windows installer. Open the page and download whatever it lists. |
+| "Finish or end the service first" | An update cannot be installed during a service. End the service, then try again. |
+| The download is refused | The file did not match what was published. Try again later, or use **Open release page**. |
+
+Nothing is downloaded or installed by itself. Update between services, never during one, and update the team's phones and tablets to the same version.
 
 ## 04 — Your first rehearsal
 
@@ -204,13 +221,15 @@ Then try the full workflow yourself. A step that says "tap" is a click on a PC.
 4. Review the first and next segment. While Ready, choose **Service mode**: **Live timing · 1×** or a **Fast rehearsal** speed. A program's Service/Rehearsal grouping is not its speed setting. **Change** swaps in another program without leaving Ready.
 5. Select **Start first segment**. When the display is connected and nothing needs attention, the service starts at once and **Undo start** is offered for 8 seconds; otherwise a confirmation explains what to check.
 6. Tap **Pause**, confirm, and observe the held timer. Tap **Resume**, then try **Custom** to add or remove minutes and seconds. Read the proposed result before confirming.
-7. Open **Stage & display** and tap one prepared **Stage cue**. It sends immediately. The countdown continues underneath. Choose **Show timer** to restore the current timer, not the original starting time.
+7. Open **Stage & display** and tap one prepared **Stage cue**, such as WRAP UP. It sends immediately. The countdown continues underneath. Choose **Show timer** to restore the current timer, not the original starting time.
 8. Tap **Blank screen**, then **Unblank screen**. Blanking hides output; it does not pause the service.
 9. Use **Next** (**Next segment** on a tablet or PC) when the current activity is finished. If this was accidental, use **Undo** while it is available and review the confirmation.
 10. Allow a segment to reach zero. Observe the operator's red overtime and the shared At zero display behaviour. Reaching zero does not automatically advance the program.
 11. Choose **End service** and confirm. Live returns to Standing by after the report saves. On the **Last service** card, tap **View last service report**.
 12. Tap **Quick timer** on Live, choose 5 min and start it. Notice there is no Ready step. Tap **End timer** when you have seen it count. See [Operate a live service](#10-operate-a-live-service) for details.
 13. On a PC, run one more rehearsal from the keyboard. Press **Space**, then **Space** again, to pause. Press **Page Down** twice for the next segment. Press **?** to see every key.
+
+**Before a real service, let the app run through it for you.** **Check this service** plays a whole program on the Simulator in about 18 seconds and lists every warning that will fire. See [Build a reusable program](#05-build-a-reusable-program).
 
 **You are ready for the next lesson when you can explain:** Ready versus running, Pause versus Blank, Show timer versus Next, a Quick timer versus a service, and a display acknowledgement versus a physical check.
 
@@ -239,7 +258,7 @@ Example practice plan:
 
 ![Program editor with example segments and program-specific end screen](site/assets/images/program-editor.png)
 
-Open a row in Programs for **Program details**, with **Load into Live** and **Edit program** up front. Its **⋮** menu holds Duplicate, Export JSON, Export CSV, **Print order of service**, **Send to paired phone** (while one is connected), **Version history** and **Delete program**, which asks for confirmation. A duplicate is useful for a special service without overwriting a familiar plan.
+Open a row in Programs for **Program details**, with **Load into Live** and **Edit program** up front. Its **⋮** menu holds **Check this service**, Duplicate, Export JSON, Export CSV, **Print order of service**, **Send to paired phone** (while one is connected), **Version history** and **Delete program**, which asks for confirmation. A duplicate is useful for a special service without overwriting a familiar plan.
 
 In the Programs list, the pin icon marks pinned programs, which Live offers first. **Press and hold** a program (click and hold on a PC) to start selecting; the bar at the bottom then offers **Pin**, **Share**, **Export** and, in red, **Delete** (with a 10-second Undo). Back or **×** finishes selecting.
 
@@ -269,11 +288,34 @@ In a desktop layout, Programs uses the whole window.
 
 | Column | What it holds |
 | --- | --- |
-| Left | Your programs, with search and the All, Pinned, Recent and Rehearsals filters. |
+| Left | Your programs, with search and the All, Pinned, Recent and Rehearsals filters, and **New program** under the list. |
 | Middle | The chosen program as a table: each segment with its time, speaker and private note. |
 | Right | **Load into Live**, the shape of the service, its total time, what past services say about the timings, the end screen and the warnings. |
 
 To change a program, click **Edit program** or double-click a segment. This opens the same Program editor, which shows the running order beside the form: when each segment starts and when the service ends. Changes never touch a service that is already running.
+
+### Check this service
+
+One button runs a whole program through at high speed on the Simulator, so you can see every automatic warning fire before Sunday.
+
+| Where | When |
+| --- | --- |
+| **Programs**, on a program's **⋮** menu | Any time no service is running. |
+| **Live**, beside **Start first segment** | While a service is set up in Ready. |
+
+1. Choose **Check this service**. It starts at once, without the usual question, because it touches nothing real.
+2. Watch the Simulator. The check takes about 18 seconds whatever the length of the service, and stops for a moment on each warning so you can read it. **Stop check** ends it at any time.
+3. Read the checklist at the end, then choose **Done** or **Check again**.
+
+![Check complete for Sunday Service: each segment with the warnings that fired, four warnings that could not fire, what happens in overtime and the planned finish](site/assets/images/service-check.png)
+
+The checklist shows, for each segment:
+
+- every warning that fired, the time left when it did, and where it showed: **Operator only** or **Operator and stage**;
+- any warning that **cannot fire**, because it is set for the whole of the segment or for longer. A 5:00 warning cannot fire in a 3-minute segment, and does not fire as a 5-minute segment starts;
+- then what the display does if a segment runs over, and the planned finish time.
+
+**It is a check only.** It runs on the LED simulator or the Stage simulator, whichever the Simulator is set to. Nothing is sent to the LED sign, paired or web screens or the second screen, the service set up on Live is left as it was, and no report is saved. It is not available while a service is running, a service started from another device stops it, and locked controls block it.
 
 ### Shared settings travel with the device, not the program
 
@@ -330,6 +372,10 @@ Change it in either place:
 
 Nothing is asked when you switch. The choice is kept on that device and is not part of backups. Locked controls cannot change it.
 
+The Stage simulator can also show what a stage screen set to **Timer and segment name** or **Timer and up next** would show. Choose it under **Simulate** in Choose display. This too is kept on that device.
+
+Scrolling cues move smoothly on the Stage simulator. The LED simulator moves a whole column at a time, as the sign does.
+
 ### Check the real screen
 
 Always check the badge after changing output. A simulator preview, an authenticated LED connection and an acknowledged stage screen are different states. Use **Test screen** (or **Test 5 s** in the Quick message composer) and have someone confirm the intended physical screen before the service.
@@ -368,7 +414,7 @@ Use one device as the **host**. It owns the clock and saved data. The host can b
 
 **Network first:** put the devices on the same Wi-Fi or on the host device's own hotspot. Internet is not required. Some sign hotspots, guest Wi-Fi and church networks keep devices apart ("client isolation"), so phones on them cannot reach each other; the app's advice is then to use the host device's hotspot. QR codes do not bypass isolation. If the host moves to another network while sharing, for example when you turn its hotspot on, it shares again at the new address by itself; approved devices, the team code and joined browsers carry over.
 
-![Screens & devices on a phone before sharing: Share to screens and Join a service, then Requests from the stage and Full screen on this phone](site/assets/images/screens-devices.png)
+![Screens & devices on a phone before sharing: Share to screens and Join a service, then Requests from the stage and Full screen on this phone with its three choices](site/assets/images/screens-devices.png)
 
 1. On the host, tap **Share to screens** on Live (or **Settings › Screens & devices**). From Choose display › Phone, tablet or web screens, the button is **Share to stage screens**, which also turns on stage output. Sharing to screens alone keeps LED output.
 2. On the joining device, tap **Join a service** on Live. Give it a clear **Device name** and choose **Use this device as**: **Service viewer**, **Stage display** or **Additional operator**.
@@ -394,9 +440,16 @@ Codes expire after ten minutes. If a code expires or its attempts are exhausted,
 
 Handing over control does **not** move the service to the other phone. If that operator disconnects, control returns to the host. Reconnection does not silently restore its control grant.
 
-For each saved screen, use **Screen options** to set a recognisable name, a **Screen group** (**General, Preacher, Choir, Media desk**) and a **Screen layout** (**Timer only, Timer + current segment, Timer + next segment**). The host can choose which acknowledged screen to inspect in the preview. In a desktop layout, the screens list under the display preview keeps a paired screen that stops answering as "not answering", shows one you disconnected as "disconnected", and counts people following the order of service on the web on one line.
+For each saved screen, use **Screen options** to set a recognisable name, a **Screen group** (**General, Preacher, Choir, Media desk**) and a **Screen layout** (**Timer only**, **Timer and segment name** or **Timer and up next**). The host can choose which acknowledged screen to inspect in the preview. In a desktop layout, the screens list under the display preview keeps a paired screen that stops answering as "not answering", shows one you disconnected as "disconnected", and counts people following the order of service on the web on one line.
 
-![Example stage display with the next segment beneath the countdown](site/assets/images/stage-layout.png)
+**Up next on stage.** A screen set to **Timer and up next** says who is next and for how long, on one line under the countdown, such as "Next: Response · Worship team · 6 min 30 s", so the band or the next speaker can get ready.
+
+![A stage screen set to Timer and up next: the countdown at 12:34 with "Next: Response · Worship team · 6 min 30 s" beneath it](site/assets/images/stage-layout.png)
+
+- The speaker is left out when a segment has none, and a line too long for the screen ends in "…".
+- The line is not shown on the last segment or during a Quick timer.
+- The same three choices, in the same words, are offered everywhere a stage screen is set up: each paired phone or tablet, web stage displays, the second screen on a PC, full screen on the host, and the Stage simulator.
+- A paired phone or tablet still on an earlier version shows only the next segment's name.
 
 **Disconnect** keeps a device saved but pauses its service access. **Reconnect** on the host can restore it without another code when the receiver app is available on the same reachable network. **Forget device** revokes approval and requires pairing again. If the receiver deliberately leaves, it must choose **Reconnect saved host** to rejoin. **Stop sharing** is deliberate; host sharing does not automatically restart on app launch.
 
@@ -415,6 +468,8 @@ While sharing, **Settings › Screens & devices › Web screens** shows three wa
 | Order of service | The rundown with the current item marked **NOW**; no times. Speakers only if **Show speakers in the order of service** is on. | The **guest code** (4 digits, the same each week until you tap **Change guest code**), or nothing if set to open. |
 | Stage display | The full-screen countdown, cues and Quick messages. | The **team code**. |
 | Service overview | Time left, ahead or behind, finish time and the rundown with durations and speakers. | The **team code**. |
+
+**Stage displays show**, under **Web screen options**, sets what every web Stage display shows under the countdown: **Timer only**, **Timer and segment name** or **Timer and up next**. It applies to all of them at once.
 
 The 6-digit team code changes each time you share, or with **New team code**, and unlocks switching between all three views. Order of service access can be **Off**, **Needs the guest code** (the default) or **Open to anyone on this Wi-Fi**. Changing a code signs out the browsers that used the old one. No browser can control the service or see private notes.
 
@@ -466,7 +521,7 @@ When the second screen stops, the preview goes back to how it was.
 | Setting | What it does |
 | --- | --- |
 | **Open the second screen when a service starts** | Off to begin with. When on, starting a service or a Quick timer shows the stage on the screen you last used. If that screen is not connected, nothing opens and Live says so. It never opens on your own screen by itself, and guided practice does not open it. |
-| **What the second screen shows** | **Timer only**, **Timer and segment name**, or **Timer and next segment**. This is the second screen's own choice; paired stage screens keep theirs. |
+| **What the second screen shows** | **Timer only**, **Timer and segment name**, or **Timer and up next**. This is the second screen's own choice; paired stage screens keep theirs. |
 
 The app remembers the screen you last showed the stage on and offers it first next time. After changing the resolution or the arrangement of screens in Windows, click **Show** once to choose it again. These choices are kept on that computer and are not part of a backup.
 
@@ -485,6 +540,8 @@ Use this when your own screen is the one people watch. During a service or a Qui
 
 **To leave**, press **Esc** or **F11**, or tap or click anywhere and then **Exit full screen**. The Exit control also shows for the first few seconds. On Android, Back leaves it too. Full screen leaves by itself when the service ends.
 
+**A phone or tablet turns sideways.** On Android, full screen turns the stage picture to landscape, either way round, so the countdown is as large as it can be. When you leave full screen, the phone or tablet goes back to turning as it did before. A PC is unchanged.
+
 Nothing changes in what the LED sign, a second screen or paired screens receive.
 
 ### Running the service from full screen
@@ -495,11 +552,11 @@ On a PC the keys work as they do on Live, with the same safety rules.
 - **Next segment** still needs its second press.
 - With **Lock controls** on, every key is blocked, Esc and F11 included. A tap, a click or Esc shows **Controls locked** and **Hold to unlock** in place of Exit.
 
-![Full screen on the device running the service: the countdown dims behind a small card asking "Pause Sermon?" with Cancel and Confirm pause](site/assets/images/full-screen-confirm.png)
+![Full screen on the device running the service: the countdown and the up next line dim behind a small card asking "Pause Sermon?" with Cancel and Confirm pause](site/assets/images/full-screen-confirm.png)
 
 ### What full screen shows
 
-The same three choices: **Timer only**, **Timer and segment name**, or **Timer and next segment**.
+The same three choices: **Timer only**, **Timer and segment name**, or **Timer and up next**.
 
 | Device | Where to choose |
 | --- | --- |
@@ -515,8 +572,9 @@ Load the correct program, check its first segment and destination, then **Start 
 **Before you start.** In Ready you can:
 
 - Use **Change** to swap in another program (pinned first, with search); an 8-second Undo switches back.
-- Set a **Pre-service countdown** (**Set time**). The display shows the clock until the last hour, counts down to the start, then holds "STARTING SOON" at 00:00. It never starts the service by itself. Tapping Start first segment early asks "Start now?" first.
+- Set a **Pre-service countdown** (**Set time**). The time is chosen on a 24-hour clock; on a PC you can type the hours and minutes. The display shows the clock until the last hour, counts down to the start, then holds "STARTING SOON" at 00:00. It never starts the service by itself. Tapping Start first segment early asks "Start now?" first.
 - Read the "Last time" review note if the same program has one.
+- Run **Check this service**, beside **Start first segment**, to see every warning fire on the Simulator first. See [Build a reusable program](#05-build-a-reusable-program).
 
 | Control or reading | What to do and expect |
 | --- | --- |
@@ -536,7 +594,7 @@ Tap a row in **Service rundown** to inspect its timing, speaker and private note
 
 At zero, the operator view enters **Overtime** and shows red text while the display stays at 00:00 or the configured At zero text. This is intentional. Start the next segment when appropriate; do not add time merely to hide an overrun from the report.
 
-The **Stage & display** panel holds Stage cues, **Show clock**, **Send message**, **Blank screen** and **Quick timer**, plus the display preview. **Show clock** puts the time of day on the display (12 or 24 hour, set in Display settings › Clock format); **Back to clock** or **Show timer** returns. **Blank screen** is a toggle: tap again as **Unblank screen** to restore current output. It also works after End service. Timing and phone alerts continue while blanked, but automatic stage warnings are suppressed. The preview should remain present and identify intentional blanking.
+The **Stage & display** panel holds Stage cues (three across where there is room), **Show clock**, **Send message**, **Blank screen** and **Quick timer**, plus the display preview. **Show clock** puts the time of day on the display (12 or 24 hour, set in Display settings › Clock format); **Back to clock** or **Show timer** returns. **Blank screen** is a toggle: tap again as **Unblank screen** to restore current output. It also works after End service. Timing and phone alerts continue while blanked, but automatic stage warnings are suppressed. The preview should remain present and identify intentional blanking.
 
 **Lock-screen controls.** On a phone or tablet, during a service, a notification shows the current segment with a live countdown (counting up in overtime), with Pause/Resume and Next; Next needs a second tap. It is on by default in **Settings › Warnings & alerts › During a service**, and it obeys Lock controls.
 
@@ -559,7 +617,7 @@ It counts down on the LED sign, stage screens, web screens and a second screen t
 
 ## 11 — Run the service from a PC
 
-In a wide window, on a PC or a large tablet held sideways, Live fills the screen instead of scrolling one column of cards. Everything works as in [Operate a live service](#10-operate-a-live-service): every timer action still asks first, and **Lock controls** still blocks them all. This lesson covers what the wide screen adds.
+In a wide window, on a PC or a 10-inch or larger tablet held sideways, Live fills the screen instead of scrolling one column of cards. Everything works as in [Operate a live service](#10-operate-a-live-service): every timer action still asks first, and **Lock controls** still blocks them all. This lesson covers what the wide screen adds.
 
 ### The Live home, before a service
 
@@ -575,7 +633,7 @@ With no service loaded, a wide window shows three areas.
 
 ### Choose a desktop layout
 
-**Settings › Desktop layout** lists five layouts. Each arranges the same timer, cues, display preview and rundown. Choosing a layout also sets the theme it comes with; you can pick any theme afterwards.
+**Settings › Desktop layout** lists five layouts. (On a tablet the row is **Tablet layout**; see below.) Each arranges the same timer, cues, display preview and rundown. Choosing a layout also sets the theme it comes with; you can pick any theme afterwards.
 
 ![Settings › Desktop layout: layout cards for Mission control and Three panes, with a preview beside them and Save appearance at the bottom](site/assets/images/desktop-layout-settings.png)
 
@@ -591,6 +649,20 @@ Click a layout, then **Save appearance**. If you already used the app before Mis
 
 A window narrower than 1200 or shorter than 600 keeps the phone and tablet layout. So does the focused operator view.
 
+### On a tablet
+
+The same setting is called **Tablet layout** on an Android tablet, with the line "Used when the tablet is in landscape".
+
+![Appearance on a tablet: the Layout & accessibility tab with Tablet layout, and Mission control and Three panes to choose from](site/assets/images/tablet-layout.png)
+
+| Device | What Settings shows |
+| --- | --- |
+| PC | **Desktop layout**. |
+| Tablet of 10 inches or more | **Tablet layout**. It is used with the tablet in landscape and the app filling the screen. In portrait or split screen, Live keeps the phone layout. |
+| 7 or 8-inch tablet, or a phone | Nothing. The screen is never wide enough, so Settings, Settings search and Appearance do not offer a layout. Saved looks and keyboard keys on buttons are still there. |
+
+The layout you had already chosen is kept.
+
 ### Mission control
 
 For seeing the whole service at a glance.
@@ -600,14 +672,14 @@ For seeing the whole service at a glance.
 - **The strip across the top** says how far ahead or behind the service is, the time now, the time elapsed, the planned finish and when it is now set to end, with **End service** beside it.
 - **The timer, the display preview and the cues** sit side by side.
 - **The rundown is a timeline** along the bottom. Each segment is as wide as the time it takes. Finished segments show how long they really took, with the part that ran over marked. A line shows where the service is now. Click a segment for its details.
-- **The keys** that work on Live are listed along the bottom edge.
+- **The keys** that work on Live are listed along the bottom edge, **J Jump to segment** among them.
 - In a tall window it also lists the screens that have joined, under the display preview, and the service's latest activity, under the cues.
 
 ### Three panes
 
-The whole rundown is on the left, with how long each finished segment really took and how far ahead or behind the service is running. The timer and its controls are in the middle, with the private note in view. The display preview, cues and messages are on the right. Live, Programs, Reports and Settings become tabs in the header.
+The whole rundown is on the left, with how long each finished segment really took and how far ahead or behind the service is running. The timer and its controls are in the middle, with the private note in view. The display preview, cues and messages are on the right. Live, Programs, Reports and Settings become tabs in the header. In a window at least 800 high, the keys are listed under the middle pane, as they are in The dial.
 
-![Three panes in the Paper & Ink theme: rundown on the left, a large countdown ring in the middle, display preview and stage cues on the right](site/assets/images/desktop-three-panes.png)
+![Three panes in the Paper & Ink theme: rundown on the left, a large countdown ring in the middle with the keys listed beneath it, display preview and stage cues on the right](site/assets/images/desktop-three-panes.png)
 
 ### The dial
 
@@ -619,7 +691,7 @@ Built around the app's own mark. The whole service is a ring, with a piece for e
 
 Dense, and made to be run from the keyboard. The running segment is one strip across the top: its name, a large countdown, how far ahead or behind the service is, when it will end, and the timer controls. Below it the rundown is a table, with a column each for speaker, planned time, start, actual time, how far over or under, and state. The private note sits underneath. A status line along the bottom shows where the output is going and whether the controls are locked.
 
-Before the first segment starts, Keys shows the three panes, which have room for the start controls.
+Before the first segment starts, Keys shows the three panes, which have room for the start controls. In a window as small as 1200 × 600, **Recover time** and **Print** move to a second line under **Edit upcoming**, so nothing runs off the pane.
 
 ![Keys in Graphite: a strip with the segment, countdown and controls, the rundown as a table, and the keys listed along the bottom](site/assets/images/desktop-keys.png)
 
@@ -643,6 +715,8 @@ The layouts grow with the window. A 1366 × 768 laptop window looks as described
 
 On a PC, Pause, Next segment, Custom and the cue buttons show the key that presses them. Turn this on or off with **Show keyboard keys on buttons**, under **Settings › Desktop layout**.
 
+The line of keys along the bottom of Mission control and Keys, and under the middle pane of Three panes and The dial, follows the same switch. It reads, for example, "Space Pause · PgDn PgDn Next · + − Adjust time · Ctrl Z Undo · J Jump to segment · 1 – 9 Cues · M Message · Ctrl L Lock". When the line is too long for the room, the least needed keys are left out. With **Clicker and foot pedal** switched off, it stops listing Space and Page Down; see [Keyboard, clicker and Commands](#12-keyboard-clicker-and-commands).
+
 ### Saved looks
 
 **Save this look** keeps the layout, theme, spacing, contrast and key labels together under a name, such as "Sunday morning", so you can go back to it in one step. Up to 8 are kept, and they are included in backups. **Reset to default** returns to Mission control with Midnight Lime.
@@ -653,7 +727,7 @@ If the same PC runs your lyrics or slides, the mini timer keeps the countdown in
 
 ![The mini timer: Sermon at 12:38, Next · Response · 10 min, 40 s behind, with Pause, Next, a WRAP UP cue button and Expand](site/assets/images/mini-timer.png)
 
-**To open it** during a service, click the mini timer button at the top right of Live, beside Lock controls. You can also choose **⋮ › Mini timer**, press **Ctrl+M**, or pick it from Commands.
+**To open it**, click the mini timer button at the top of the window. It is there on every page: Live, Programs, Reports and Settings. You can also press **Ctrl+M** from any page, choose **⋮ › Mini timer** on Live, or pick it from Commands.
 
 The app shrinks to a small window that stays on top of other programs. It shows:
 
@@ -663,13 +737,15 @@ The app shrinks to a small window that stays on top of other programs. It shows:
 
 Pause, Next and closing the window ask before acting, as usual, in a compact form. The cue button turns into **Show timer** while that cue is on stage. Adjusting time needs the full window. With **Lock controls** on, the buttons give way to **Hold to unlock**. Dragged very narrow, the window shows only the name and the countdown.
 
+**With no service running** the mini timer still opens. It shows the time of day and, when a service is loaded, its name and start time, counting down in the last hour before it. There is nothing to pause, so it has only **Expand**.
+
 **To leave it**, click **Expand** or press **Ctrl+M** again. The full window comes back exactly where it was. It also comes back by itself when the service ends.
 
 Test the mini timer with your slides program on your PC before relying on it in a service.
 
 ### Programs, Reports and Settings in a wide window
 
-- **Programs** lists your programs on the left, the chosen program's segments as a table in the middle, and a summary with **Load into Live** on the right. See [Build a reusable program](#05-build-a-reusable-program).
+- **Programs** lists your programs on the left, with **New program** under the list, the chosen program's segments as a table in the middle, and a summary with **Load into Live** on the right. See [Build a reusable program](#05-build-a-reusable-program).
 - **Reports** lists saved services down the left and opens the chosen one beside them. See [Read, export and print reports](#17-read-export-and-print-reports).
 - **Settings** sets its groups in two columns, and most pages put a preview or a summary beside the settings. See [Make the workspace yours](#18-make-the-workspace-yours).
 - Quick timer, Print, Export, Version history, Segment library, Recover time and Edit upcoming open as dialogs in the middle of the window, not as sheets across the bottom.
@@ -709,7 +785,8 @@ On a PC the whole service can be run from the keyboard. Two rules hold for every
 - **Timer and stage keys** (from Space down to M in the table) work on Live while a service is running, with no question or other page on top. The cue numbers and <kbd>M</kbd> also need a display connected.
 - <kbd>Ctrl</kbd> <kbd>Z</kbd> needs a segment change to undo. <kbd>J</kbd> needs a later segment to jump to.
 - <kbd>Ctrl</kbd> <kbd>K</kbd> and <kbd>?</kbd> work on any tab, but not under a dialog.
-- <kbd>Ctrl</kbd> <kbd>M</kbd> and <kbd>F11</kbd> work whenever a service is running. In full screen, the timer and stage keys work as they do on Live.
+- <kbd>Ctrl</kbd> <kbd>M</kbd> works on every page, with or without a service. <kbd>F11</kbd> works whenever a service is running. In full screen, the timer and stage keys work as they do on Live.
+- <kbd>Space</kbd>, <kbd>B</kbd>, <kbd>Page Down</kbd> and <kbd>→</kbd> follow the **Clicker and foot pedal** switch; see below.
 - **No key does anything while you are typing in a field.** A question mark typed into a field is still a question mark.
 - The <kbd>+</kbd> key works without Shift, and the number pad's keys work too.
 
@@ -741,8 +818,20 @@ A clicker or pedal works like a small keyboard: each button sends one key.
 | B or Space | Pause or resume: asks first, and Space or Enter confirms | Pause or resume **at once, without asking** |
 | Page Up, Left arrow, F5 and others | Nothing | Nothing |
 
-- **On a PC** these keys always work on Live; there is nothing to turn on.
-- **On a phone or tablet** a Bluetooth clicker needs **Settings › Warnings & alerts › Clicker and foot pedal** switched on. A clicker's pause acts at once there, because there is no screen in the hand to confirm on. Give the clicker only to someone who understands that.
+One switch turns these keys on or off on every device: **Settings › Warnings & alerts › During a service › Clicker and foot pedal**. It is on to begin with.
+
+- **On a phone or tablet** a clicker's pause acts at once, because there is no screen in the hand to confirm on. Give the clicker only to someone who understands that.
+- **On a PC** the switch works too. Turn it off when a stray pedal, or the clicker that drives your slides, would otherwise reach the timer.
+
+**A PC cannot tell a clicker from its keyboard.** With the switch off, <kbd>Space</kbd>, <kbd>B</kbd>, <kbd>Page Down</kbd> and <kbd>→</kbd> do nothing from the keyboard either.
+
+| With the switch off on a PC | What happens |
+| --- | --- |
+| Space, B, Page Down and → | Do nothing on Live, from a clicker or the keyboard. |
+| The buttons on screen | Still work, and still ask first. |
+| +, −, Ctrl Z, M, the number keys and the other shortcuts | Still work. |
+| The Pause and Next buttons, the line of keys and Commands | Stop showing Space and Page Down. |
+| The shortcuts list and Test a clicker or pedal | Say those keys are switched off. |
 
 ### Test a clicker or pedal
 
@@ -758,56 +847,171 @@ Before the service, find out what each button really sends.
 
 ## 13 — Prepared cues and automatic warnings
 
-Prepared **Stage cues** are short reusable instructions such as WRAP UP or AMEN. Configure them before the service in **Settings › Stage cues**, or use the **Manage cues** link on Live.
+Prepared **Stage cues** are short reusable instructions such as WRAP UP or SPEAK UP. Configure them before the service in **Settings › Stage cues**, or use the **Manage cues** link on Live.
 
-1. Create or edit a cue's text, font, height, bold/italic, alignment and effect (static, scroll or flash). Then set how it looks on screens; see below.
+1. Create or edit a cue's text, choose **Bold** or **Italic**, and pick an **Effect**. Then set how it looks on the LED sign and on screens; see below.
 2. Save it. The Live cue buttons share this saved set across services.
 3. During the service, **tap the cue once to send**. On a PC, the keys **1** to **9** send the first nine cues, and pressing the number of the cue that is showing goes back to the timer. There is no editing step on Live; choose deliberately. Before a service starts, Stage cues says "Cues work once the service starts".
 4. Select **Show timer** when the instruction has served its purpose. The timer has continued beneath the cue.
 
 Changing the saved cue later does not rewrite content already on stage. Deleting an individual cue or warning offers an **eight-second Undo**, preserving its formatting. This Undo does not apply to deleting reports.
 
-![Prepared Stage cues in Settings on a phone, separated into editable rows](site/assets/images/cues.png)
+![Stage cues in Settings on a phone: the seven cues a new install starts with, each with a line saying how it shows on the sign and on screens](site/assets/images/cues.png)
+
+### The cues you start with
+
+A new install has seven cues, on keys 1 to 7. They are a starting set: change them, delete them or add your own.
+
+| Key | Cue | On screens | On the LED sign |
+| --- | --- | --- | --- |
+| 1 | **WRAP UP** | Amber banner at the bottom, pulsing | A word at a time |
+| 2 | **TIME'S UP** | Red, full screen, flashing | Flashes, a word at a time |
+| 3 | **SPEAK UP** | White banner at the top | Scrolls |
+| 4 | **SLOW DOWN** | White banner at the top | Scrolls, a little slower |
+| 5 | **MIC OFF?** | Amber banner at the top | Scrolls |
+| 6 | **FINAL SONG** | Green banner at the bottom | Scrolls |
+| 7 | **SEE ME** | Your theme's colour, full screen, sliding in | Scrolls |
+
+On the LED sign they use the tall 14-pixel letters, which read best from a distance. On screens each is set to wrap, so it holds still and is as large as fits.
+
+**If you already use the app**, the earlier WRAP UP, TIME'S UP and MIC LOW, where still as they came, are replaced by these seven, followed by any cues you added. Cues and warnings you changed are left alone.
+
+### Effects
+
+The **Effect** list says what each effect does. The names that end in "(must fit)" need text short enough for the LED sign.
+
+![The Effect list in the cue editor: Static (must fit), Scroll long text, Flash, Flash then hold (must fit), Pulse, Slide in and Countdown bar, each with a line saying what it does](site/assets/images/cue-effects.png)
+
+| Effect | On screens | On the LED sign |
+| --- | --- | --- |
+| **Static (must fit)** | Holds still. | Holds still. The text must fit. |
+| **Scroll long text** | Moves across. | Moves across. |
+| **Flash** | Blinks on and off until cleared. | The same. Long text shows a few words at a time. |
+| **Flash then hold (must fit)** | Flashes three times, then stays steady. | The same, and flashes three times again every 5 minutes while the cue stays up. The text must fit. |
+| **Pulse** | Gently brightens and dims, about every two seconds. | The sign cannot dim, so it shows the text steady. Long text shows a few words at a time. |
+| **Slide in** | Slides in from the bottom edge as it appears, then holds still. A banner slides in from its own edge. | Steady, or scrolls if too wide. |
+| **Countdown bar** | A thin bar in the cue's colour, just under the words, empties as the cue's time runs out. | Steady, or scrolls if too wide. |
+| **Screen flash** | Washes the whole screen once with a deep shade of the cue's colour (red for a white cue) as it appears, then settles. In a banner only the band flashes. | Steady, or scrolls if too wide. |
+
+- **Long text with Flash or Pulse.** Text too wide for the sign is split into groups of whole words that fit, shown one after another, over and over. "PLEASE WRAP UP NOW" may show as "PLEASE", then "WRAP", then "UP NOW". Screens step through the same groups at the same time, unless **Wrap long text** is on, when they show the whole message at once. This works for up to 60 characters; for longer text the editor suggests **Scroll long text**. A single word too wide for the sign still has to be shortened.
+- **Slide in, Countdown bar and Screen flash are for screens.** The LED sign cannot draw them, so it shows the cue steady, or scrolls it at **Speed on the LED sign** when the text is too wide.
+- **The countdown bar needs a time to count.** That is a warning's time, or the time chosen when a cue is sent for a set time. A cue shown until cleared has no bar.
+- **Reduced motion.** With it on, a cue that slides in simply appears, and Screen flash gives the screen a coloured edge instead of a flash.
+- The countdown under a banner never moves or changes with any effect.
+
+### One editor, two displays
+
+Over the editor's preview is a small switch, **LED sign | Stage screen**. It starts on the display you are using. It changes the preview, and it also chooses which settings the editor shows. A line under the switch says which.
+
+![The cue editor on Stage screen: the LED sign and Stage screen switch over a preview of AMEN, with a line saying the settings shown are for the stage screen](site/assets/images/cue-editor-switch.png)
+
+| The switch is on | The editor shows |
+| --- | --- |
+| **LED sign** | The group **On the LED sign**: the display font, **Tall · 14 px** (switch it off for the shorter 7-pixel letters), the alignment and **Speed on the LED sign**. |
+| **Stage screen** | The group **On screens**: colour, position, **Wrap long text** and **Speed on screens**. |
+| Either | The text, **Bold**, **Italic** and **Effect**. These change both displays. |
+
+Nothing is lost by switching: the hidden settings are kept and saved. Editing a warning's text has the same switch, so a warning can have its own effect, colour, banner and screen speed.
 
 ### How a cue looks on screens
 
-The LED sign is small, red and one colour. Stage screens, web screens, a second screen and full screen are large and can do more. The cue editor has a group called **On screens** for them. Nothing in it changes the LED sign.
+The LED sign is small, red and one colour. Stage screens, web screens, a second screen and full screen are large and can do more. The **On screens** group is for them. Nothing in it changes the LED sign.
 
-![The cue editor's On screens group: Colour set to Amber, Position set to Banner at the bottom, Speed on screens at 30, and Same as the LED sign](site/assets/images/cue-on-screens.png)
+![The cue editor's On screens group: Colour set to Amber, Position set to Banner at the bottom, Wrap long text switched off and Speed on screens at 30](site/assets/images/cue-on-screens.png)
 
 | Setting | Choices |
 | --- | --- |
-| **Colour** | **White** (as before), **Amber**, **Red**, **Green** or **Theme colour**. They are fixed colours chosen to read clearly on the black stage background. |
+| **Colour** | **White** (as before), **Amber**, **Red**, **Green** or **Theme colour**. |
 | **Position** | **Full screen**: the cue takes the place of the countdown. **Banner at the top** or **Banner at the bottom**: the cue shows in a band and the countdown, or the clock, stays in view. |
+| **Wrap long text** | Shows the cue on up to 3 lines (2 in a banner), centred and as large as fits, instead of scrolling it or shrinking it onto one line. A scrolling cue then holds still on screens while the LED sign keeps scrolling it. |
 | **Speed on screens** | How fast a scrolling cue moves on screens, up to 48, twice the sign's fastest. Until you move it, screens follow the sign. **Same as the LED sign** puts it back. |
 
-The sign's own speed is the slider above it, **Speed on the LED sign**. A speed that suits the sign is slow on a big screen, which is why there are two.
+**Keep wrapped text short.** Text that would be too small to read on 3 lines scrolls instead, so nothing is cut off. With more than 60 characters the editor warns that long text is hard to read from a distance; you can still save it.
+
+**A banner** keeps the countdown in view.
 
 ![A stage screen showing the countdown at 12:34 with WRAP UP in an amber banner at the bottom](site/assets/images/cue-banner.png)
 
-A banner needs a running service to sit over. After the service has ended, a banner cue fills the screen. Bold, italic, flashing and scrolling work in a banner too.
+A banner needs a running service to sit over. After the service has ended, a banner cue fills the screen. Bold, italic and every effect work in a banner too.
 
-**Preview it both ways.** Over the editor's preview is a small switch, **LED sign | Stage screen**. It starts on the display you are using, and changing it only changes the preview. The editor for a warning's text has the same switch, so a warning can have its own colour, banner and screen speed.
+**A coloured cue that fills the screen** sits on a warm charcoal background with a band of its colour along the bottom edge. Red, Green and Theme colour cues have their words in that colour; Amber cues have warm white words. White cues stay white on black.
+
+![A red TIME'S UP cue filling a stage screen: red words on warm charcoal with a red band along the bottom edge](site/assets/images/cue-red-full.png)
+
+**Wrap long text and the countdown bar together:**
+
+![A green cue wrapped onto three lines, PLEASE MAKE YOUR WAY TO THE FRONT FOR PRAYER, with a countdown bar half empty just under the words](site/assets/images/cue-wrapped-bar.png)
+
+Scrolling cues move smoothly on paired screens, web screens, a second screen and full screen, and carry on from where they were when the host sends an update.
 
 In a wide window, the pane beside **Settings › Stage cues** and beside **Warnings & alerts** shows every cue and warning as your display will show it: **On the LED sign** with an LED sign or the LED simulator, and **On the stage screen** with stage screens or the Stage simulator. Point at a scrolling cue to play it.
 
-![Settings › Stage cues on a PC: three cues listed, with a pane on the right showing each one as the stage screen will, including an amber WRAP UP banner and a red TIME'S UP](site/assets/images/stage-cues-desktop.png)
+![Settings › Stage cues on a PC: seven cues listed, with a pane on the right showing each one as the stage screen will, including an amber WRAP UP banner, a red TIME'S UP and SEE ME in the theme's colour](site/assets/images/stage-cues-desktop.png)
 
-Cues, backups and program files you already have look the same as before. A paired phone or tablet still on an earlier version shows every cue in white and full screen, at the sign's speed.
+Cues, backups and program files you already have look the same as before. A paired phone or tablet still on an earlier version shows every cue in white and full screen, at the sign's speed, with the new effects as steady text.
 
 ### Text for the LED sign
 
-For LED text, choose **I-Proton Matrix**, **I-Proton Sq-Matrix**, or bundled **Tinos**. Matrix countdown digits are unchanged. Tinos has regular, bold, italic and bold-italic faces; no font import is needed. Tall 14 px preserves more serif detail. Short 7 px fits a smaller line. Static/flashing text must fit the LED width; scroll longer text. Changing square/circular LED preview cells does not change the actual sign's physical LEDs or glyph data.
+Switch the editor to **LED sign** for these. Choose **I-Proton Matrix**, **I-Proton Sq-Matrix**, or bundled **Tinos**. Matrix countdown digits are unchanged. Tinos has regular, bold, italic and bold-italic faces; no font import is needed. Tall 14 px preserves more serif detail. Short 7 px fits a smaller line. Changing square/circular LED preview cells does not change the actual sign's physical LEDs or glyph data.
+
+The sign is 32 columns wide, which is not much: in bold, TIME'S alone is too wide for it.
+
+| Effect | Text too wide for the sign |
+| --- | --- |
+| Static, Flash then hold | Must fit. Shorten the text or choose another effect; for Flash then hold the editor suggests Flash. |
+| Scroll long text | Scrolls. |
+| Flash, Pulse | Shows a few words at a time. |
+| Slide in, Countdown bar, Screen flash | Scrolls on the sign. |
 
 ### Automatic warnings
 
-Automatic rules live in **Settings › Warnings & alerts** and apply to **all services and rehearsals**. They trigger at **time remaining**, not time elapsed. In a ten-minute segment, a 01:30 rule triggers when 8 min 30 s have elapsed under ordinary uninterrupted timing. **Use suggested warnings** adds a starting set.
+Automatic rules live in **Settings › Warnings & alerts** and apply to **all services and rehearsals**. They trigger at **time remaining**, not time elapsed. In a ten-minute segment, a 01:30 rule triggers when 8 min 30 s have elapsed under ordinary uninterrupted timing.
 
-For each rule set the **Remaining time**, the warning text and **Where to show**: **Operator + phone notification** or **Operator and stage**. Choose **Show for** 1–120 seconds, or **Scroll once, then return** for scrolling text wider than the display. A stage warning returns to the current countdown, or At zero, after its duration. On the LED path, that duration begins after the controller acknowledges it.
+![Warnings & alerts on a phone: four example warnings with their switches, a note on when a warning fires, then Phone alerts](site/assets/images/warnings.png)
 
-![Shared warning rules and phone notification controls on a phone](site/assets/images/warnings.png)
+A new install has four warnings, for the operator and the stage. **Use suggested warnings** puts the suggested set back.
 
-New manual cues, Blank, Next and End service supersede a warning. Passed thresholds are not replayed retroactively when rules change. If a manual Quick message covers every connected stage screen, automatic stage cues are consumed while it is present; phone warnings continue. With a targeted Quick message, other stage screens can still show warnings.
+| At | Warning | On screens | Stays up for |
+| --- | --- | --- | --- |
+| 5:00 | **5 MIN LEFT** | White banner at the top | 12 seconds |
+| 2:00 | **2 MIN LEFT** | Amber banner at the bottom | 12 seconds |
+| 0:30 | **WRAP UP** | Amber banner at the bottom | 10 seconds |
+| 0:00 | **TIME'S UP** | Flashes the screen red once, then stays red on the whole screen | 10 seconds |
+
+On the LED sign each scrolls, and stays up long enough to pass twice.
+
+**When a warning fires.** Each warning fires once in each segment, when the countdown comes down to its time.
+
+- **It never fires as a segment starts.** A 5-minute segment does not begin with 5 MIN LEFT, and a 3-minute segment never shows it. A 6-minute segment shows it at 5:00.
+- **TIME'S UP** at 0:00 still fires at zero.
+- If you add time so that more is left than a warning's time, a warning that has not yet fired in this segment fires when the countdown comes down to it. One that has already fired does not fire again.
+- Removing time past a warning's time fires it.
+- Rehearsal speeds, phone notifications and **Check this service** follow the same rule. The check lists every warning that cannot fire in a segment; see [Build a reusable program](#05-build-a-reusable-program).
+
+### Edit a warning
+
+Tap or click a warning, or **Add**, to open **Edit warning** or **New warning**. It is set out as questions.
+
+![Edit warning on a PC, in two columns: When, 00:30 left with Change; What it shows, a preview with the LED sign and Stage screen switch and Edit text and style; Where, Operator only or Operator and stage; How long; On or off; Delete warning at the bottom left, Cancel and Save warning at the right](site/assets/images/warning-editor.png)
+
+| Question | What you set |
+| --- | --- |
+| **When** | The time left, in large figures and coloured as in the list. **Change** sets it. |
+| **What it shows** | A preview that plays by itself, with the LED sign and Stage screen switch, a line saying how the text looks, and **Edit text and style**, which opens the same editor a cue has. |
+| **Where** | **Operator only**: in the app and as a notification, while the stage keeps showing the timer. **Operator and stage**: also on the LED sign and stage screens, which then go back to the timer. |
+| **How long** | **Stays up for**, up to 120 seconds. For text that scrolls, **Scroll once, then back to the timer** is offered too; while it is on, the time is set by one scroll. |
+| **On or off** | Switch a warning off without deleting it. |
+
+- **On a PC** a wide window shows the editor in two columns, with **Delete warning** at the bottom left and **Cancel** and **Save warning** at the bottom right.
+- **On a phone** the editor uses the whole screen, with **Save** at the top.
+- **Two warnings cannot share a time.** If another warning already fires at the time you choose, the editor says so straight away and Save waits for a different time.
+- Deleting still asks first.
+
+![Edit warning on a phone: the whole screen, with Save at the top, then When, What it shows and Where](site/assets/images/warning-editor-phone.png)
+
+A stage warning returns to the current countdown, or At zero, after its time. On the LED path, that time begins after the controller acknowledges it.
+
+New manual cues, Blank, Next and End service supersede a warning. Passed times are not replayed when rules change. If a manual Quick message covers every connected stage screen, automatic stage cues are consumed while it is present; phone warnings continue. With a targeted Quick message, other stage screens can still show warnings.
 
 ### Alerts on the phone
 
@@ -922,7 +1126,7 @@ In a wide window, **Dates** opens a small calendar, **Filter service dates**, wi
 2. Or click a ready-made range: **Last 4 weeks**, **This month**, **Last month**, **This year**, or **All dates**, which clears the filter.
 3. Click **Apply**.
 
-A dot marks each day that has a saved report. The arrows beside the month names move between months. From the keyboard, the arrow keys move between days, Enter chooses, Page Up and Page Down change the month, and Esc cancels. A phone or a narrow window keeps the picker it had.
+A dot marks each day that has a saved report. Weeks start on Monday. The arrows beside the month names move between months. From the keyboard, the arrow keys move between days, Enter chooses, Page Up and Page Down change the month, and Esc cancels. A phone or a narrow window keeps the picker it had.
 
 ### Reading a report
 
@@ -949,7 +1153,7 @@ Print choices open as a sheet:
 
 The PDF repeats table headings and reserves footer space on every page for **Church Service Timer · I-Proton** and **Page N of M**. Service date and the document's preparation date/time/timezone are separate. Rundowns omit Planned start; historical reports retain useful planned/actual/paused columns.
 
-Choose **Print** to continue to Android's print screen, or the Windows print window on a PC, and select a printer or **Save as PDF**, or **Share PDF** to send the sheet directly. Review the destination and final pages. Printing a program before it has run offers a service date. A PDF is an exported copy; later app changes do not update a file already shared.
+Choose **Print** to continue to Android's print screen, or the Windows print window on a PC, and select a printer or **Save as PDF**, or **Share PDF** to send the sheet directly. Review the destination and final pages. Printing a program before it has run offers a **Service date**. Its calendar reads the date the way the app writes it, "Fri 20 Nov 2026", starts the week on Monday and takes a typed date as 20/11/2026. A PDF is an exported copy; later app changes do not update a file already shared.
 
 ## 18 — Make the workspace yours
 
@@ -969,7 +1173,7 @@ Choose a JPEG, PNG or WebP photo up to 5 MB and 40 megapixels. The app saves exa
 
 ![Appearance settings on a phone with selectable theme tiles](site/assets/images/appearance.png)
 
-The **Layout & accessibility** tab sets the **Desktop layout**, **Show keyboard keys on buttons** and **Saved looks** (all three are described in [Run the service from a PC](#11-run-the-service-from-a-pc)), then **Layout density** (Compact, Comfortable, Spacious or Automatic, the default), **High contrast**, **Reduced motion** and the divider style. **Settings › Desktop layout** opens straight on this tab and names the layout in use; the Theme tab's **Desktop layout and spacing** button switches to it.
+The **Layout & accessibility** tab sets the **Desktop layout** (**Tablet layout** on a 10-inch or larger tablet; a phone has neither), **Show keyboard keys on buttons** and **Saved looks** (all three are described in [Run the service from a PC](#11-run-the-service-from-a-pc)), then **Layout density** (Compact, Comfortable, Spacious or Automatic, the default), **High contrast**, **Reduced motion** and the divider style. With Reduced motion on, a cue that slides in simply appears, and Screen flash gives the screen a coloured edge instead of a flash. On a PC or a large tablet, **Settings › Desktop layout** (or **Tablet layout**) opens straight on this tab and names the layout in use, and the Theme tab has a button that switches to it.
 
 Other useful settings:
 
@@ -977,18 +1181,18 @@ Other useful settings:
 | --- | --- |
 | At zero | Display settings. Shared by every service: **Show 00:00** or **Custom text**. |
 | Default end screen | Display settings. Starting value for new programs; existing programs keep their own setting. |
-| Clock format | Display settings. 12 or 24 hour, and the **Blinking colon** on paired and web screens (on by default). |
+| Clock format | Display settings. 12 or 24 hour for the clock on stage, and the **Blinking colon** on paired and web screens (on by default). Times you choose in the app, such as the pre-service countdown, are always 24-hour. |
 | LED preview shape | Display settings. Square or circular visual cells; does not reconfigure physical hardware. |
-| Desktop layout | How Live is arranged in a wide window: Mission control, Three panes, The dial, Keys or Classic. |
+| Desktop layout, or Tablet layout | How Live is arranged in a wide window: Mission control, Three panes, The dial, Keys or Classic. Not shown on a phone or a small tablet. |
 | Warnings & alerts | Shared rules; phone alerts, or Alerts on this computer on a PC; lock-screen controls; clicker and foot pedal, and its test page. |
-| Stage cues | Shared prepared cue buttons, with their formatting for the LED sign and for screens. |
+| Stage cues | Shared prepared cue buttons, with their effect and their formatting for the LED sign and for screens. |
 | Quick message presets | Saved rich messages for stage screens. |
-| Screens & devices | Pairing, saved devices, web screens, Requests from the stage, the Second screen on a PC, and Full screen on this phone. |
+| Screens & devices | Pairing, saved devices, web screens and what web stage displays show, Requests from the stage, the Second screen on a PC, and Full screen on this phone. |
 | Keep screen awake | Prevents sleep while the app is visible; it is not a guarantee against force-stop or power loss. |
 | Settings PIN | Optional lock for Settings, deleting and sign administration. See [Protect data and manage the LED device](#20-protect-data-and-manage-the-led-device). |
 | About | Installed version, creator I-Proton, What's new, Check for updates, Your data, Privacy policy, Guided practice, Diagnostics and the open-source licences. |
 
-Use **Search settings** at the top of Settings to find a page by name; "layout" finds Desktop layout and "keyboard" finds Keyboard shortcuts.
+Use **Search settings** at the top of Settings to find a page by name; "layout" finds Desktop layout on a PC, or Tablet layout on a large tablet, and "keyboard" finds Keyboard shortcuts.
 
 **Settings in a wide window.** The groups sit in two columns. Appearance keeps its preview beside the themes and layouts. Display settings lists its sections down the left. Warnings & alerts and Stage cues show what your display will show. Church profile, Backup & restore, Feedback centre, Settings PIN, About, Diagnostics and Ready for service each put a preview or a summary beside the settings.
 
@@ -1014,7 +1218,10 @@ Start with the destination badge, not repeated button presses. Identify whether 
 | A stage screen shows only a waiting message | The display is still set to the Simulator or the LED sign. Select **Show on stage screens** in the note on Live. |
 | Mobile preview looks frozen/stale | Receiver may be disconnected. Keep its app open, check network and Saved devices, then reconnect. Do not treat stale output as a live countdown. |
 | Cue command is rejected | Check who has control and whether the program, segment or selected cue changed. Review the current service instead of repeatedly pressing an old control. |
-| Warning not visible on stage | Check enabled rule, time-remaining threshold, Where to show and connection. Intentional Blank suppresses stage warnings; all-screen Quick messages can take priority. |
+| Warning not visible on stage | Check the warning is switched on, its time, **Where** (it must be **Operator and stage**) and the connection. Intentional Blank suppresses stage warnings; all-screen Quick messages can take priority. |
+| A warning never shows in a short segment | A warning set for the whole of a segment, or for longer, cannot fire: 5 MIN LEFT does not show in a 5-minute or a 3-minute segment. Run **Check this service** to list every warning that cannot fire. |
+| A cue will not save: its text is too wide for the LED sign | **Static** and **Flash then hold** must fit the sign. Shorten the text, or choose **Scroll long text**, or **Flash** or **Pulse**, which show long text a few words at a time. |
+| The stage shows only the next segment's name, not who and how long | That paired phone or tablet is on an earlier version, or the screen is set to another layout. Update it, and choose **Timer and up next**. |
 | No notification sound | Check Android permission, channel sound, volume, Do Not Disturb and Precise timing. Use **Test** under Sound and vibration. |
 | Warnings stop or the timer notification goes quiet with the screen off | Battery optimisation may pause warnings. Tap the battery hint on Live, or **Allow** on the Battery row in Ready for service, to open the Android setting. If background operation is unavailable, keep the app open. |
 | Screen is blank but timer runs | Check for intentional Blank. Tap **Unblank screen**, or choose **Show timer** as appropriate. |
@@ -1028,17 +1235,20 @@ Start with the destination badge, not repeated button presses. Identify whether 
 | Symptom | Check / next action |
 | --- | --- |
 | Windows protected your PC | The installer is not code-signed. Click **More info**, then **Run anyway**. |
-| Live looks like the phone app | The window is narrower than 1200 or shorter than 600, or the focused operator view is on. Widen or maximise the window. |
+| Live looks like the phone app | The window is narrower than 1200 or shorter than 600, or the focused operator view is on. Widen or maximise the window. On a tablet, turn it to landscape and let the app fill the screen. |
 | "No second screen connected" | Check the cable, then press **Windows + P** and choose **Extend**. With Duplicate there is only one screen to show on. |
 | The second screen did not open when the service started | Live says why: no screen has been chosen yet, or the screen used last time is not connected. Click **Show on second screen** once to choose it. |
 | A key does nothing | Check the controls are not locked, the cursor is not in a text field, Live is the page showing, no dialog is open, and a service is running. Press **?** for the list. |
-| A clicker does nothing | On a phone or tablet, turn on **Clicker and foot pedal**. Then open **Test a clicker or pedal** to see which key each button sends. |
+| Space and Page Down do nothing, but other keys work | **Clicker and foot pedal** is switched off in Settings › Warnings & alerts. On a PC that turns those keys off on the keyboard too. |
+| A clicker does nothing | Check **Clicker and foot pedal** is switched on. Then open **Test a clicker or pedal** to see which key each button sends. |
+| Check for updates offers only Open release page | That release has no Windows installer. Download what the page lists and install it yourself. |
+| Download and install says to finish the service first | An update cannot be installed while a service runs. End the service, then try again. |
 | No warning notification | Windows holds notifications back under **Do not disturb**, which it turns on by itself when the screen is duplicated. The taskbar button still flashes. Use **Test** in Warnings & alerts. |
 | Warnings make no sound | That is the default on a PC. Turn on **Play the Windows notification sound** if you want it. |
 | The countdown icon is missing beside the clock | It shows only while a service or Quick timer runs. On Windows 11 look behind the small arrow and drag it out. Check **Show the countdown in the notification area** is on. |
 | A dropped file is refused | Drop one program file (`.json` or `.csv`) at a time. A drop is refused while a service is running or the controls are locked. |
 | Phones cannot reach the PC host | Allow the app through Windows Defender Firewall on private networks, and check the PC's network is set to Private. |
-| The mini timer or full screen will not open | Both need a running service, and neither opens from the other. Unlock the controls first. |
+| The mini timer or full screen will not open | Full screen needs a running service or Quick timer; the mini timer does not. Neither opens from the other. Unlock the controls first. |
 
 ### How recovery works
 
@@ -1056,7 +1266,7 @@ Use **Settings › Backup & restore › Export backup** before changing devices 
 
 Saved sign passwords are left out unless you tick **Include saved passwords**, which encrypts them with a **Passphrase** you choose. Restoring asks for that passphrase; skipping it or a wrong passphrase still restores everything else.
 
-Restoring replaces saved data on the target device after review (**Restore and replace**). Export its current setup first if it should be kept. Backups do **not** transfer an active clock, phone permissions, pairing approvals, the Settings PIN, received programs waiting for review, local editing drafts or a live display connection. Some choices also stay with the device: the desktop layout in use, what the Simulator simulates, the second screen and full screen choices, and a PC's notification sound and countdown icon switches. Reconnect and approve equipment again as needed.
+Restoring replaces saved data on the target device after review (**Restore and replace**). A backup from before 0.34 has its untouched starting cues and warnings brought up to the new suggested set, as an update does; any you changed are kept. Export its current setup first if it should be kept. Backups do **not** transfer an active clock, phone permissions, pairing approvals, the Settings PIN, received programs waiting for review, local editing drafts or a live display connection. Some choices also stay with the device: the desktop or tablet layout in use, what the Simulator simulates and shows, the second screen and full screen choices, and a PC's notification sound and countdown icon switches. Reconnect and approve equipment again as needed.
 
 **Settings PIN** (optional, 4–8 digits) locks Settings, deleting programs and reports, and LED sign administration; Live, Programs and Reports stay open. Setting it shows a one-time recovery code that removes the PIN if forgotten (**Forgot PIN?**). Settings lock again whenever the app leaves the screen. **Turn off PIN** removes it.
 
@@ -1083,7 +1293,7 @@ Suggested coached session: 10 minutes explaining roles and output, 15 minutes of
 - Check power, battery optimisation on phones, network reachability and notification sound.
 - On a PC: set Windows to **Extend**, click **Show on second screen** and look at the projector. Decide whether warnings should play the Windows sound; they are silent unless you turn it on.
 - Test the clicker or pedal on **Test a clicker or pedal**, and tell whoever holds it what each button does.
-- Review shared warning thresholds and prepared cues with the service leader.
+- Review shared warning times and prepared cues with the service leader. Run **Check this service** on the program and read the list of warnings that cannot fire.
 - Agree who hosts and who has control; name and approve receivers deliberately.
 - If browsers will follow, check the guest code, team code and join slide are current.
 - Open **⋮ › Ready for service** on Live to review the app checklist. An isolated simulator test is not proof of physical delivery.
@@ -1126,7 +1336,9 @@ Ask the learner to demonstrate each task with the simulator first:
 | Keyboard run (PC) | Pauses with Space and confirms, advances with Page Down twice, sends cue 1 and returns to the timer, and shows that Lock controls blocks every key. |
 | Second screen (PC) | Shows the stage on the projector, changes what it shows, and stops it with Stop or Esc. |
 | Full screen | Opens full screen, answers a timer question in the card over the stage, and leaves with Esc or Exit full screen. |
-| Cue on screens | Makes a cue an amber banner at the bottom and checks it with the LED sign and Stage screen preview switch. |
+| Cue on screens | Makes a cue an amber banner at the bottom, gives it an effect, and checks it with the LED sign and Stage screen preview switch. |
+| Check this service | Runs the check on a program, names a warning that cannot fire and says why, and explains that nothing reached the stage. |
+| Warning editor | Adds a warning, chooses Operator only or Operator and stage, and explains when it fires. |
 
 The learner should be able to perform the routine controls and explain when to call the experienced operator. Repeat the exact church equipment setup before independent operation; a simulator pass alone is not the equipment check.
 
@@ -1140,13 +1352,17 @@ The learner should be able to perform the routine controls and explain when to c
 | Quick timer | A single countdown with no program or Ready step; saved only if you choose. |
 | Host | The device that owns the service clock, saving and output: a phone, a tablet or a PC. |
 | Stage cue | A prepared one-tap instruction with saved formatting, for the LED sign and for screens. |
+| Effect | How a cue behaves: static, scroll, flash, flash then hold, pulse, slide in, countdown bar or screen flash. |
+| Automatic warning | A cue the app shows by itself, once in each segment, when the countdown reaches its time. |
+| Check this service | A quick run through a program on the Simulator that lists every warning and flags any that cannot fire. |
+| Up next | The line under a stage countdown that says who is next and for how long. |
 | Quick message | A richer temporary message for selected stage screens. |
 | Web screen | A browser on the same Wi-Fi following the service; it cannot control it. |
 | Second screen | A projector or monitor plugged into the PC, showing the stage full screen with no pairing. |
 | Full screen | The stage countdown on the screen of the device running the service. |
 | LED simulator / Stage simulator | The Simulator pretending to be an LED sign or a stage screen. Neither sends to hardware. |
-| Desktop layout | How Live is arranged in a wide window: Mission control, Three panes, The dial, Keys or Classic. |
-| Mini timer | A small always-on-top window on a PC with the countdown, Pause, Next and one cue. |
+| Desktop layout, or Tablet layout | How Live is arranged in a wide window: Mission control, Three panes, The dial, Keys or Classic. |
+| Mini timer | A small always-on-top window on a PC with the countdown, Pause, Next and one cue; with no service, the time of day. |
 | Commands | A searchable list of everything you can do now, opened with Ctrl+K on a PC. |
 | Banner | A cue shown in a band at the top or bottom of a screen while the countdown stays in view. |
 | Guest code / team code | The guest code opens Order of service and stays the same each week; the team code also opens Stage display and Service overview, and changes each time you share. |
@@ -1173,8 +1389,12 @@ The learner should be able to perform the routine controls and explain when to c
 12. With Lock controls on, which keys still work? **None. Every key is blocked until you Hold to unlock.**
 13. Does a warning play a sound on a PC? **Not unless Play the Windows notification sound is turned on. A notification appears and the taskbar button flashes.**
 14. Does a projector plugged into the PC need pairing? **No. Set Windows to Extend and click Show on second screen.**
-15. A cue is set to Banner at the bottom. What does the LED sign show? **The cue as before. Colour, banners and Speed on screens change screens only.**
+15. A cue is set to Banner at the bottom. What does the LED sign show? **The cue as before. Colour, banners, Wrap long text and Speed on screens change screens only.**
 16. The chip reads Stage simulator. Is anything reaching the stage? **No. Either simulator is a preview on your own device.**
+17. A five-minute segment has a warning at 05:00. When does it show? **Never. A warning fires only when the countdown comes down to its time, not as a segment starts.**
+18. Does Check this service send anything to the LED sign or the stage screens? **No. It runs on the Simulator only, changes nothing on Live and saves no report.**
+19. On a PC, Clicker and foot pedal is switched off. Does Space still pause? **No. A PC cannot tell a clicker from its keyboard, so Space, B, Page Down and → do nothing. The buttons on screen still work.**
+20. A cue uses Slide in and its text is too wide for the LED sign. What does the sign show? **It scrolls the text. Screens slide it in.**
 
 ### Current scope
 
@@ -1182,6 +1402,6 @@ This guide covers version 0.34.0 on Android and Windows. An iOS or Mac app and u
 
 Physical checks have established the supported W2 countdown, expected one-blink transitions, scrolling warnings returning to the current timer, and Next segment after overtime. Full-service endurance, power-loss acceptance and controller administration writes still require controlled hardware validation. Web screens, guided practice, Quick timer, stage requests and the other features added from 0.19 to 0.34 are described here from the app's release notes and on-screen wording; behaviour on your phones, PCs, routers, browsers and projectors has not been verified by this handbook, so hands-on testing of that release remains the user's responsibility.
 
-**The Windows app is new.** Its installer is not code-signed, so Windows warns before it runs. The second screen, the mini timer, full screen and the countdown beside the clock depend on how Windows, your graphics driver and your screens behave. Rehearse the exact PC, projector and clicker before a service, and keep a phone with the same programs as a fallback.
+**The Windows app is new.** Its installer is not code-signed, so Windows warns before it runs. The second screen, the mini timer, full screen, the countdown beside the clock and **Download and install** depend on how Windows, your graphics driver and your screens behave. Rehearse the exact PC, projector and clicker before a service, and keep a phone with the same programs as a fallback.
 
 The online handbook and this Markdown guide are training materials, not a remote-control interface. Nothing in the handbook can connect to a sign, start a service or send a stage cue.
