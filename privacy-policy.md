@@ -1,6 +1,6 @@
 # Privacy policy
 
-**Church Service Timer by I-Proton** · Last updated **20 November 2026** · Applies to the Android app, version 0.30.0 and later, and the Windows app
+**Church Service Timer by I-Proton** · Last updated **21 November 2026** · Applies to the Android app, version 0.30.0 and later, and the Windows app
 
 Church Service Timer is a timer for running church services. It is built to work offline, on your church's own phones, screens and LED sign. This page explains, in plain words, what the app does with information. If anything here is unclear, write to us (see [Contact](#contact)).
 
@@ -10,7 +10,7 @@ The Windows app works the same way. Where this page says "phone", read "PC"; the
 
 - **No account, no cloud, no ads, no tracking.** There is nothing to sign in to. The app contains no advertising, no analytics and no tracking of its own, and it does not send your services, programs or reports to us or to any server.
 - **Your data stays on your phone.** Programs, service reports, review notes, cues, messages, settings, and your church's name, logo and banner are stored only inside the app on your phone.
-- **It talks only to devices in the room.** The app connects to your LED sign, to phones and tablets you pair, and to browsers showing a web screen, all on the same Wi-Fi or hotspot. The one exception is **Check for updates**, which asks GitHub for the newest version only when you press it.
+- **It talks only to devices in the room.** The app connects to your LED sign, to phones and tablets you pair, and to browsers showing a web screen, all on the same Wi-Fi or hotspot. The one exception is **Check for updates**, which asks GitHub for the newest version when you press it, or once a day if you switch on **Check for updates automatically**.
 - **You decide what leaves the phone.** Backups, exports, printouts, shared program files and feedback emails are only made when you choose to, and only go where you send them.
 
 ## What is stored on your phone
@@ -37,15 +37,17 @@ To show the timer on stage, the app connects only to equipment on the same local
 - **Paired phones and tablets.** A phone or tablet joins with a six-digit code or a QR code, and you approve it on the host phone. After that, the two devices talk over an encrypted connection.
 - **Web screens.** A browser on the same network (a laptop, smart TV or tablet) can show the timer by opening the phone's local address, for example `http://192.168.1.20:8080` or `http://your-phone-name.local:8080`, and entering a team code or guest code. The `.local` name is only announced on your local network, so devices elsewhere cannot see it.
 
-Android's "Internet" permission is what allows these local connections. The only online service the app reaches is GitHub, when you use Check for updates (below).
+Android's "Internet" permission is what allows these local connections. The only online service the app reaches is GitHub, for Check for updates (below).
 
 ## Checking for updates
 
-**Check for updates** in Settings › About looks for a newer version of the app. It never runs by itself: nothing is checked when the app starts or during a service, only when you press it.
+**Check for updates** in Settings › About looks for a newer version of the app when you press it.
+
+- **Automatically, only if you choose.** Under it, **Check for updates automatically** is off to begin with. If you switch it on, the app makes the same check by itself, at most once a day and never during a service, a rehearsal or a quick timer, or while the controls are locked. If a newer version is found, a notice on Live says so. Nothing is downloaded or installed without asking.
 
 - **What is sent.** One request over an encrypted (HTTPS) connection to GitHub's public API, `api.github.com`, asking for the latest release in the Church Service Timer guide repository, where new versions are published. No account is used, and nothing about you, your church, your services or your device is sent. The app identifies itself only as `church-service-timer`.
 - **On a Windows PC.** If you press **Download and install**, the app downloads the installer (and its checksum, if published) from the same release on GitHub. It is installed only after you confirm.
-- **What GitHub sees.** Like any website, GitHub sees your internet address and the time of the request. GitHub handles that under the [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). The app keeps no record of the check.
+- **What GitHub sees.** Like any website, GitHub sees your internet address and the time of the request. GitHub handles that under the [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). On your device the app keeps only the time of its last automatic check and the newest version it found, so it checks no more than once a day; these are not included in backups.
 
 ## Permissions, and why the app asks for them
 
