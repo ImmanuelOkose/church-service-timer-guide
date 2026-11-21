@@ -60,7 +60,7 @@
 <a class="sidebar-privacy" href="release-notes.html">Release notes</a>
 <a class="sidebar-privacy" href="privacy-policy/index.html">Privacy policy</a>
 </aside>
-<main id="main" tabindex="-1"><div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">LESSON 19 / 22 <span>10 MIN READ</span></p>
+<main id="main" tabindex="-1"><div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">LESSON 19 / 22 <span>11 MIN READ</span></p>
 <h1 id="19-connection-recovery-and-troubleshooting">Connection recovery and troubleshooting</h1><p class="chapter-deck">Diagnose a stale screen, lost connection, missing warning or rejected command, on a phone or a PC.</p></header>
 <nav class="on-this-page" aria-label="On this page"><strong>In this lesson</strong><a href="#displays-pairing-and-timing">Displays, pairing and timing</a><a href="#on-a-windows-pc">On a Windows PC</a><a href="#how-recovery-works">How recovery works</a></nav>
 <article class="prose"><p>Start with the destination badge, not repeated button presses. Identify whether the problem is the device's network, the app's connection, a held output, or the receiver itself.</p>
@@ -158,8 +158,16 @@
 <td>The left third asks Undo, the middle Pause or Resume, the right third Next segment. Choose <strong>Cancel</strong>; nothing changes until you confirm.</td>
 </tr>
 <tr>
+<td>The screens show the clock after End service, not an end screen</td>
+<td>The program is set to end on the <strong>Clock</strong>. Open the program, and under <strong>When the service ends</strong> choose <strong>End screen</strong>. For new programs and Quick timers, change <strong>Settings › Display settings › Default end screen</strong>.</td>
+</tr>
+<tr>
+<td>An earlier version refuses a backup or program file</td>
+<td>A program in it, or the default, is set to end on the Clock, which needs 0.35 or later. Update that device.</td>
+</tr>
+<tr>
 <td>Full screen is still showing after the service ended</td>
-<td>That is intended: it shows the end screen. Leave with <strong>Exit</strong> in the tray, <strong>Esc</strong> or <strong>F11</strong>. It closes by itself when the next service is set up.</td>
+<td>That is intended: it shows the end screen, or the clock. Leave with <strong>Exit</strong> in the tray, <strong>Esc</strong> or <strong>F11</strong>. It closes by itself when the next service is set up.</td>
 </tr>
 <tr>
 <td>No update notice, though Check for updates automatically is on</td>
@@ -202,7 +210,7 @@
 </tr>
 <tr>
 <td>Live looks like the phone app, or uses Classic whatever layout is chosen</td>
-<td>The window is narrower than 1200 or shorter than 600, or the focused operator view is on. Widen or maximise the window. Windows display scaling counts: a 1366 × 768 screen at 125% gives a window about 1093 wide. On a tablet, turn it to landscape and let the app fill the screen.</td>
+<td>The window is narrower than 1200 or shorter than 600, or the focused operator view is on. Widen or maximise the window; Classic is set out to work well if you cannot. Windows display scaling counts: a 1366 × 768 screen at 125% gives a window about 1093 wide. On a tablet, turn it to landscape and let the app fill the screen.</td>
 </tr>
 <tr>
 <td>"No second screen connected"</td>
@@ -211,6 +219,10 @@
 <tr>
 <td>The second screen did not open when the service started</td>
 <td>Live says why: no screen has been chosen yet, or the screen used last time is not connected. Click <strong>Show on second screen</strong> once to choose it.</td>
+</tr>
+<tr>
+<td>The line of keys is missing</td>
+<td>It shows only while <strong>Show keyboard keys on buttons</strong> is on, and not in a window 600 high. Classic has no line; it shows each key on its button.</td>
 </tr>
 <tr>
 <td>A key does nothing</td>
