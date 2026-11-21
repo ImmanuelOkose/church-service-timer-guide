@@ -4,7 +4,7 @@ For app **0.35.0** on Android and Windows · Prepared **21 November 2026** · Cr
 
 This handbook teaches a new operator to prepare a program, run its timer, communicate discreetly with the stage, recover from common interruptions, and close the service with a useful report. Keep it beside the phone or the PC during your first rehearsal. Screenshots use example data from automated app previews; they are illustrations, not evidence that a particular physical display is connected.
 
-**0.35.0 is the next release and is not published yet.** Until it is, the download page gives 0.34.0. What 0.35.0 adds is listed at the top of the [release notes](release-notes.html); on 0.34.0 those parts of this handbook do not apply yet.
+**This handbook is for 0.35.0.** What 0.35.0 adds is listed at the top of the [release notes](release-notes.html). On a phone or PC still on 0.34.0 or earlier, those parts of this handbook do not apply until you update.
 
 **The same app runs on a phone, a tablet and a Windows PC.** Programs, reports, settings and backups are the same everywhere. Where a step differs, this guide says "tap" for a phone or tablet and "click" for a PC, as the app itself does.
 
@@ -76,7 +76,7 @@ The app runs on phones and tablets with **Android 7.0 or later**.
 1. On the phone, open the [download page](https://github.com/ImmanuelOkose/church-service-timer-guide/releases/latest) and download the file ending in `.apk`. From 0.35.0, the lines under each release's notes say which file is for Android and which is for Windows, and how to install each.
 2. Open the downloaded file. Android asks whether to allow installs from your browser or file manager; allow it for this install.
 3. Open **Church Service Timer**. It starts on Live with the **LED simulator**, so nothing reaches a real stage until you choose a display.
-4. Check the version in **Settings › About**. This guide describes 0.35.0, the next release. Until it is published the download page gives 0.34.0, which does not yet have what the [release notes](release-notes.html) list under 0.35.0.
+4. Check the version in **Settings › About**. This guide describes 0.35.0. An earlier version does not have what the [release notes](release-notes.html) list under 0.35.0, so update it first.
 
 ### Allow what the app asks for
 
@@ -252,7 +252,7 @@ Allow about 15 minutes. Use the simulator so no practice cue reaches a real stag
 
 Then try the full workflow yourself. A step that says "tap" is a click on a PC.
 
-1. Install the app; see [Get started on Android](#02-get-started-on-android) or [Get started on Windows](#03-get-started-on-windows). Check **Settings › About** for its version. This guide describes 0.35.0, the next release.
+1. Install the app; see [Get started on Android](#02-get-started-on-android) or [Get started on Windows](#03-get-started-on-windows). Check **Settings › About** for its version. This guide describes 0.35.0.
 2. Tap the display chip at the top of Live and choose **Simulator**. The chip then reads **LED simulator**, or **Stage simulator** if you have chosen to simulate a stage screen.
 3. On Live choose **Start service**, then load **Quick rehearsal** (a Pinned or Recent program card on Live loads straight away). In a wide window on a PC, click the program under **Choose a program**, then **Start service**. Loading a program enters **Ready**; it does not start the countdown. On a PC, Ready shows your layout's own timer with the first segment's full time, not counting.
 4. Review the first and next segment. While Ready, choose **Service mode**: **Live timing · 1×** or a **Fast rehearsal** speed. A program's Service/Rehearsal grouping is not its speed setting. **Change** swaps in another program without leaving Ready.
@@ -1596,7 +1596,7 @@ The learner should be able to perform the routine controls and explain when to c
 
 ### Current scope
 
-This guide covers version 0.35.0 on Android and Windows. 0.35.0 is the next release; until it is published, the download page gives 0.34.0, which does not have what the release notes list under 0.35.0. An iOS or Mac app and universal LED compatibility are not provided; browsers can only follow a service as web screens, never control it. The original Matrix glyphs and square-matrix glyphs are unchanged. Tinos is bundled; installed/imported font loading is not part of the workflow. LED countdowns, segments and Quick timers stay within 59:59.
+This guide covers version 0.35.0 on Android and Windows. An earlier version does not have what the release notes list under 0.35.0. An iOS or Mac app and universal LED compatibility are not provided; browsers can only follow a service as web screens, never control it. The original Matrix glyphs and square-matrix glyphs are unchanged. Tinos is bundled; installed/imported font loading is not part of the workflow. LED countdowns, segments and Quick timers stay within 59:59.
 
 Physical checks have established the supported W2 countdown, expected one-blink transitions, scrolling warnings returning to the current timer, and Next segment after overtime. Full-service endurance, power-loss acceptance and controller administration writes still require controlled hardware validation. Web screens, guided practice, Quick timer, stage requests and the other features added from 0.19 to 0.35 are described here from the app's release notes and on-screen wording; behaviour on your phones, PCs, routers, browsers and projectors has not been verified by this handbook, so hands-on testing of that release remains the user's responsibility.
 
