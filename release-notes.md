@@ -2,28 +2,34 @@
 
 What changed in each version of Church Service Timer, newest first, in short. Update every phone, tablet and PC your team uses to the same version: from 0.28, program files, backups and sent programs can't be opened by 0.27 or earlier.
 
-## 0.35.0 · next release
-
-**Not released yet.** These changes are in the app's next version. Until it is published, the download page gives 0.34.0.
+## 0.35.0 · 21 November 2026
 
 **Full screen**
 
 - **Gestures in full screen.** Double tap or double-click the right third of the screen for the next segment, the middle to pause or resume, and the left third to undo the last segment change. Each asks first, in the same small card as the keys and buttons. See [Second screen and full screen](second-screen-and-full-screen.html).
 - **A control tray in full screen.** A single tap or click, a swipe up from the bottom edge, or the mouse at the bottom of the screen brings up a small tray: Pause or Resume, Next, −2 min, +2 min, Undo, Cues, Clock, Blank, End service and Exit. Every timer action in it still asks first. It hides after 6 seconds; Esc, Back or a swipe down puts it away. Nothing of it is sent to any stage screen.
-- **Full screen stays on the end screen.** However the service ends, full screen stays open and shows the end screen. The timer buttons grey out, while Cues, Clock, Blank and Exit keep working. It closes when the next service is set up.
+- **Full screen stays on the end screen.** However the service ends, full screen stays open and shows the end screen, or the clock. The timer buttons grey out, while Cues, Clock, Blank and Exit keep working. It closes when the next service is set up.
 - **Lock controls blocks all of it.** With the controls locked, the gestures and the tray do nothing, and a tap still shows Hold to unlock.
 
 **On a PC**
 
+- **A clearer line in Ready.** With a pre-service start time set, the line now reads "Timing has not started. The display shows the pre-service countdown until you start the first segment." in every layout.
 - **Ready shows the timer you will have.** A service that is loaded but not started now shows each desktop layout's own timer, at the size and in the place it has once running, with the first segment's full time and not counting. The Ready form sits where the timer controls go. Keys shows its own strip in Ready. See [Run the service from a PC](run-the-service-from-a-pc.html).
 - **The ring fills the middle pane at every window size** in Three panes and The dial, not only from 1920 × 1080, and Mission control's dial grows into spare height. A laptop, or a PC with display scaling, no longer has empty space above and below the ring.
-- **Classic fits a laptop window.** In a wide window less than 1000 high, Classic puts the controls beside the ring, so they are in view without scrolling. A window under 1200 wide, such as a 1366 × 768 screen at 125% scaling, uses Classic whatever the choice.
+- **The line of keys shows on laptop screens too.** Three panes and The dial now list the keys along the bottom wherever there is room, not only in a window 800 high: every common screen from 1280 × 720 up, 1366 × 768 and 1270 × 790 included. Only a window 600 high leaves it out.
+- **Classic fits a laptop window.** In a window 1200 or more wide and less than 1000 high, Classic puts the controls beside the ring, so they are in view without scrolling.
+- **Classic looks right in a window under 1200 wide,** which uses Classic whatever the choice: a 1366 × 768 screen at 125% scaling, or a 1024 × 768 screen. The ring is larger, under the segment's name or beside it, and the card fills the height. **Custom** stays on one line, the preview heading shortens to **PREVIEW** where it must, and cue names no longer break in the middle of a word.
 
 **On every device**
 
+- **No end screen: show the clock.** A program can end on the clock. In the Program editor the end screen card is now **When the service ends**, with **End screen** or **Clock**. **Settings › Display settings › Default end screen** has the same choice for new programs and Quick timers. With Clock, every display shows the clock when the service ends, Live says **Showing the clock**, and the End service question says so. See [Finish and hand over cleanly](finish-and-hand-over-cleanly.html).
 - **Check for updates automatically.** A new switch in Settings › About, off to begin with. When on, the app checks at most once a day and never during a service, and a newer version shows a notice on Live with **See update** and **Not now**. Nothing is downloaded or installed without asking. See [Get started on Android](get-started-on-android.html).
 - **The time on screens holds still, before the service too.** The countdown to a scheduled start, and the clock shown before it, no longer shift or change size each second on stage screens, the second screen, full screen, web screens and the Stage simulator. On a PC these screens, and the large time in the mini timer, now use the app's own font.
 - **Release notes say how to install on Windows.** The lines under each release's notes now say which file is for Android and which for Windows, what to do if Windows says "Windows protected your PC", and that a PC on 0.34.0 or later can use **Download and install** instead.
+
+**Keep every device on the same version**
+
+- A backup or program file in which a program, or the default, is set to end on the Clock needs 0.35 or later to open. A paired phone or tablet on an earlier version still shows the clock.
 
 ## 0.34.0 · 21 November 2026
 
