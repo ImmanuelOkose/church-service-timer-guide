@@ -4,7 +4,7 @@ These PNG files come from reviewed automated app previews in Church Service Time
 
 Every file was re-compressed without loss (oxipng), so the pixels match the preview. Three files differ from a plain copy, as noted in the second table. reports-desktop.png and mini-timer.png were not rendered again in the second refresh; the screens they show had not changed.
 
-For the 0.35.0 handbook, every file in both tables was compared, pixel for pixel, with the preview on the app's main branch after the full-screen tray, the automatic update check and the new Ready layouts were merged. None had changed, so none was replaced. Twelve were added: the full-screen tray on a PC and a phone, About with the automatic check on a phone and a PC, the update notice on Live on a phone and a PC, Ready in each of the five desktop layouts, and Three panes in a laptop-sized window. The twelve were re-compressed without loss with Pillow, as oxipng was not to hand, and each was checked to match its preview pixel for pixel. The version numbers they show ("0.33.0 is available", "Version 0.0.0 (test)") are sample data.
+For the 0.35.0 handbook, every file in both tables was compared, pixel for pixel, with the preview on the app's main branch (6d3f0c6). Thirteen had changed and were copied again: program-editor.png, stage-layout.png, desktop-mission-control.png, desktop-mission-control-large.png, second-screen-live.png, full-screen-confirm.png, stage-simulator.png, shortcuts.png, commands.png, cue-banner.png, cue-editor-switch.png, stage-cues-desktop.png and desktop-three-panes-laptop.png. Six more were added for the clock in place of an end screen, Classic in a narrow window and the line of keys on a laptop. Before those, twelve were added: the full-screen tray on a PC and a phone, About with the automatic check on a phone and a PC, the update notice on Live on a phone and a PC, Ready in each of the five desktop layouts, and Three panes in a laptop-sized window. All of these were re-compressed without loss with Pillow, as oxipng was not to hand, and each was checked to match its preview pixel for pixel. The version numbers they show ("0.33.0 is available", "Version 0.0.0 (test)") are sample data.
 
 ## Phone and tablet
 
@@ -32,6 +32,7 @@ For the 0.35.0 handbook, every file in both tables was compared, pixel for pixel
 | about-auto-update.png | auto-update-about-phone.png |
 | update-notice.png | update-notice-live-phone.png |
 | full-screen-tray-phone.png | host-full-screen-tray-phone.png |
+| no-end-screen-phone.png | no-end-screen-editor-phone.png |
 
 ## PC (wide window) and stage
 
@@ -69,6 +70,11 @@ For the 0.35.0 handbook, every file in both tables was compared, pixel for pixel
 | service-check.png | desktop-service-check.png |
 | update-pc.png | desktop-update-available.png |
 | about-pc.png | desktop-settings-about.png |
+| no-end-screen-pc.png | desktop-no-end-screen-editor-1366.png |
+| default-end-screen-pc.png | desktop-settings-display-end-screen.png |
+| desktop-classic-narrow.png | desktop-classic-1154.png |
+| desktop-classic-1024.png | desktop-classic-1024.png |
+| desktop-three-panes-1366.png | desktop-three-panes-1366.png |
 | update-notice-pc.png | update-notice-live-1366.png |
 | stage-cues-desktop.png | desktop-settings-stage-cues-stage-screen.png |
 | warnings-desktop.png | desktop-settings-warnings.png |
