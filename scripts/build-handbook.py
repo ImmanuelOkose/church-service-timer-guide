@@ -12,23 +12,23 @@ from pathlib import Path
 import markdown
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.34.0"
+VERSION = "0.35.0"
 UPDATED = "21 November 2026"
 GROUPS = [(0, 5, "Begin here"), (5, 9, "Connect the room"),
           (9, 16, "Run the service"), (16, 20, "Review & maintain"),
           (20, 22, "Train your team")]
 SUMMARIES = [
     "Know the four tabs on a phone and a PC, the operator clock and what a display acknowledgement really means.",
-    "Install the app on a phone or tablet, allow what it asks for and keep every device on the same version.",
+    "Install the app on a phone or tablet, allow what it asks for, keep every device on the same version and choose how it checks for updates.",
     "Install on a Windows 10 or 11 PC, learn what is different from the phone, and update it from inside the app.",
     "Use guided practice, then rehearse the complete service workflow in the simulator, without touching the stage.",
     "Create a reusable plan with segments, speakers, notes and its own end screen; import, share, restore versions and check it before Sunday.",
     "See every way to show the timer: Simulator, LED sign, phones, tablets, browsers, a second screen or your own screen.",
     "Join the right Wi-Fi, authenticate the supported W2 and understand its limits.",
     "Approve stage screens and operators, show who is up next, open web screens in a browser, and manage saved devices.",
-    "Show the stage on a projector or monitor plugged into the PC, or fill your own screen with the countdown.",
+    "Show the stage on a projector or monitor plugged into the PC, or fill your own screen with the countdown and run the service from it.",
     "Start, pause, adjust, advance and blank with clear control, or run a Quick timer.",
-    "Choose a desktop or tablet layout, read the Live home before a service, and keep a mini timer above your slides.",
+    "Choose a desktop or tablet layout, read the Live home and Ready before a service, and keep a mini timer above your slides.",
     "Every key that works on Live, the Commands list, and how to test a clicker or foot pedal.",
     "Prepare one-tap instructions, give them an effect and a look for screens and the sign, and set warnings by time remaining.",
     "Target stage screens, format the message and request explicit Seen.",

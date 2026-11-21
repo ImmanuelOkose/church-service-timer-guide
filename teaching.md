@@ -1,8 +1,10 @@
 # Church Service Timer — operator teaching guide
 
-For app **0.34.0** on Android and Windows · Prepared **21 November 2026** · Creator **I-Proton**
+For app **0.35.0** on Android and Windows · Prepared **21 November 2026** · Creator **I-Proton**
 
 This handbook teaches a new operator to prepare a program, run its timer, communicate discreetly with the stage, recover from common interruptions, and close the service with a useful report. Keep it beside the phone or the PC during your first rehearsal. Screenshots use example data from automated app previews; they are illustrations, not evidence that a particular physical display is connected.
+
+**0.35.0 is the next release and is not published yet.** Until it is, the download page gives 0.34.0. What 0.35.0 adds is listed at the top of the [release notes](release-notes.html); on 0.34.0 those parts of this handbook do not apply yet.
 
 **The same app runs on a phone, a tablet and a Windows PC.** Programs, reports, settings and backups are the same everywhere. Where a step differs, this guide says "tap" for a phone or tablet and "click" for a PC, as the app itself does.
 
@@ -71,10 +73,10 @@ The timer, cues, display preview and rundown are the same ones the phone uses, a
 
 The app runs on phones and tablets with **Android 7.0 or later**.
 
-1. On the phone, open the [download page](https://github.com/ImmanuelOkose/church-service-timer-guide/releases/latest) and download the file ending in `.apk`.
+1. On the phone, open the [download page](https://github.com/ImmanuelOkose/church-service-timer-guide/releases/latest) and download the file ending in `.apk`. From 0.35.0, the lines under each release's notes say which file is for Android and which is for Windows, and how to install each.
 2. Open the downloaded file. Android asks whether to allow installs from your browser or file manager; allow it for this install.
 3. Open **Church Service Timer**. It starts on Live with the **LED simulator**, so nothing reaches a real stage until you choose a display.
-4. Check the version in **Settings › About**. This guide describes 0.34.0.
+4. Check the version in **Settings › About**. This guide describes 0.35.0, the next release. Until it is published the download page gives 0.34.0, which does not yet have what the [release notes](release-notes.html) list under 0.35.0.
 
 ### Allow what the app asks for
 
@@ -100,7 +102,7 @@ Update every phone, tablet and PC your team uses together.
 
 ### Check for updates
 
-**Settings › About › Check for updates** asks GitHub whether a newer version has been published. It checks only when you tap the row, never by itself, and sends nothing about you or your church.
+**Settings › About › Check for updates** asks GitHub whether a newer version has been published. It checks when you tap the row, and sends nothing about you or your church. It never checks by itself unless you switch on **Check for updates automatically**, described below.
 
 | The row says | What to do |
 | --- | --- |
@@ -110,6 +112,28 @@ Update every phone, tablet and PC your team uses together.
 
 Installing a newer version over the old one keeps your programs, reports and settings. Export a backup first all the same; see [Protect data and manage the LED device](#20-protect-data-and-manage-the-led-device).
 
+### Check for updates automatically
+
+Under Check for updates is a switch, **Check for updates automatically**. It is off to begin with, so the app contacts GitHub only when you ask.
+
+![About on a phone: Check for updates, then the Check for updates automatically switch, off, with the line "Once a day, when no service is running. Nothing is downloaded or installed without asking."](site/assets/images/about-auto-update.png)
+
+With the switch on:
+
+- The app makes the same check by itself, **at most once a day**: about 30 seconds after it opens, and again when it comes back to standing by.
+- **It never checks during a service**, a Quick timer, a rehearsal, guided practice or Check this service, while the controls are locked, or on a device that has joined another device's service.
+- When a newer version has been published, Live shows a small notice while standing by, such as "Version 0.35.0 is available".
+- If the check cannot reach GitHub it says nothing and tries again the next day. Tapping **Check for updates** still says when it could not check.
+
+![Live on a phone while standing by: an example notice, "Version 0.33.0 is available", with Not now and See update, above the Standing by card](site/assets/images/update-notice.png)
+
+| On the notice | What it does |
+| --- | --- |
+| **See update** | Opens Check for updates, after the Settings PIN if one is set. From there you update as described above. |
+| **Not now** | Hides the notice for that version. A newer version shows it again. |
+
+**Nothing is downloaded or installed without asking.** The notice only tells you; you still choose when to update. It never shows during a service, on a stage screen, on the second screen or in full screen. The switch, and what the last check found, are kept on that phone, tablet or PC, and are not part of backups or program files.
+
 ## 03 — Get started on Windows
 
 Church Service Timer also runs on a **Windows 10 or 11 PC** (64-bit), so a service can be run from the laptop at the media desk. It is the same app as on the phone: the same programs, reports, themes and settings. A backup made on a phone restores on the PC, and the other way round.
@@ -118,7 +142,7 @@ The Windows app is new. Rehearse on the actual PC, with its projector or screens
 
 ### Install it
 
-1. On the PC, open the [download page](https://github.com/ImmanuelOkose/church-service-timer-guide/releases/latest) and download the file ending in `windows-setup.exe`. From 0.34.0, each release lists the Windows installer and its checksum beside the Android `.apk`. An earlier release may list only the `.apk`.
+1. On the PC, open the [download page](https://github.com/ImmanuelOkose/church-service-timer-guide/releases/latest) and download the file ending in `windows-setup.exe`. From 0.34.0, each release lists the Windows installer and its checksum beside the Android `.apk`. An earlier release may list only the `.apk`. From 0.35.0, the lines under each release's notes say which file is for Windows, what to do if Windows shows **Windows protected your PC**, and that a PC already on 0.34.0 or later can use **Download and install** instead.
 2. Run the installer. Windows may show **Windows protected your PC**, because the installer is not code-signed. Click **More info**, then **Run anyway**.
 3. Follow the installer. It installs for your Windows account, so it does not need an administrator password. Tick the desktop icon if you want one.
 4. Start **Church Service Timer** from the Start menu.
@@ -181,7 +205,7 @@ If the same PC runs your slides, the **Mini timer** keeps the countdown and thre
 
 ### Update the PC
 
-**Settings › About › Check for updates** checks only when you click it, as on the phone. When a newer version has been published, a PC can fetch and start the installer for you.
+**Settings › About › Check for updates** checks when you click it, as on the phone. When a newer version has been published, a PC can fetch and start the installer for you.
 
 ![Check for updates on a PC: a newer version is available, with Download and install beside Open release page](site/assets/images/update-pc.png)
 
@@ -199,6 +223,18 @@ If the same PC runs your slides, the **Mini timer** keeps the countdown and thre
 
 Nothing is downloaded or installed by itself. Update between services, never during one, and update the team's phones and tablets to the same version.
 
+**Let the PC check by itself, if you like.** Under Check for updates, **Check for updates automatically** is off to begin with. Switched on, the PC checks at most once a day, and never during a service. It works as on a phone; see [Get started on Android](#02-get-started-on-android).
+
+![About on a PC: Check for updates, then the Check for updates automatically switch, off, with What's new in a pane on the right](site/assets/images/about-pc.png)
+
+When the automatic check finds a newer version, the Live home shows a notice while standing by.
+
+![The Live home on a PC with an example notice above the time of day: "Version 0.33.0 is available", with Not now and See update](site/assets/images/update-notice-pc.png)
+
+- **See update** opens Check for updates, after the Settings PIN if one is set. **Download and install** is there, and still asks before anything is installed.
+- **Not now** hides the notice for that version. A newer one shows it again.
+- The notice never shows during a service, on the second screen or in full screen.
+
 ## 04 — Your first rehearsal
 
 Allow about 15 minutes. Use the simulator so no practice cue reaches a real stage.
@@ -215,9 +251,9 @@ Allow about 15 minutes. Use the simulator so no practice cue reaches a real stag
 
 Then try the full workflow yourself. A step that says "tap" is a click on a PC.
 
-1. Install the app; see [Get started on Android](#02-get-started-on-android) or [Get started on Windows](#03-get-started-on-windows). Check **Settings › About** for its version. This guide describes 0.34.0.
+1. Install the app; see [Get started on Android](#02-get-started-on-android) or [Get started on Windows](#03-get-started-on-windows). Check **Settings › About** for its version. This guide describes 0.35.0, the next release.
 2. Tap the display chip at the top of Live and choose **Simulator**. The chip then reads **LED simulator**, or **Stage simulator** if you have chosen to simulate a stage screen.
-3. On Live choose **Start service**, then load **Quick rehearsal** (a Pinned or Recent program card on Live loads straight away). In a wide window on a PC, click the program under **Choose a program**, then **Start service**. Loading a program enters **Ready**; it does not start the countdown.
+3. On Live choose **Start service**, then load **Quick rehearsal** (a Pinned or Recent program card on Live loads straight away). In a wide window on a PC, click the program under **Choose a program**, then **Start service**. Loading a program enters **Ready**; it does not start the countdown. On a PC, Ready shows your layout's own timer with the first segment's full time, not counting.
 4. Review the first and next segment. While Ready, choose **Service mode**: **Live timing · 1×** or a **Fast rehearsal** speed. A program's Service/Rehearsal grouping is not its speed setting. **Change** swaps in another program without leaving Ready.
 5. Select **Start first segment**. When the display is connected and nothing needs attention, the service starts at once and **Undo start** is offered for 8 seconds; otherwise a confirmation explains what to check.
 6. Tap **Pause**, confirm, and observe the held timer. Tap **Resume**, then try **Custom** to add or remove minutes and seconds. Read the proposed result before confirming.
@@ -337,6 +373,8 @@ There are several ways to put the timer in front of people. This lesson lists th
 | **Full screen** | When your own screen is the one people watch: a laptop on a lectern, or a tablet on a stand. | A running service or Quick timer. | [Second screen and full screen](#09-second-screen-and-full-screen) |
 
 Stage screens, web screens, a second screen and full screen all draw the same stage picture: a large countdown on black, with cues, warnings, the clock and a blank screen as you send them. This guide calls them "screens" where the LED sign behaves differently.
+
+**The time on these screens holds still.** Every digit has its own place, as wide as the widest digit, so the time keeps one size and nothing shifts as the seconds change. That is true during the service, in the countdown to a scheduled start, and on the clock shown before it. The time changes size only when it gains or loses a character, such as the + of overtime, or when the screen changes size. On a PC, the Stage simulator, the second screen, full screen and the large time in the mini timer use the app's own font, not Windows' font, so they look the same as on a phone. A web screen uses the browser's own font.
 
 ### Choose display
 
@@ -538,7 +576,9 @@ Use this when your own screen is the one people watch. During a service or a Qui
 | **F11** | On a PC. |
 | **Full screen** in Commands | On a PC, with **Ctrl+K**. |
 
-**To leave**, press **Esc** or **F11**, or tap or click anywhere and then **Exit full screen**. The Exit control also shows for the first few seconds. On Android, Back leaves it too. Full screen leaves by itself when the service ends.
+**To leave**, press **Esc** or **F11**, or tap or click once and choose **Exit** in the tray that comes up. A small **Exit full screen** control also shows at the top right for the first few seconds. On Android, Back leaves it too. While the tray is showing, Esc or Back puts the tray away first; press it again to leave.
+
+**Full screen does not leave by itself when the service ends.** It stays on the end screen; see [When the service ends](#when-the-service-ends) below.
 
 **A phone or tablet turns sideways.** On Android, full screen turns the stage picture to landscape, either way round, so the countdown is as large as it can be. When you leave full screen, the phone or tablet goes back to turning as it did before. A PC is unchanged.
 
@@ -546,13 +586,62 @@ Nothing changes in what the LED sign, a second screen or paired screens receive.
 
 ### Running the service from full screen
 
-On a PC the keys work as they do on Live, with the same safety rules.
+You can run the whole service without leaving full screen: with gestures, with a small tray of controls, or with the keys on a PC. The same safety rules hold as on Live.
 
-- **Every timer action still asks first**, in a small card over the stage. People watching will see that card for a moment.
-- **Next segment** still needs its second press.
-- With **Lock controls** on, every key is blocked, Esc and F11 included. A tap, a click or Esc shows **Controls locked** and **Hold to unlock** in place of Exit.
+**Gestures.** Double tap, or double-click, one third of the screen.
+
+| Where | It asks to |
+| --- | --- |
+| Left third | **Undo** the last segment change. With nothing to undo, a short "Nothing to undo" shows and fades. |
+| Middle | **Pause**, or **Resume** when paused. |
+| Right third | Go to the **Next segment**. On the last segment, a short "This is the last segment" shows and fades. |
+
+**Each gesture asks first**, in the same small card the keys and buttons use. Nothing changes until you confirm, so a stray double tap can be cancelled.
 
 ![Full screen on the device running the service: the countdown and the up next line dim behind a small card asking "Pause Sermon?" with Cancel and Confirm pause](site/assets/images/full-screen-confirm.png)
+
+**The control tray.** A small tray along the bottom holds the controls. To bring it up:
+
+- tap or click once anywhere. It waits a moment, so a double tap is not taken for it;
+- swipe up from the bottom edge of the screen;
+- on a PC, move the mouse to the bottom of the screen.
+
+![Full screen on a PC with the control tray along the bottom: Pause, Next, −2 min, +2 min, Undo, Cues, Clock, Blank, End service in red, and Exit](site/assets/images/full-screen-tray.png)
+
+| In the tray | What it does |
+| --- | --- |
+| **Pause** or **Resume**, **Next**, **−2 min**, **+2 min**, **Undo** | The timer actions. Each asks first, as on Live. |
+| **Cues** | Lists your prepared cues. Choose one to show it. Choose the one that is showing to go back to the timer. |
+| **Clock** | Shows the time of day. The button then reads **Timer**, which goes back. |
+| **Blank** | Blanks the screen. The button then reads **Unblank**. |
+| **End service** | Asks just as it does on Live. For a Quick timer it reads **End timer**. |
+| **Exit** | Leaves full screen. |
+
+Cues, Clock and Blank do what they do on Live: they change what every display shows, not only this screen.
+
+- **The tray hides after 6 seconds** untouched. It stays while the mouse is on it, or while a question from it is open.
+- **Esc**, Back on Android, or a swipe down puts it away at once.
+- With **Reduced motion** on, the tray appears without sliding.
+- The tray, the cards and the short messages show on this screen only. Nothing of them is sent to the LED sign, a second screen or paired screens. People watching this screen will see them for a moment.
+
+![Full screen on a phone held sideways: the countdown with the same control tray along the bottom](site/assets/images/full-screen-tray-phone.png)
+
+**Keys.** On a PC the keys work as they do on Live.
+
+- **Every timer action still asks first**, in a small card over the stage.
+- **Next segment** still needs its second press.
+
+**With Lock controls on, none of this works.** The gestures and the tray do nothing, and every key is blocked, Esc and F11 included. A tap, a click or Esc shows **Controls locked** and **Hold to unlock** in place of Exit.
+
+### When the service ends
+
+Full screen stays open on the end screen, however the service ends. The people watching see the program's end screen, not your Live page.
+
+- The timer buttons in the tray grey out. **Cues**, **Clock**, **Blank** and **Exit** keep working.
+- If the program's end screen has no text, **End service** from the tray shows the clock, so the screen is not left empty.
+- Leave when the room no longer needs it: **Exit** in the tray, **Esc** or **F11**.
+- Full screen closes by itself when the next service is set up.
+- Full screen cannot be opened after the service has ended. It needs a running service or Quick timer.
 
 ### What full screen shows
 
@@ -572,7 +661,7 @@ Load the correct program, check its first segment and destination, then **Start 
 **Before you start.** In Ready you can:
 
 - Use **Change** to swap in another program (pinned first, with search); an 8-second Undo switches back.
-- Set a **Pre-service countdown** (**Set time**). The time is chosen on a 24-hour clock; on a PC you can type the hours and minutes. The display shows the clock until the last hour, counts down to the start, then holds "STARTING SOON" at 00:00. It never starts the service by itself. Tapping Start first segment early asks "Start now?" first.
+- Set a **Pre-service countdown** (**Set time**). The time is chosen on a 24-hour clock; on a PC you can type the hours and minutes. The display shows the clock until the last hour, counts down to the start, then holds "STARTING SOON" at 00:00. On screens, that clock and countdown hold still: they do not shift or change size each second. It never starts the service by itself. Tapping Start first segment early asks "Start now?" first.
 - Read the "Last time" review note if the same program has one.
 - Run **Check this service**, beside **Start first segment**, to see every warning fire on the Simulator first. See [Build a reusable program](#05-build-a-reusable-program).
 
@@ -583,7 +672,7 @@ Load the correct program, check its first segment and destination, then **Start 
 | Custom | Choose add or remove and set minutes and seconds. Review the resulting timer; time can continue while the dialog is open. |
 | Next (Next segment on a tablet or PC) | Confirm when the next real activity begins. It starts that segment's allocation and replaces the previous output. |
 | Segment title | Tap the current segment's name to **Jump to segment** further ahead, with a confirmation. |
-| Full screen | Shows the stage countdown on this device's own screen. See [Second screen and full screen](#09-second-screen-and-full-screen). |
+| Full screen | Shows the stage countdown on this device's own screen, where gestures and a control tray run the service. See [Second screen and full screen](#09-second-screen-and-full-screen). |
 | Undo | Reverses the supported last segment change when available; it is not a universal undo of every action. Review the confirmation. |
 | "of 10:00 allocated" | The current segment's allotted time, not the entire service length. |
 | View / Hide operator notes | Opens the current segment's private notes; it does not publish them to stage displays. |
@@ -629,7 +718,7 @@ With no service loaded, a wide window shows three areas.
 | Middle | The time of day, then the chosen program's order of service with each segment, speaker and length, a small **Print** button beside the summary, and one **Start service** button. Under it: **Quick timer**, **Share to screens** and **Join a service**. The **Last service** card follows. |
 | Right | The display preview and stage cues, already open. |
 
-**Start service** opens Ready, where you check the display and start the first segment. Nothing counts until then. The picture of this page is in [Get started on Windows](#03-get-started-on-windows).
+**Start service** opens Ready, where you check the display and start the first segment. Nothing counts until then; see [Ready in each layout](#ready-in-each-layout). The picture of this page is in [Get started on Windows](#03-get-started-on-windows).
 
 ### Choose a desktop layout
 
@@ -647,7 +736,9 @@ With no service loaded, a wide window shows three areas.
 
 Click a layout, then **Save appearance**. If you already used the app before Mission control became the starting layout, your layout stays as it is.
 
-A window narrower than 1200 or shorter than 600 keeps the phone and tablet layout. So does the focused operator view.
+A window narrower than 1200 or shorter than 600 uses Classic, the phone and tablet layout, whatever layout is chosen. So does the focused operator view.
+
+**Windows display scaling makes the window smaller than the screen.** A 1920 × 1200 screen at 150% gives the app about 1270 × 790, which is wide enough for every layout. A 1366 × 768 screen at 125% gives about 1093 × 614, which is under 1200 wide, so the app uses Classic.
 
 ### On a tablet
 
@@ -691,7 +782,7 @@ Built around the app's own mark. The whole service is a ring, with a piece for e
 
 Dense, and made to be run from the keyboard. The running segment is one strip across the top: its name, a large countdown, how far ahead or behind the service is, when it will end, and the timer controls. Below it the rundown is a table, with a column each for speaker, planned time, start, actual time, how far over or under, and state. The private note sits underneath. A status line along the bottom shows where the output is going and whether the controls are locked.
 
-Before the first segment starts, Keys shows the three panes, which have room for the start controls. In a window as small as 1200 × 600, **Recover time** and **Print** move to a second line under **Edit upcoming**, so nothing runs off the pane.
+Before the first segment starts, Keys shows the same strip with the Ready controls in it; see [Ready in each layout](#ready-in-each-layout). In a window as small as 1200 × 600, **Recover time** and **Print** move to a second line under **Edit upcoming**, so nothing runs off the pane.
 
 ![Keys in Graphite: a strip with the segment, countdown and controls, the rundown as a table, and the keys listed along the bottom](site/assets/images/desktop-keys.png)
 
@@ -699,17 +790,51 @@ Before the first segment starts, Keys shows the three panes, which have room for
 
 The side rail and one column of cards, as before the desktop layouts. In a very wide window the rundown has a column of its own beside the timer and the display, so the whole service is in view without scrolling.
 
+In a wide window less than 1000 high, such as a 1366 × 768 laptop, Classic puts the controls beside the ring. Pause, Next, the time adjustments and End service, or the Ready form and Start first segment, are then in view without scrolling.
+
 ![Classic in a wide window: the timer card, the display preview and stage cues, and the service rundown in its own column](site/assets/images/desktop-classic.png)
+
+### Ready in each layout
+
+**Start service** loads the program into Ready. Each layout shows its own timer in Ready, at the size and in the place it has once the service is running, with the first segment's full time and not counting. Nothing jumps when you start.
+
+The Ready form takes the place of the timer controls. It holds the program with **Change**, the readiness row (for example **Simulator · all set**), the **Pre-service countdown**, the **Service mode**, a line saying timing has not started, and three buttons: **Start first segment**, **Cancel setup** and **Check this service**.
+
+![Ready in Mission control: the strip across the top says Ready, with Simulator · all set, Start first segment, Cancel setup and Check this service; the dial shows 05:00 for Welcome, with the program, the pre-service countdown and the service mode under it](site/assets/images/desktop-ready-mission-control.png)
+
+| Layout | What Ready looks like |
+| --- | --- |
+| **Mission control** | The strip across the top says **Ready**, with the readiness row, the line and the three buttons where End service goes. The program, the pre-service countdown and the service mode are under the dial. In a window under 760 high, the program and the service mode sit beside the dial in place of its figures. |
+| **Three panes** | The ring in the middle pane, with the form two to a row under it, where Pause and Next segment go. |
+| **The dial** | Its service ring with the first segment marked, and the same form under it. |
+| **Keys** | Its own countdown strip, with Start first segment, Cancel setup and Check this service where Pause and Next go. The rundown says Ready for the first segment, and the form is under it. |
+| **Classic** | The ring in its card with the form under it, or beside it in a laptop window. |
+
+![Ready in Three panes: the ring at 05:00 in the middle pane, with the program, Simulator · all set, the pre-service countdown, the service mode and Start first segment under it](site/assets/images/desktop-ready-three-panes.png)
+
+![Ready in The dial: the service ring with the first of five segments marked, 05:00 inside, and the Ready form under it](site/assets/images/desktop-ready-dial.png)
+
+![Ready in Keys: the strip shows Welcome, 05:00 and Ready, with Start first segment, Cancel setup and Check this service; the rundown table marks Welcome as Ready, with the form under it](site/assets/images/desktop-ready-keys.png)
+
+![Ready in Classic: the ring at 05:00 in the timer card, with the program, Simulator · all set, the pre-service countdown, the service mode and Start first segment under it](site/assets/images/desktop-ready-classic.png)
+
+Starting the service works as it always has, and nothing about timing changes; see [Operate a live service](#10-operate-a-live-service).
 
 ### On a large monitor
 
-The layouts grow with the window. A 1366 × 768 laptop window looks as described above.
+The layouts grow with the window, at every size.
 
-| Layout | In a larger window |
+| Layout | As the window grows |
 | --- | --- |
-| Three panes and The dial | From about 1920 × 1080 the ring grows to fill the height, with the buttons straight under it. In a wider window, such as 2560 × 1440, the ring sits at the left with the segment name, the controls, the private note and End service in a column at its right. |
-| Mission control | In a tall window the ring is larger, the timeline is taller and each block adds the speaker, the planned time and how long the segment took or when it should start. |
+| Three panes and The dial | The ring grows with the height of the middle pane, as large as fits while the segment name, Pause, Next segment, the time adjustments and End service stay in view without scrolling. In a wider window, such as 2560 × 1440, the ring sits at the left with the segment name, the controls, the private note and End service in a column at its right. |
+| Mission control | The dial grows into spare height. In a tall window the timeline is taller and each block adds the speaker, the planned time and how long the segment took or when it should start. |
 | Classic | From about 1840 wide, the rundown gets its own column. |
+
+![Three panes in a 1270 × 790 window, the size a 1920 × 1200 screen gives at 150% scaling: the ring fills the middle pane, with the Ready form under it](site/assets/images/desktop-three-panes-laptop.png)
+
+- The ring keeps the same size in Ready and once the service starts, because Ready leaves room for the line of keys along the bottom.
+- In a very short window, Three panes puts a segment's private note on one line under the title, as The dial does.
+- A window 600 high is too short for Three panes, The dial and Mission control to show every control without scrolling.
 
 ### Keys on the buttons
 
@@ -785,7 +910,7 @@ On a PC the whole service can be run from the keyboard. Two rules hold for every
 - **Timer and stage keys** (from Space down to M in the table) work on Live while a service is running, with no question or other page on top. The cue numbers and <kbd>M</kbd> also need a display connected.
 - <kbd>Ctrl</kbd> <kbd>Z</kbd> needs a segment change to undo. <kbd>J</kbd> needs a later segment to jump to.
 - <kbd>Ctrl</kbd> <kbd>K</kbd> and <kbd>?</kbd> work on any tab, but not under a dialog.
-- <kbd>Ctrl</kbd> <kbd>M</kbd> works on every page, with or without a service. <kbd>F11</kbd> works whenever a service is running. In full screen, the timer and stage keys work as they do on Live.
+- <kbd>Ctrl</kbd> <kbd>M</kbd> works on every page, with or without a service. <kbd>F11</kbd> works whenever a service is running. In full screen, the timer and stage keys work as they do on Live, and <kbd>Esc</kbd> puts the control tray away first if it is showing. Full screen also has gestures and a tray for a mouse or a touch screen; see [Second screen and full screen](#09-second-screen-and-full-screen).
 - <kbd>Space</kbd>, <kbd>B</kbd>, <kbd>Page Down</kbd> and <kbd>→</kbd> follow the **Clicker and foot pedal** switch; see below.
 - **No key does anything while you are typing in a field.** A question mark typed into a field is still a question mark.
 - The <kbd>+</kbd> key works without Shift, and the number pad's keys work too.
@@ -1069,12 +1194,13 @@ Suggestions use median active duration rounded up. In **Program editor › Learn
 ## 16 — Finish and hand over cleanly
 
 1. Confirm the service really is complete.
-2. Choose **End service** and confirm.
+2. Choose **End service** and confirm. In full screen, End service is in the control tray.
 3. Wait for the completed report to save. Live returns to the **Standing by** card ("Ready when you are") with **Start service**, **Quick timer**, **Share to screens** (or **Manage sharing** while sharing) and **Join a service**, and a **Last service** card with **View last service report**. The active rundown and timing overview disappear.
 4. Check the selected screen's program-specific end output. It remains connected. The **Stage & display** panel starts closed after a service; open it to blank or unblank, or to send a message or cue after the service.
 5. Open View last service report, check the service date and segment timings, add a review note if useful, and export or print if required.
 6. **Stop sharing** when the stage, viewer and web devices are no longer needed. Deliberately disconnect the LED if the equipment is being handed over or powered down.
-7. On a PC, a second screen stays open on the end screen until you click **Stop**. Full screen and the mini timer close by themselves when the service ends, and the countdown icon beside the Windows clock goes.
+7. Full screen, on a phone, tablet or PC, stays open on the end screen. Leave it with **Exit** in its tray, **Esc** or **F11**; it also closes when the next service is set up.
+8. On a PC, a second screen stays open on the end screen until you click **Stop**. The mini timer closes by itself when the service ends, and the countdown icon beside the Windows clock goes.
 
 ![Standing by on a phone after a saved service, with Start service, Quick timer and the Last service card](site/assets/images/standing-by.png)
 
@@ -1190,7 +1316,7 @@ Other useful settings:
 | Screens & devices | Pairing, saved devices, web screens and what web stage displays show, Requests from the stage, the Second screen on a PC, and Full screen on this phone. |
 | Keep screen awake | Prevents sleep while the app is visible; it is not a guarantee against force-stop or power loss. |
 | Settings PIN | Optional lock for Settings, deleting and sign administration. See [Protect data and manage the LED device](#20-protect-data-and-manage-the-led-device). |
-| About | Installed version, creator I-Proton, What's new, Check for updates, Your data, Privacy policy, Guided practice, Diagnostics and the open-source licences. |
+| About | Installed version, creator I-Proton, What's new, Check for updates, Check for updates automatically, Your data, Privacy policy, Guided practice, Diagnostics and the open-source licences. |
 
 Use **Search settings** at the top of Settings to find a page by name; "layout" finds Desktop layout on a PC, or Tablet layout on a large tablet, and "keyboard" finds Keyboard shortcuts.
 
@@ -1224,6 +1350,11 @@ Start with the destination badge, not repeated button presses. Identify whether 
 | The stage shows only the next segment's name, not who and how long | That paired phone or tablet is on an earlier version, or the screen is set to another layout. Update it, and choose **Timer and up next**. |
 | No notification sound | Check Android permission, channel sound, volume, Do Not Disturb and Precise timing. Use **Test** under Sound and vibration. |
 | Warnings stop or the timer notification goes quiet with the screen off | Battery optimisation may pause warnings. Tap the battery hint on Live, or **Allow** on the Battery row in Ready for service, to open the Android setting. If background operation is unavailable, keep the app open. |
+| In full screen, a tap only shows Hold to unlock | The controls are locked. With Lock controls on, the gestures, the tray and every key do nothing. **Hold to unlock**, then try again. |
+| The tray in full screen goes away | It hides after 6 seconds untouched. Tap or click once, swipe up from the bottom edge, or move the mouse to the bottom of the screen to bring it back. It stays while the mouse is on it. |
+| A double tap in full screen asked the wrong question | The left third asks Undo, the middle Pause or Resume, the right third Next segment. Choose **Cancel**; nothing changes until you confirm. |
+| Full screen is still showing after the service ended | That is intended: it shows the end screen. Leave with **Exit** in the tray, **Esc** or **F11**. It closes by itself when the next service is set up. |
+| No update notice, though Check for updates automatically is on | The check runs at most once a day and never during a service or while the controls are locked. The notice shows only on Live while standing by, and **Not now** hides it for that version. Offline, the check says nothing. Tap **Check for updates** to check now. |
 | Screen is blank but timer runs | Check for intentional Blank. Tap **Unblank screen**, or choose **Show timer** as appropriate. |
 | Quick message send is disabled | Phone, tablet or web screens destination, sharing, connected recipients in Send to and control are needed. The composer says which is missing. Before the first run, use **Test 5 s**. |
 | Controller administration is disabled | Connect to sign Wi-Fi and authenticate the supported LED display; end the service and stop sharing. |
@@ -1235,7 +1366,7 @@ Start with the destination badge, not repeated button presses. Identify whether 
 | Symptom | Check / next action |
 | --- | --- |
 | Windows protected your PC | The installer is not code-signed. Click **More info**, then **Run anyway**. |
-| Live looks like the phone app | The window is narrower than 1200 or shorter than 600, or the focused operator view is on. Widen or maximise the window. On a tablet, turn it to landscape and let the app fill the screen. |
+| Live looks like the phone app, or uses Classic whatever layout is chosen | The window is narrower than 1200 or shorter than 600, or the focused operator view is on. Widen or maximise the window. Windows display scaling counts: a 1366 × 768 screen at 125% gives a window about 1093 wide. On a tablet, turn it to landscape and let the app fill the screen. |
 | "No second screen connected" | Check the cable, then press **Windows + P** and choose **Extend**. With Duplicate there is only one screen to show on. |
 | The second screen did not open when the service started | Live says why: no screen has been chosen yet, or the screen used last time is not connected. Click **Show on second screen** once to choose it. |
 | A key does nothing | Check the controls are not locked, the cursor is not in a text field, Live is the page showing, no dialog is open, and a service is running. Press **?** for the list. |
@@ -1248,7 +1379,7 @@ Start with the destination badge, not repeated button presses. Identify whether 
 | The countdown icon is missing beside the clock | It shows only while a service or Quick timer runs. On Windows 11 look behind the small arrow and drag it out. Check **Show the countdown in the notification area** is on. |
 | A dropped file is refused | Drop one program file (`.json` or `.csv`) at a time. A drop is refused while a service is running or the controls are locked. |
 | Phones cannot reach the PC host | Allow the app through Windows Defender Firewall on private networks, and check the PC's network is set to Private. |
-| The mini timer or full screen will not open | Full screen needs a running service or Quick timer; the mini timer does not. Neither opens from the other. Unlock the controls first. |
+| The mini timer or full screen will not open | Full screen needs a running service or Quick timer, and cannot be opened once the service has ended; the mini timer needs neither. Neither opens from the other. Unlock the controls first. |
 
 ### How recovery works
 
@@ -1266,7 +1397,7 @@ Use **Settings › Backup & restore › Export backup** before changing devices 
 
 Saved sign passwords are left out unless you tick **Include saved passwords**, which encrypts them with a **Passphrase** you choose. Restoring asks for that passphrase; skipping it or a wrong passphrase still restores everything else.
 
-Restoring replaces saved data on the target device after review (**Restore and replace**). A backup from before 0.34 has its untouched starting cues and warnings brought up to the new suggested set, as an update does; any you changed are kept. Export its current setup first if it should be kept. Backups do **not** transfer an active clock, phone permissions, pairing approvals, the Settings PIN, received programs waiting for review, local editing drafts or a live display connection. Some choices also stay with the device: the desktop or tablet layout in use, what the Simulator simulates and shows, the second screen and full screen choices, and a PC's notification sound and countdown icon switches. Reconnect and approve equipment again as needed.
+Restoring replaces saved data on the target device after review (**Restore and replace**). A backup from before 0.34 has its untouched starting cues and warnings brought up to the new suggested set, as an update does; any you changed are kept. Export its current setup first if it should be kept. Backups do **not** transfer an active clock, phone permissions, pairing approvals, the Settings PIN, received programs waiting for review, local editing drafts or a live display connection. Some choices also stay with the device: the desktop or tablet layout in use, what the Simulator simulates and shows, the second screen and full screen choices, the **Check for updates automatically** switch, and a PC's notification sound and countdown icon switches. Reconnect and approve equipment again as needed.
 
 **Settings PIN** (optional, 4–8 digits) locks Settings, deleting programs and reports, and LED sign administration; Live, Programs and Reports stay open. Setting it shows a one-time recovery code that removes the PIN if forgotten (**Forgot PIN?**). Settings lock again whenever the app leaves the screen. **Turn off PIN** removes it.
 
@@ -1314,7 +1445,7 @@ Suggested coached session: 10 minutes explaining roles and output, 15 minutes of
 
 - End once, confirm the report saved, and inspect View last service report. Add a review note while it is fresh.
 - Print or export the right copy; inspect private-note inclusion before distribution.
-- Stop sharing, stop the second screen, and deliberately disconnect equipment when appropriate.
+- Stop sharing, stop the second screen, leave full screen, and deliberately disconnect equipment when appropriate.
 - Record an issue or useful program improvement.
 - Back up the configuration after significant changes.
 
@@ -1324,7 +1455,7 @@ Ask the learner to demonstrate each task with the simulator first:
 
 | Drill | Successful result |
 | --- | --- |
-| Load without starting | Explains Ready and starts only after checking the destination. |
+| Load without starting | Explains Ready, shows that the timer in Ready is not counting, and starts only after checking the destination. |
 | Pause versus blank | Shows that Pause stops time while Blank only hides output. |
 | Cue and return | Sends a prepared cue and returns to the current countdown. |
 | Overtime transition | Recognises red overtime and starts the next segment correctly. |
@@ -1335,7 +1466,8 @@ Ask the learner to demonstrate each task with the simulator first:
 | Close and print | Saves a single report and produces a Stage copy without private notes. |
 | Keyboard run (PC) | Pauses with Space and confirms, advances with Page Down twice, sends cue 1 and returns to the timer, and shows that Lock controls blocks every key. |
 | Second screen (PC) | Shows the stage on the projector, changes what it shows, and stops it with Stop or Esc. |
-| Full screen | Opens full screen, answers a timer question in the card over the stage, and leaves with Esc or Exit full screen. |
+| Full screen | Opens full screen, pauses with a double tap or double-click in the middle and confirms in the card, opens the tray and sends a cue, shows that Lock controls blocks the gestures and the tray, and leaves with Esc or Exit. |
+| Full screen at the end | Ends the service from the tray, explains why full screen stays on the end screen, and leaves it. |
 | Cue on screens | Makes a cue an amber banner at the bottom, gives it an effect, and checks it with the LED sign and Stage screen preview switch. |
 | Check this service | Runs the check on a program, names a warning that cannot fire and says why, and explains that nothing reached the stage. |
 | Warning editor | Adds a warning, chooses Operator only or Operator and stage, and explains when it fires. |
@@ -1348,7 +1480,7 @@ The learner should be able to perform the routine controls and explain when to c
 | --- | --- |
 | Program | The reusable plan, not the running service. |
 | Segment | One timed activity inside a program. |
-| Ready | Loaded and reviewed, but not counting yet. |
+| Ready | Loaded and reviewed, but not counting yet. On a PC it shows your layout's own timer with the first segment's full time. |
 | Quick timer | A single countdown with no program or Ready step; saved only if you choose. |
 | Host | The device that owns the service clock, saving and output: a phone, a tablet or a PC. |
 | Stage cue | A prepared one-tap instruction with saved formatting, for the LED sign and for screens. |
@@ -1359,10 +1491,12 @@ The learner should be able to perform the routine controls and explain when to c
 | Quick message | A richer temporary message for selected stage screens. |
 | Web screen | A browser on the same Wi-Fi following the service; it cannot control it. |
 | Second screen | A projector or monitor plugged into the PC, showing the stage full screen with no pairing. |
-| Full screen | The stage countdown on the screen of the device running the service. |
+| Full screen | The stage countdown on the screen of the device running the service, with gestures and a control tray to run the service from it. |
+| Control tray | The row of buttons along the bottom of full screen. A tap, a swipe up or the mouse at the bottom edge opens it; it hides after 6 seconds. |
 | LED simulator / Stage simulator | The Simulator pretending to be an LED sign or a stage screen. Neither sends to hardware. |
 | Desktop layout, or Tablet layout | How Live is arranged in a wide window: Mission control, Three panes, The dial, Keys or Classic. |
 | Mini timer | A small always-on-top window on a PC with the countdown, Pause, Next and one cue; with no service, the time of day. |
+| Check for updates automatically | An optional check, at most once a day and never during a service. Off to begin with. It only shows a notice on Live. |
 | Commands | A searchable list of everything you can do now, opened with Ctrl+K on a PC. |
 | Banner | A cue shown in a band at the top or bottom of a screen while the countdown stays in view. |
 | Guest code / team code | The guest code opens Order of service and stays the same each week; the team code also opens Stage display and Service overview, and changes each time you share. |
@@ -1395,12 +1529,16 @@ The learner should be able to perform the routine controls and explain when to c
 18. Does Check this service send anything to the LED sign or the stage screens? **No. It runs on the Simulator only, changes nothing on Live and saves no report.**
 19. On a PC, Clicker and foot pedal is switched off. Does Space still pause? **No. A PC cannot tell a clicker from its keyboard, so Space, B, Page Down and → do nothing. The buttons on screen still work.**
 20. A cue uses Slide in and its text is too wide for the LED sign. What does the sign show? **It scrolls the text. Screens slide it in.**
+21. In full screen, you double tap the right third of the screen. Does the service go to the next segment at once? **No. It asks first, like every timer action. With Lock controls on, it does nothing at all.**
+22. The service ends while full screen is open. What does that screen show? **The end screen. Full screen stays open, Cues, Clock, Blank and Exit still work, and it closes when the next service is set up.**
+23. Check for updates automatically is switched on. Will the app install an update by itself? **No. It checks at most once a day, never during a service, and only shows a notice on Live. Nothing is downloaded or installed without asking.**
+24. A service is loaded on a PC and the ring shows 05:00. Is it counting? **No. That is Ready: the layout's own timer with the first segment's full time. Nothing counts until Start first segment.**
 
 ### Current scope
 
-This guide covers version 0.34.0 on Android and Windows. An iOS or Mac app and universal LED compatibility are not provided; browsers can only follow a service as web screens, never control it. The original Matrix glyphs and square-matrix glyphs are unchanged. Tinos is bundled; installed/imported font loading is not part of the workflow. LED countdowns, segments and Quick timers stay within 59:59.
+This guide covers version 0.35.0 on Android and Windows. 0.35.0 is the next release; until it is published, the download page gives 0.34.0, which does not have what the release notes list under 0.35.0. An iOS or Mac app and universal LED compatibility are not provided; browsers can only follow a service as web screens, never control it. The original Matrix glyphs and square-matrix glyphs are unchanged. Tinos is bundled; installed/imported font loading is not part of the workflow. LED countdowns, segments and Quick timers stay within 59:59.
 
-Physical checks have established the supported W2 countdown, expected one-blink transitions, scrolling warnings returning to the current timer, and Next segment after overtime. Full-service endurance, power-loss acceptance and controller administration writes still require controlled hardware validation. Web screens, guided practice, Quick timer, stage requests and the other features added from 0.19 to 0.34 are described here from the app's release notes and on-screen wording; behaviour on your phones, PCs, routers, browsers and projectors has not been verified by this handbook, so hands-on testing of that release remains the user's responsibility.
+Physical checks have established the supported W2 countdown, expected one-blink transitions, scrolling warnings returning to the current timer, and Next segment after overtime. Full-service endurance, power-loss acceptance and controller administration writes still require controlled hardware validation. Web screens, guided practice, Quick timer, stage requests and the other features added from 0.19 to 0.35 are described here from the app's release notes and on-screen wording; behaviour on your phones, PCs, routers, browsers and projectors has not been verified by this handbook, so hands-on testing of that release remains the user's responsibility.
 
 **The Windows app is new.** Its installer is not code-signed, so Windows warns before it runs. The second screen, the mini timer, full screen, the countdown beside the clock and **Download and install** depend on how Windows, your graphics driver and your screens behave. Rehearse the exact PC, projector and clicker before a service, and keep a phone with the same programs as a fallback.
 
