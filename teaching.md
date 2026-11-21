@@ -19,7 +19,7 @@ The app has four main destinations. On a phone they are tabs along the bottom. O
 | Tab | Use it for |
 | --- | --- |
 | Live | Start and operate a service or a Quick timer, inspect output, send cues and messages, share to screens or join a service. |
-| Programs | Create reusable plans, arrange segments, add speakers and private notes, set each program's end screen, keep a segment library and version history. |
+| Programs | Create reusable plans, arrange segments, add speakers and private notes, choose what each program shows when it ends, keep a segment library and version history. |
 | Reports | Review completed services, compare durations, add review notes, export, share and print records. |
 | Settings | Church profile, appearance, desktop or tablet layout, warnings and alerts, display settings, stage cues, Quick message presets, Screens & devices, LED device management, backups, Settings PIN and About. |
 
@@ -98,6 +98,7 @@ Update every phone, tablet and PC your team uses together.
 
 - Program files, backups and sent programs saved by 0.28 or later cannot be opened by 0.27 or earlier.
 - A backup or program file made by 0.34 needs 0.34 or later to open if it holds any of the new cue settings: a screen colour, a banner, **Wrap long text**, its own screen speed, one of the new effects, long text with Flash or Pulse, or more than six cues. The cues a new install starts with use several of these.
+- A backup or program file in which a program, or the default, is set to end on the **Clock** needs 0.35 or later to open. Earlier versions need an end screen and refuse the file. Programs and backups you already have are unchanged.
 - A paired phone or tablet still on an earlier version shows every cue in white and full screen, at the LED sign's speed, with the new effects as steady text and the next segment's name without its speaker and length.
 
 ### Check for updates
@@ -280,7 +281,7 @@ Open **Programs** and tap **New program**. (With no programs at all, Programs of
 3. Add a **Speaker (optional)** and **Private operator notes** where useful: microphone changes, music cues or an agreed finish instruction. Notes are never shown on the sign.
 4. Turn on **Protect duration** for a segment that time recovery must not shorten.
 5. Reorder segments using the drag handles ("Drag the handle to reorder" appears once there are two or more).
-6. Review the **End screen** row. It reads "Uses the current default" until you give this program its own end screen.
+6. Review the **When the service ends** card. Choose **End screen** or **Clock**; see below. The end screen reads "Uses the current default" until you give this program its own.
 7. Choose **Create program** for a new plan, or **Save changes** after editing.
 
 Example practice plan:
@@ -292,7 +293,21 @@ Example practice plan:
 | Message | 8 min | Speaker · send the agreed wrap-up cue. |
 | Closing | 2 min | Host · confirm announcements before closing. |
 
-![Program editor with example segments and program-specific end screen](site/assets/images/program-editor.png)
+![The Program editor for a new program: the name, the Service and Rehearsal group, Add segment, and the When the service ends card set to End screen, showing Hallelujah](site/assets/images/program-editor.png)
+
+**When the service ends.** Each program chooses what every display shows after **End service**.
+
+| Choice | What the displays show when the service ends |
+| --- | --- |
+| **End screen** | The program's end screen text, "Hallelujah" to begin with. Tap the row under the switch to edit its text and style. |
+| **Clock** | The time of day, in the 12 or 24-hour format you chose. The card says "No end screen. When you end the service, the sign and stage screens show the clock." |
+
+![The Program editor with When the service ends set to Clock: "No end screen. When you end the service, the sign and stage screens show the clock.", with Use current default beneath](site/assets/images/no-end-screen-phone.png)
+
+- Every program keeps its end screen until you choose Clock.
+- Choosing **End screen** again while the editor is open brings back the text you had.
+- Program details, Programs on a PC and the import review say **No end screen** and **Shows the clock when the service ends** for such a program.
+- What Live shows and says when such a service ends is in [Finish and hand over cleanly](#16-finish-and-hand-over-cleanly).
 
 Open a row in Programs for **Program details**, with **Load into Live** and **Edit program** up front. Its **⋮** menu holds **Check this service**, Duplicate, Export JSON, Export CSV, **Print order of service**, **Send to paired phone** (while one is connected), **Version history** and **Delete program**, which asks for confirmation. A duplicate is useful for a special service without overwriting a familiar plan.
 
@@ -326,9 +341,11 @@ In a desktop layout, Programs uses the whole window.
 | --- | --- |
 | Left | Your programs, with search and the All, Pinned, Recent and Rehearsals filters, and **New program** under the list. |
 | Middle | The chosen program as a table: each segment with its time, speaker and private note. |
-| Right | **Load into Live**, the shape of the service, its total time, what past services say about the timings, the end screen and the warnings. |
+| Right | **Load into Live**, the shape of the service, its total time, what past services say about the timings, the end screen (or **No end screen**) and the warnings. |
 
 To change a program, click **Edit program** or double-click a segment. This opens the same Program editor, which shows the running order beside the form: when each segment starts and when the service ends. Changes never touch a service that is already running.
+
+![The Program editor on a PC: two segments, the When the service ends card set to Clock, and the running order on the right](site/assets/images/no-end-screen-pc.png)
 
 ### Check this service
 
@@ -563,7 +580,7 @@ When the second screen stops, the preview goes back to how it was.
 
 The app remembers the screen you last showed the stage on and offers it first next time. After changing the resolution or the arrangement of screens in Windows, click **Show** once to choose it again. These choices are kept on that computer and are not part of a backup.
 
-Ending the service leaves the second screen open, showing the program's end screen. Close it with **Stop** when the room no longer needs it.
+Ending the service leaves the second screen open, showing the program's end screen, or the clock if the program has no end screen. Close it with **Stop** when the room no longer needs it.
 
 ### Full screen on the device running the service
 
@@ -578,7 +595,7 @@ Use this when your own screen is the one people watch. During a service or a Qui
 
 **To leave**, press **Esc** or **F11**, or tap or click once and choose **Exit** in the tray that comes up. A small **Exit full screen** control also shows at the top right for the first few seconds. On Android, Back leaves it too. While the tray is showing, Esc or Back puts the tray away first; press it again to leave.
 
-**Full screen does not leave by itself when the service ends.** It stays on the end screen; see [When the service ends](#when-the-service-ends) below.
+**Full screen does not leave by itself when the service ends.** It stays on the end screen, or the clock; see [When the service ends](#when-the-service-ends) below.
 
 **A phone or tablet turns sideways.** On Android, full screen turns the stage picture to landscape, either way round, so the countdown is as large as it can be. When you leave full screen, the phone or tablet goes back to turning as it did before. A PC is unchanged.
 
@@ -635,10 +652,10 @@ Cues, Clock and Blank do what they do on Live: they change what every display sh
 
 ### When the service ends
 
-Full screen stays open on the end screen, however the service ends. The people watching see the program's end screen, not your Live page.
+Full screen stays open, however the service ends. The people watching see the program's end screen, or the clock if the program is set to end on the **Clock**, not your Live page.
 
 - The timer buttons in the tray grey out. **Cues**, **Clock**, **Blank** and **Exit** keep working.
-- If the program's end screen has no text, **End service** from the tray shows the clock, so the screen is not left empty.
+- With a program set to end on the Clock, **Clock** in the tray is greyed out, as the clock is already showing. Blank, cues and messages go back to the clock when they are cleared.
 - Leave when the room no longer needs it: **Exit** in the tray, **Esc** or **F11**.
 - Full screen closes by itself when the next service is set up.
 - Full screen cannot be opened after the service has ended. It needs a running service or Quick timer.
@@ -702,7 +719,7 @@ For a prayer meeting, a break or a talk that isn't a whole service, use **Quick 
 3. Leave **Save as a report** off unless you want a record. Off, nothing is saved when it ends; on, it is saved in Reports, marked Quick timer.
 4. Tap **Start 5 min timer** (the button names the length). It starts straight away, with no Ready step.
 
-It counts down on the LED sign, stage screens, web screens and a second screen together, with Pause, ±2 min, overtime, warnings, full screen and the lock-screen controls as usual. **End timer** stops it and shows the end screen. Saved Quick timers are left out of service averages and length suggestions.
+It counts down on the LED sign, stage screens, web screens and a second screen together, with Pause, ±2 min, overtime, warnings, full screen and the lock-screen controls as usual. **End timer** stops it and shows the default end screen, or the clock if the default is set to Clock. Saved Quick timers are left out of service averages and length suggestions.
 
 ## 11 — Run the service from a PC
 
@@ -768,7 +785,7 @@ For seeing the whole service at a glance.
 
 ### Three panes
 
-The whole rundown is on the left, with how long each finished segment really took and how far ahead or behind the service is running. The timer and its controls are in the middle, with the private note in view. The display preview, cues and messages are on the right. Live, Programs, Reports and Settings become tabs in the header. In a window at least 800 high, the keys are listed under the middle pane, as they are in The dial.
+The whole rundown is on the left, with how long each finished segment really took and how far ahead or behind the service is running. The timer and its controls are in the middle, with the private note in view. The display preview, cues and messages are on the right. Live, Programs, Reports and Settings become tabs in the header. The keys are listed along the bottom of the middle pane, as they are in The dial, wherever there is room: on every common screen from 1280 × 720 up.
 
 ![Three panes in the Paper & Ink theme: rundown on the left, a large countdown ring in the middle with the keys listed beneath it, display preview and stage cues on the right](site/assets/images/desktop-three-panes.png)
 
@@ -790,7 +807,19 @@ Before the first segment starts, Keys shows the same strip with the Ready contro
 
 The side rail and one column of cards, as before the desktop layouts. In a very wide window the rundown has a column of its own beside the timer and the display, so the whole service is in view without scrolling.
 
-In a wide window less than 1000 high, such as a 1366 × 768 laptop, Classic puts the controls beside the ring. Pause, Next, the time adjustments and End service, or the Ready form and Start first segment, are then in view without scrolling.
+In a window 1200 or more wide and less than 1000 high, such as a 1366 × 768 laptop, Classic puts the controls beside the ring. Pause, Next, the time adjustments and End service, or the Ready form and Start first segment, are then in view without scrolling.
+
+**Classic in a window under 1200 wide.** Such a window always uses Classic: a 1366 × 768 screen at 125% scaling, a window that does not fill the screen, or a 1024 × 768 screen. Classic there is set out to keep the ring large.
+
+![Classic in a window 1154 wide: the ring under the segment's name, with Pause, Next segment, the time adjustments and End service across the card beneath, and the display preview and cues in a column at the right](site/assets/images/desktop-classic-narrow.png)
+
+- The ring sits under the segment's name, with Pause, Next segment, the time adjustments and End service across the card under it. In a shorter window the segment's name sits beside the ring. The app uses whichever gives the larger ring.
+- The ring fills the height, so the card reaches the foot of the window. In Ready, the form takes the place of the controls.
+- **Custom** stays on one line. Where there is no room for its key beside it, the key is left out; in the narrowest windows Pause and Next do the same.
+- The **DISPLAY PREVIEW** heading shortens to **PREVIEW** when there is no room, here and in the other layouts, so neither it nor the display's badge is cut short.
+- Cue buttons are never so narrow that a word breaks across lines.
+
+![Classic in a 1024 × 768 window: the segment's name beside the ring, with the controls across the card beneath](site/assets/images/desktop-classic-1024.png)
 
 ![Classic in a wide window: the timer card, the display preview and stage cues, and the service rundown in its own column](site/assets/images/desktop-classic.png)
 
@@ -808,7 +837,7 @@ The Ready form takes the place of the timer controls. It holds the program with 
 | **Three panes** | The ring in the middle pane, with the form two to a row under it, where Pause and Next segment go. |
 | **The dial** | Its service ring with the first segment marked, and the same form under it. |
 | **Keys** | Its own countdown strip, with Start first segment, Cancel setup and Check this service where Pause and Next go. The rundown says Ready for the first segment, and the form is under it. |
-| **Classic** | The ring in its card with the form under it, or beside it in a laptop window. |
+| **Classic** | The ring in its card with the form in place of the controls: under the ring, or beside it in a laptop window. |
 
 ![Ready in Three panes: the ring at 05:00 in the middle pane, with the program, Simulator · all set, the pre-service countdown, the service mode and Start first segment under it](site/assets/images/desktop-ready-three-panes.png)
 
@@ -817,6 +846,13 @@ The Ready form takes the place of the timer controls. It holds the program with 
 ![Ready in Keys: the strip shows Welcome, 05:00 and Ready, with Start first segment, Cancel setup and Check this service; the rundown table marks Welcome as Ready, with the form under it](site/assets/images/desktop-ready-keys.png)
 
 ![Ready in Classic: the ring at 05:00 in the timer card, with the program, Simulator · all set, the pre-service countdown, the service mode and Start first segment under it](site/assets/images/desktop-ready-classic.png)
+
+**The line under the form** says what the display is doing until you start.
+
+| Pre-service countdown | The line reads |
+| --- | --- |
+| Off | "Timing has not started. The display keeps its current output." |
+| A start time is set | "Timing has not started. The display shows the pre-service countdown until you start the first segment." |
 
 Starting the service works as it always has, and nothing about timing changes; see [Operate a live service](#10-operate-a-live-service).
 
@@ -832,15 +868,18 @@ The layouts grow with the window, at every size.
 
 ![Three panes in a 1270 × 790 window, the size a 1920 × 1200 screen gives at 150% scaling: the ring fills the middle pane, with the Ready form under it](site/assets/images/desktop-three-panes-laptop.png)
 
-- The ring keeps the same size in Ready and once the service starts, because Ready leaves room for the line of keys along the bottom.
-- In a very short window, Three panes puts a segment's private note on one line under the title, as The dial does.
-- A window 600 high is too short for Three panes, The dial and Mission control to show every control without scrolling.
+- **The line of keys shows on laptop screens too.** In Three panes, The dial, Mission control and Keys it sits along the bottom wherever key labels are on and it fits: every common screen from 1280 × 720 up, 1366 × 768 and 1270 × 790 included. The ring gives up a little height for it.
+- The ring keeps the same size in Ready and once the service starts, because Ready leaves room for the line of keys.
+- Where a block of its own would leave the ring too little room, as in a 1366 × 768 window, a segment's private note takes one line under the title.
+- Only a window 600 high leaves the line of keys out. It is too short for Three panes, The dial and Mission control to show every control without scrolling.
+
+![Three panes running in a 1366 × 768 window: the ring in the middle pane, the controls under it, and the keys listed along the bottom](site/assets/images/desktop-three-panes-1366.png)
 
 ### Keys on the buttons
 
 On a PC, Pause, Next segment, Custom and the cue buttons show the key that presses them. Turn this on or off with **Show keyboard keys on buttons**, under **Settings › Desktop layout**.
 
-The line of keys along the bottom of Mission control and Keys, and under the middle pane of Three panes and The dial, follows the same switch. It reads, for example, "Space Pause · PgDn PgDn Next · + − Adjust time · Ctrl Z Undo · J Jump to segment · 1 – 9 Cues · M Message · Ctrl L Lock". When the line is too long for the room, the least needed keys are left out. With **Clicker and foot pedal** switched off, it stops listing Space and Page Down; see [Keyboard, clicker and Commands](#12-keyboard-clicker-and-commands).
+The line of keys along the bottom of Mission control and Keys, and along the bottom of the middle pane of Three panes and The dial, follows the same switch. Classic has no such line; it shows each key on its button. It reads, for example, "Space Pause · PgDn PgDn Next · + − Adjust time · Ctrl Z Undo · J Jump to segment · 1 – 9 Cues · M Message · Ctrl L Lock". When the line is too long for the room, the least needed keys are left out. With **Clicker and foot pedal** switched off, it stops listing Space and Page Down; see [Keyboard, clicker and Commands](#12-keyboard-clicker-and-commands).
 
 ### Saved looks
 
@@ -1196,17 +1235,33 @@ Suggestions use median active duration rounded up. In **Program editor › Learn
 1. Confirm the service really is complete.
 2. Choose **End service** and confirm. In full screen, End service is in the control tray.
 3. Wait for the completed report to save. Live returns to the **Standing by** card ("Ready when you are") with **Start service**, **Quick timer**, **Share to screens** (or **Manage sharing** while sharing) and **Join a service**, and a **Last service** card with **View last service report**. The active rundown and timing overview disappear.
-4. Check the selected screen's program-specific end output. It remains connected. The **Stage & display** panel starts closed after a service; open it to blank or unblank, or to send a message or cue after the service.
+4. Check the selected screen's end output: the program's end screen, or the clock if the program has no end screen. It remains connected. The **Stage & display** panel starts closed after a service; open it to blank or unblank, or to send a message or cue after the service.
 5. Open View last service report, check the service date and segment timings, add a review note if useful, and export or print if required.
 6. **Stop sharing** when the stage, viewer and web devices are no longer needed. Deliberately disconnect the LED if the equipment is being handed over or powered down.
-7. Full screen, on a phone, tablet or PC, stays open on the end screen. Leave it with **Exit** in its tray, **Esc** or **F11**; it also closes when the next service is set up.
-8. On a PC, a second screen stays open on the end screen until you click **Stop**. The mini timer closes by itself when the service ends, and the countdown icon beside the Windows clock goes.
+7. Full screen, on a phone, tablet or PC, stays open on the end screen, or the clock. Leave it with **Exit** in its tray, **Esc** or **F11**; it also closes when the next service is set up.
+8. On a PC, a second screen stays open on the end screen, or the clock, until you click **Stop**. The mini timer closes by itself when the service ends, and the countdown icon beside the Windows clock goes.
 
 ![Standing by on a phone after a saved service, with Start service, Quick timer and the Last service card](site/assets/images/standing-by.png)
 
 If saving fails, the app retains the completed information and offers **Retry saving report**. Retry rather than starting a duplicate service. It preserves the original finish time and saves one report; a successful retry restores the Standing by card automatically. A pending save failure blocks service changes. Do not clear app storage to remove the message.
 
-An end screen belongs to the selected program. The **Default end screen** in Settings › Display settings seeds new programs; changing that default does not overwrite existing program-specific end screens.
+An end screen belongs to the selected program. The **Default end screen** in Settings › Display settings seeds new programs and is used by Quick timers; changing that default does not overwrite existing program-specific end screens.
+
+### No end screen: show the clock
+
+A program can end on the clock instead of an end screen. Choose **Clock** under **When the service ends** in the Program editor; see [Build a reusable program](#05-build-a-reusable-program). **Settings › Display settings › Default end screen** has the same choice, for new programs and Quick timers.
+
+![Display settings on a PC: Default end screen, with When the service ends set to End screen, a preview of Hallelujah and Edit end screen](site/assets/images/default-end-screen-pc.png)
+
+When a service with no end screen ends:
+
+- **Every display shows the clock:** the LED sign, paired phones and tablets, web screens, the second screen, full screen and both simulators, in the 12 or 24-hour format you chose.
+- **The End service question says so.** It asks to "show the clock" where it would name the end screen, and with the LED sign it says the sign will show the clock.
+- Live says **Showing the clock**.
+- **Show clock** is greyed out, as the clock is already showing.
+- Blank screen, cues and messages sent after the end go back to the clock when they are cleared. The button that would bring back the end screen says **Back to clock**.
+
+Every program, and the default, keeps its end screen until you choose Clock. Choosing **End screen** again in the default starts from "Hallelujah", ready to edit. A paired phone or tablet on an earlier version shows the clock too, but a backup or program file with this setting needs 0.35 or later to open.
 
 ## 17 — Read, export and print reports
 
@@ -1306,7 +1361,7 @@ Other useful settings:
 | Setting | Scope |
 | --- | --- |
 | At zero | Display settings. Shared by every service: **Show 00:00** or **Custom text**. |
-| Default end screen | Display settings. Starting value for new programs; existing programs keep their own setting. |
+| Default end screen | Display settings. **End screen** or **Clock**, for new programs and Quick timers; existing programs keep their own setting. |
 | Clock format | Display settings. 12 or 24 hour for the clock on stage, and the **Blinking colon** on paired and web screens (on by default). Times you choose in the app, such as the pre-service countdown, are always 24-hour. |
 | LED preview shape | Display settings. Square or circular visual cells; does not reconfigure physical hardware. |
 | Desktop layout, or Tablet layout | How Live is arranged in a wide window: Mission control, Three panes, The dial, Keys or Classic. Not shown on a phone or a small tablet. |
@@ -1353,7 +1408,9 @@ Start with the destination badge, not repeated button presses. Identify whether 
 | In full screen, a tap only shows Hold to unlock | The controls are locked. With Lock controls on, the gestures, the tray and every key do nothing. **Hold to unlock**, then try again. |
 | The tray in full screen goes away | It hides after 6 seconds untouched. Tap or click once, swipe up from the bottom edge, or move the mouse to the bottom of the screen to bring it back. It stays while the mouse is on it. |
 | A double tap in full screen asked the wrong question | The left third asks Undo, the middle Pause or Resume, the right third Next segment. Choose **Cancel**; nothing changes until you confirm. |
-| Full screen is still showing after the service ended | That is intended: it shows the end screen. Leave with **Exit** in the tray, **Esc** or **F11**. It closes by itself when the next service is set up. |
+| The screens show the clock after End service, not an end screen | The program is set to end on the **Clock**. Open the program, and under **When the service ends** choose **End screen**. For new programs and Quick timers, change **Settings › Display settings › Default end screen**. |
+| An earlier version refuses a backup or program file | A program in it, or the default, is set to end on the Clock, which needs 0.35 or later. Update that device. |
+| Full screen is still showing after the service ended | That is intended: it shows the end screen, or the clock. Leave with **Exit** in the tray, **Esc** or **F11**. It closes by itself when the next service is set up. |
 | No update notice, though Check for updates automatically is on | The check runs at most once a day and never during a service or while the controls are locked. The notice shows only on Live while standing by, and **Not now** hides it for that version. Offline, the check says nothing. Tap **Check for updates** to check now. |
 | Screen is blank but timer runs | Check for intentional Blank. Tap **Unblank screen**, or choose **Show timer** as appropriate. |
 | Quick message send is disabled | Phone, tablet or web screens destination, sharing, connected recipients in Send to and control are needed. The composer says which is missing. Before the first run, use **Test 5 s**. |
@@ -1366,9 +1423,10 @@ Start with the destination badge, not repeated button presses. Identify whether 
 | Symptom | Check / next action |
 | --- | --- |
 | Windows protected your PC | The installer is not code-signed. Click **More info**, then **Run anyway**. |
-| Live looks like the phone app, or uses Classic whatever layout is chosen | The window is narrower than 1200 or shorter than 600, or the focused operator view is on. Widen or maximise the window. Windows display scaling counts: a 1366 × 768 screen at 125% gives a window about 1093 wide. On a tablet, turn it to landscape and let the app fill the screen. |
+| Live looks like the phone app, or uses Classic whatever layout is chosen | The window is narrower than 1200 or shorter than 600, or the focused operator view is on. Widen or maximise the window; Classic is set out to work well if you cannot. Windows display scaling counts: a 1366 × 768 screen at 125% gives a window about 1093 wide. On a tablet, turn it to landscape and let the app fill the screen. |
 | "No second screen connected" | Check the cable, then press **Windows + P** and choose **Extend**. With Duplicate there is only one screen to show on. |
 | The second screen did not open when the service started | Live says why: no screen has been chosen yet, or the screen used last time is not connected. Click **Show on second screen** once to choose it. |
+| The line of keys is missing | It shows only while **Show keyboard keys on buttons** is on, and not in a window 600 high. Classic has no line; it shows each key on its button. |
 | A key does nothing | Check the controls are not locked, the cursor is not in a text field, Live is the page showing, no dialog is open, and a service is running. Press **?** for the list. |
 | Space and Page Down do nothing, but other keys work | **Clicker and foot pedal** is switched off in Settings › Warnings & alerts. On a PC that turns those keys off on the keyboard too. |
 | A clicker does nothing | Check **Clicker and foot pedal** is switched on. Then open **Test a clicker or pedal** to see which key each button sends. |
@@ -1419,7 +1477,7 @@ Suggested coached session: 10 minutes explaining roles and output, 15 minutes of
 
 ### Before the service
 
-- Confirm the installed version on every phone, tablet and PC, and the program, speakers, allocations and end screen.
+- Confirm the installed version on every phone, tablet and PC, and the program, speakers, allocations and what it shows when it ends: an end screen or the clock.
 - Choose the intended destination and confirm the physical screen with another person.
 - Check power, battery optimisation on phones, network reachability and notification sound.
 - On a PC: set Windows to **Extend**, click **Show on second screen** and look at the projector. Decide whether warnings should play the Windows sound; they are silent unless you turn it on.
@@ -1467,7 +1525,8 @@ Ask the learner to demonstrate each task with the simulator first:
 | Keyboard run (PC) | Pauses with Space and confirms, advances with Page Down twice, sends cue 1 and returns to the timer, and shows that Lock controls blocks every key. |
 | Second screen (PC) | Shows the stage on the projector, changes what it shows, and stops it with Stop or Esc. |
 | Full screen | Opens full screen, pauses with a double tap or double-click in the middle and confirms in the card, opens the tray and sends a cue, shows that Lock controls blocks the gestures and the tray, and leaves with Esc or Exit. |
-| Full screen at the end | Ends the service from the tray, explains why full screen stays on the end screen, and leaves it. |
+| Full screen at the end | Ends the service from the tray, explains why full screen stays on the end screen or the clock, and leaves it. |
+| End on the clock | Sets a program to end on the Clock, reads the End service question, and shows where to change the default for new programs and Quick timers. |
 | Cue on screens | Makes a cue an amber banner at the bottom, gives it an effect, and checks it with the LED sign and Stage screen preview switch. |
 | Check this service | Runs the check on a program, names a warning that cannot fire and says why, and explains that nothing reached the stage. |
 | Warning editor | Adds a warning, chooses Operator only or Operator and stage, and explains when it fires. |
@@ -1501,7 +1560,7 @@ The learner should be able to perform the routine controls and explain when to c
 | Banner | A cue shown in a band at the top or bottom of a screen while the countdown stays in view. |
 | Guest code / team code | The guest code opens Order of service and stays the same each week; the team code also opens Stage display and Service overview, and changes each time you share. |
 | At zero | Shared output behaviour when a segment expires. |
-| End screen | The selected program's output after End service. |
+| End screen | The selected program's output after End service. A program set to **Clock** has no end screen and shows the time of day. |
 | Controller accepted / Stage screens received | Data acknowledged by the receiver; not optical verification. |
 | Seen | An explicit human acknowledgement on a paired stage screen. |
 | Disconnect | Pause access/connection without necessarily forgetting saved identity. |
@@ -1530,9 +1589,10 @@ The learner should be able to perform the routine controls and explain when to c
 19. On a PC, Clicker and foot pedal is switched off. Does Space still pause? **No. A PC cannot tell a clicker from its keyboard, so Space, B, Page Down and → do nothing. The buttons on screen still work.**
 20. A cue uses Slide in and its text is too wide for the LED sign. What does the sign show? **It scrolls the text. Screens slide it in.**
 21. In full screen, you double tap the right third of the screen. Does the service go to the next segment at once? **No. It asks first, like every timer action. With Lock controls on, it does nothing at all.**
-22. The service ends while full screen is open. What does that screen show? **The end screen. Full screen stays open, Cues, Clock, Blank and Exit still work, and it closes when the next service is set up.**
+22. The service ends while full screen is open. What does that screen show? **The end screen, or the clock if the program has no end screen. Full screen stays open, Cues, Clock, Blank and Exit still work, and it closes when the next service is set up.**
 23. Check for updates automatically is switched on. Will the app install an update by itself? **No. It checks at most once a day, never during a service, and only shows a notice on Live. Nothing is downloaded or installed without asking.**
 24. A service is loaded on a PC and the ring shows 05:00. Is it counting? **No. That is Ready: the layout's own timer with the first segment's full time. Nothing counts until Start first segment.**
+25. A program is set to end on the Clock. What do the LED sign and the stage screens show after End service? **The clock, on every display. Live says Showing the clock, and Show clock is greyed out.**
 
 ### Current scope
 
