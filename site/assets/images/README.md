@@ -6,6 +6,8 @@ Every file was re-compressed without loss (oxipng), so the pixels match the prev
 
 For the 0.35.0 handbook, every file in both tables was compared, pixel for pixel, with the preview on the app's main branch (6d3f0c6). Thirteen had changed and were copied again: program-editor.png, stage-layout.png, desktop-mission-control.png, desktop-mission-control-large.png, second-screen-live.png, full-screen-confirm.png, stage-simulator.png, shortcuts.png, commands.png, cue-banner.png, cue-editor-switch.png, stage-cues-desktop.png and desktop-three-panes-laptop.png. Six more were added for the clock in place of an end screen, Classic in a narrow window and the line of keys on a laptop. Before those, twelve were added: the full-screen tray on a PC and a phone, About with the automatic check on a phone and a PC, the update notice on Live on a phone and a PC, Ready in each of the five desktop layouts, and Three panes in a laptop-sized window. All of these were re-compressed without loss with Pillow, as oxipng was not to hand, and each was checked to match its preview pixel for pixel. The version numbers they show ("0.33.0 is available", "Version 0.0.0 (test)") are sample data.
 
+For the 0.36.0 handbook, every file in both tables was compared, by its pixels, with the preview on the app's main branch (release 0.36.0, cb2602b). Fifteen had changed and were copied again: full-screen-tray-phone.png, full-screen-tray.png, desktop-mission-control.png, desktop-mission-control-large.png, desktop-three-panes.png, desktop-three-panes-1366.png, desktop-dial.png, desktop-keys.png, desktop-ready-keys.png, second-screen-live.png, stage-simulator.png, shortcuts.png, commands.png, desktop-classic-narrow.png and desktop-classic-1024.png. The rest matched. desktop-classic.png, scaled from its preview, was compared after scaling and matched. reports-desktop.png and mini-timer.png are rendered for the handbook and were not rendered again. Five were added: whats-new-notice.png and whats-new-notice-pc.png (the Updated to notice), full-screen-tip-phone.png and full-screen-tip.png (the gestures tip), and send-message-stage.png (Send message with the switch on Stage screen). All were saved without changing a pixel and re-compressed without loss with Pillow. The version in the notice, 0.36.0, is the release itself.
+
 ## Phone and tablet
 
 | Public filename | Original fixture |
@@ -33,6 +35,9 @@ For the 0.35.0 handbook, every file in both tables was compared, pixel for pixel
 | update-notice.png | update-notice-live-phone.png |
 | full-screen-tray-phone.png | host-full-screen-tray-phone.png |
 | no-end-screen-phone.png | no-end-screen-editor-phone.png |
+| whats-new-notice.png | whats-new-notice-live-phone.png |
+| full-screen-tip-phone.png | host-full-screen-tip-phone.png |
+| send-message-stage.png | send-message-stage-phone.png |
 
 ## PC (wide window) and stage
 
@@ -76,6 +81,8 @@ For the 0.35.0 handbook, every file in both tables was compared, pixel for pixel
 | desktop-classic-1024.png | desktop-classic-1024.png |
 | desktop-three-panes-1366.png | desktop-three-panes-1366.png |
 | update-notice-pc.png | update-notice-live-1366.png |
+| whats-new-notice-pc.png | whats-new-notice-live-1366.png |
+| full-screen-tip.png | host-full-screen-tip-1920.png |
 | stage-cues-desktop.png | desktop-settings-stage-cues-stage-screen.png |
 | warnings-desktop.png | desktop-settings-warnings.png |
 | programs-desktop.png | desktop-programs.png |
