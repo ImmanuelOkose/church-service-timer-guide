@@ -21,7 +21,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar">
 <a class="brand" href="index.html"><img src="assets/app-mark.svg" width="42" height="42" alt=""><span>Church Service Timer<small>THE OPERATOR HANDBOOK</small></span></a>
-<div class="header-actions"><span class="version">VERSION 0.35.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
+<div class="header-actions"><span class="version">VERSION 0.36.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
 <button class="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">Lessons <span aria-hidden="true">☰</span></button></div>
 </header>
 <div class="layout">
@@ -61,9 +61,9 @@
 <a class="sidebar-privacy" href="privacy-policy/index.html">Privacy policy</a>
 </aside>
 <main id="main" tabindex="-1"><div class="chapter-shell complete-guide"><header class="chapter-header"><p class="eyebrow">THE COMPLETE HANDBOOK</p><h1>One guide. Every workflow.</h1><p class="chapter-deck">Read every lesson here, or print this page for a training session.</p><button class="primary-button" type="button" id="print-guide">Print this handbook</button></header><article class="prose">
-<p>For app <strong>0.35.0</strong> on Android and Windows · Prepared <strong>21 November 2026</strong> · Creator <strong>I-Proton</strong></p>
+<p>For app <strong>0.36.0</strong> on Android and Windows · Prepared <strong>22 November 2026</strong> · Creator <strong>I-Proton</strong></p>
 <p>This handbook teaches a new operator to prepare a program, run its timer, communicate discreetly with the stage, recover from common interruptions, and close the service with a useful report. Keep it beside the phone or the PC during your first rehearsal. Screenshots use example data from automated app previews; they are illustrations, not evidence that a particular physical display is connected.</p>
-<p><strong>This handbook is for 0.35.0.</strong> What 0.35.0 adds is listed at the top of the <a href="release-notes.html">release notes</a>. On a phone or PC still on 0.34.0 or earlier, those parts of this handbook do not apply until you update.</p>
+<p><strong>This handbook is for 0.36.0.</strong> What 0.36.0 adds is listed at the top of the <a href="release-notes.html">release notes</a>. On a phone or PC still on 0.35.0 or earlier, those parts of this handbook do not apply until you update.</p>
 <p><strong>The same app runs on a phone, a tablet and a Windows PC.</strong> Programs, reports, settings and backups are the same everywhere. Where a step differs, this guide says "tap" for a phone or tablet and "click" for a PC, as the app itself does.</p>
 <p><strong>Start with a simulator rehearsal.</strong> Move to the church's actual equipment with an experienced operator before running a service alone. The app has tested support for one specific LED controller; reliable use still depends on the device, the network and the stage equipment.</p>
 <h2 id="01-understand-the-workspace">01 — Understand the workspace</h2>
@@ -179,7 +179,7 @@
 <li>On the phone, open the <a href="https://github.com/ImmanuelOkose/church-service-timer-guide/releases/latest">download page</a> and download the file ending in <code>.apk</code>. From 0.35.0, the lines under each release's notes say which file is for Android and which is for Windows, and how to install each.</li>
 <li>Open the downloaded file. Android asks whether to allow installs from your browser or file manager; allow it for this install.</li>
 <li>Open <strong>Church Service Timer</strong>. It starts on Live with the <strong>LED simulator</strong>, so nothing reaches a real stage until you choose a display.</li>
-<li>Check the version in <strong>Settings › About</strong>. This guide describes 0.35.0. An earlier version does not have what the <a href="release-notes.html">release notes</a> list under 0.35.0, so update it first.</li>
+<li>Check the version in <strong>Settings › About</strong>. This guide describes 0.36.0. An earlier version does not have what the <a href="release-notes.html">release notes</a> list under 0.36.0, so update it first.</li>
 </ol>
 <h3 id="allow-what-the-app-asks-for">Allow what the app asks for</h3>
 <p>The app asks for each of these only when it is needed. The first three protect warnings during a service.</p>
@@ -220,6 +220,7 @@
 <li>Program files, backups and sent programs saved by 0.28 or later cannot be opened by 0.27 or earlier.</li>
 <li>A backup or program file made by 0.34 needs 0.34 or later to open if it holds any of the new cue settings: a screen colour, a banner, <strong>Wrap long text</strong>, its own screen speed, one of the new effects, long text with Flash or Pulse, or more than six cues. The cues a new install starts with use several of these.</li>
 <li>A backup or program file in which a program, or the default, is set to end on the <strong>Clock</strong> needs 0.35 or later to open. Earlier versions need an end screen and refuse the file. Programs and backups you already have are unchanged.</li>
+<li>Nothing in 0.36.0 changes programs, backups or paired screens, so earlier versions can open the same files.</li>
 <li>A paired phone or tablet still on an earlier version shows every cue in white and full screen, at the LED sign's speed, with the new effects as steady text and the next segment's name without its speaker and length.</li>
 </ul>
 <h3 id="check-for-updates">Check for updates</h3>
@@ -246,6 +247,7 @@
 </tr>
 </tbody>
 </table></div>
+<p>A test (beta) version, such as 0.36.0-beta.1, is never offered as an update. You will not see one unless you were given it on purpose; if you are running one, you are still offered the real version that follows it.</p>
 <p>Installing a newer version over the old one keeps your programs, reports and settings. Export a backup first all the same; see <a href="#20-protect-data-and-manage-the-led-device">Protect data and manage the LED device</a>.</p>
 <h3 id="check-for-updates-automatically">Check for updates automatically</h3>
 <p>Under Check for updates is a switch, <strong>Check for updates automatically</strong>. It is off to begin with, so the app contacts GitHub only when you ask.</p>
@@ -254,7 +256,7 @@
 <ul>
 <li>The app makes the same check by itself, <strong>at most once a day</strong>: about 30 seconds after it opens, and again when it comes back to standing by.</li>
 <li><strong>It never checks during a service</strong>, a Quick timer, a rehearsal, guided practice or Check this service, while the controls are locked, or on a device that has joined another device's service.</li>
-<li>When a newer version has been published, Live shows a small notice while standing by, such as "Version 0.35.0 is available".</li>
+<li>When a newer version has been published, Live shows a small notice while standing by, such as "Version 0.36.0 is available".</li>
 <li>If the check cannot reach GitHub it says nothing and tries again the next day. Tapping <strong>Check for updates</strong> still says when it could not check.</li>
 </ul>
 <figure class="app-figure"><a class="zoom-image" href="assets/images/update-notice.png" aria-label="Enlarge: Live on a phone while standing by: an example notice, &quot;Version 0.33.0 is available&quot;, with Not now and See update, above the Standing by card"><img src="assets/images/update-notice.png" alt="Live on a phone while standing by: an example notice, &quot;Version 0.33.0 is available&quot;, with Not now and See update, above the Standing by card" width="430" height="1000" loading="lazy" decoding="async"></a><figcaption>Live on a phone while standing by: an example notice, &quot;Version 0.33.0 is available&quot;, with Not now and See update, above the Standing by card<span>Example app preview · select to enlarge</span></figcaption></figure>
@@ -277,6 +279,34 @@
 </tbody>
 </table></div>
 <p><strong>Nothing is downloaded or installed without asking.</strong> The notice only tells you; you still choose when to update. It never shows during a service, on a stage screen, on the second screen or in full screen. The switch, and what the last check found, are kept on that phone, tablet or PC, and are not part of backups or program files.</p>
+<h3 id="after-you-update">After you update</h3>
+<p>The first time the app opens on a newer version, Live shows a small notice while standing by: <strong>Updated to 0.36.0</strong>.</p>
+<figure class="app-figure"><a class="zoom-image" href="assets/images/whats-new-notice.png" aria-label="Enlarge: Live on a phone while standing by: a notice, &quot;Updated to 0.36.0&quot;, with Dismiss and See what's new, above the Standing by card"><img src="assets/images/whats-new-notice.png" alt="Live on a phone while standing by: a notice, &quot;Updated to 0.36.0&quot;, with Dismiss and See what's new, above the Standing by card" width="430" height="1000" loading="lazy" decoding="async"></a><figcaption>Live on a phone while standing by: a notice, &quot;Updated to 0.36.0&quot;, with Dismiss and See what's new, above the Standing by card<span>Example app preview · select to enlarge</span></figcaption></figure>
+<div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
+<thead>
+<tr>
+<th>On the notice</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>See what's new</strong></td>
+<td>Opens the What's new page, after the Settings PIN if one is set.</td>
+</tr>
+<tr>
+<td><strong>Dismiss</strong></td>
+<td>Hides the notice.</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>It shows once for each version.</strong> Opening it or dismissing it counts as seen.</li>
+<li><strong>A new install shows nothing.</strong> So does going back to an older version.</li>
+<li><strong>It stays out of the way.</strong> It never shows during a service, a Quick timer, a rehearsal, guided practice or Check this service, with the controls locked, while joined to another device's service, or on a stage screen, the second screen or full screen. If a service is running when the app starts, it waits for the next time the app is standing by.</li>
+<li><strong>If a newer version is also available,</strong> that notice shows first, and this one after it is dismissed.</li>
+<li>Which version you last saw is kept on that device only, not in backups or program files. Nothing is sent anywhere.</li>
+</ul>
 <h2 id="03-get-started-on-windows">03 — Get started on Windows</h2>
 <p>Church Service Timer also runs on a <strong>Windows 10 or 11 PC</strong> (64-bit), so a service can be run from the laptop at the media desk. It is the same app as on the phone: the same programs, reports, themes and settings. A backup made on a phone restores on the PC, and the other way round.</p>
 <p>The Windows app is new. Rehearse on the actual PC, with its projector or screens plugged in, before you rely on it in a service.</p>
@@ -421,6 +451,7 @@
 </tbody>
 </table></div>
 <p>Nothing is downloaded or installed by itself. Update between services, never during one, and update the team's phones and tablets to the same version.</p>
+<p><strong>The text looks a little different.</strong> From 0.36.0 the app draws its own text in the Roboto font on every PC, as it already did on Android. Letters look slightly different from before, and labels, headings and buttons take the same room on a PC as on a phone, so a label no longer wraps or is cut short in a narrow window. Nothing in your programs, backups or settings changes.</p>
 <p><strong>Let the PC check by itself, if you like.</strong> Under Check for updates, <strong>Check for updates automatically</strong> is off to begin with. Switched on, the PC checks at most once a day, and never during a service. It works as on a phone; see <a href="#02-get-started-on-android">Get started on Android</a>.</p>
 <figure class="app-figure wide-figure"><a class="zoom-image" href="assets/images/about-pc.png" aria-label="Enlarge: About on a PC: Check for updates, then the Check for updates automatically switch, off, with What's new in a pane on the right"><img src="assets/images/about-pc.png" alt="About on a PC: Check for updates, then the Check for updates automatically switch, off, with What's new in a pane on the right" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>About on a PC: Check for updates, then the Check for updates automatically switch, off, with What's new in a pane on the right<span>Example app preview · select to enlarge</span></figcaption></figure>
 <p>When the automatic check finds a newer version, the Live home shows a notice while standing by.</p>
@@ -430,6 +461,8 @@
 <li><strong>Not now</strong> hides the notice for that version. A newer one shows it again.</li>
 <li>The notice never shows during a service, on the second screen or in full screen.</li>
 </ul>
+<p><strong>After an update,</strong> the Live home shows a second notice once: <strong>Updated to 0.36.0</strong>, with <strong>See what's new</strong> and <strong>Dismiss</strong>. It works as on a phone; see <a href="#02-get-started-on-android">Get started on Android</a>.</p>
+<figure class="app-figure wide-figure"><a class="zoom-image" href="assets/images/whats-new-notice-pc.png" aria-label="Enlarge: The Live home on a PC with an example notice above the time of day: &quot;Updated to 0.36.0&quot;, with Dismiss and See what's new"><img src="assets/images/whats-new-notice-pc.png" alt="The Live home on a PC with an example notice above the time of day: &quot;Updated to 0.36.0&quot;, with Dismiss and See what's new" width="1366" height="768" loading="lazy" decoding="async"></a><figcaption>The Live home on a PC with an example notice above the time of day: &quot;Updated to 0.36.0&quot;, with Dismiss and See what's new<span>Example app preview · select to enlarge</span></figcaption></figure>
 <h2 id="04-your-first-rehearsal">04 — Your first rehearsal</h2>
 <p>Allow about 15 minutes. Use the simulator so no practice cue reaches a real stage.</p>
 <p><strong>The quickest start is guided practice.</strong> On a new install, Live shows a card: "New to this? Practise running a service". Choose <strong>Start practice</strong>, <strong>Not now</strong> (hides it until the app is next opened) or <strong>Don't show again</strong>. You can start it any time from <strong>Settings › About › Guided practice</strong>.</p>
@@ -443,7 +476,7 @@
 </ul>
 <p>Then try the full workflow yourself. A step that says "tap" is a click on a PC.</p>
 <ol>
-<li>Install the app; see <a href="#02-get-started-on-android">Get started on Android</a> or <a href="#03-get-started-on-windows">Get started on Windows</a>. Check <strong>Settings › About</strong> for its version. This guide describes 0.35.0.</li>
+<li>Install the app; see <a href="#02-get-started-on-android">Get started on Android</a> or <a href="#03-get-started-on-windows">Get started on Windows</a>. Check <strong>Settings › About</strong> for its version. This guide describes 0.36.0.</li>
 <li>Tap the display chip at the top of Live and choose <strong>Simulator</strong>. The chip then reads <strong>LED simulator</strong>, or <strong>Stage simulator</strong> if you have chosen to simulate a stage screen.</li>
 <li>On Live choose <strong>Start service</strong>, then load <strong>Quick rehearsal</strong> (a Pinned or Recent program card on Live loads straight away). In a wide window on a PC, click the program under <strong>Choose a program</strong>, then <strong>Start service</strong>. Loading a program enters <strong>Ready</strong>; it does not start the countdown. On a PC, Ready shows your layout's own timer with the first segment's full time, not counting.</li>
 <li>Review the first and next segment. While Ready, choose <strong>Service mode</strong>: <strong>Live timing · 1×</strong> or a <strong>Fast rehearsal</strong> speed. A program's Service/Rehearsal grouping is not its speed setting. <strong>Change</strong> swaps in another program without leaving Ready.</li>
@@ -950,8 +983,8 @@
 </tbody>
 </table></div>
 <p><strong>To leave</strong>, press <strong>Esc</strong> or <strong>F11</strong>, or tap or click once and choose <strong>Exit</strong> in the tray that comes up. A small <strong>Exit full screen</strong> control also shows at the top right for the first few seconds. On Android, Back leaves it too. While the tray is showing, Esc or Back puts the tray away first; press it again to leave.</p>
-<p><strong>Full screen does not leave by itself when the service ends.</strong> It stays on the end screen, or the clock; see <a href="#when-the-service-ends">When the service ends</a> below.</p>
-<p><strong>A phone or tablet turns sideways.</strong> On Android, full screen turns the stage picture to landscape, either way round, so the countdown is as large as it can be. When you leave full screen, the phone or tablet goes back to turning as it did before. A PC is unchanged.</p>
+<p><strong>When the service ends,</strong> full screen on a phone or tablet closes by itself. On a PC it stays open on the end screen, or the clock. See <a href="#when-the-service-ends">When the service ends</a> below.</p>
+<p><strong>A phone or tablet turns sideways.</strong> On Android, full screen turns the stage picture to landscape, so the countdown is as large as it can be. It follows the phone between the two landscapes, so turn it the other way round and the stage turns with it. This works even when the phone's auto-rotate switch is off. When you leave full screen, the screen goes back to how it was before. Windows is unchanged.</p>
 <p>Nothing changes in what the LED sign, a second screen or paired screens receive.</p>
 <h3 id="running-the-service-from-full-screen">Running the service from full screen</h3>
 <p>You can run the whole service without leaving full screen: with gestures, with a small tray of controls, or with the keys on a PC. The same safety rules hold as on Live.</p>
@@ -979,6 +1012,16 @@
 </tbody>
 </table></div>
 <p><strong>Each gesture asks first</strong>, in the same small card the keys and buttons use. Nothing changes until you confirm, so a stray double tap can be cancelled.</p>
+<p><strong>A tip the first time.</strong> The first time full screen opens on a phone, tablet or PC, a short tip shows the three zones and what each does, and how to bring up the control tray: swipe up from the bottom or tap once on a phone or tablet; click once or move the mouse to the bottom edge on a PC.</p>
+<figure class="app-figure wide-figure"><a class="zoom-image" href="assets/images/full-screen-tip-phone.png" aria-label="Enlarge: Full screen on a phone held sideways: the tip over the stage, showing the left, middle and right thirds with Undo, Pause or resume and Next segment, and how to open the tray"><img src="assets/images/full-screen-tip-phone.png" alt="Full screen on a phone held sideways: the tip over the stage, showing the left, middle and right thirds with Undo, Pause or resume and Next segment, and how to open the tray" width="844" height="390" loading="lazy" decoding="async"></a><figcaption>Full screen on a phone held sideways: the tip over the stage, showing the left, middle and right thirds with Undo, Pause or resume and Next segment, and how to open the tray<span>Example app preview · select to enlarge</span></figcaption></figure>
+<ul>
+<li>It goes away with a tap or click, any key, or after about 8 seconds. It does not come back by itself, and the tap that closes it is not counted as part of a double tap.</li>
+<li><strong>Show gestures</strong> in the control tray shows it again whenever you want.</li>
+<li>With the controls locked it does not show, so it never gets in the way of <strong>Hold to unlock</strong>. It is not used up, and shows the next time.</li>
+<li>With <strong>Reduced motion</strong> on, it does not fade.</li>
+<li>It shows on this screen only. Nothing of it goes to the LED sign, a second screen or paired screens. Whether it has been shown is kept on that phone or PC, not in backups or program files.</li>
+</ul>
+<figure class="app-figure wide-figure"><a class="zoom-image" href="assets/images/full-screen-tip.png" aria-label="Enlarge: Full screen on a PC: the tip over the stage, with the three zones and how to open the tray"><img src="assets/images/full-screen-tip.png" alt="Full screen on a PC: the tip over the stage, with the three zones and how to open the tray" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Full screen on a PC: the tip over the stage, with the three zones and how to open the tray<span>Example app preview · select to enlarge</span></figcaption></figure>
 <figure class="app-figure wide-figure"><a class="zoom-image" href="assets/images/full-screen-confirm.png" aria-label="Enlarge: Full screen on the device running the service: the countdown and the up next line dim behind a small card asking &quot;Pause Sermon?&quot; with Cancel and Confirm pause"><img src="assets/images/full-screen-confirm.png" alt="Full screen on the device running the service: the countdown and the up next line dim behind a small card asking &quot;Pause Sermon?&quot; with Cancel and Confirm pause" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Full screen on the device running the service: the countdown and the up next line dim behind a small card asking &quot;Pause Sermon?&quot; with Cancel and Confirm pause<span>Example app preview · select to enlarge</span></figcaption></figure>
 <p><strong>The control tray.</strong> A small tray along the bottom holds the controls. To bring it up:</p>
 <ul>
@@ -1012,6 +1055,10 @@
 <td>Blanks the screen. The button then reads <strong>Unblank</strong>.</td>
 </tr>
 <tr>
+<td><strong>Show gestures</strong></td>
+<td>Shows the gestures tip again.</td>
+</tr>
+<tr>
 <td><strong>End service</strong></td>
 <td>Asks just as it does on Live. For a Quick timer it reads <strong>End timer</strong>.</td>
 </tr>
@@ -1036,12 +1083,16 @@
 </ul>
 <p><strong>With Lock controls on, none of this works.</strong> The gestures and the tray do nothing, and every key is blocked, Esc and F11 included. A tap, a click or Esc shows <strong>Controls locked</strong> and <strong>Hold to unlock</strong> in place of Exit.</p>
 <h3 id="when-the-service-ends">When the service ends</h3>
-<p>Full screen stays open, however the service ends. The people watching see the program's end screen, or the clock if the program is set to end on the <strong>Clock</strong>, not your Live page.</p>
+<p>What happens depends on the device.</p>
+<ul>
+<li><strong>On a phone or tablet,</strong> End service closes full screen and turns the screen back to how it was before. This is the same whether you end it from the tray, from End service on Live, or from a paired device. You are back on Live.</li>
+<li><strong>On a PC,</strong> full screen stays open, however the service ends. The people watching see the program's end screen, or the clock if the program is set to end on the <strong>Clock</strong>, not your Live page. It closes when the next service is set up.</li>
+</ul>
+<p>On a PC:</p>
 <ul>
 <li>The timer buttons in the tray grey out. <strong>Cues</strong>, <strong>Clock</strong>, <strong>Blank</strong> and <strong>Exit</strong> keep working.</li>
 <li>With a program set to end on the Clock, <strong>Clock</strong> in the tray is greyed out, as the clock is already showing. Blank, cues and messages go back to the clock when they are cleared.</li>
 <li>Leave when the room no longer needs it: <strong>Exit</strong> in the tray, <strong>Esc</strong> or <strong>F11</strong>.</li>
-<li>Full screen closes by itself when the next service is set up.</li>
 <li>Full screen cannot be opened after the service has ended. It needs a running service or Quick timer.</li>
 </ul>
 <h3 id="what-full-screen-shows">What full screen shows</h3>
@@ -1130,7 +1181,7 @@
 </table></div>
 <p>Tap a row in <strong>Service rundown</strong> to inspect its timing, speaker and private note. Opening that information does not advance to the row. The rundown header also holds <strong>Edit upcoming</strong>, <strong>Recover time</strong> and a print icon for <strong>Print order of service</strong>.</p>
 <p>At zero, the operator view enters <strong>Overtime</strong> and shows red text while the display stays at 00:00 or the configured At zero text. This is intentional. Start the next segment when appropriate; do not add time merely to hide an overrun from the report.</p>
-<p>The <strong>Stage &amp; display</strong> panel holds Stage cues (three across where there is room), <strong>Show clock</strong>, <strong>Send message</strong>, <strong>Blank screen</strong> and <strong>Quick timer</strong>, plus the display preview. <strong>Show clock</strong> puts the time of day on the display (12 or 24 hour, set in Display settings › Clock format); <strong>Back to clock</strong> or <strong>Show timer</strong> returns. <strong>Blank screen</strong> is a toggle: tap again as <strong>Unblank screen</strong> to restore current output. It also works after End service. Timing and phone alerts continue while blanked, but automatic stage warnings are suppressed. The preview should remain present and identify intentional blanking.</p>
+<p>The <strong>Stage &amp; display</strong> panel holds Stage cues (three across where there is room), <strong>Show clock</strong>, <strong>Send message</strong>, <strong>Blank screen</strong> and <strong>Quick timer</strong>, plus the display preview. <strong>Show clock</strong> puts the time of day on the display (12 or 24 hour, set in Display settings › Clock format); <strong>Back to clock</strong> or <strong>Show timer</strong> returns. <strong>Send message</strong> opens a window with the same <strong>LED sign | Stage screen</strong> switch as the cue editor; see <a href="#13-prepared-cues-and-automatic-warnings">One editor, two displays</a>. <strong>Blank screen</strong> is a toggle: tap again as <strong>Unblank screen</strong> to restore current output. It also works after End service. Timing and phone alerts continue while blanked, but automatic stage warnings are suppressed. The preview should remain present and identify intentional blanking.</p>
 <p><strong>Lock-screen controls.</strong> On a phone or tablet, during a service, a notification shows the current segment with a live countdown (counting up in overtime), with Pause/Resume and Next; Next needs a second tap. It is on by default in <strong>Settings › Warnings &amp; alerts › During a service</strong>, and it obeys Lock controls.</p>
 <p><strong>Keyboard, clicker and foot pedal.</strong> On a PC, Space, Page Down and other keys run the service, and each timer key asks first. A clicker or foot pedal can drive Live on a phone, tablet or PC. Both are in <a href="#12-keyboard-clicker-and-commands">Keyboard, clicker and Commands</a>.</p>
 <p><strong>On a PC.</strong> While another program is in front, the countdown is beside the Windows clock, and the mini timer keeps it above your slides. Under the display preview, one line and one button show the stage on a projector or second monitor. See <a href="#03-get-started-on-windows">Get started on Windows</a>, <a href="#11-run-the-service-from-a-pc">Run the service from a PC</a> and <a href="#09-second-screen-and-full-screen">Second screen and full screen</a>.</p>
@@ -1270,6 +1321,9 @@
 <li><strong>Custom</strong> stays on one line. Where there is no room for its key beside it, the key is left out; in the narrowest windows Pause and Next do the same.</li>
 <li>The <strong>DISPLAY PREVIEW</strong> heading shortens to <strong>PREVIEW</strong> when there is no room, here and in the other layouts, so neither it nor the display's badge is cut short.</li>
 <li>Cue buttons are never so narrow that a word breaks across lines.</li>
+<li><strong>The columns balance.</strong> Classic measures its cards and places them in two columns that end at about the same height, so there is no large empty gap under the timer card. The rundown goes under the timer card when that fills the space. Windows from about 740 wide (820 when under 1000 high) use two columns; narrower ones use one.</li>
+<li><strong>The controls stay in view.</strong> From 600 wide up, the ring and the controls fit the window height, so Pause, Next segment and End service need no scrolling in a window 700 or more high.</li>
+<li><strong>Custom</strong>, <strong>Pre-service countdown</strong> and the other labels shrink a little in a tight space rather than breaking a word or ending in "…".</li>
 </ul>
 <figure class="app-figure wide-figure"><a class="zoom-image" href="assets/images/desktop-classic-1024.png" aria-label="Enlarge: Classic in a 1024 × 768 window: the segment's name beside the ring, with the controls across the card beneath"><img src="assets/images/desktop-classic-1024.png" alt="Classic in a 1024 × 768 window: the segment's name beside the ring, with the controls across the card beneath" width="1024" height="768" loading="lazy" decoding="async"></a><figcaption>Classic in a 1024 × 768 window: the segment's name beside the ring, with the controls across the card beneath<span>Example app preview · select to enlarge</span></figcaption></figure>
 <figure class="app-figure wide-figure"><a class="zoom-image" href="assets/images/desktop-classic.png" aria-label="Enlarge: Classic in a wide window: the timer card, the display preview and stage cues, and the service rundown in its own column"><img src="assets/images/desktop-classic.png" alt="Classic in a wide window: the timer card, the display preview and stage cues, and the service rundown in its own column" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Classic in a wide window: the timer card, the display preview and stage cues, and the service rundown in its own column<span>Example app preview · select to enlarge</span></figcaption></figure>
@@ -1365,7 +1419,7 @@
 <figure class="app-figure wide-figure"><a class="zoom-image" href="assets/images/desktop-three-panes-1366.png" aria-label="Enlarge: Three panes running in a 1366 × 768 window: the ring in the middle pane, the controls under it, and the keys listed along the bottom"><img src="assets/images/desktop-three-panes-1366.png" alt="Three panes running in a 1366 × 768 window: the ring in the middle pane, the controls under it, and the keys listed along the bottom" width="1366" height="768" loading="lazy" decoding="async"></a><figcaption>Three panes running in a 1366 × 768 window: the ring in the middle pane, the controls under it, and the keys listed along the bottom<span>Example app preview · select to enlarge</span></figcaption></figure>
 <h3 id="keys-on-the-buttons">Keys on the buttons</h3>
 <p>On a PC, Pause, Next segment, Custom and the cue buttons show the key that presses them. Turn this on or off with <strong>Show keyboard keys on buttons</strong>, under <strong>Settings › Desktop layout</strong>.</p>
-<p>The line of keys along the bottom of Mission control and Keys, and along the bottom of the middle pane of Three panes and The dial, follows the same switch. Classic has no such line; it shows each key on its button. It reads, for example, "Space Pause · PgDn PgDn Next · + − Adjust time · Ctrl Z Undo · J Jump to segment · 1 – 9 Cues · M Message · Ctrl L Lock". When the line is too long for the room, the least needed keys are left out. With <strong>Clicker and foot pedal</strong> switched off, it stops listing Space and Page Down; see <a href="#12-keyboard-clicker-and-commands">Keyboard, clicker and Commands</a>.</p>
+<p>The line of keys along the bottom of Mission control and Keys, and along the bottom of the middle pane of Three panes and The dial, follows the same switch. Classic has no such line; it shows each key on its button. It reads, for example, "Space Pause · PgDn PgDn Next · + − Adjust time · Ctrl Z Undo · J Jump to segment · 1 – 9 Cues · M Message · Ctrl L Lock". When the line is too long for the room, the least needed keys are left out, but <strong>? Keys</strong> and <strong>Ctrl K Commands</strong> always stay, at the end, so you can always find the list of keys and Commands. With <strong>Clicker and foot pedal</strong> switched off, it stops listing Space and Page Down; see <a href="#12-keyboard-clicker-and-commands">Keyboard, clicker and Commands</a>.</p>
 <h3 id="saved-looks">Saved looks</h3>
 <p><strong>Save this look</strong> keeps the layout, theme, spacing, contrast and key labels together under a name, such as "Sunday morning", so you can go back to it in one step. Up to 8 are kept, and they are included in backups. <strong>Reset to default</strong> returns to Mission control with Midnight Lime.</p>
 <h3 id="the-mini-timer-windows">The mini timer (Windows)</h3>
@@ -1492,7 +1546,8 @@
 <ul>
 <li><strong>Timer and stage keys</strong> (from Space down to M in the table) work on Live while a service is running, with no question or other page on top. The cue numbers and <kbd>M</kbd> also need a display connected.</li>
 <li><kbd>Ctrl</kbd> <kbd>Z</kbd> needs a segment change to undo. <kbd>J</kbd> needs a later segment to jump to.</li>
-<li><kbd>Ctrl</kbd> <kbd>K</kbd> and <kbd>?</kbd> work on any tab, but not under a dialog.</li>
+<li><kbd>Ctrl</kbd> <kbd>K</kbd> and <kbd>?</kbd> work on any tab, but not under a dialog. <kbd>Ctrl</kbd> <kbd>K</kbd> and <kbd>Ctrl</kbd> <kbd>M</kbd> also work when a text box had the keyboard.</li>
+<li><strong>Ctrl keys keep working.</strong> In earlier versions Ctrl+K could work once and then only now and then. A key pressed again after a pause now always counts, and the app checks which keys are held whenever the window changes, for example after the mini timer had the keyboard.</li>
 <li><kbd>Ctrl</kbd> <kbd>M</kbd> works on every page, with or without a service. <kbd>F11</kbd> works whenever a service is running. In full screen, the timer and stage keys work as they do on Live, and <kbd>Esc</kbd> puts the control tray away first if it is showing. Full screen also has gestures and a tray for a mouse or a touch screen; see <a href="#09-second-screen-and-full-screen">Second screen and full screen</a>.</li>
 <li><kbd>Space</kbd>, <kbd>B</kbd>, <kbd>Page Down</kbd> and <kbd>→</kbd> follow the <strong>Clicker and foot pedal</strong> switch; see below.</li>
 <li><strong>No key does anything while you are typing in a field.</strong> A question mark typed into a field is still a question mark.</li>
@@ -1738,6 +1793,14 @@
 </tbody>
 </table></div>
 <p>Nothing is lost by switching: the hidden settings are kept and saved. Editing a warning's text has the same switch, so a warning can have its own effect, colour, banner and screen speed.</p>
+<p><strong>The same switch is on four more windows,</strong> and it starts on the display in use: <strong>Stage screen</strong> with the Stage simulator or stage screens, <strong>LED sign</strong> otherwise.</p>
+<ul>
+<li><strong>Send message</strong>, below the stage cues. Stage screen shows colour, position, speed and <strong>Wrap long text</strong>. LED sign shows the display font, <strong>Tall</strong>, the alignment and the LED speed. The text, <strong>Bold</strong>, <strong>Italic</strong> and <strong>Effect</strong> show on both.</li>
+<li><strong>Edit end screen</strong> in Settings › Display settings, and the end screen in the program editor, <strong>Edit upcoming</strong> included.</li>
+<li><strong>At zero</strong>, with Custom text, in Settings › Display settings.</li>
+</ul>
+<figure class="app-figure"><a class="zoom-image" href="assets/images/send-message-stage.png" aria-label="Enlarge: Send message on a phone with the switch on Stage screen: a preview of Amen, the text, Bold, Italic and Effect, then the On screens settings starting with Colour"><img src="assets/images/send-message-stage.png" alt="Send message on a phone with the switch on Stage screen: a preview of Amen, the text, Bold, Italic and Effect, then the On screens settings starting with Colour" width="430" height="1000" loading="lazy" decoding="async"></a><figcaption>Send message on a phone with the switch on Stage screen: a preview of Amen, the text, Bold, Italic and Effect, then the On screens settings starting with Colour<span>Example app preview · select to enlarge</span></figcaption></figure>
+<p>It only changes what you see while you write. What is sent and saved is the same as before, so a message or end screen set up on either side reaches the sign and the screens as it always did, and older paired screens are not affected. The <strong>Clock</strong> choice for <strong>When the service ends</strong> is untouched.</p>
 <h3 id="how-a-cue-looks-on-screens">How a cue looks on screens</h3>
 <p>The LED sign is small, red and one colour. Stage screens, web screens, a second screen and full screen are large and can do more. The <strong>On screens</strong> group is for them. Nothing in it changes the LED sign.</p>
 <figure class="app-figure wide-figure"><a class="zoom-image" href="assets/images/cue-on-screens.png" aria-label="Enlarge: The cue editor's On screens group: Colour set to Amber, Position set to Banner at the bottom, Wrap long text switched off and Speed on screens at 30"><img src="assets/images/cue-on-screens.png" alt="The cue editor's On screens group: Colour set to Amber, Position set to Banner at the bottom, Wrap long text switched off and Speed on screens at 30" width="1366" height="768" loading="lazy" decoding="async"></a><figcaption>The cue editor's On screens group: Colour set to Amber, Position set to Banner at the bottom, Wrap long text switched off and Speed on screens at 30<span>Example app preview · select to enlarge</span></figcaption></figure>
@@ -1941,7 +2004,7 @@
 <li>Check the selected screen's end output: the program's end screen, or the clock if the program has no end screen. It remains connected. The <strong>Stage &amp; display</strong> panel starts closed after a service; open it to blank or unblank, or to send a message or cue after the service.</li>
 <li>Open View last service report, check the service date and segment timings, add a review note if useful, and export or print if required.</li>
 <li><strong>Stop sharing</strong> when the stage, viewer and web devices are no longer needed. Deliberately disconnect the LED if the equipment is being handed over or powered down.</li>
-<li>Full screen, on a phone, tablet or PC, stays open on the end screen, or the clock. Leave it with <strong>Exit</strong> in its tray, <strong>Esc</strong> or <strong>F11</strong>; it also closes when the next service is set up.</li>
+<li>Full screen on a phone or tablet closes when the service ends, and the screen turns back as it was. On a PC it stays open on the end screen, or the clock. Leave it with <strong>Exit</strong> in its tray, <strong>Esc</strong> or <strong>F11</strong>; it also closes when the next service is set up.</li>
 <li>On a PC, a second screen stays open on the end screen, or the clock, until you click <strong>Stop</strong>. The mini timer closes by itself when the service ends, and the countdown icon beside the Windows clock goes.</li>
 </ol>
 <figure class="app-figure"><a class="zoom-image" href="assets/images/standing-by.png" aria-label="Enlarge: Standing by on a phone after a saved service, with Start service, Quick timer and the Last service card"><img src="assets/images/standing-by.png" alt="Standing by on a phone after a saved service, with Start service, Quick timer and the Last service card" width="430" height="1100" loading="lazy" decoding="async"></a><figcaption>Standing by on a phone after a saved service, with Start service, Quick timer and the Last service card<span>Example app preview · select to enlarge</span></figcaption></figure>
@@ -2315,6 +2378,10 @@
 <td>It shows only while <strong>Show keyboard keys on buttons</strong> is on, and not in a window 600 high. Classic has no line; it shows each key on its button.</td>
 </tr>
 <tr>
+<td>A Ctrl key worked once, then not</td>
+<td>Fixed in 0.36.0. Update the PC.</td>
+</tr>
+<tr>
 <td>A key does nothing</td>
 <td>Check the controls are not locked, the cursor is not in a text field, Live is the page showing, no dialog is open, and a service is running. Press <strong>?</strong> for the list.</td>
 </tr>
@@ -2470,7 +2537,7 @@
 </tr>
 <tr>
 <td>Full screen at the end</td>
-<td>Ends the service from the tray, explains why full screen stays on the end screen or the clock, and leaves it.</td>
+<td>Ends the service from the tray. On a phone or tablet, sees full screen close; on a PC, sees the end screen or the clock stay, and leaves with Exit.</td>
 </tr>
 <tr>
 <td>End on the clock</td>
@@ -2554,7 +2621,7 @@
 </tr>
 <tr>
 <td>Full screen</td>
-<td>The stage countdown on the screen of the device running the service, with gestures and a control tray to run the service from it.</td>
+<td>The stage countdown on the screen of the device running the service, with gestures and a control tray to run the service from it. A tip shows the first time, and <strong>Show gestures</strong> brings it back.</td>
 </tr>
 <tr>
 <td>Control tray</td>
@@ -2637,17 +2704,17 @@
 <li>On a PC, Clicker and foot pedal is switched off. Does Space still pause? <strong>No. A PC cannot tell a clicker from its keyboard, so Space, B, Page Down and → do nothing. The buttons on screen still work.</strong></li>
 <li>A cue uses Slide in and its text is too wide for the LED sign. What does the sign show? <strong>It scrolls the text. Screens slide it in.</strong></li>
 <li>In full screen, you double tap the right third of the screen. Does the service go to the next segment at once? <strong>No. It asks first, like every timer action. With Lock controls on, it does nothing at all.</strong></li>
-<li>The service ends while full screen is open. What does that screen show? <strong>The end screen, or the clock if the program has no end screen. Full screen stays open, Cues, Clock, Blank and Exit still work, and it closes when the next service is set up.</strong></li>
+<li>The service ends while full screen is open. What happens? <strong>On a phone or tablet, full screen closes and the screen turns back as it was. On a PC it stays open on the end screen, or the clock if the program has no end screen; Cues, Clock, Blank and Exit still work, and it closes when the next service is set up.</strong></li>
 <li>Check for updates automatically is switched on. Will the app install an update by itself? <strong>No. It checks at most once a day, never during a service, and only shows a notice on Live. Nothing is downloaded or installed without asking.</strong></li>
 <li>A service is loaded on a PC and the ring shows 05:00. Is it counting? <strong>No. That is Ready: the layout's own timer with the first segment's full time. Nothing counts until Start first segment.</strong></li>
 <li>A program is set to end on the Clock. What do the LED sign and the stage screens show after End service? <strong>The clock, on every display. Live says Showing the clock, and Show clock is greyed out.</strong></li>
 </ol>
 <h3 id="current-scope">Current scope</h3>
-<p>This guide covers version 0.35.0 on Android and Windows. An earlier version does not have what the release notes list under 0.35.0. An iOS or Mac app and universal LED compatibility are not provided; browsers can only follow a service as web screens, never control it. The original Matrix glyphs and square-matrix glyphs are unchanged. Tinos is bundled; installed/imported font loading is not part of the workflow. LED countdowns, segments and Quick timers stay within 59:59.</p>
-<p>Physical checks have established the supported W2 countdown, expected one-blink transitions, scrolling warnings returning to the current timer, and Next segment after overtime. Full-service endurance, power-loss acceptance and controller administration writes still require controlled hardware validation. Web screens, guided practice, Quick timer, stage requests and the other features added from 0.19 to 0.35 are described here from the app's release notes and on-screen wording; behaviour on your phones, PCs, routers, browsers and projectors has not been verified by this handbook, so hands-on testing of that release remains the user's responsibility.</p>
+<p>This guide covers version 0.36.0 on Android and Windows. An earlier version does not have what the release notes list under 0.36.0. An iOS or Mac app and universal LED compatibility are not provided; browsers can only follow a service as web screens, never control it. The original Matrix glyphs and square-matrix glyphs are unchanged. Tinos is bundled; installed/imported font loading is not part of the workflow. LED countdowns, segments and Quick timers stay within 59:59.</p>
+<p>Physical checks have established the supported W2 countdown, expected one-blink transitions, scrolling warnings returning to the current timer, and Next segment after overtime. Full-service endurance, power-loss acceptance and controller administration writes still require controlled hardware validation. Web screens, guided practice, Quick timer, stage requests and the other features added from 0.19 to 0.36 are described here from the app's release notes and on-screen wording; behaviour on your phones, PCs, routers, browsers and projectors has not been verified by this handbook, so hands-on testing of that release remains the user's responsibility.</p>
 <p><strong>The Windows app is new.</strong> Its installer is not code-signed, so Windows warns before it runs. The second screen, the mini timer, full screen, the countdown beside the clock and <strong>Download and install</strong> depend on how Windows, your graphics driver and your screens behave. Rehearse the exact PC, projector and clicker before a service, and keep a phone with the same programs as a fallback.</p>
 <p>The online handbook and this Markdown guide are training materials, not a remote-control interface. Nothing in the handbook can connect to a sign, start a service or send a stage cue.</p></article></div>
-<footer class="page-footer"><img src="assets/app-mark.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.35.0 · Updated 21 November 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="release-notes.html">Release notes</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
+<footer class="page-footer"><img src="assets/app-mark.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.36.0 · Updated 22 November 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="release-notes.html">Release notes</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
 </main></div>
 <dialog id="image-dialog" aria-label="Enlarged app screenshot"><button type="button" class="close-dialog" aria-label="Close enlarged screenshot">Close ✕</button><img alt=""><p></p></dialog>
 <noscript><div class="noscript-note">All lessons and the full guide work without JavaScript. Search, progress tracking and the practice quiz need JavaScript.</div></noscript>

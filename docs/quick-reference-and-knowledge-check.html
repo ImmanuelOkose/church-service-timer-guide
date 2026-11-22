@@ -21,7 +21,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar">
 <a class="brand" href="index.html"><img src="assets/app-mark.svg" width="42" height="42" alt=""><span>Church Service Timer<small>THE OPERATOR HANDBOOK</small></span></a>
-<div class="header-actions"><span class="version">VERSION 0.35.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
+<div class="header-actions"><span class="version">VERSION 0.36.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
 <button class="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">Lessons <span aria-hidden="true">☰</span></button></div>
 </header>
 <div class="layout">
@@ -125,7 +125,7 @@
 </tr>
 <tr>
 <td>Full screen</td>
-<td>The stage countdown on the screen of the device running the service, with gestures and a control tray to run the service from it.</td>
+<td>The stage countdown on the screen of the device running the service, with gestures and a control tray to run the service from it. A tip shows the first time, and <strong>Show gestures</strong> brings it back.</td>
 </tr>
 <tr>
 <td>Control tray</td>
@@ -208,14 +208,14 @@
 <li>On a PC, Clicker and foot pedal is switched off. Does Space still pause? <strong>No. A PC cannot tell a clicker from its keyboard, so Space, B, Page Down and → do nothing. The buttons on screen still work.</strong></li>
 <li>A cue uses Slide in and its text is too wide for the LED sign. What does the sign show? <strong>It scrolls the text. Screens slide it in.</strong></li>
 <li>In full screen, you double tap the right third of the screen. Does the service go to the next segment at once? <strong>No. It asks first, like every timer action. With Lock controls on, it does nothing at all.</strong></li>
-<li>The service ends while full screen is open. What does that screen show? <strong>The end screen, or the clock if the program has no end screen. Full screen stays open, Cues, Clock, Blank and Exit still work, and it closes when the next service is set up.</strong></li>
+<li>The service ends while full screen is open. What happens? <strong>On a phone or tablet, full screen closes and the screen turns back as it was. On a PC it stays open on the end screen, or the clock if the program has no end screen; Cues, Clock, Blank and Exit still work, and it closes when the next service is set up.</strong></li>
 <li>Check for updates automatically is switched on. Will the app install an update by itself? <strong>No. It checks at most once a day, never during a service, and only shows a notice on Live. Nothing is downloaded or installed without asking.</strong></li>
 <li>A service is loaded on a PC and the ring shows 05:00. Is it counting? <strong>No. That is Ready: the layout's own timer with the first segment's full time. Nothing counts until Start first segment.</strong></li>
 <li>A program is set to end on the Clock. What do the LED sign and the stage screens show after End service? <strong>The clock, on every display. Live says Showing the clock, and Show clock is greyed out.</strong></li>
 </ol>
 <h3 id="current-scope">Current scope</h3>
-<p>This guide covers version 0.35.0 on Android and Windows. An earlier version does not have what the release notes list under 0.35.0. An iOS or Mac app and universal LED compatibility are not provided; browsers can only follow a service as web screens, never control it. The original Matrix glyphs and square-matrix glyphs are unchanged. Tinos is bundled; installed/imported font loading is not part of the workflow. LED countdowns, segments and Quick timers stay within 59:59.</p>
-<p>Physical checks have established the supported W2 countdown, expected one-blink transitions, scrolling warnings returning to the current timer, and Next segment after overtime. Full-service endurance, power-loss acceptance and controller administration writes still require controlled hardware validation. Web screens, guided practice, Quick timer, stage requests and the other features added from 0.19 to 0.35 are described here from the app's release notes and on-screen wording; behaviour on your phones, PCs, routers, browsers and projectors has not been verified by this handbook, so hands-on testing of that release remains the user's responsibility.</p>
+<p>This guide covers version 0.36.0 on Android and Windows. An earlier version does not have what the release notes list under 0.36.0. An iOS or Mac app and universal LED compatibility are not provided; browsers can only follow a service as web screens, never control it. The original Matrix glyphs and square-matrix glyphs are unchanged. Tinos is bundled; installed/imported font loading is not part of the workflow. LED countdowns, segments and Quick timers stay within 59:59.</p>
+<p>Physical checks have established the supported W2 countdown, expected one-blink transitions, scrolling warnings returning to the current timer, and Next segment after overtime. Full-service endurance, power-loss acceptance and controller administration writes still require controlled hardware validation. Web screens, guided practice, Quick timer, stage requests and the other features added from 0.19 to 0.36 are described here from the app's release notes and on-screen wording; behaviour on your phones, PCs, routers, browsers and projectors has not been verified by this handbook, so hands-on testing of that release remains the user's responsibility.</p>
 <p><strong>The Windows app is new.</strong> Its installer is not code-signed, so Windows warns before it runs. The second screen, the mini timer, full screen, the countdown beside the clock and <strong>Download and install</strong> depend on how Windows, your graphics driver and your screens behave. Rehearse the exact PC, projector and clicker before a service, and keep a phone with the same programs as a fallback.</p>
 <p>The online handbook and this Markdown guide are training materials, not a remote-control interface. Nothing in the handbook can connect to a sign, start a service or send a stage cue.</p></article>
 <section class="quiz" aria-labelledby="quiz-title"><p class="eyebrow">PRACTICE WITHOUT THE PHONE</p><h2 id="quiz-title">Five quick scenarios.</h2>
@@ -227,7 +227,7 @@
 <fieldset><legend>5. A projector is plugged into the PC and Windows is set to Extend. What puts the countdown on it?</legend><label><input type="radio" name="q5" value="pair" required> Pairing the projector with a six-digit code.</label><label><input type="radio" name="q5" value="show"> Show on second screen, under the Display preview on Live.</label></fieldset>
 <button type="submit" class="primary-button">Check my answers</button><p id="quiz-result" role="status"></p></form></section><div class="lesson-complete"><div><strong>A moment to reflect.</strong><p>Could you explain this workflow to another operator?</p></div><button type="button" data-complete="quick-reference-and-knowledge-check" aria-pressed="false">Mark lesson as read</button></div>
 <nav class="chapter-pagination" aria-label="Lesson pagination"><a href="trainer-session-and-readiness-checklist.html"><span>PREVIOUS LESSON</span>Trainer session and readiness checklist</a><a href="index.html"><span>KEEP IT CLOSE</span>Return to handbook →</a></nav></div>
-<footer class="page-footer"><img src="assets/app-mark.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.35.0 · Updated 21 November 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="release-notes.html">Release notes</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
+<footer class="page-footer"><img src="assets/app-mark.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.36.0 · Updated 22 November 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="release-notes.html">Release notes</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
 </main></div>
 <dialog id="image-dialog" aria-label="Enlarged app screenshot"><button type="button" class="close-dialog" aria-label="Close enlarged screenshot">Close ✕</button><img alt=""><p></p></dialog>
 <noscript><div class="noscript-note">All lessons and the full guide work without JavaScript. Search, progress tracking and the practice quiz need JavaScript.</div></noscript>
