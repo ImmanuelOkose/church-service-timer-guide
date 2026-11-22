@@ -2,13 +2,34 @@
 
 What changed in each version of Church Service Timer, newest first, in short. Update every phone, tablet and PC your team uses to the same version: from 0.28, program files, backups and sent programs can't be opened by 0.27 or earlier.
 
+## 0.36.0 · 22 November 2026
+
+**Full screen**
+
+- **Full screen follows both landscapes on Android.** It turns between the two landscapes with the phone, even when auto-rotate is off. Leaving full screen puts the screen back as it was.
+- **On a phone or tablet, End service leaves full screen.** From the tray, from Live or from a paired device, full screen closes and the screen turns back. **A PC is unchanged:** full screen stays on the end screen, or the clock, until you leave it. This corrects the 0.35.0 note below, which said full screen stays open however the service ends, on any device.
+- **A tip the first time.** A short overlay shows the three double-tap zones and how to open the control tray. It goes with a tap, any key or after about 8 seconds. **Show gestures** in the tray brings it back. See [Second screen and full screen](second-screen-and-full-screen.html).
+
+**On every device**
+
+- **"Updated to 0.36.0".** The first time the app opens on a new version, Live shows a notice while standing by, with **See what's new** and **Dismiss**. It shows once, and never during a service. See [Get started on Android](get-started-on-android.html).
+- **Send message, the end screen and the zero screen follow the simulator.** They now have the **LED sign | Stage screen** switch the cue editor has, and show the settings for the display in use. What is sent is unchanged.
+- **Check for updates ignores test versions.** Only real releases are offered.
+
+**On a PC**
+
+- **The same text on every PC.** The app's text is drawn in Roboto, as on Android. Letters look a little different, and labels fit as they do on a phone.
+- **Ctrl+K and the other Ctrl keys keep working.** They could work once and then only now and then. This is fixed.
+- **? Keys and Ctrl K Commands always show** at the end of the line of keys, even in a narrow window.
+- **Classic balances its columns.** In a narrow window it no longer leaves a large gap under the timer card, and the controls stay in view from 600 wide up.
+
 ## 0.35.0 · 21 November 2026
 
 **Full screen**
 
 - **Gestures in full screen.** Double tap or double-click the right third of the screen for the next segment, the middle to pause or resume, and the left third to undo the last segment change. Each asks first, in the same small card as the keys and buttons. See [Second screen and full screen](second-screen-and-full-screen.html).
 - **A control tray in full screen.** A single tap or click, a swipe up from the bottom edge, or the mouse at the bottom of the screen brings up a small tray: Pause or Resume, Next, −2 min, +2 min, Undo, Cues, Clock, Blank, End service and Exit. Every timer action in it still asks first. It hides after 6 seconds; Esc, Back or a swipe down puts it away. Nothing of it is sent to any stage screen.
-- **Full screen stays on the end screen.** However the service ends, full screen stays open and shows the end screen, or the clock. The timer buttons grey out, while Cues, Clock, Blank and Exit keep working. It closes when the next service is set up.
+- **Full screen stays on the end screen.** On a PC, however the service ends, full screen stays open (a phone or tablet leaves it from 0.36.0) and shows the end screen, or the clock. The timer buttons grey out, while Cues, Clock, Blank and Exit keep working. It closes when the next service is set up.
 - **Lock controls blocks all of it.** With the controls locked, the gestures and the tray do nothing, and a tap still shows Hold to unlock.
 
 **On a PC**
