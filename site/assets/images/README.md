@@ -8,6 +8,8 @@ For the 0.35.0 handbook, every file in both tables was compared, pixel for pixel
 
 For the 0.36.0 handbook, every file in both tables was compared, by its pixels, with the preview on the app's main branch (release 0.36.0, cb2602b). Fifteen had changed and were copied again: full-screen-tray-phone.png, full-screen-tray.png, desktop-mission-control.png, desktop-mission-control-large.png, desktop-three-panes.png, desktop-three-panes-1366.png, desktop-dial.png, desktop-keys.png, desktop-ready-keys.png, second-screen-live.png, stage-simulator.png, shortcuts.png, commands.png, desktop-classic-narrow.png and desktop-classic-1024.png. The rest matched. desktop-classic.png, scaled from its preview, was compared after scaling and matched. reports-desktop.png and mini-timer.png are rendered for the handbook and were not rendered again. Five were added: whats-new-notice.png and whats-new-notice-pc.png (the Updated to notice), full-screen-tip-phone.png and full-screen-tip.png (the gestures tip), and send-message-stage.png (Send message with the switch on Stage screen). All were saved without changing a pixel and re-compressed without loss with Pillow. The version in the notice, 0.36.0, is the release itself.
 
+For the 0.37.0 handbook, every file in both tables was compared, by its colour values (red, green, blue and alpha, not only its size), with the preview on the app's main branch (release 0.37.0, 70094f6). Seventeen had changed and were copied again: stage-layout.png, appearance.png, screens-devices.png, full-screen-tray-phone.png, full-screen-tip-phone.png, send-message-stage.png, desktop-three-panes.png, second-screen-live.png, second-screen-settings.png, full-screen-confirm.png, full-screen-tray.png, stage-simulator.png, cue-banner.png, cue-editor-switch.png, default-end-screen-pc.png, full-screen-tip.png and stage-cues-desktop.png. The rest matched. desktop-classic.png, scaled from its preview, was compared after scaling and matched. reports-desktop.png and mini-timer.png are rendered for the handbook; their previews have not changed since 0.36.0, so they were not rendered again. Twenty-one were added, listed in the third table. All were saved without changing a pixel and re-compressed without loss with Pillow.
+
 ## Phone and tablet
 
 | Public filename | Original fixture |
@@ -89,6 +91,32 @@ For the 0.36.0 handbook, every file in both tables was compared, by its pixels, 
 | reports-dates.png | desktop-date-range.png |
 | reports-desktop.png | Rendered for the handbook by the fixture behind desktop-date-range.png (the same sample reports, dated 2026), without the calendar open |
 | mini-timer.png | Rendered for the handbook by the fixture behind mini-timer.png, at twice the pixel density (760 × 300) |
+
+## Added for 0.37.0
+
+| Public filename | Original fixture |
+| --- | --- |
+| flip-clock.png | flip-clock-wide-12h.png |
+| flip-clock-24h.png | flip-clock-wide-24h.png |
+| flip-clock-phone.png | flip-clock-phone-12h.png |
+| layout-timer-only.png | countdown-timer-wide.png |
+| layout-segment-name.png | countdown-current-wide.png |
+| layout-up-next.png | countdown-next-wide.png |
+| layout-up-next-only.png | countdown-only-wide.png |
+| stage-warning.png | countdown-warning-wide.png |
+| stage-overtime.png | countdown-overtime-strong-wide.png |
+| stage-light-theme.png | countdown-light-current-wide.png |
+| layout-tiles.png | layout-tiles-desktop.png |
+| layout-tiles-phone.png | layout-tiles-phone.png |
+| overtime-alert.png | desktop-settings-display-overtime.png |
+| finish-tiles.png | finish/appearance-finish-dark-1366.png |
+| finish-tiles-phone.png | finish/appearance-finish-light-phone.png |
+| finish-console-live.png | finish/live-console-subtle-light-phone.png |
+| finish-denim-live.png | finish/live-denim-subtle-light-phone.png |
+| papery-live.png | finish/papery-paper_ink-full-live-phone.png |
+| papery-appearance.png | finish/papery-appearance-note-paper_ink.png |
+| keep-awake.png | desktop-settings.png |
+| send-message-too-wide.png | send-message-wide-static-stage-phone.png |
 
 ## Adding or replacing an image
 
