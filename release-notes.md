@@ -2,6 +2,21 @@
 
 What changed in each version of Church Service Timer, newest first, in short. Update every phone, tablet and PC your team uses to the same version: from 0.28, program files, backups and sent programs can't be opened by 0.27 or earlier.
 
+## 0.38.0 · 23 November 2026
+
+**New: Slides**
+
+- **Song words, Bible verses and announcements on the screens.** A new **Slides** page, after Programs in the navigation, and a **Slides** button on Live under the display preview, put words on the second screen, web screens and stage screens. The app now has five places: Live, Programs, Slides, Reports and Settings. See [Show words with Slides](show-words-with-slides.html).
+- **A Library** on the left keeps every song, set of Bible verses and announcement you save, for every service, most recently used first. **Search the library** finds a title or any words in it. Edit or delete (it asks first) from the **⋮** beside each one.
+- **Add a song** by typing or pasting the words, or with **Open a text file**. A blank line starts a new slide, and a line such as Verse 1, Chorus, Bridge, Refrain, Pre-chorus, Intro, Outro, Tag or Ending names the slide and is not shown. **Lines on a slide** keeps the words as typed or splits them into slides of 2 or 4 lines, and the slides it makes show beside the words as you type.
+- **Add Bible verses** by typing a reference such as John 3:16, John 3:16-18, Psalm 23 or 1 Cor 13:4-7 and choosing **Find**. The King James Version comes with the app, and each slide ends with the reference in gold ("John 3:16 · KJV"). Other translations, such as the NLT, are under copyright: **Paste your own** takes the words from any translation your church may show, with its own reference and translation name.
+- **Add an announcement:** a title, the words, and a date, time or place line.
+- **Click or tap a slide to show it.** The slide on the screens is ringed in red and the next one is dashed. **Previous**, **Next**, **Clear slide** and **Black** are in **On the screens now**, and along the bottom on a phone or tablet. On a computer, **Right arrow** or **Space** is next, **Left arrow** back, **Esc** clears the slide and **B** turns the screens black. These keys work on the Slides page only: on Live, Space and the arrows pause and move to the next segment as before.
+- **Send to:** Second screen, Web screens and Stage screens. **Stage screens start unticked,** so a speaker's countdown is never covered by accident. The LED sign never shows slides. **Clear slide** gives every screen back what it showed before: the countdown, the clock, a cue or the end screen. A quick message to the stage still shows over a slide.
+- **The look:** twelve drawn backgrounds, 23 public-domain and CC0 photos under Nature and People, or **Your picture**; **Dim** (70% to begin with, up to 90%); text size S, M or L; Centre or Left; **Motion** Still or Gentle; and **Countdown in the corner**, which turns into a red chip in overtime. **Your picture** shows on the second screen, full screen and web screens; phones and tablets acting as stage screens show Midnight in its place for now.
+- **Fits the rest of the app.** The Slides page takes the Finish you chose. While a slide or Black is on a screen, the device stays awake under **While a service is running**, and lets go when you clear it. Slides can be shown with no service running, and ending a service keeps everything.
+- **Backups carry the Library and the look.** A backup that holds songs needs 0.38.0 or later to open; one without is unchanged. Your picture stays on the device. A phone, tablet or web screen on an earlier version keeps showing the countdown.
+
 ## 0.37.0 · 23 November 2026
 
 **On stage screens**

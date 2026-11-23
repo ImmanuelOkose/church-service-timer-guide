@@ -1,10 +1,10 @@
 # Church Service Timer — operator teaching guide
 
-For app **0.37.0** on Android and Windows · Prepared **23 November 2026** · Creator **I-Proton**
+For app **0.38.0** on Android and Windows · Prepared **23 November 2026** · Creator **I-Proton**
 
 This handbook teaches a new operator to prepare a program, run its timer, communicate discreetly with the stage, recover from common interruptions, and close the service with a useful report. Keep it beside the phone or the PC during your first rehearsal. Screenshots use example data from automated app previews; they are illustrations, not evidence that a particular physical display is connected.
 
-**This handbook is for 0.37.0.** What 0.37.0 adds is listed at the top of the [release notes](release-notes.html). On a phone or PC still on 0.36.0 or earlier, those parts of this handbook do not apply until you update.
+**This handbook is for 0.38.0.** What 0.38.0 adds is listed at the top of the [release notes](release-notes.html). On a phone or PC still on 0.37.0 or earlier, those parts of this handbook do not apply until you update.
 
 **The same app runs on a phone, a tablet and a Windows PC.** Programs, reports, settings and backups are the same everywhere. Where a step differs, this guide says "tap" for a phone or tablet and "click" for a PC, as the app itself does.
 
@@ -14,12 +14,13 @@ This handbook teaches a new operator to prepare a program, run its timer, commun
 
 **A Program is a saved plan. A service is one run of that plan.** Editing a saved program prepares a future run. Adjusting a running service does not rewrite the saved program or old reports.
 
-The app has four main destinations. On a phone they are tabs along the bottom. On a tablet or a PC they sit in a side rail, or across the top of the window, depending on the layout.
+The app has five main destinations. On a phone they are tabs along the bottom. On a tablet or a PC they sit in a side rail, or across the top of the window, depending on the layout.
 
 | Tab | Use it for |
 | --- | --- |
 | Live | Start and operate a service or a Quick timer, inspect output, send cues and messages, share to screens or join a service. |
 | Programs | Create reusable plans, arrange segments, add speakers and private notes, choose what each program shows when it ends, keep a segment library and version history. |
+| Slides | Keep song words, Bible verses and announcements in a Library, and show them on the second screen, web screens and stage screens. See [Show words with Slides](#15-show-words-with-slides). |
 | Reports | Review completed services, compare durations, add review notes, export, share and print records. |
 | Settings | Church profile, appearance, desktop or tablet layout, warnings and alerts, display settings, stage cues, Quick message presets, Screens & devices, LED device management, backups, Settings PIN and About. |
 
@@ -30,7 +31,7 @@ The app has four main destinations. On a phone they are tabs along the bottom. O
 | Part | What it does |
 | --- | --- |
 | Logo or mark, top left | Your church logo, or the built-in ring-and-cross mark. Select it to open the church profile. |
-| App or service name | The loaded or running service, or Church Service Timer when none is loaded, with your church's name under it. On Programs, Reports or Settings, select either name to go straight back to Live, whether or not a service is running. Lock controls still stops it. |
+| App or service name | The loaded or running service, or Church Service Timer when none is loaded, with your church's name under it. On Programs, Slides, Reports or Settings, select either name to go straight back to Live, whether or not a service is running. Lock controls still stops it. |
 | Display chip | Where the stage output is going, for example **LED simulator**, **Stage simulator**, **LED sign** or **Stage screens**. Select it to open **Choose display**. Choosing and connecting a display are separate from starting a service. |
 | Full screen | During a service or a Quick timer, shows the stage countdown on this device's own screen. On a phone the button is under the display preview instead. See [Second screen and full screen](#09-second-screen-and-full-screen). |
 | Mini timer | On a PC only, and on every page: shrinks the app to a small window that stays above your slides. See [Run the service from a PC](#11-run-the-service-from-a-pc). |
@@ -53,7 +54,7 @@ Use the labels as well as colour: normal time, warning and overtime have differe
 
 Tap the bar, or swipe left or right anywhere on the page. Each tab keeps its place when you come back to it. While a service is loaded or running, Live stays put: leave it with the bar, and swipe back to it from any other tab. A running-service bar on the other tabs, and **Return to Live** on Settings pages, take you straight back. Swiping is off while the controls are locked or while programs or reports are being selected; a sideways list or slider still scrolls as before, and a swipe from the very edge of the screen is still Android Back. With reduced motion on, the new tab appears at once.
 
-The **Back** key on Programs, Reports or Settings returns to Live. On Live it asks you to press Back again before leaving the app; during a service it asks for confirmation and explains that the timer keeps running.
+The **Back** key on Programs, Slides, Reports or Settings returns to Live. On Live it asks you to press Back again before leaving the app; during a service it asks for confirmation and explains that the timer keeps running.
 
 ### Moving around on a PC
 
@@ -76,7 +77,7 @@ The app runs on phones and tablets with **Android 7.0 or later**.
 1. On the phone, open the [download page](https://github.com/ImmanuelOkose/church-service-timer-guide/releases/latest) and download the file ending in `.apk`. From 0.35.0, the lines under each release's notes say which file is for Android and which is for Windows, and how to install each.
 2. Open the downloaded file. Android asks whether to allow installs from your browser or file manager; allow it for this install.
 3. Open **Church Service Timer**. It starts on Live with the **LED simulator**, so nothing reaches a real stage until you choose a display.
-4. Check the version in **Settings › About**. This guide describes 0.37.0. An earlier version does not have what the [release notes](release-notes.html) list under 0.37.0, so update it first.
+4. Check the version in **Settings › About**. This guide describes 0.38.0. An earlier version does not have what the [release notes](release-notes.html) list under 0.38.0, so update it first.
 
 ### Allow what the app asks for
 
@@ -99,7 +100,9 @@ Update every phone, tablet and PC your team uses together.
 - Program files, backups and sent programs saved by 0.28 or later cannot be opened by 0.27 or earlier.
 - A backup or program file made by 0.34 needs 0.34 or later to open if it holds any of the new cue settings: a screen colour, a banner, **Wrap long text**, its own screen speed, one of the new effects, long text with Flash or Pulse, or more than six cues. The cues a new install starts with use several of these.
 - A backup or program file in which a program, or the default, is set to end on the **Clock** needs 0.35 or later to open. Earlier versions need an end screen and refuse the file. Programs and backups you already have are unchanged.
-- Nothing in 0.37.0 changes programs or backups, so earlier versions can open the same files.
+- A backup that holds songs, Bible verses or announcements in its Slides Library needs 0.38.0 or later to open. A backup with none, and every program file, is unchanged, so earlier versions open them as before.
+- Slides need 0.38.0 on the host. A paired phone or tablet or a web screen still on 0.37.0 or earlier does not know slides, and keeps showing the countdown. See [Show words with Slides](#15-show-words-with-slides).
+- Nothing in 0.37.0 changed programs or backups.
 - The new stage looks need 0.37.0 on the screen as well as on the host (see [What a stage screen looks like](#06-choose-the-right-display)). A paired phone or tablet still on 0.36.0 or earlier shows the plain clock, not the flip clock, and, set to **Up next only**, it shows the segment name under the timer. A web screen always matches the app. A new screen with an older host shows the flip clock in white on black, with its own day and date.
 - A paired phone or tablet still on an earlier version shows every cue in white and full screen, at the LED sign's speed, with the new effects as steady text and the next segment's name without its speaker and length.
 
@@ -115,7 +118,7 @@ Update every phone, tablet and PC your team uses together.
 
 A test (beta) version, such as 0.36.0-beta.1, is never offered as an update. You will not see one unless you were given it on purpose; if you are running one, you are still offered the real version that follows it.
 
-Installing a newer version over the old one keeps your programs, reports and settings. Export a backup first all the same; see [Protect data and manage the LED device](#20-protect-data-and-manage-the-led-device).
+Installing a newer version over the old one keeps your programs, reports and settings. Export a backup first all the same; see [Protect data and manage the LED device](#21-protect-data-and-manage-the-led-device).
 
 ### Check for updates automatically
 
@@ -192,7 +195,7 @@ The app opens on Live with the **LED simulator**, so nothing reaches a real stag
 | Drag and drop | Drag one program file (`.json`) or spreadsheet (`.csv`) from a folder onto the window to import it. It opens in the usual review, and nothing is saved until you confirm. A drop is refused while a service is running or the controls are locked. |
 | Open with | Right-click a program file, choose **Open with**, then Church Service Timer. |
 | Printing | **Print** opens the Windows print window. |
-| It stays awake | While a service runs, or screens are shared, the PC does not go to sleep. Whether its monitor stays on follows **Keep screen awake**: by default, while a service is running, so it may turn off when nothing is running. See [Keep screen awake](#18-make-the-workspace-yours). If the PC does sleep, for example when the lid is closed, the timer is still right when it wakes. |
+| It stays awake | While a service runs, or screens are shared, the PC does not go to sleep. Whether its monitor stays on follows **Keep screen awake**: by default, while a service is running, so it may turn off when nothing is running. See [Keep screen awake](#19-make-the-workspace-yours). If the PC does sleep, for example when the lid is closed, the timer is still right when it wakes. |
 | Closing the window | During a service the app asks **Close during the service?** Closing stops the timer on stage screens and the LED sign, and stops warnings. The service is saved, and opening the app again carries on from the clock. |
 | Second screen | A projector or monitor plugged into the PC can show the stage full screen, with no network or pairing. See [Second screen and full screen](#09-second-screen-and-full-screen). |
 | LED sign Wi-Fi | Join the sign's Wi-Fi in Windows' own Wi-Fi settings; the app does not switch networks for you. The PC can be on a network cable and the sign's Wi-Fi at the same time. |
@@ -279,7 +282,7 @@ Allow about 15 minutes. Use the simulator so no practice cue reaches a real stag
 
 Then try the full workflow yourself. A step that says "tap" is a click on a PC.
 
-1. Install the app; see [Get started on Android](#02-get-started-on-android) or [Get started on Windows](#03-get-started-on-windows). Check **Settings › About** for its version. This guide describes 0.37.0.
+1. Install the app; see [Get started on Android](#02-get-started-on-android) or [Get started on Windows](#03-get-started-on-windows). Check **Settings › About** for its version. This guide describes 0.38.0.
 2. Tap the display chip at the top of Live and choose **Simulator**. The chip then reads **LED simulator**, or **Stage simulator** if you have chosen to simulate a stage screen.
 3. On Live choose **Start service**, then load **Quick rehearsal** (a Pinned or Recent program card on Live loads straight away). In a wide window on a PC, click the program under **Choose a program**, then **Start service**. Loading a program enters **Ready**; it does not start the countdown. On a PC, Ready shows your layout's own timer with the first segment's full time, not counting.
 4. Review the first and next segment. While Ready, choose **Service mode**: **Live timing · 1×** or a **Fast rehearsal** speed. A program's Service/Rehearsal grouping is not its speed setting. **Change** swaps in another program without leaving Ready.
@@ -334,7 +337,7 @@ Example practice plan:
 - Every program keeps its end screen until you choose Clock.
 - Choosing **End screen** again while the editor is open brings back the text you had.
 - Program details, Programs on a PC and the import review say **No end screen** and **Shows the clock when the service ends** for such a program.
-- What Live shows and says when such a service ends is in [Finish and hand over cleanly](#16-finish-and-hand-over-cleanly).
+- What Live shows and says when such a service ends is in [Finish and hand over cleanly](#17-finish-and-hand-over-cleanly).
 
 Open a row in Programs for **Program details**, with **Load into Live** and **Edit program** up front. Its **⋮** menu holds **Check this service**, Duplicate, Export JSON, Export CSV, **Print order of service**, **Send to paired phone** (while one is connected), **Version history** and **Delete program**, which asks for confirmation. A duplicate is useful for a special service without overwriting a familiar plan.
 
@@ -417,6 +420,8 @@ There are several ways to put the timer in front of people. This lesson lists th
 | **Full screen** | When your own screen is the one people watch: a laptop on a lectern, or a tablet on a stand. | A running service or Quick timer. | [Second screen and full screen](#09-second-screen-and-full-screen) |
 
 Stage screens, web screens, a second screen and full screen all draw the same stage picture: a large countdown in your theme's colours, with cues, warnings, the clock and a blank screen as you send them. See [What a stage screen looks like](#what-a-stage-screen-looks-like). This guide calls them "screens" where the LED sign behaves differently.
+
+**Words can go on these screens too.** With **Slides**, a song, a Bible reading or an announcement can take the place of the countdown on the second screen, web screens and, if you tick them, stage screens. The LED sign never shows slides. See [Show words with Slides](#15-show-words-with-slides).
 
 **The time on these screens holds still.** Every digit has its own place, as wide as the widest digit, so the time keeps one size and nothing shifts as the seconds change. That is true during the service, in the countdown to a scheduled start, and on the clock shown before it. The time changes size only when it gains or loses a character, such as the + of overtime, or when the screen changes size. On a PC, the Stage simulator, the second screen, full screen and the large time in the mini timer use the app's own font, not Windows' font, so they look the same as on a phone. A web screen uses the browser's own font.
 
@@ -586,7 +591,7 @@ Supported native countdowns run up to **59:59**. The sign runs an accepted count
 
 **On a PC.** The PC can stay on a network cable while it joins the sign's Wi-Fi, so web screens and the sign can run together. The Tinos font is drawn slightly differently on Windows, most visibly at Short 7 px; check a Tinos cue on the real sign after moving from a phone to a PC.
 
-An uploaded countdown can continue if Wi-Fi is lost. A static pause frame or cue may instead remain visible until it is replaced. Do not infer that the sign is current just because it is still lit. Read [connection recovery](#19-connection-recovery-and-troubleshooting) before using automatic recovery during a service.
+An uploaded countdown can continue if Wi-Fi is lost. A static pause frame or cue may instead remain visible until it is replaced. Do not infer that the sign is current just because it is still lit. Read [connection recovery](#20-connection-recovery-and-troubleshooting) before using automatic recovery during a service.
 
 ## 08 — Pair a phone or tablet
 
@@ -811,6 +816,8 @@ The same four picture tiles: **Timer only**, **Timer and segment name**, **Timer
 | PC | It uses the choice made for the second screen, in **Settings › Screens & devices › Second screen**. |
 | Phone or tablet | **Settings › Screens & devices › Full screen on this phone**, as the same picture tiles. It is kept on that device and is not part of a backup. |
 
+**Slides show in full screen too.** When a slide is on the second screen, full screen on this device shows it in place of the countdown. **Clear slide** gives the countdown back. See [Show words with Slides](#15-show-words-with-slides).
+
 A device that has joined another device's service as a stage screen already has its own full-screen stage display, so it is not offered this one. Full screen cannot be opened from the mini timer.
 
 ## 10 — Operate a live service
@@ -845,6 +852,8 @@ At zero, the operator view enters **Overtime** and shows red text while the disp
 The **Stage & display** panel holds Stage cues (three across where there is room), **Show clock**, **Send message**, **Blank screen** and **Quick timer**, plus the display preview. **Show clock** puts the time of day on the display (12 or 24 hour, set in Display settings › Clock format); on stage screens it is a flip clock, with the weekday and the date; **Back to clock** or **Show timer** returns. **Send message** opens a window with the same **LED sign | Stage screen** switch as the cue editor; see [One editor, two displays](#13-prepared-cues-and-automatic-warnings). **Blank screen** is a toggle: tap again as **Unblank screen** to restore current output. It also works after End service. Timing and phone alerts continue while blanked, but automatic stage warnings are suppressed. The preview should remain present and identify intentional blanking.
 
 **Lock-screen controls.** On a phone or tablet, during a service, a notification shows the current segment with a live countdown (counting up in overtime), with Pause/Resume and Next; Next needs a second tap. It is on by default in **Settings › Warnings & alerts › During a service**, and it obeys Lock controls.
+
+**Slides.** Under the display preview, the **Slides** button opens the Slides page. While a slide is on the screens, a line says what it is, for example "On the screens: Amazing Grace · Verse 4", with **Clear slide**. In a PC layout that fills the window, the button is an icon in the top bar. See [Show words with Slides](#15-show-words-with-slides).
 
 **Keyboard, clicker and foot pedal.** On a PC, Space, Page Down and other keys run the service, and each timer key asks first. A clicker or foot pedal can drive Live on a phone, tablet or PC. Both are in [Keyboard, clicker and Commands](#12-keyboard-clicker-and-commands).
 
@@ -927,7 +936,7 @@ For seeing the whole service at a glance.
 
 ### Three panes
 
-The whole rundown is on the left, with how long each finished segment really took and how far ahead or behind the service is running. The timer and its controls are in the middle, with the private note in view. The display preview, cues and messages are on the right. Live, Programs, Reports and Settings become tabs in the header. The keys are listed along the bottom of the middle pane, as they are in The dial, wherever there is room: on every common screen from 1280 × 720 up.
+The whole rundown is on the left, with how long each finished segment really took and how far ahead or behind the service is running. The timer and its controls are in the middle, with the private note in view. The display preview, cues and messages are on the right. Live, Programs, Slides, Reports and Settings become tabs in the header. The keys are listed along the bottom of the middle pane, as they are in The dial, wherever there is room: on every common screen from 1280 × 720 up.
 
 ![Three panes in the Paper & Ink theme: rundown on the left, a large countdown ring in the middle with the keys listed beneath it, display preview and stage cues on the right](assets/images/desktop-three-panes.png)
 
@@ -1036,7 +1045,7 @@ If the same PC runs your lyrics or slides, the mini timer keeps the countdown in
 
 ![The mini timer: Sermon at 12:38, Next · Response · 10 min, 40 s behind, with Pause, Next, a WRAP UP cue button and Expand](assets/images/mini-timer.png)
 
-**To open it**, click the mini timer button at the top of the window. It is there on every page: Live, Programs, Reports and Settings. You can also press **Ctrl+M** from any page, choose **⋮ › Mini timer** on Live, or pick it from Commands.
+**To open it**, click the mini timer button at the top of the window. It is there on every page: Live, Programs, Slides, Reports and Settings. You can also press **Ctrl+M** from any page, choose **⋮ › Mini timer** on Live, or pick it from Commands.
 
 The app shrinks to a small window that stays on top of other programs. It shows:
 
@@ -1052,11 +1061,12 @@ Pause, Next and closing the window ask before acting, as usual, in a compact for
 
 Test the mini timer with your slides program on your PC before relying on it in a service.
 
-### Programs, Reports and Settings in a wide window
+### Programs, Slides, Reports and Settings in a wide window
 
 - **Programs** lists your programs on the left, with **New program** under the list, the chosen program's segments as a table in the middle, and a summary with **Load into Live** on the right. See [Build a reusable program](#05-build-a-reusable-program).
-- **Reports** lists saved services down the left and opens the chosen one beside them. See [Read, export and print reports](#17-read-export-and-print-reports).
-- **Settings** sets its groups in two columns, and most pages put a preview or a summary beside the settings. See [Make the workspace yours](#18-make-the-workspace-yours).
+- **Slides** has three columns: the Library on the left, the slides of the chosen item in the middle, and **On the screens now** on the right, with the buttons and the look. See [Show words with Slides](#15-show-words-with-slides).
+- **Reports** lists saved services down the left and opens the chosen one beside them. See [Read, export and print reports](#18-read-export-and-print-reports).
+- **Settings** sets its groups in two columns, and most pages put a preview or a summary beside the settings. See [Make the workspace yours](#19-make-the-workspace-yours).
 - Quick timer, Print, Export, Version history, Segment library, Recover time and Edit upcoming open as dialogs in the middle of the window, not as sheets across the bottom.
 
 ## 12 — Keyboard, clicker and Commands
@@ -1096,6 +1106,7 @@ On a PC the whole service can be run from the keyboard. Two rules hold for every
 - <kbd>Ctrl</kbd> <kbd>K</kbd> and <kbd>?</kbd> work on any tab, but not under a dialog. <kbd>Ctrl</kbd> <kbd>K</kbd> and <kbd>Ctrl</kbd> <kbd>M</kbd> also work when a text box had the keyboard.
 - **Ctrl keys keep working.** In earlier versions Ctrl+K could work once and then only now and then. A key pressed again after a pause now always counts, and the app checks which keys are held whenever the window changes, for example after the mini timer had the keyboard.
 - <kbd>Ctrl</kbd> <kbd>M</kbd> works on every page, with or without a service. <kbd>F11</kbd> works whenever a service is running. In full screen, the timer and stage keys work as they do on Live, and <kbd>Esc</kbd> puts the control tray away first if it is showing. Full screen also has gestures and a tray for a mouse or a touch screen; see [Second screen and full screen](#09-second-screen-and-full-screen).
+- **On the Slides page the same keys mean something else.** <kbd>→</kbd>, <kbd>Space</kbd> or <kbd>Page Down</kbd> is the next slide, <kbd>←</kbd> or <kbd>Page Up</kbd> the one before, <kbd>Esc</kbd> clears the slide and <kbd>B</kbd> turns the screens black. They act at once and ask nothing, because they never touch the timer. On Live, those keys keep their Live meanings. See [Show words with Slides](#15-show-words-with-slides).
 - <kbd>Space</kbd>, <kbd>B</kbd>, <kbd>Page Down</kbd> and <kbd>→</kbd> follow the **Clicker and foot pedal** switch; see below.
 - **No key does anything while you are typing in a field.** A question mark typed into a field is still a question mark.
 - The <kbd>+</kbd> key works without Shift, and the number pad's keys work too.
@@ -1114,7 +1125,7 @@ Press <kbd>Ctrl</kbd> <kbd>K</kbd>, or choose **Commands** in the **⋮** menu o
 2. Use the arrow keys to move, and press <kbd>Enter</kbd> to choose.
 3. <kbd>Esc</kbd> closes the list.
 
-What is most likely needed is suggested first, such as **Recover time** when the service is running behind. Each command shows its key. A command is listed only while its button would work, and anything that changes the timer still asks you to confirm, exactly as its button does.
+What is most likely needed is suggested first, such as **Recover time** when the service is running behind. Each command shows its key. **Go to Slides** is in the list, and so is **Clear slide** while a slide is on the screens. A command is listed only while its button would work, and anything that changes the timer still asks you to confirm, exactly as its button does.
 
 ![Commands on a PC: a search box, Recover time suggested first because the service is behind, then timer commands with their keys](assets/images/commands.png)
 
@@ -1378,7 +1389,162 @@ The **Send message** tile in Stage & display no longer insists on text that fits
 - A short note says if the text would be too wide for a sign. Choose **Scroll long text** or make it shorter before you use a sign.
 - The message a new user starts with, "Thank you" with **Scroll long text**, already fits the sign and is unchanged.
 
-## 15 — Adjust the plan without losing control
+## 15 — Show words with Slides
+
+**Slides puts song words, Bible verses and announcements on the screens.** You keep them in a **Library**. In the service, you click or tap one slide at a time. Slides needs app **0.38.0** on the phone or PC that runs the service.
+
+### What Slides is for, and where it is
+
+Use Slides when the people in the room should read something: a song, a Bible reading or a notice. The words go to the second screen, to web screens and, if you choose, to stage screens. They never go to the LED sign.
+
+- **The Slides tab** comes after Programs. On a phone it is in the bar along the bottom. On a tablet or a PC it is in the side rail, or across the top of the window. Live, Programs, Slides, Reports and Settings are the five places in the app.
+- **The Slides button on Live** opens the same page. On a phone, a tablet and in Classic it sits next to **Change display**, under the display preview. In the other PC layouts (Mission control, Three panes, The dial and Keys) it is an icon in the top bar, lit while a slide is showing.
+- **No service needed.** You can show slides before the service, with the app standing by.
+
+![Live on a phone: the Slides button next to Change display, and under it the line On the screens, Amazing Grace · Verse 4, with Clear slide](assets/images/slides-live-button.png)
+
+![Live in Mission control on a PC: the Slides icon in the top bar, and Slides in the side rail](assets/images/slides-live-button-pc.png)
+
+On a PC the page has three columns. On the left is the **Library**. In the middle are the slides of the song you chose. On the right is **On the screens now**, with the buttons and the look.
+
+![The Slides page on a PC: Library on the left, four slides of Amazing Grace in the middle, and On the screens now with Previous, Next, Clear slide, Black and Send to on the right](assets/images/slides-page.png)
+
+On a phone it is one column: a small preview, the song, its slides, and a bar along the bottom with **Previous**, **Next**, **Clear** and **Black**. The Send to choices and the look are under **Screens and look**.
+
+![The Slides page on a phone: the preview, the song picker, two slides and the bar with Next, Clear and Black along the bottom](assets/images/slides-page-phone.png)
+
+### The Library
+
+The Library keeps every song, set of Bible verses and announcement you save. It is the same for every service. The one you used last is at the top. The Library holds up to 300 items.
+
+- **Search the library** finds a title, or any words inside an item.
+- The **⋮** beside each item has **Edit** and **Delete…**. Delete asks first. It cannot be undone.
+- Under the list are three buttons: **Add a song**, **Add Bible verses** and **Add an announcement**.
+
+### Add a song
+
+1. Choose **Add a song**.
+2. Type the **Song title**. **Written by** is optional and shows only in the list.
+3. Fill in **Words**. Type them, paste them, or choose **Open a text file** and pick a file of words.
+4. Look at **The slides this makes**. It shows each slide as you type.
+5. Choose **Save song**.
+
+![Add a song: a title, the words with Verse 1 and Verse 2 headings, Lines on a slide, Open a text file, and the slides this makes](assets/images/slides-add-song.png)
+
+**Two rules shape the slides.**
+
+| Rule | What it does |
+| --- | --- |
+| A blank line | Starts a new slide. |
+| A line such as **Verse 1**, **Chorus**, **Bridge**, **Refrain**, **Pre-chorus**, **Intro**, **Outro**, **Tag** or **Ending** | Names the slide. The name is **not shown** on the screens. It shows in the app, on the small slide. |
+
+A block with no such line is called **Slide 3**, **Slide 4** and so on. A name line in the middle of a block starts a new slide.
+
+**Lines on a slide** has three choices. **As typed** keeps each block whole. **2** or **4** cuts each block into slides of that many lines. Use 2 or 4 for a small room or a big font.
+
+### Add Bible verses
+
+1. Choose **Add Bible verses**. **Find in the KJV** is chosen to begin with.
+2. Type a **Reference** and choose **Find**. Examples: `John 3:16`, `John 3:16-18`, `Psalm 23`, `1 Cor 13:4-7`. Common short names work.
+3. Look at the slides it makes, then choose **Save verses**.
+
+The **King James Version** comes with the app, so no internet is needed. Each slide has a few verses, as large as fit. The reference shows under them in gold, for example **John 3:16-17 · KJV**.
+
+![A Bible verse slide: John 3:16 and 17 in large white words with small gold verse numbers, and John 3:16-17 · KJV in gold under them](assets/images/slides-bible-verse.png)
+
+If the reference is wrong, the app says what to fix. For example: "There is no chapter 40 in John: it has 21 chapters."
+
+**Another translation, such as the NLT.** These are under copyright, so they do not come with the app. Choose **Paste your own**. Type the **Reference** (for example `Romans 8:28`), the **Translation** if you like (NIV, NLT, ESV and so on) and the **Verse text**. Paste only text your church may show. A blank line starts a new slide, and long text is split by length. The reference and the translation show under the words.
+
+### Add an announcement
+
+Choose **Add an announcement**. Fill in a **Title** and the **Words**. **Date, time or place** is optional. The title shows large in gold, the words under it, and the date line smaller at the bottom.
+
+![An announcement slide: Harvest lunch large in gold, the words under it, and a date, time and place line](assets/images/slides-announcement.png)
+
+### Show slides in a service
+
+1. Choose a song in the Library. Its slides appear.
+2. **Click or tap a slide.** It goes to the screens at once.
+3. Move on with the buttons or the keys.
+
+Two marks tell you where you are:
+
+| Mark | Meaning |
+| --- | --- |
+| A **red ring**, and **On screens** | This slide is on the screens now. |
+| A **dashed line** | This slide is next. |
+
+**On the screens now** has four buttons. On a phone they are along the bottom.
+
+| Button | Key on a PC | What it does |
+| --- | --- | --- |
+| **Previous** | Left arrow, or Page Up | Goes back one slide. |
+| **Next** | Right arrow, Space or Page Down | Goes to the next slide. |
+| **Clear slide** (**Clear** on a phone) | Esc | Takes the slide off. Every screen goes back to what it showed before. |
+| **Black** | B | Turns the screens black. Press it again to bring the slide back. |
+
+**The keys work on the Slides page only.** On Live, **Space** and the **arrow** keys keep their Live meanings: Space pauses (after it asks), and the arrow moves to the next segment. A key never changes a slide on Live, and never touches the timer on the Slides page. No key works while you type in a box.
+
+**Clear slide is also on Live,** next to the line "On the screens: Amazing Grace · Verse 4". In Commands (Ctrl+K), it appears whenever a slide is showing. **Go to Slides** is there too.
+
+### Send to: choose the screens
+
+Under **Send to** are three tick boxes.
+
+| Box | What it covers |
+| --- | --- |
+| **Second screen** (on a phone or tablet: **Full screen**) | The projector or monitor on a PC. Full screen on this device and the Stage simulator show the same. |
+| **Web screens** | Browsers following the service. |
+| **Stage screens** | Paired phones and tablets that show the stage. |
+
+**Stage screens start unticked.** The speaker's countdown is on those screens. Slides would cover it, so the app does not do it unless you ask. Tick the box only when you want the words on the stage too.
+
+**What the LED sign shows.** Nothing changes. **The LED sign never shows slides.**
+
+**Clear slide gives back what each screen showed before:** the countdown, the clock, a cue or the end screen. A **quick message** to the stage still shows over a slide, so a speaker always sees it.
+
+A slide covers the countdown layouts, including Up next only, and the red overtime screen, but only on the screens you ticked. Slides do not stop the service. The timer keeps counting under them.
+
+### Backgrounds and the look
+
+The look is on the right of the page, or under **Screens and look** on a phone. One look is used for every slide.
+
+![The look: Send to, then the backgrounds in four groups (Designs, Nature, People, Your picture), Dim, text size, alignment, Motion and Countdown in the corner](assets/images/slides-backgrounds.png)
+
+| Choice | What it does |
+| --- | --- |
+| **Background** | **Designs** are twelve drawn looks (Black, Midnight, Aurora, Sunrise, Mountain dusk, Starry night, Candlelight, Ocean, Forest mist, Stained glass, Royal velvet and Linen). **Nature** and **People** are 23 photos that come with the app. Choose **Photo credits** to see who took them. **Your picture** is one photo from your own device. |
+| **Dim** | Darkens the background so words are easy to read. It starts at 70% and goes up to 90%. Linen has dark words and is never dimmed. |
+| **Text** | **S**, **M** or **L**. This is the largest size allowed. Words are as large as fit and never cut off. |
+| **Centre** or **Left** | Where the words sit. |
+| **Motion** | **Still**, or **Gentle**: a slow zoom, drift or shimmer, twinkling stars or rising embers. Gentle is never used when **Reduced motion** is on. |
+| **Countdown in the corner** | A small countdown on the slide while a service runs. In overtime it turns into a red chip with the time over, for example +0:42. |
+
+Three slides, three looks. The first is the Aurora design:
+
+![A song on the Aurora design, one of the twelve drawn backgrounds](assets/images/slides-aurora.png)
+
+![A song on the Northern lights photo, from the Nature group](assets/images/slides-photo.png)
+
+![A song on Linen: dark words on a light paper look](assets/images/slides-linen.png)
+
+![A slide with the countdown in the top right corner](assets/images/slides-countdown-corner.png)
+
+**Your picture does not reach phones and tablets acting as stage screens.** They show Midnight in its place, and the page says so under the backgrounds. Your picture does show on the second screen, full screen and web screens. It stays on this device. A photo from the app's own groups works on every screen.
+
+### How it fits the rest
+
+- **The screen stays awake while a slide is showing.** With **Keep screen awake** on **While a service is running**, a slide or Black on a screen holds the device awake. When you clear it, it lets go.
+- **The page follows your Finish.** The page is cards like Live and Settings, in the Finish you chose. The slides themselves never use a finish.
+- **Ending a service keeps everything.** The Library and the look stay as they were.
+- **Backups carry the Library and the look.** Your picture is not in a backup. A backup that has songs in it needs 0.38.0 or later to open. A backup with none opens as before.
+- **An older screen keeps the countdown.** A phone, tablet or web screen on an earlier version does not know slides. It keeps showing the countdown, as if Stage screens were unticked.
+- **Lock controls** greys out the slide buttons.
+
+Test the slides on the real screens before the service. Look at the room, not only at the preview on your phone.
+
+## 16 — Adjust the plan without losing control
 
 Use **Service timing overview** to notice drift early. Its estimated finish assumes future segments use their allocations; pauses, overtime and manual advances can change the actual finish.
 
@@ -1399,7 +1565,7 @@ After several comparable services, open **Reports › ⋮ › Timing insights**.
 
 Suggestions use median active duration rounded up. In **Program editor › Learn from previous services** (offered only when past services can suggest a duration), select only the suggestions you want and **Apply to draft**, then save. These are planning aids, not instructions to rush a speaker or evidence of why a service ran long.
 
-## 16 — Finish and hand over cleanly
+## 17 — Finish and hand over cleanly
 
 1. Confirm the service really is complete.
 2. Choose **End service** and confirm. In full screen, End service is in the control tray.
@@ -1432,7 +1598,7 @@ When a service with no end screen ends:
 
 Every program, and the default, keeps its end screen until you choose Clock. Choosing **End screen** again in the default starts from "Hallelujah", ready to edit. A paired phone or tablet on an earlier version shows the clock too, but a backup or program file with this setting needs 0.35 or later to open.
 
-## 17 — Read, export and print reports
+## 18 — Read, export and print reports
 
 Reports lists completed services as rows with a date badge, the length and start time, and an outcome chip: **On time**, **N min over** (amber) or **N min under** (blue), or "Partial" for an incomplete record. Rehearsals and saved Quick timers are labelled so they are not confused with real service timing. A finished service or segment is always on time, over or under in Reports; Live keeps "ahead" and "behind" for a service still running.
 
@@ -1505,7 +1671,7 @@ The PDF repeats table headings and reserves footer space on every page for **Chu
 
 Choose **Print** to continue to Android's print screen, or the Windows print window on a PC, and select a printer or **Save as PDF**, or **Share PDF** to send the sheet directly. Review the destination and final pages. Printing a program before it has run offers a **Service date**. Its calendar reads the date the way the app writes it, "Fri 20 Nov 2026", starts the week on Monday and takes a typed date as 20/11/2026. A PDF is an exported copy; later app changes do not update a file already shared.
 
-## 18 — Make the workspace yours
+## 19 — Make the workspace yours
 
 Open **Settings › Church profile**, or tap the logo or mark at the top left of any page. A preview of the page header sits at the top, then three sections and one **Save church profile** button.
 
@@ -1541,7 +1707,7 @@ Other useful settings:
 | Quick message presets | Saved rich messages for stage screens. |
 | Screens & devices | Pairing, saved devices, web screens and what web stage displays show, Requests from the stage, the Second screen on a PC, and Full screen on this phone. |
 | Keep screen awake | **While a service is running** (the default), **Always** or **Never**. See [Keep screen awake](#keep-screen-awake). It is not a guarantee against force-stop or power loss. |
-| Settings PIN | Optional lock for Settings, deleting and sign administration. See [Protect data and manage the LED device](#20-protect-data-and-manage-the-led-device). |
+| Settings PIN | Optional lock for Settings, deleting and sign administration. See [Protect data and manage the LED device](#21-protect-data-and-manage-the-led-device). |
 | About | Installed version, creator I-Proton, What's new, Check for updates, Check for updates automatically, Your data, Privacy policy, Guided practice, Diagnostics and the open-source licences. |
 
 Use **Search settings** at the top of Settings to find a page by name; "layout" finds Desktop layout on a PC, or Tablet layout on a large tablet, and "keyboard" finds Keyboard shortcuts.
@@ -1583,6 +1749,7 @@ Tap a picture tile to try it. The app behind the editor changes at once, and **S
 - **Words always sit on a panel and stay easy to read.** The texture shows in the gaps between panels, at the edges and on the header, and is quiet under text. Each finish takes its tint from your theme, built-in or custom, and is held back wherever it would make text, grey text or the accent harder to read than the plain theme. Pale themes get a paler material for that reason.
 - **High contrast switches it off.** Every finish is turned off, so outlines and text stay plain. The Finish section then says "High contrast is on, so panels stay plain."
 - **It never applies to stage screens.** Stage screens, the second screen, web screens, full screen, the stage picture in the simulator and the LED sign never use a finish. Nothing is sent to any other device.
+- **The Slides page takes the finish too.** Its page is cards like Live and Settings. The slides themselves never use a finish.
 - **It is saved with the look.** The finish and its strength are part of the appearance, so **Save this look** keeps them. Like the rest of the appearance they stay on this device and are not in a backup, except inside a look you saved. Appearance saved before 0.37.0 opens as Flat, Subtle.
 - The materials are drawn by the app, with no pictures added to it, and drawn once, so a finish costs no extra work while a service runs.
 
@@ -1606,6 +1773,7 @@ Tap a picture tile to try it. The app behind the editor changes at once, and **S
 
 - **A stage screen always stays on,** whichever you choose, because nobody is there to touch it. That includes a paired phone or tablet set up as a stage screen and a second screen.
 - **A device that is sharing or following** stays awake with **While a service is running** and **Always**. With **Never** it can sleep.
+- **A slide or Black on a screen** holds the device awake while **While a service is running** is chosen, even with no service running. It lets go when you clear it. See [Show words with Slides](#15-show-words-with-slides).
 - **A web stage screen** in a browser asks the browser to keep the screen on only while it is a stage display or a service is running, and lets go otherwise.
 - **On a PC** the computer still does not go to sleep while a service runs or screens are shared, but the monitor may turn off when no service is running.
 - **Existing installs move to the new default.** If you had switched the old setting off, it stays **Never**. Everyone else is now on **While a service is running**.
@@ -1614,7 +1782,7 @@ Tap a picture tile to try it. The app behind the editor changes at once, and **S
 
 If the phone's screen goes dark on Live between services, that is the new default doing its job. Start the service and the screen is held again.
 
-## 19 — Connection recovery and troubleshooting
+## 20 — Connection recovery and troubleshooting
 
 Start with the destination badge, not repeated button presses. Identify whether the problem is the device's network, the app's connection, a held output, or the receiver itself.
 
@@ -1643,6 +1811,13 @@ Start with the destination badge, not repeated button presses. Identify whether 
 | The whole stage screen is red | The segment is in overtime and **Overtime alert** is **Strong** or **Strongest**. Start the next segment. For a quieter alert, choose **Gentle** in **Settings › Display settings › Overtime alert**. |
 | The phone's screen goes dark on Live between services | **Keep screen awake** is on **While a service is running**, which lets an idle phone sleep. The screen is held once a service starts. Choose **Always** to keep it on whenever the app is open. A stage screen always stays on. |
 | The Finish tiles are missing, or the finish does not show | With **Paper & Ink**, a note takes the place of the tiles: Papery comes with that theme. **High contrast** turns every finish off. A finish never shows on stage screens, the second screen, web screens or the LED sign. |
+| A slide does not show on a screen | Check the screen is ticked under **Send to** on the Slides page. **Stage screens** start unticked. A paired phone, tablet or web screen on an earlier version than 0.38.0 does not know slides and keeps showing the countdown. The LED sign never shows slides. |
+| The stage screen still shows the countdown | **Stage screens** are not ticked under Send to. This is on purpose, so a speaker's countdown is never covered by accident. Tick the box to put slides there. |
+| The keys do nothing on the Slides page | A box has the keyboard (click outside it), a window is open, or **Lock controls** is on. On Live the same keys run the timer, not the slides. |
+| A screen is stuck on a slide | Choose **Clear slide** (Esc on the Slides page, or on Live under the display preview). Every screen goes back to the countdown, the clock, a cue or the end screen. If Black is on, press **Black** again, or choose Clear slide. |
+| Your picture shows as Midnight on a stage screen | Your picture does not reach phones and tablets acting as stage screens. Choose a photo or a design for the slides. Your picture does show on the second screen, full screen and web screens. |
+| Bible verses say a chapter or book is wrong | The app says what to fix, for example "There is no chapter 40 in John: it has 21 chapters." Type a book and chapter, such as John 3, or John 3:16-18. For a translation other than the KJV, use **Paste your own**. |
+| A backup with songs will not open | Songs in the Library need 0.38.0 or later to open the backup. Update that device. |
 | No notification sound | Check Android permission, channel sound, volume, Do Not Disturb and Precise timing. Use **Test** under Sound and vibration. |
 | Warnings stop or the timer notification goes quiet with the screen off | Battery optimisation may pause warnings. Tap the battery hint on Live, or **Allow** on the Battery row in Ready for service, to open the Android setting. If background operation is unavailable, keep the app open. |
 | In full screen, a tap only shows Hold to unlock | The controls are locked. With Lock controls on, the gestures, the tray and every key do nothing. **Hold to unlock**, then try again. |
@@ -1688,9 +1863,11 @@ The LED connection tolerates brief health-check misses before reconnecting. Retr
 
 For an interruption during worship: keep one responsible operator in control, establish what the stage is actually seeing, restore connectivity, check the timer against the real activity, and restore current output once. A second person should not open another independent LED app and compete for the sign.
 
-## 20 — Protect data and manage the LED device
+## 21 — Protect data and manage the LED device
 
-Use **Settings › Backup & restore › Export backup** before changing devices or replacing a setup. Backups include saved programs (with version history), the segment library, cues, reports, preferences, saved looks and the church profile, including the logo and reduced banner.
+Use **Settings › Backup & restore › Export backup** before changing devices or replacing a setup. Backups include saved programs (with version history), the segment library, the Slides Library and its look, cues, reports, preferences, saved looks and the church profile, including the logo and reduced banner.
+
+**A backup that holds songs needs 0.38.0 or later to open.** Slides keep their Library and look in the backup. Your picture for the slide background is a file on that device, so it is not carried; a restored look that used it falls back to Midnight. A backup with no songs, verses or announcements is unchanged.
 
 **A backup moves between a phone and a PC.** One made on either restores on the other, so you can build programs on the office PC and run them from a phone, or the other way round. Keep exports containing private notes in an appropriate place.
 
@@ -1698,7 +1875,7 @@ Saved sign passwords are left out unless you tick **Include saved passwords**, w
 
 Restoring replaces saved data on the target device after review (**Restore and replace**). A backup from before 0.34 has its untouched starting cues and warnings brought up to the new suggested set, as an update does; any you changed are kept. Export its current setup first if it should be kept. Backups do **not** transfer an active clock, phone permissions, pairing approvals, the Settings PIN, received programs waiting for review, local editing drafts or a live display connection. Some choices also stay with the device: the desktop or tablet layout in use, what the Simulator simulates and shows, the second screen and full screen choices, the **Check for updates automatically** switch, and a PC's notification sound and countdown icon switches. Reconnect and approve equipment again as needed.
 
-**Settings PIN** (optional, 4–8 digits) locks Settings, deleting programs and reports, and LED sign administration; Live, Programs and Reports stay open. Setting it shows a one-time recovery code that removes the PIN if forgotten (**Forgot PIN?**). Settings lock again whenever the app leaves the screen. **Turn off PIN** removes it.
+**Settings PIN** (optional, 4–8 digits) locks Settings, deleting programs and reports, and LED sign administration; Live, Programs, Slides and Reports stay open. Setting it shows a one-time recovery code that removes the PIN if forgotten (**Forgot PIN?**). Settings lock again whenever the app leaves the screen. **Turn off PIN** removes it.
 
 **LED device management is for the sign, not the phone, tablet or PC.** It shows the saved **Wi-Fi password** and **Connection password**, with **Show** on each row and change or forget in the row's **⋮** menu. Once connected, **Open Wi-Fi** and **Details** help reach the correct network and controller. Revealing a saved password shows the app's local copy; it does not retrieve an unknown current password from the sign. Saving a known Wi-Fi password locally does not change the sign's Wi-Fi configuration.
 
@@ -1712,7 +1889,7 @@ Describe the app version, output type, steps, expected result and actual result.
 
 For a performance problem, **Settings › About › Diagnostics › Record service metrics** records the next service on this device (memory, battery, smoothness, timer accuracy, warning timing and reconnections), then switches itself off. It records no service content or people, and nothing leaves the device until you tap **Share recording**.
 
-## 21 — Trainer session and readiness checklist
+## 22 — Trainer session and readiness checklist
 
 Suggested coached session: 10 minutes explaining roles and output, 15 minutes of simulator practice (guided practice is a good start), 15 minutes on the actual connected equipment (the PC, projector and clicker included, if you use them), then 10 minutes of recovery and reporting. These are teaching estimates, not app timers.
 
@@ -1728,6 +1905,7 @@ Suggested coached session: 10 minutes explaining roles and output, 15 minutes of
 - Agree who hosts and who has control; name and approve receivers deliberately.
 - If browsers will follow, check the guest code, team code and join slide are current.
 - Open **⋮ › Ready for service** on Live to review the app checklist. An isolated simulator test is not proof of physical delivery.
+- If you will show song words or Bible verses, put them in the Slides Library first. Look at each slide on the real screens, check what **Send to** has ticked (Stage screens start unticked), and know where **Clear slide** is.
 - Review stage-message recipients and screen groups; do not use a real congregation-facing screen for an unannounced test.
 
 ### During the service
@@ -1738,6 +1916,7 @@ Suggested coached session: 10 minutes explaining roles and output, 15 minutes of
 - Lock the controls when you step away; unlock with Hold to unlock.
 - Keep cues concise; target rich messages carefully and distinguish delivery from Seen.
 - Answer stage requests promptly with Acknowledge, Dismiss or Add 2 min.
+- When a song ends, choose **Clear slide**. Never leave a slide on the screens by accident.
 - Check any disconnected/stale/held indication before assuming output is current.
 - Keep the host powered; control handover does not move the service to another device. Do not close the app's window on a PC during the service.
 
@@ -1777,11 +1956,17 @@ Ask the learner to demonstrate each task with the simulator first:
 | Keep screen awake | Names the three choices, says which is the default, and says what always stays awake. |
 | Message that is too wide for a sign | Sends a wide **Static** message to a stage screen, reads the note, and says what to change before using a sign. |
 | Check this service | Runs the check on a program, names a warning that cannot fire and says why, and explains that nothing reached the stage. |
+| Add a song | Adds a song on the Slides page with two verses and a chorus, sees the slides it makes, uses **Lines on a slide**, saves it and finds it again with search. |
+| Bible verses | Finds John 3:16-18 in the KJV, saves it, and explains that another translation needs **Paste your own**. |
+| Show a slide | Clicks a slide, moves with Next and Previous, uses Black and Clear slide, and says which slide is ringed and which is dashed. |
+| Slides on stage | Says why **Stage screens** start unticked, ticks it, and shows that **Clear slide** gives back the countdown. |
+| Slides keys | Uses the right arrow, Space, Esc and B on the Slides page, and says what Space and the arrows do on Live instead. |
+| Slides look | Changes the background, Dim, Text size, Centre or Left and Motion, and explains why Your picture shows Midnight on a stage screen. |
 | Warning editor | Adds a warning, chooses Operator only or Operator and stage, and explains when it fires. |
 
 The learner should be able to perform the routine controls and explain when to call the experienced operator. Repeat the exact church equipment setup before independent operation; a simulator pass alone is not the equipment check.
 
-## 22 — Quick reference and knowledge check
+## 23 — Quick reference and knowledge check
 
 | Term | Remember it as |
 | --- | --- |
@@ -1802,6 +1987,14 @@ The learner should be able to perform the routine controls and explain when to c
 | Overtime alert | A setting in Display settings: Gentle, Strong (the default) or Strongest, for how strongly stage screens show overtime. |
 | Finish | The material of the app's background and panels, chosen in Settings › Appearance › Theme. Flat is the default; Strength is Subtle or Full. Never on stage screens or the LED sign. |
 | Papery | The finish that always comes with the Paper & Ink themes. It is not a tile. |
+| Slides | The page, after Programs, that puts song words, Bible verses and announcements on the screens. |
+| Library | The list on the Slides page that keeps every song, set of Bible verses and announcement for every service. |
+| Slide | One screen of words. A blank line in a song starts a new one. |
+| Clear slide | Takes the slide off. Every screen goes back to what it showed before. |
+| Send to | The three tick boxes for slides: Second screen, Web screens and Stage screens. Stage screens start unticked. |
+| Black | Turns the screens black while the slide waits. Press it again to bring the slide back. |
+| Dim | How dark the background is behind the words. It starts at 70%. |
+| Paste your own | Adds Bible verses from a translation other than the KJV, with its own reference. |
 | Keep screen awake | A setting with three choices: While a service is running (the default), Always or Never. A stage screen always stays on. |
 | Quick message | A richer temporary message for selected stage screens. |
 | Web screen | A browser on the same Wi-Fi following the service; it cannot control it. |
@@ -1857,12 +2050,23 @@ The learner should be able to perform the routine controls and explain when to c
 31. A phone is on Live standing by, with Keep screen awake on its default. Can the screen go to sleep? **Yes. The default keeps it on only while a service is running. It is held again as soon as a service starts.**
 32. Keep screen awake is on Never. A tablet is a stage screen. Does it stay on? **Yes. A stage screen always stays on, whichever you choose.**
 33. A Quick message is Static and too wide for the LED sign. Can you send it to stage screens? **Yes. The width check applies only when a sign is in use. A note says the text is too wide for a sign; use Scroll long text or shorten it before using one.**
+34. A song has a blank line between two blocks. What does that do? **It starts a new slide.**
+35. A line in a song reads Chorus. Do people see the word Chorus on the screens? **No. A line such as Verse 1 or Chorus names the slide and is not shown.**
+36. A slide is ringed in red and another is dashed. What do they mean? **The ringed one is on the screens now. The dashed one is next.**
+37. You press Space on the Slides page. What happens? **The next slide shows. On Live, Space asks to pause the timer. A key never does the other thing's job.**
+38. Why does a stage screen still show the countdown after you show a slide? **Stage screens start unticked under Send to, so a speaker's countdown is not covered by accident. Tick it to put slides there.**
+39. Does the LED sign show slides? **No. The LED sign never shows slides.**
+40. What does Clear slide give back? **Exactly what each screen showed before: the countdown, the clock, a cue or the end screen.**
+41. Which translation comes with the app? **The King James Version. Other translations are under copyright; use Paste your own.**
+42. Does Your picture show on a phone acting as a stage screen? **No. It shows Midnight there. It shows on the second screen, full screen and web screens.**
 
 ### Current scope
 
-This guide covers version 0.37.0 on Android and Windows. An earlier version does not have what the release notes list under 0.37.0. An iOS or Mac app and universal LED compatibility are not provided; browsers can only follow a service as web screens, never control it. The original Matrix glyphs and square-matrix glyphs are unchanged. Tinos is bundled; installed/imported font loading is not part of the workflow. LED countdowns, segments and Quick timers stay within 59:59.
+This guide covers version 0.38.0 on Android and Windows. An earlier version does not have what the release notes list under 0.38.0. An iOS or Mac app and universal LED compatibility are not provided; browsers can only follow a service as web screens, never control it. The original Matrix glyphs and square-matrix glyphs are unchanged. Tinos is bundled; installed/imported font loading is not part of the workflow. LED countdowns, segments and Quick timers stay within 59:59.
 
-Physical checks have established the supported W2 countdown, expected one-blink transitions, scrolling warnings returning to the current timer, and Next segment after overtime. Full-service endurance, power-loss acceptance and controller administration writes still require controlled hardware validation. Web screens, guided practice, Quick timer, stage requests and the other features added from 0.19 to 0.37 are described here from the app's release notes and on-screen wording; behaviour on your phones, PCs, routers, browsers and projectors has not been verified by this handbook, so hands-on testing of that release remains the user's responsibility.
+Physical checks have established the supported W2 countdown, expected one-blink transitions, scrolling warnings returning to the current timer, and Next segment after overtime. Full-service endurance, power-loss acceptance and controller administration writes still require controlled hardware validation. Web screens, guided practice, Quick timer, stage requests and the other features added from 0.19 to 0.38 are described here from the app's release notes and on-screen wording; behaviour on your phones, PCs, routers, browsers and projectors has not been verified by this handbook, so hands-on testing of that release remains the user's responsibility.
+
+**Slides are described from the release notes and the app's own previews.** How the words fit on your projector, and how the second screen, web screens and paired stage screens draw them, have not been checked by this handbook. Look at every slide on the real screens before the service.
 
 **The Windows app is new.** Its installer is not code-signed, so Windows warns before it runs. The second screen, the mini timer, full screen, the countdown beside the clock and **Download and install** depend on how Windows, your graphics driver and your screens behave. Rehearse the exact PC, projector and clicker before a service, and keep a phone with the same programs as a fallback.
 
