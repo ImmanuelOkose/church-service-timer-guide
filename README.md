@@ -1,6 +1,6 @@
 ﻿# Church Service Timer - operator handbook
 
-Onboarding and reference guide for Church Service Timer 0.36.0 by I-Proton,
+Onboarding and reference guide for Church Service Timer 0.37.0 by I-Proton,
 for Android phones and tablets and Windows PCs.
 
 Website: https://immanuelokose.github.io/church-service-timer-guide/

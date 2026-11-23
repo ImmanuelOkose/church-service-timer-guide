@@ -12,8 +12,8 @@ from pathlib import Path
 import markdown
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.36.0"
-UPDATED = "22 November 2026"
+VERSION = "0.37.0"
+UPDATED = "23 November 2026"
 GROUPS = [(0, 5, "Begin here"), (5, 9, "Connect the room"),
           (9, 16, "Run the service"), (16, 20, "Review & maintain"),
           (20, 22, "Train your team")]

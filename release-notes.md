@@ -2,6 +2,24 @@
 
 What changed in each version of Church Service Timer, newest first, in short. Update every phone, tablet and PC your team uses to the same version: from 0.28, program files, backups and sent programs can't be opened by 0.27 or earlier.
 
+## 0.37.0 · 23 November 2026
+
+**On stage screens**
+
+- **A flip clock whenever a stage screen shows the time of day.** After **Show clock**, when a service or program ends on the clock (no end screen, a Quick timer included), before a scheduled service, and under a banner cue, stage screens show hours and minutes on cards that fold over, with the weekday and the date under them. **12 hour** has AM and PM tiles with the current one lit; **24 hour** has two digits and no tiles. It follows the theme, and with **Reduced motion** the digits change without folding. The LED sign is unchanged. See [Choose the right display](choose-the-right-display.html).
+- **Four layouts, with a new one: Up next only.** **Timer only**, **Timer and segment name** (a **NOW** band across the top), **Timer and up next** (an **UP NEXT** band along the bottom) and **Up next only**, which shows just the next item and no time. On the last segment, in a Quick timer or with no program it shows the end screen, or the clock. A line along the bottom edge shows how much of the segment has gone; the digits and the line turn amber in the warning period; a paused countdown is dimmed and says **PAUSED**.
+- **Picture tiles to choose the layout.** On the second screen, each paired stage screen, web screens, full screen on a phone and the Stage simulator, the choice is now four picture tiles. See [Pair a phone or tablet](pair-a-phone-or-tablet.html) and [Second screen and full screen](second-screen-and-full-screen.html).
+- **Stage screens follow the theme.** They were always white on black. Light themes work too. Cues, messages and Blank keep their own backgrounds.
+- **Overtime is hard to miss.** The whole stage screen turns solid red, with large dark digits counting up and **OVER TIME**. A new setting, **Overtime alert** in **Settings › Display settings**, sets how strongly: **Gentle**, **Strong** (the default) or **Strongest**, which pulses slowly. It is kept on this device, not in backups.
+- **An older paired screen** shows the plain clock, and the segment name instead of Up next only. Web screens always match the app.
+
+**On every device**
+
+- **Finish: choose what the app is made of.** **Settings › Appearance › Theme** has a new **Finish** section with picture tiles: Flat (the default), Glass, Bridge console, Brick, Cashmere, Denim, Plastic, Walnut, Oak, Leather, Marble and Carbon fibre, with **Subtle** (the default) or **Full** strength. **High contrast** switches it off, and it never applies to stage screens, the second screen, web screens or the LED sign. **Paper & Ink** and **Paper & Ink (blue)** always come with their own **Papery** finish, which is not a tile. See [Make the workspace yours](make-the-workspace-yours.html).
+- **The screen stays on only while a service is running.** **Keep screen awake** in Settings now has three choices: **While a service is running** (the new default), **Always** (the old behaviour) and **Never**. A stage screen always stays on. If you had switched the old setting off, it stays **Never**; everyone else moves to the new default. An idle phone can now sleep on Live, in Settings, Programs and Reports.
+- **Send message no longer insists on text that fits the LED sign when no sign is in use.** The width check now applies only when the display in use is an LED sign, or the Simulator standing in for one. With stage screens, the second screen or the Stage simulator, any width can be sent, and a short note says if the text would be too wide for a sign. The same applies to the stage cue editor, the end screen and zero screen editors, warning cues, the program editor and importing a program. See [Send rich Quick messages](send-rich-quick-messages.html).
+- **Nothing here changes programs or backups.** Earlier versions open the same files.
+
 ## 0.36.0 · 22 November 2026
 
 **Full screen**
