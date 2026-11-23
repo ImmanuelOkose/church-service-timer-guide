@@ -21,7 +21,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar">
 <a class="brand" href="index.html"><img src="assets/app-mark.svg" width="42" height="42" alt=""><span>Church Service Timer<small>THE OPERATOR HANDBOOK</small></span></a>
-<div class="header-actions"><span class="version">VERSION 0.36.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
+<div class="header-actions"><span class="version">VERSION 0.37.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
 <button class="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">Lessons <span aria-hidden="true">☰</span></button></div>
 </header>
 <div class="layout">
@@ -60,7 +60,7 @@
 <a class="sidebar-privacy" href="release-notes.html">Release notes</a>
 <a class="sidebar-privacy" href="privacy-policy/index.html">Privacy policy</a>
 </aside>
-<main id="main" tabindex="-1"><div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">LESSON 19 / 22 <span>11 MIN READ</span></p>
+<main id="main" tabindex="-1"><div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">LESSON 19 / 22 <span>12 MIN READ</span></p>
 <h1 id="19-connection-recovery-and-troubleshooting">Connection recovery and troubleshooting</h1><p class="chapter-deck">Diagnose a stale screen, lost connection, missing warning or rejected command, on a phone or a PC.</p></header>
 <nav class="on-this-page" aria-label="On this page"><strong>In this lesson</strong><a href="#displays-pairing-and-timing">Displays, pairing and timing</a><a href="#on-a-windows-pc">On a Windows PC</a><a href="#how-recovery-works">How recovery works</a></nav>
 <article class="prose"><p>Start with the destination badge, not repeated button presses. Identify whether the problem is the device's network, the app's connection, a held output, or the receiver itself.</p>
@@ -130,12 +130,32 @@
 <td>A warning set for the whole of a segment, or for longer, cannot fire: 5 MIN LEFT does not show in a 5-minute or a 3-minute segment. Run <strong>Check this service</strong> to list every warning that cannot fire.</td>
 </tr>
 <tr>
-<td>A cue will not save: its text is too wide for the LED sign</td>
-<td><strong>Static</strong> and <strong>Flash then hold</strong> must fit the sign. Shorten the text, or choose <strong>Scroll long text</strong>, or <strong>Flash</strong> or <strong>Pulse</strong>, which show long text a few words at a time.</td>
+<td>A cue or message will not save, or Continue is off: its text is too wide for the LED sign</td>
+<td>A sign is the display in use (the LED sign, or the Simulator set to LED sign), and <strong>Static</strong> and <strong>Flash then hold</strong> must fit it. Shorten the text, or choose <strong>Scroll long text</strong>, or <strong>Flash</strong> or <strong>Pulse</strong>, which show long text a few words at a time. With stage screens, the second screen or the Stage simulator, any width can be sent and a note says if a sign could not show it.</td>
 </tr>
 <tr>
 <td>The stage shows only the next segment's name, not who and how long</td>
 <td>That paired phone or tablet is on an earlier version, or the screen is set to another layout. Update it, and choose <strong>Timer and up next</strong>.</td>
+</tr>
+<tr>
+<td>A stage screen set to Up next only shows the segment name under the timer</td>
+<td>That paired phone or tablet is on 0.36.0 or earlier and does not know <strong>Up next only</strong>. Update it. A web screen always matches the app.</td>
+</tr>
+<tr>
+<td>A stage screen shows the plain clock, not the flip clock</td>
+<td>That paired phone or tablet or web screen is on 0.36.0 or earlier. Update it. The LED sign never shows the flip clock.</td>
+</tr>
+<tr>
+<td>The whole stage screen is red</td>
+<td>The segment is in overtime and <strong>Overtime alert</strong> is <strong>Strong</strong> or <strong>Strongest</strong>. Start the next segment. For a quieter alert, choose <strong>Gentle</strong> in <strong>Settings › Display settings › Overtime alert</strong>.</td>
+</tr>
+<tr>
+<td>The phone's screen goes dark on Live between services</td>
+<td><strong>Keep screen awake</strong> is on <strong>While a service is running</strong>, which lets an idle phone sleep. The screen is held once a service starts. Choose <strong>Always</strong> to keep it on whenever the app is open. A stage screen always stays on.</td>
+</tr>
+<tr>
+<td>The Finish tiles are missing, or the finish does not show</td>
+<td>With <strong>Paper &amp; Ink</strong>, a note takes the place of the tiles: Papery comes with that theme. <strong>High contrast</strong> turns every finish off. A finish never shows on stage screens, the second screen, web screens or the LED sign.</td>
 </tr>
 <tr>
 <td>No notification sound</td>
@@ -280,7 +300,7 @@
 <p>For an interruption during worship: keep one responsible operator in control, establish what the stage is actually seeing, restore connectivity, check the timer against the real activity, and restore current output once. A second person should not open another independent LED app and compete for the sign.</p></article>
 <div class="lesson-complete"><div><strong>A moment to reflect.</strong><p>Could you explain this workflow to another operator?</p></div><button type="button" data-complete="connection-recovery-and-troubleshooting" aria-pressed="false">Mark lesson as read</button></div>
 <nav class="chapter-pagination" aria-label="Lesson pagination"><a href="make-the-workspace-yours.html"><span>PREVIOUS LESSON</span>Make the workspace yours</a><a href="protect-data-and-manage-the-led-device.html"><span>NEXT LESSON</span>Protect data and manage the LED device →</a></nav></div>
-<footer class="page-footer"><img src="assets/app-mark.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.36.0 · Updated 22 November 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="release-notes.html">Release notes</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
+<footer class="page-footer"><img src="assets/app-mark.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.37.0 · Updated 23 November 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="release-notes.html">Release notes</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
 </main></div>
 <dialog id="image-dialog" aria-label="Enlarged app screenshot"><button type="button" class="close-dialog" aria-label="Close enlarged screenshot">Close ✕</button><img alt=""><p></p></dialog>
 <noscript><div class="noscript-note">All lessons and the full guide work without JavaScript. Search, progress tracking and the practice quiz need JavaScript.</div></noscript>
