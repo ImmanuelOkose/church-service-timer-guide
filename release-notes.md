@@ -2,6 +2,45 @@
 
 What changed in each version of Church Service Timer, newest first, in short. Update every phone, tablet and PC your team uses to the same version: from 0.28, program files, backups and sent programs can't be opened by 0.27 or earlier.
 
+## 0.39.0 · 24 November 2026
+
+**New: Screens**
+
+- **One page for every screen.** **Screens** is a button on Live (beside Change display and Slides, or an icon in the top bar in a desktop layout), a place in the side bar or the tabs along the top on a tablet or PC, and **Screens** in Commands (Ctrl+K). The Screens buttons in Slides and in Settings open the same page. See [Choose the right display](choose-the-right-display.html).
+- **Groups.** Screens are sorted into groups you name, and one tap on a group's picture tile sets what all its screens show: **Timer only**, **Timer and segment name**, **Timer and up next**, **Up next only**, **Slides**, or the new **Slides and timer**. Move a screen to another group at any time, even mid-service. Groups can be added, renamed and deleted. Nothing asks "are you sure". A phone or tablet paired for the first time joins the group marked **default for new screens** (Stage to begin with); a browser joins the group of the web link it was opened from, or the group set for **New web screens**.
+- **Your screens keep showing what they showed.** The update makes the groups from your settings: **Church Auditorium** (this computer's second screen, with full screen and the stage simulator, and web screens) and **Stage** (paired phones and tablets). Screens that were set differently get a group of their own, and screens ticked under the old Slides **Send to** are in a group set to Slides. A paired screen's old **Screen group** for quick messages is now called **Message group**.
+- **Slides and timer** is a confidence monitor: the words of the slide large on the left, the countdown on the right (amber in the warning time, red in overtime) with the next slide's name and first line under it. A paired screen on an older version shows the countdown instead.
+- **Scenes** save what every group shows, and one tap sets them all again. A program segment can name a scene, and every group changes by itself when that segment starts. Groups and scenes travel in backups when you have scenes; that backup needs 0.39.0 or later.
+- **Shows cues, for each group.** On, a group's screens show cues, warnings and quick messages, also over a slide (a band across the bottom or top, or in the timer panel of Slides and timer). Off, they never do. **Church Auditorium starts with Shows cues off**, so WRAP UP and other cues no longer appear on the second screen and web screens until you switch it on. Stage starts on, and new groups start off.
+- **The LED sign** has a card on Screens ("Shows the countdown and cues. Never slides."), and Live shows a small picture of what was last sent to it above the stage preview. It is never in a group.
+- **Screens on a phone** stays a button on Live. The bottom bar keeps five places.
+
+**Navigation and windows**
+
+- **A new order: Live, Slides, Screens, Programs, Reports, Settings.** What you use during a service comes first. On a phone: Live, Slides, Programs, Reports, Settings.
+- **Pages use the whole window.** Screens fills a wide window with as many columns of groups as fit. Screens & devices fills its panes the same way. Settings runs across a wide window, in three columns when there is room.
+- **Tapping a notification opens the app on Live.** The countdown warning on a phone, the lock-screen card for a running service and the Windows warning toast bring the app to the front on Live, with the service running as it was. The app is not restarted.
+
+**Slides**
+
+- **Search the Bible, and a Ready tray.** The box at the top of the Library searches your songs and the whole King James Bible as you type: a reference, or any words from a verse in any order. **Enter** puts a passage in **Ready**, and **Send** shows it like any slide. **+ next verse**, **Whole chapter** and **Save to Library** are in Ready. **/** or **Ctrl+F** goes to the box, and **Search the Bible** is in Commands. See [Show words with Slides](show-words-with-slides.html).
+- **Bible references are forgiving.** Misspelt books are put right, words work (John chapter three verse sixteen), and a short name that could be several books shows **Did you mean:** with a button for each.
+- **A tidier Slides page.** **Previous**, **Next**, **Clear** and **Black** sit in one row. Under the preview are three rows, **Screens**, **Background** and **Look**; Background and Look start closed, and the app remembers which you left open. The Library has tabs: **Songs**, **Bible verses**, **Announcements** and **All**, and the Add buttons are one row, **+ Song**, **+ Bible verses**, **+ Announcement**.
+- **Slide cards line up** at an even height, and repeat marks such as `_(x2)_` show as **(x2)** on every screen.
+- **Typing in the Slides editors no longer stops** after you clear a box and type the same words again.
+
+**Finishes**
+
+- **Real materials, with no slowdown.** Every texture is now a photograph of the real thing, drawn once and kept, so a finish is no slower than Flat. Edges are drawn to match: wood inlay, polished marble, moulded plastic, bevelled steel with screws, stitched Denim and Leather.
+- **Every page and every popup.** Programs, Reports, the program editor, Settings, Screens & devices, dialogs, menus, pickers and Commands are made of the finish. Small cards are made of the material too, and nothing runs over a panel's edge.
+- **Full by default.** A finish shows at **Full** until you choose otherwise, except Walnut, Oak and Carbon fibre, which start at **Subtle**. A Subtle saved by an older version counts as not chosen, once. The tiles have a new order. See [Make the workspace yours](make-the-workspace-yours.html).
+
+**Other changes**
+
+- **Services end on the clock.** **When the service ends** starts on **Clock**, including the Default end screen. Programs you already have, and the default, move to the clock once if they still have the plain Hallelujah that came with the app; an end screen you changed is kept. See [Finish and hand over cleanly](finish-and-hand-over-cleanly.html).
+- **Keep screen awake is one row** in Settings that opens its three choices.
+- **A new look for the Windows installer.** The setup window is dark and matches the app. What is installed, and how updates and removal work, are unchanged.
+
 ## 0.38.0 · 23 November 2026
 
 **New: Slides**
