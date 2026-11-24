@@ -12,6 +12,8 @@ For the 0.37.0 handbook, every file in both tables was compared, by its colour v
 
 For the 0.38.0 handbook, every file in the tables was compared, by its colour values (red, green, blue and alpha, not only its size), with the preview on the app's main branch (release 0.38.0, 596491e). The navigation has a new tab, Slides, so most screens that show it had changed. 35 were copied again: live.png, standing-by.png, practice.png, reports.png, update-notice.png, whats-new-notice.png, send-message-stage.png, desktop-mission-control.png, desktop-mission-control-large.png, desktop-live-home.png, desktop-three-panes.png, desktop-dial.png, desktop-keys.png, desktop-ready-mission-control.png, desktop-ready-three-panes.png, desktop-ready-dial.png, desktop-ready-keys.png, desktop-ready-classic.png, desktop-three-panes-laptop.png, second-screen-live.png, stage-simulator.png, shortcuts.png, commands.png, desktop-classic-narrow.png, desktop-classic-1024.png, desktop-three-panes-1366.png, update-notice-pc.png, whats-new-notice-pc.png, programs-desktop.png, reports-dates.png, finish-console-live.png, finish-denim-live.png, papery-live.png, keep-awake.png and send-message-too-wide.png. desktop-classic.png, scaled from its preview with Lanczos resampling, was compared after scaling and had changed, so it was scaled again. reports-desktop.png, which is rendered for the handbook, was rendered again from the same fixture as desktop-date-range.png without the calendar open (only the header with the tabs differs from the old file); it now shows five tabs. The rest matched. mini-timer.png has no navigation and its preview has not changed, so it was not rendered again. Twelve were added, listed in the fourth table. All were saved without changing a pixel and re-compressed without loss with Pillow. slides-live-button.png keeps the preview's transparency (the header on a phone is partly see-through), so it is saved with its alpha channel; the others are RGB.
 
+For the 0.39.0 handbook, every file in the tables was compared, by its colour values (red, green, blue and alpha), with the preview in the app's release 0.39.0 (release/0.39.0, c45bedd). The navigation now has Screens and a new order, so most screens that show it had changed. 49 were copied again: live.png, standing-by.png, print.png, practice.png, reports.png, screens-devices.png, update-notice.png, whats-new-notice.png, send-message-stage.png, desktop-mission-control.png, desktop-mission-control-large.png, desktop-live-home.png, desktop-three-panes.png, desktop-dial.png, desktop-keys.png, desktop-ready-mission-control.png, desktop-ready-three-panes.png, desktop-ready-dial.png, desktop-ready-keys.png, desktop-ready-classic.png, desktop-three-panes-laptop.png, second-screen-live.png, second-screen-settings.png, stage-simulator.png, shortcuts.png, commands.png, default-end-screen-pc.png, desktop-classic-narrow.png, desktop-classic-1024.png, desktop-three-panes-1366.png, update-notice-pc.png, whats-new-notice-pc.png, programs-desktop.png, reports-dates.png, overtime-alert.png, finish-tiles.png, finish-tiles-phone.png, finish-console-live.png, finish-denim-live.png, papery-live.png, keep-awake.png, send-message-too-wide.png, slides-page.png, slides-page-phone.png, slides-add-song.png, slides-backgrounds.png, slides-live-button.png, slides-live-button-pc.png and desktop-classic.png (scaled again from its preview with Lanczos resampling). The rest matched. reports-desktop.png, which is rendered for the handbook, was not rendered again, so its header still shows the old tab order; mini-timer.png has no navigation and was not rendered again. papery-appearance.png has no matching preview in this release (the file named in the second table is not in test/goldens/finish) and was left as it was. Thirteen were added, listed in the fifth table. All were saved without changing a pixel and re-compressed without loss with Pillow.
+
 ## Phone and tablet
 
 | Public filename | Original fixture |
@@ -136,6 +138,24 @@ For the 0.38.0 handbook, every file in the tables was compared, by its colour va
 | slides-live-button.png | lyrics-live-button.png |
 | slides-live-button-pc.png | lyrics-live-button-1920.png |
 | slides-countdown-corner.png | lyrics-chip.png |
+
+## Added for 0.39.0
+
+| Public filename | Original fixture |
+| --- | --- |
+| screens-page.png | screens-1920-full.png |
+| screens-page-phone.png | screens-phone-full.png |
+| screens-live-button-phone.png | screens-live-led-phone.png |
+| screens-scene-in-editor.png | screens-program-editor-scene.png |
+| screens-cues-on.png | screens-1920-room-cues-on.png |
+| slides-cue-over-slide.png | screens-slide-cue-banner-wide.png |
+| slides-rows-open.png | slides-rows-open-1366.png |
+| slides-ready-tray.png | scripture-ready-tray-1366.png |
+| slides-bible-did-you-mean.png | lyrics-editor-bible-choices-phone.png |
+| keep-awake-choices-phone.png | settings-screen-awake-menu-phone.png |
+| new-program-clock-phone.png | new-program-ends-on-clock-phone.png |
+| finish-cards-denim-phone.png | finish/cards-settings-denim-phone.png |
+| finish-dialog-denim.png | finish/dialog-end-service-denim.png |
 
 ## Adding or replacing an image
 
