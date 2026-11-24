@@ -21,7 +21,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar">
 <a class="brand" href="index.html"><img src="assets/app-mark.svg" width="42" height="42" alt=""><span>Church Service Timer<small>THE OPERATOR HANDBOOK</small></span></a>
-<div class="header-actions"><span class="version">VERSION 0.38.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
+<div class="header-actions"><span class="version">VERSION 0.39.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
 <button class="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">Lessons <span aria-hidden="true">☰</span></button></div>
 </header>
 <div class="layout">
@@ -62,6 +62,44 @@
 <a class="sidebar-privacy" href="privacy-policy/index.html">Privacy policy</a>
 </aside>
 <main id="main" tabindex="-1"><div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">WHAT’S NEW</p><h1 id="release-notes">Release notes</h1><p class="chapter-deck">What changed in each version, newest first.</p></header><article class="prose"><p>What changed in each version of Church Service Timer, newest first, in short. Update every phone, tablet and PC your team uses to the same version: from 0.28, program files, backups and sent programs can't be opened by 0.27 or earlier.</p>
+<h2 id="0390-24-november-2026">0.39.0 · 24 November 2026</h2>
+<p><strong>New: Screens</strong></p>
+<ul>
+<li><strong>One page for every screen.</strong> <strong>Screens</strong> is a button on Live (beside Change display and Slides, or an icon in the top bar in a desktop layout), a place in the side bar or the tabs along the top on a tablet or PC, and <strong>Screens</strong> in Commands (Ctrl+K). The Screens buttons in Slides and in Settings open the same page. See <a href="choose-the-right-display.html">Choose the right display</a>.</li>
+<li><strong>Groups.</strong> Screens are sorted into groups you name, and one tap on a group's picture tile sets what all its screens show: <strong>Timer only</strong>, <strong>Timer and segment name</strong>, <strong>Timer and up next</strong>, <strong>Up next only</strong>, <strong>Slides</strong>, or the new <strong>Slides and timer</strong>. Move a screen to another group at any time, even mid-service. Groups can be added, renamed and deleted. Nothing asks "are you sure". A phone or tablet paired for the first time joins the group marked <strong>default for new screens</strong> (Stage to begin with); a browser joins the group of the web link it was opened from, or the group set for <strong>New web screens</strong>.</li>
+<li><strong>Your screens keep showing what they showed.</strong> The update makes the groups from your settings: <strong>Church Auditorium</strong> (this computer's second screen, with full screen and the stage simulator, and web screens) and <strong>Stage</strong> (paired phones and tablets). Screens that were set differently get a group of their own, and screens ticked under the old Slides <strong>Send to</strong> are in a group set to Slides. A paired screen's old <strong>Screen group</strong> for quick messages is now called <strong>Message group</strong>.</li>
+<li><strong>Slides and timer</strong> is a confidence monitor: the words of the slide large on the left, the countdown on the right (amber in the warning time, red in overtime) with the next slide's name and first line under it. A paired screen on an older version shows the countdown instead.</li>
+<li><strong>Scenes</strong> save what every group shows, and one tap sets them all again. A program segment can name a scene, and every group changes by itself when that segment starts. Groups and scenes travel in backups when you have scenes; that backup needs 0.39.0 or later.</li>
+<li><strong>Shows cues, for each group.</strong> On, a group's screens show cues, warnings and quick messages, also over a slide (a band across the bottom or top, or in the timer panel of Slides and timer). Off, they never do. <strong>Church Auditorium starts with Shows cues off</strong>, so WRAP UP and other cues no longer appear on the second screen and web screens until you switch it on. Stage starts on, and new groups start off.</li>
+<li><strong>The LED sign</strong> has a card on Screens ("Shows the countdown and cues. Never slides."), and Live shows a small picture of what was last sent to it above the stage preview. It is never in a group.</li>
+<li><strong>Screens on a phone</strong> stays a button on Live. The bottom bar keeps five places.</li>
+</ul>
+<p><strong>Navigation and windows</strong></p>
+<ul>
+<li><strong>A new order: Live, Slides, Screens, Programs, Reports, Settings.</strong> What you use during a service comes first. On a phone: Live, Slides, Programs, Reports, Settings.</li>
+<li><strong>Pages use the whole window.</strong> Screens fills a wide window with as many columns of groups as fit. Screens &amp; devices fills its panes the same way. Settings runs across a wide window, in three columns when there is room.</li>
+<li><strong>Tapping a notification opens the app on Live.</strong> The countdown warning on a phone, the lock-screen card for a running service and the Windows warning toast bring the app to the front on Live, with the service running as it was. The app is not restarted.</li>
+</ul>
+<p><strong>Slides</strong></p>
+<ul>
+<li><strong>Search the Bible, and a Ready tray.</strong> The box at the top of the Library searches your songs and the whole King James Bible as you type: a reference, or any words from a verse in any order. <strong>Enter</strong> puts a passage in <strong>Ready</strong>, and <strong>Send</strong> shows it like any slide. <strong>+ next verse</strong>, <strong>Whole chapter</strong> and <strong>Save to Library</strong> are in Ready. <strong>/</strong> or <strong>Ctrl+F</strong> goes to the box, and <strong>Search the Bible</strong> is in Commands. See <a href="show-words-with-slides.html">Show words with Slides</a>.</li>
+<li><strong>Bible references are forgiving.</strong> Misspelt books are put right, words work (John chapter three verse sixteen), and a short name that could be several books shows <strong>Did you mean:</strong> with a button for each.</li>
+<li><strong>A tidier Slides page.</strong> <strong>Previous</strong>, <strong>Next</strong>, <strong>Clear</strong> and <strong>Black</strong> sit in one row. Under the preview are three rows, <strong>Screens</strong>, <strong>Background</strong> and <strong>Look</strong>; Background and Look start closed, and the app remembers which you left open. The Library has tabs: <strong>Songs</strong>, <strong>Bible verses</strong>, <strong>Announcements</strong> and <strong>All</strong>, and the Add buttons are one row, <strong>+ Song</strong>, <strong>+ Bible verses</strong>, <strong>+ Announcement</strong>.</li>
+<li><strong>Slide cards line up</strong> at an even height, and repeat marks such as <code>_(x2)_</code> show as <strong>(x2)</strong> on every screen.</li>
+<li><strong>Typing in the Slides editors no longer stops</strong> after you clear a box and type the same words again.</li>
+</ul>
+<p><strong>Finishes</strong></p>
+<ul>
+<li><strong>Real materials, with no slowdown.</strong> Every texture is now a photograph of the real thing, drawn once and kept, so a finish is no slower than Flat. Edges are drawn to match: wood inlay, polished marble, moulded plastic, bevelled steel with screws, stitched Denim and Leather.</li>
+<li><strong>Every page and every popup.</strong> Programs, Reports, the program editor, Settings, Screens &amp; devices, dialogs, menus, pickers and Commands are made of the finish. Small cards are made of the material too, and nothing runs over a panel's edge.</li>
+<li><strong>Full by default.</strong> A finish shows at <strong>Full</strong> until you choose otherwise, except Walnut, Oak and Carbon fibre, which start at <strong>Subtle</strong>. A Subtle saved by an older version counts as not chosen, once. The tiles have a new order. See <a href="make-the-workspace-yours.html">Make the workspace yours</a>.</li>
+</ul>
+<p><strong>Other changes</strong></p>
+<ul>
+<li><strong>Services end on the clock.</strong> <strong>When the service ends</strong> starts on <strong>Clock</strong>, including the Default end screen. Programs you already have, and the default, move to the clock once if they still have the plain Hallelujah that came with the app; an end screen you changed is kept. See <a href="finish-and-hand-over-cleanly.html">Finish and hand over cleanly</a>.</li>
+<li><strong>Keep screen awake is one row</strong> in Settings that opens its three choices.</li>
+<li><strong>A new look for the Windows installer.</strong> The setup window is dark and matches the app. What is installed, and how updates and removal work, are unchanged.</li>
+</ul>
 <h2 id="0380-23-november-2026">0.38.0 · 23 November 2026</h2>
 <p><strong>New: Slides</strong></p>
 <ul>
@@ -275,7 +313,7 @@
 </ul>
 <h2 id="0180-and-earlier">0.18.0 and earlier</h2>
 <p>The handbook was first written for 0.18.0. Earlier versions were prototypes.</p></article></div><section class="ready-strip get-app" id="get-the-app"><div><p class="eyebrow">GET THE APP · ANDROID 7.0 OR LATER · WINDOWS 10 OR 11</p><h2>Download Church Service Timer.</h2><p>Each release is on GitHub Releases. For a phone or tablet, download the signed <code>.apk</code>, open it and allow the install when Android asks. For a PC, download the <code>windows-setup.exe</code> installer; from 0.34.0 each release lists it beside the <code>.apk</code>. Install the same version on every device your team uses. A Google Play listing is coming.</p></div><a class="primary-button" href="https://github.com/ImmanuelOkose/church-service-timer-guide/releases/latest">Download the latest version →</a></section>
-<footer class="page-footer"><img src="assets/app-mark.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.38.0 · Updated 23 November 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="release-notes.html">Release notes</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
+<footer class="page-footer"><img src="assets/app-mark.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.39.0 · Updated 24 November 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="release-notes.html">Release notes</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
 </main></div>
 <dialog id="image-dialog" aria-label="Enlarged app screenshot"><button type="button" class="close-dialog" aria-label="Close enlarged screenshot">Close ✕</button><img alt=""><p></p></dialog>
 <noscript><div class="noscript-note">All lessons and the full guide work without JavaScript. Search, progress tracking and the practice quiz need JavaScript.</div></noscript>

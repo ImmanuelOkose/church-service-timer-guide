@@ -12,18 +12,18 @@ from pathlib import Path
 import markdown
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.38.0"
-UPDATED = "23 November 2026"
+VERSION = "0.39.0"
+UPDATED = "24 November 2026"
 GROUPS = [(0, 5, "Begin here"), (5, 9, "Connect the room"),
           (9, 17, "Run the service"), (17, 21, "Review & maintain"),
           (21, 23, "Train your team")]
 SUMMARIES = [
-    "Know the five tabs on a phone and a PC, the operator clock and what a display acknowledgement really means.",
+    "Know the places in the app on a phone and a PC, the operator clock and what a display acknowledgement really means.",
     "Install the app on a phone or tablet, allow what it asks for, keep every device on the same version and choose how it checks for updates.",
     "Install on a Windows 10 or 11 PC, learn what is different from the phone, and update it from inside the app.",
     "Use guided practice, then rehearse the complete service workflow in the simulator, without touching the stage.",
     "Create a reusable plan with segments, speakers, notes and its own end screen; import, share, restore versions and check it before Sunday.",
-    "See every way to show the timer: Simulator, LED sign, phones, tablets, browsers, a second screen or your own screen.",
+    "See every way to show the timer: Simulator, LED sign, phones, tablets, browsers, a second screen or your own screen, and choose what every screen shows with groups and scenes.",
     "Join the right Wi-Fi, authenticate the supported W2 and understand its limits.",
     "Approve stage screens and operators, show who is up next, open web screens in a browser, and manage saved devices.",
     "Show the stage on a projector or monitor plugged into the PC, or fill your own screen with the countdown and run the service from it.",
@@ -32,7 +32,7 @@ SUMMARIES = [
     "Every key that works on Live, the Commands list, and how to test a clicker or foot pedal.",
     "Prepare one-tap instructions, give them an effect and a look for screens and the sign, and set warnings by time remaining.",
     "Target stage screens, format the message and request explicit Seen.",
-    "Keep songs, Bible verses and announcements in a Library, show them one slide at a time, and choose which screens and which background they use.",
+    "Keep songs, Bible verses and announcements in a Library, search the Bible, show them one slide at a time, and choose which screens and which background they use.",
     "Review future timing changes and learn from comparable completed services.",
     "End once, save the report and recover cleanly from a saving failure.",
     "Read the record, filter by date, add review notes, export it, and print the right copy with notes kept private.",
