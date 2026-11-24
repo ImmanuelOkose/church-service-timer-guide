@@ -21,7 +21,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar">
 <a class="brand" href="index.html"><img src="assets/app-mark.svg" width="42" height="42" alt=""><span>Church Service Timer<small>THE OPERATOR HANDBOOK</small></span></a>
-<div class="header-actions"><span class="version">VERSION 0.38.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
+<div class="header-actions"><span class="version">VERSION 0.39.0</span><a class="download" href="teaching.md" download>Download guide <span aria-hidden="true">↙</span></a>
 <button class="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">Lessons <span aria-hidden="true">☰</span></button></div>
 </header>
 <div class="layout">
@@ -61,7 +61,7 @@
 <a class="sidebar-privacy" href="release-notes.html">Release notes</a>
 <a class="sidebar-privacy" href="privacy-policy/index.html">Privacy policy</a>
 </aside>
-<main id="main" tabindex="-1"><div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">LESSON 23 / 23 <span>14 MIN READ</span></p>
+<main id="main" tabindex="-1"><div class="chapter-shell"><header class="chapter-header"><p class="eyebrow">LESSON 23 / 23 <span>17 MIN READ</span></p>
 <h1 id="23-quick-reference-and-knowledge-check">Quick reference and knowledge check</h1><p class="chapter-deck">Look up terms, check your understanding and review the current scope.</p></header>
 <nav class="on-this-page" aria-label="On this page"><strong>In this lesson</strong><a href="#check-your-understanding">Check your understanding</a><a href="#current-scope">Current scope</a></nav>
 <article class="prose"><div class="table-scroll" role="region" aria-label="Reference table" tabindex="0"><table>
@@ -118,7 +118,7 @@
 </tr>
 <tr>
 <td>Stage layout</td>
-<td>What a stage screen shows while it counts down: Timer only, Timer and segment name, Timer and up next or Up next only. Chosen from four picture tiles.</td>
+<td>What a stage screen shows while it counts down: Timer only, Timer and segment name, Timer and up next or Up next only. Chosen for a group on the Screens page.</td>
 </tr>
 <tr>
 <td>NOW band</td>
@@ -134,7 +134,7 @@
 </tr>
 <tr>
 <td>Finish</td>
-<td>The material of the app's background and panels, chosen in Settings › Appearance › Theme. Flat is the default; Strength is Subtle or Full. Never on stage screens or the LED sign.</td>
+<td>The material of the app's background and panels, chosen in Settings › Appearance › Theme. Flat is the default; Strength is Subtle or Full, and most finishes start at Full. It covers every page and popup, and is never on stage screens or the LED sign.</td>
 </tr>
 <tr>
 <td>Papery</td>
@@ -142,7 +142,31 @@
 </tr>
 <tr>
 <td>Slides</td>
-<td>The page, after Programs, that puts song words, Bible verses and announcements on the screens.</td>
+<td>The page, second after Live, that puts song words, Bible verses and announcements on the screens.</td>
+</tr>
+<tr>
+<td>Screens</td>
+<td>The page where every stage screen is sorted into groups, and one tap sets what a group shows. A button on Live on a phone.</td>
+</tr>
+<tr>
+<td>Group</td>
+<td>Screens that share one choice of what they show. A screen is in exactly one group. Church Auditorium and Stage to begin with.</td>
+</tr>
+<tr>
+<td>Scene</td>
+<td>A saved choice for every group, set with one tap, or by a program segment that names it.</td>
+</tr>
+<tr>
+<td>Shows cues</td>
+<td>A switch on each group. Off, its screens never show cues, warnings or quick messages. Church Auditorium starts off.</td>
+</tr>
+<tr>
+<td>Slides and timer</td>
+<td>A choice for a group: the slide's words large on the left, the countdown and the next slide on the right.</td>
+</tr>
+<tr>
+<td>Ready (Slides)</td>
+<td>The short list on the Slides page that holds passages you found by searching the Bible, until you press Send.</td>
 </tr>
 <tr>
 <td>Library</td>
@@ -157,8 +181,8 @@
 <td>Takes the slide off. Every screen goes back to what it showed before.</td>
 </tr>
 <tr>
-<td>Send to</td>
-<td>The three tick boxes for slides: Second screen, Web screens and Stage screens. Stage screens start unticked.</td>
+<td>Message group</td>
+<td>A paired screen's own group for Quick messages (General, Preacher, Choir, Media desk). Not the same as a Screens group.</td>
 </tr>
 <tr>
 <td>Black</td>
@@ -289,15 +313,23 @@
 <li>A line in a song reads Chorus. Do people see the word Chorus on the screens? <strong>No. A line such as Verse 1 or Chorus names the slide and is not shown.</strong></li>
 <li>A slide is ringed in red and another is dashed. What do they mean? <strong>The ringed one is on the screens now. The dashed one is next.</strong></li>
 <li>You press Space on the Slides page. What happens? <strong>The next slide shows. On Live, Space asks to pause the timer. A key never does the other thing's job.</strong></li>
-<li>Why does a stage screen still show the countdown after you show a slide? <strong>Stage screens start unticked under Send to, so a speaker's countdown is not covered by accident. Tick it to put slides there.</strong></li>
+<li>Why does a stage screen still show the countdown after you show a slide? <strong>Its group on the Screens page is not set to Slides or Slides and timer. Nothing covers a speaker's countdown unless you set that group to show slides.</strong></li>
 <li>Does the LED sign show slides? <strong>No. The LED sign never shows slides.</strong></li>
 <li>What does Clear slide give back? <strong>Exactly what each screen showed before: the countdown, the clock, a cue or the end screen.</strong></li>
 <li>Which translation comes with the app? <strong>The King James Version. Other translations are under copyright; use Paste your own.</strong></li>
 <li>Does Your picture show on a phone acting as a stage screen? <strong>No. It shows Midnight there. It shows on the second screen, full screen and web screens.</strong></li>
+<li>You choose Timer and up next for the Stage group. What changes? <strong>Every screen in the Stage group changes at once, with no question. A screen in another group does not.</strong></li>
+<li>A new phone is paired for the first time. Which group does it join? <strong>The group marked default for new screens, Stage to begin with.</strong></li>
+<li>WRAP UP is sent but the projector shows no cue. Why? <strong>The projector's group, Church Auditorium to begin with, has Shows cues off. Switch it on on the Screens page.</strong></li>
+<li>A program segment names a scene. What happens when it starts? <strong>Every group changes to what the scene saved. You can still change any group by hand afterwards.</strong></li>
+<li>A new program is made. What does it show when the service ends? <strong>The clock. A new program starts on Clock; choose End screen for words.</strong></li>
+<li>You type Jo 3:1 in Add Bible verses. What does the app do? <strong>It does not guess. Did you mean: offers Job, Joel, John, Jonah and Joshua as buttons.</strong></li>
+<li>A Bible passage is found by search. How does it reach the screens? <strong>Enter puts it in Ready, then Send shows it like a slide from the Library. Ctrl+Enter sends at once.</strong></li>
 </ol>
 <h3 id="current-scope">Current scope</h3>
-<p>This guide covers version 0.38.0 on Android and Windows. An earlier version does not have what the release notes list under 0.38.0. An iOS or Mac app and universal LED compatibility are not provided; browsers can only follow a service as web screens, never control it. The original Matrix glyphs and square-matrix glyphs are unchanged. Tinos is bundled; installed/imported font loading is not part of the workflow. LED countdowns, segments and Quick timers stay within 59:59.</p>
-<p>Physical checks have established the supported W2 countdown, expected one-blink transitions, scrolling warnings returning to the current timer, and Next segment after overtime. Full-service endurance, power-loss acceptance and controller administration writes still require controlled hardware validation. Web screens, guided practice, Quick timer, stage requests and the other features added from 0.19 to 0.38 are described here from the app's release notes and on-screen wording; behaviour on your phones, PCs, routers, browsers and projectors has not been verified by this handbook, so hands-on testing of that release remains the user's responsibility.</p>
+<p>This guide covers version 0.39.0 on Android and Windows. An earlier version does not have what the release notes list under 0.39.0. An iOS or Mac app and universal LED compatibility are not provided; browsers can only follow a service as web screens, never control it. The original Matrix glyphs and square-matrix glyphs are unchanged. Tinos is bundled; installed/imported font loading is not part of the workflow. LED countdowns, segments and Quick timers stay within 59:59.</p>
+<p>Physical checks have established the supported W2 countdown, expected one-blink transitions, scrolling warnings returning to the current timer, and Next segment after overtime. Full-service endurance, power-loss acceptance and controller administration writes still require controlled hardware validation. Web screens, guided practice, Quick timer, stage requests and the other features added from 0.19 to 0.39 are described here from the app's release notes and on-screen wording; behaviour on your phones, PCs, routers, browsers and projectors has not been verified by this handbook, so hands-on testing of that release remains the user's responsibility.</p>
+<p><strong>Screens and the new finishes are described from the release notes and the app's own previews.</strong> How groups, scenes and Slides and timer look on your own screens, how the finishes run on your own PC, and how the new Windows installer looks on a real PC have not been checked by this handbook. Rehearse them on your own equipment.</p>
 <p><strong>Slides are described from the release notes and the app's own previews.</strong> How the words fit on your projector, and how the second screen, web screens and paired stage screens draw them, have not been checked by this handbook. Look at every slide on the real screens before the service.</p>
 <p><strong>The Windows app is new.</strong> Its installer is not code-signed, so Windows warns before it runs. The second screen, the mini timer, full screen, the countdown beside the clock and <strong>Download and install</strong> depend on how Windows, your graphics driver and your screens behave. Rehearse the exact PC, projector and clicker before a service, and keep a phone with the same programs as a fallback.</p>
 <p>The online handbook and this Markdown guide are training materials, not a remote-control interface. Nothing in the handbook can connect to a sign, start a service or send a stage cue.</p></article>
@@ -310,7 +342,7 @@
 <fieldset><legend>5. A projector is plugged into the PC and Windows is set to Extend. What puts the countdown on it?</legend><label><input type="radio" name="q5" value="pair" required> Pairing the projector with a six-digit code.</label><label><input type="radio" name="q5" value="show"> Show on second screen, under the Display preview on Live.</label></fieldset>
 <button type="submit" class="primary-button">Check my answers</button><p id="quiz-result" role="status"></p></form></section><div class="lesson-complete"><div><strong>A moment to reflect.</strong><p>Could you explain this workflow to another operator?</p></div><button type="button" data-complete="quick-reference-and-knowledge-check" aria-pressed="false">Mark lesson as read</button></div>
 <nav class="chapter-pagination" aria-label="Lesson pagination"><a href="trainer-session-and-readiness-checklist.html"><span>PREVIOUS LESSON</span>Trainer session and readiness checklist</a><a href="index.html"><span>KEEP IT CLOSE</span>Return to handbook →</a></nav></div>
-<footer class="page-footer"><img src="assets/app-mark.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.38.0 · Updated 23 November 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="release-notes.html">Release notes</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
+<footer class="page-footer"><img src="assets/app-mark.svg" width="30" height="30" alt=""><p><strong>Church Service Timer · I-Proton</strong><span>Handbook for 0.39.0 · Updated 24 November 2026</span></p><nav class="footer-links" aria-label="Site"><a href="index.html">Home</a><a href="release-notes.html">Release notes</a><a href="privacy-policy/index.html">Privacy policy</a><a href="quick-reference-and-knowledge-check.html#current-scope">Scope & limitations</a></nav></footer>
 </main></div>
 <dialog id="image-dialog" aria-label="Enlarged app screenshot"><button type="button" class="close-dialog" aria-label="Close enlarged screenshot">Close ✕</button><img alt=""><p></p></dialog>
 <noscript><div class="noscript-note">All lessons and the full guide work without JavaScript. Search, progress tracking and the practice quiz need JavaScript.</div></noscript>
