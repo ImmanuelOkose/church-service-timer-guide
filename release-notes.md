@@ -31,7 +31,7 @@ What changed in each version of Church Service Timer, newest first, in short. Up
 
 **Finishes**
 
-- **Real materials, with no slowdown.** Every texture is now a photograph of the real thing, drawn once and kept, so a finish is no slower than Flat. Edges are drawn to match: wood inlay, polished marble, moulded plastic, bevelled steel with screws, stitched Denim and Leather.
+- **Real materials, and much lighter on the computer.** Every texture is now a photograph of the real thing, drawn once and kept, so a finish takes far less work than before. On an older computer it can still feel a little less quick than Flat. Edges are drawn to match: wood inlay, polished marble, moulded plastic, bevelled steel with screws, stitched Denim and Leather.
 - **Every page and every popup.** Programs, Reports, the program editor, Settings, Screens & devices, dialogs, menus, pickers and Commands are made of the finish. Small cards are made of the material too, and nothing runs over a panel's edge.
 - **Full by default.** A finish shows at **Full** until you choose otherwise, except Walnut, Oak and Carbon fibre, which start at **Subtle**. A Subtle saved by an older version counts as not chosen, once. The tiles have a new order. See [Make the workspace yours](make-the-workspace-yours.html).
 
